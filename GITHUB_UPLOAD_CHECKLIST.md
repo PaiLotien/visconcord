@@ -24,8 +24,9 @@ author order used in the manuscript.
 - [x] First release tag selected: `v1.0.0`.
 - [x] GitHub URL recorded in `CITATION.cff` and the submission declaration.
 - [ ] Add an archival Zenodo/DOI identifier later if one is created.
-- [ ] Confirm CRediT roles, competing-interest wording, and funding wording with
-      every author; none are inferred from commits or file history.
+- [x] CRediT roles are recorded from the author-provided statement.
+- [x] Standard no-competing-interest and no-specific-funding wording is recorded
+      in the submission declaration.
 - [ ] Run installation and `python scripts/reproduce.py` on a fresh machine.
 - [ ] Inspect the complete staged file list before pushing.
 
