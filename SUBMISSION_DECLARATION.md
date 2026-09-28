@@ -7,9 +7,9 @@ Replace the bracketed repository fields after creating the GitHub repository.
 
 The VisConcord source code, frozen configurations, rule registry, task and
 gold assets, saved validation outputs, and analysis scripts are available at
-[GitHub repository URL]. The released package corresponds to commit
-`6f2efb4a2dad569ef13abeb927d8ee1f7286778c` and release tag `[RELEASE TAG]`.
-An archival DOI may be added as `[DOI, if assigned]`. The code is distributed
+https://github.com/PaiLotien/visconcord. The released package corresponds to commit
+`6f2efb4a2dad569ef13abeb927d8ee1f7286778c` and release tag `v1.0.0`.
+No archival DOI has been assigned at this time. The code is distributed
 under the MIT License. Original project data and documentation are distributed
 under CC BY 4.0 where permitted; UCI-derived and third-party assets retain
 their original terms.

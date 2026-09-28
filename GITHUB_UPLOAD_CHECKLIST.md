@@ -18,11 +18,12 @@ author order used in the manuscript.
 
 ## Remaining mechanical steps
 
-- [ ] Create the GitHub repository under the author's chosen account or
-      organization and set its URL in `SUBMISSION_DECLARATION.md`.
-- [ ] Choose and record the first release tag, for example `v1.0.0`.
-- [ ] Add the final GitHub URL and optional Zenodo/DOI to `CITATION.cff` and the
-      manuscript's Data and code availability section.
+- [x] Created the public GitHub repository at
+      `https://github.com/PaiLotien/visconcord` and set its URL in the
+      submission declaration.
+- [x] First release tag selected: `v1.0.0`.
+- [x] GitHub URL recorded in `CITATION.cff` and the submission declaration.
+- [ ] Add an archival Zenodo/DOI identifier later if one is created.
 - [ ] Confirm CRediT roles, competing-interest wording, and funding wording with
       every author; none are inferred from commits or file history.
 - [ ] Run installation and `python scripts/reproduce.py` on a fresh machine.

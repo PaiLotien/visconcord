@@ -17,6 +17,7 @@ authors:
   - family-names: Wang
     given-names: Xumeng
 version: 1.0.0
+repository-code: "https://github.com/PaiLotien/visconcord"
 date-released: 2026-09-28
 keywords:
   - visualization recommendation
