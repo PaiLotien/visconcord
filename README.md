@@ -73,5 +73,6 @@ fresh tool-comparison rerun.
 
 The project is named `VisConcord`, the repository is prepared for public named
 release, and the author-approved data release includes the packaged validation
-outputs and adjudicated labels. The GitHub URL, release tag, and optional DOI
-are intentionally left for the final repository creation step.
+outputs and adjudicated labels. The public repository is available at
+<https://github.com/PaiLotien/visconcord>; the reproducibility package is tagged
+`v1.0.0`. No archival DOI has been assigned at this time.
