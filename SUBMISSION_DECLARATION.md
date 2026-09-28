@@ -42,15 +42,14 @@ public, commercial, or not-for-profit sectors.
 
 ## Ethics and consent
 
-The validation used controlled cases and non-author annotators. The authors do
-not claim ethics approval or an ethics exemption for this artifact; the released
-package contains the controlled cases and adjudicated labels used for the
-reported component-level validation.
+The annotation was conducted by members of the research team as part of the
+development and evaluation of the proposed method. No personal or sensitive
+information about the annotators was collected. Ethics approval and informed
+consent were not applicable to this study.
 
 ## Declaration of generative AI and AI-assisted technologies in the manuscript preparation process
 
-During manuscript preparation, the authors used OpenAI Codex to assist with
-language editing, consistency checks, and LaTeX source revision. The authors
-reviewed the resulting suggestions and take responsibility for the final
-manuscript. Experimental model runs are research-method components and are
-described separately in the manuscript and reproducibility package.
+During the preparation of this work, the authors used ChatGPT and Codex
+(OpenAI) to assist with manuscript preparation and language refinement. After
+using these tools, the authors reviewed and edited the content as needed and
+take full responsibility for the content of the publication.

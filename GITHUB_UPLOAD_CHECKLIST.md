@@ -9,8 +9,8 @@ author order used in the manuscript.
 - [x] Public named repository: `visconcord`.
 - [x] The packaged 120 validation contexts, 140 candidates, 360 validator
       replays, saved outputs, and adjudicated labels may be published.
-- [x] No ethics approval or exemption is claimed for this release. Do not add an
-      ethics-approval number.
+- [x] Ethics approval and informed consent were not applicable to this study; no
+      ethics-approval number is included.
 - [x] Author order follows the paper and is recorded in `CITATION.cff`.
 - [x] MIT License for project code.
 - [x] CC BY 4.0 for original project data and documentation; UCI-derived and

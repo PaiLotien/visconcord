@@ -13,8 +13,8 @@
     },
     {
       "path": "GITHUB_UPLOAD_CHECKLIST.md",
-      "sha256": "a4e7f2d442b979f0540f3d4e5a9997288f7b1b42cebff8d2d3a435b4646df603",
-      "size_bytes": 1862
+      "sha256": "4ee0ac395e78c5f64c988336c2a06d72e7f44ba4acafc1a052195e74de7e0baa",
+      "size_bytes": 1874
     },
     {
       "path": "LICENSE",
@@ -48,8 +48,8 @@
     },
     {
       "path": "SUBMISSION_DECLARATION.md",
-      "sha256": "0d6046b65aa04c815f74b7dacd6f4681798e6433b5811436c7638c6ce33cb667",
-      "size_bytes": 2682
+      "sha256": "a85c327800c2ed84cee5ad32d14a5c89e2166e87aa34a580e10154021d28615f",
+      "size_bytes": 2602
     },
     {
       "path": "anonymization_scan.json",
@@ -5026,5 +5026,5 @@
   "release_identity": "visconcord-v1.0.0-github-upload-package-v1",
   "schema_version": "visconcord-public-release-manifest-v1.0.0",
   "status": "PUBLIC_NAMED_GITHUB_UPLOAD_PACKAGE",
-  "total_bytes": 18420439
+  "total_bytes": 18420371
 }
