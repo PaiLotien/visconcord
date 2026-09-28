@@ -1,0 +1,345 @@
+{
+  "quality_invocation_count": 20,
+  "replay_repetitions": 3,
+  "replay_task_ids": [
+    "PCS7-Q-002",
+    "PCS7-Q-003",
+    "PCS7-Q-015",
+    "PCS7-Q-016",
+    "PCS7-Q-019"
+  ],
+  "run_id": "skillvis-joint-v1121-qualification-pcs-v7-20260731-r3",
+  "schedule": [
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 1,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-013"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 2,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-017"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 3,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-003"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 4,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-019"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 5,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-016"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 6,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-018"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 7,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-015"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 8,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-001"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 9,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-003"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 10,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-012"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 11,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-004"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 12,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-008"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 13,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-006"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 14,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-014"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 15,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-020"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 16,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-002"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 17,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-019"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 18,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-016"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 19,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-011"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 20,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-007"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 21,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-015"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 22,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-003"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 23,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-019"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 24,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-009"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 25,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-002"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 26,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-002"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 27,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-016"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 28,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-015"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 29,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-005"
+    },
+    {
+      "purposes": [
+        "qualification",
+        "quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 30,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-Q-010"
+    }
+  ],
+  "schedule_content_sha256": "2ed5a73ab84625d31e2bf8410e7d669130ed47798ebaaab82aa479cc85c3811f",
+  "schema_version": "skillvis-pcs-v7-qualification-schedule-v1.0.0",
+  "seed": 202607319,
+  "status": "FROZEN_BEFORE_FIRST_QUALIFICATION_INVOCATION",
+  "task_count": 20,
+  "total_invocation_count": 30
+}

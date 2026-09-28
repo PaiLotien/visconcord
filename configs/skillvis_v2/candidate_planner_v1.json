@@ -1,0 +1,146 @@
+{
+  "schema_version": "skillvis-v2-config-v0.3.0",
+  "config_version": "skillvis-v2-m4-candidate-planner-v1.0.0",
+  "enabled": true,
+  "rule_registry_path": "configs/skillvis_v2/rules_m1_m3_v0.json",
+  "safety_rule_registry_path": "configs/skillvis_v2/rules_m3_5_safety_v1.json",
+  "candidate_rule_registry_path": "configs/skillvis_v2/rules_m4_candidate_planner_v1.json",
+  "feature_flags": {
+    "enable_m1_query_normalization": true,
+    "enable_m1_schema_profiling": true,
+    "enable_m2_field_resolution": true,
+    "enable_m3_task_profiling": true,
+    "enable_m3_query_decomposition": true,
+    "enable_m3_5_semantic_safety": true,
+    "enable_value_matching": true,
+    "enable_candidate_planner": true,
+    "enable_semantic_validator": false,
+    "enable_selective_recovery": false,
+    "enable_llm": false
+  },
+  "resolver_weights": {
+    "lexical": 0.72,
+    "alias": 0.7,
+    "value": 0.62,
+    "type_compatible": 0.08,
+    "task_role": 0.08,
+    "structural_recovery": 0.55,
+    "conflict": 0.25
+  },
+  "field_candidate_threshold": 0.5,
+  "ambiguity_margin": 0.08,
+  "task_candidate_threshold": 0.45,
+  "max_value_cardinality": 64,
+  "max_sample_values": 16,
+  "max_profile_rows": 10000,
+  "deterministic_seed": 4401,
+  "candidate_planner": {
+    "schema_version": "skillvis-v2-candidate-planner-settings-v1.0.0",
+    "max_candidates": 5,
+    "pie_max_categories": 6,
+    "explicit_chart_hints_are_hard_constraints": true,
+    "audit_only_on_missing_roles": false,
+    "core_tasks": [
+      "comparison",
+      "ranking",
+      "trend",
+      "correlation",
+      "distribution",
+      "composition",
+      "extremum"
+    ],
+    "chart_vocabulary": [
+      "bar",
+      "grouped_bar",
+      "dot_plot",
+      "horizontal_bar",
+      "top_k_bar",
+      "line",
+      "multi_line",
+      "scatter",
+      "grouped_scatter",
+      "histogram",
+      "box_plot",
+      "stacked_bar",
+      "normalized_stacked_bar",
+      "pie",
+      "ranked_bar",
+      "highlighted_extremum"
+    ],
+    "score_formula": "clamp01((task_fit*w_task + field_role_fit*w_field + type_compatibility*w_type + chart_effectiveness*w_effectiveness + provenance_strength*w_provenance + deterministic_tie_breaker*w_tie)/(w_task+w_field+w_type+w_effectiveness+w_provenance+w_tie) - ambiguity_penalty*w_ambiguity - missing_role_penalty*w_missing - unsupported_feature_penalty*w_unsupported - complexity_penalty*w_complexity)",
+    "score_weights": {
+      "task_fit": 0.24,
+      "field_role_fit": 0.2,
+      "type_compatibility": 0.16,
+      "chart_effectiveness": 0.18,
+      "provenance_strength": 0.12,
+      "deterministic_tie_breaker": 0.001,
+      "ambiguity_penalty": 0.06,
+      "missing_role_penalty": 0.3,
+      "unsupported_feature_penalty": 0.5,
+      "complexity_penalty": 0.08
+    },
+    "task_chart_effectiveness": {
+      "comparison": {
+        "bar": 0.98,
+        "grouped_bar": 0.94,
+        "dot_plot": 0.88
+      },
+      "ranking": {
+        "horizontal_bar": 0.98,
+        "top_k_bar": 0.97,
+        "ranked_bar": 0.95
+      },
+      "trend": {
+        "line": 0.99,
+        "multi_line": 0.96
+      },
+      "correlation": {
+        "scatter": 0.99,
+        "grouped_scatter": 0.95
+      },
+      "distribution": {
+        "histogram": 0.97,
+        "box_plot": 0.92
+      },
+      "composition": {
+        "normalized_stacked_bar": 0.98,
+        "stacked_bar": 0.95,
+        "pie": 0.82
+      },
+      "extremum": {
+        "highlighted_extremum": 0.99,
+        "horizontal_bar": 0.94,
+        "ranked_bar": 0.93
+      }
+    },
+    "chart_complexity": {
+      "bar": 0.05,
+      "grouped_bar": 0.2,
+      "dot_plot": 0.08,
+      "horizontal_bar": 0.05,
+      "top_k_bar": 0.12,
+      "line": 0.05,
+      "multi_line": 0.18,
+      "scatter": 0.05,
+      "grouped_scatter": 0.18,
+      "histogram": 0.08,
+      "box_plot": 0.12,
+      "stacked_bar": 0.18,
+      "normalized_stacked_bar": 0.22,
+      "pie": 0.15,
+      "ranked_bar": 0.08,
+      "highlighted_extremum": 0.12
+    },
+    "gates": {
+      "top1_acceptable_rate_min": 0.8,
+      "acceptable_candidate_recall_at_3_min": 0.9,
+      "unsupported_executable_candidate_rate_max": 0.0,
+      "duplicate_candidate_rate_max": 0.0,
+      "deterministic_replay_rate_min": 1.0,
+      "provenance_completeness_rate_min": 1.0,
+      "score_decomposition_completeness_rate_min": 1.0,
+      "schema_validation_rate_min": 1.0
+    }
+  }
+}

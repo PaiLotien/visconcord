@@ -1,0 +1,453 @@
+{
+  "$defs": {
+    "AmbiguityRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "alternatives": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "dimension": {
+          "enum": [
+            "field",
+            "task",
+            "transform",
+            "relation",
+            "query"
+          ],
+          "title": "Dimension",
+          "type": "string"
+        },
+        "evidence_span_ids": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Span Ids",
+          "type": "array"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "dimension",
+        "alternatives",
+        "reason",
+        "rule_ids"
+      ],
+      "title": "AmbiguityRecord",
+      "type": "object"
+    },
+    "CandidateScore": {
+      "additionalProperties": false,
+      "properties": {
+        "alias_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Alias Score",
+          "type": "number"
+        },
+        "conflict_penalty": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Conflict Penalty",
+          "type": "number"
+        },
+        "lexical_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Lexical Score",
+          "type": "number"
+        },
+        "task_role_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Task Role Score",
+          "type": "number"
+        },
+        "total_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Total Score",
+          "type": "number"
+        },
+        "type_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Type Score",
+          "type": "number"
+        },
+        "value_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Value Score",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lexical_score",
+        "alias_score",
+        "value_score",
+        "type_score",
+        "task_role_score",
+        "conflict_penalty",
+        "total_score"
+      ],
+      "title": "CandidateScore",
+      "type": "object"
+    },
+    "EvidenceSpan": {
+      "additionalProperties": false,
+      "properties": {
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "normalized": {
+          "title": "Normalized",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "text",
+        "normalized",
+        "kind",
+        "rule_ids"
+      ],
+      "title": "EvidenceSpan",
+      "type": "object"
+    },
+    "FieldCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate_rank": {
+          "minimum": 1,
+          "title": "Candidate Rank",
+          "type": "integer"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/FieldEvidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "field_name": {
+          "title": "Field Name",
+          "type": "string"
+        },
+        "intended_roles": {
+          "items": {
+            "enum": [
+              "measure",
+              "dimension",
+              "temporal",
+              "grouping",
+              "filter",
+              "identifier",
+              "geographic",
+              "unknown"
+            ],
+            "type": "string"
+          },
+          "title": "Intended Roles",
+          "type": "array"
+        },
+        "match_types": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Match Types",
+          "type": "array"
+        },
+        "mention_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Mention Ids",
+          "type": "array"
+        },
+        "score_components": {
+          "$ref": "#/$defs/CandidateScore"
+        },
+        "source_rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Rule Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "field_name",
+        "mention_ids",
+        "candidate_rank",
+        "score_components",
+        "match_types",
+        "evidence",
+        "intended_roles",
+        "source_rule_ids"
+      ],
+      "title": "FieldCandidate",
+      "type": "object"
+    },
+    "FieldEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_type": {
+          "title": "Evidence Type",
+          "type": "string"
+        },
+        "query_span": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EvidenceSpan"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rule_id": {
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "source_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "evidence_type",
+        "query_span",
+        "value",
+        "rule_id",
+        "source_ids"
+      ],
+      "title": "FieldEvidence",
+      "type": "object"
+    },
+    "QueryMention": {
+      "additionalProperties": false,
+      "properties": {
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "mention_id": {
+          "title": "Mention Id",
+          "type": "string"
+        },
+        "mention_kind": {
+          "enum": [
+            "field",
+            "alias",
+            "value",
+            "structural",
+            "unresolved"
+          ],
+          "title": "Mention Kind",
+          "type": "string"
+        },
+        "normalized": {
+          "title": "Normalized",
+          "type": "string"
+        },
+        "source_rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Rule Ids",
+          "type": "array"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "mention_id",
+        "text",
+        "normalized",
+        "start",
+        "end",
+        "mention_kind",
+        "source_rule_ids"
+      ],
+      "title": "QueryMention",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "abstention_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Abstention Reason"
+    },
+    "ambiguity": {
+      "items": {
+        "$ref": "#/$defs/AmbiguityRecord"
+      },
+      "title": "Ambiguity",
+      "type": "array"
+    },
+    "applied_rule_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Applied Rule Ids",
+      "type": "array"
+    },
+    "candidate_fields": {
+      "items": {
+        "$ref": "#/$defs/FieldCandidate"
+      },
+      "title": "Candidate Fields",
+      "type": "array"
+    },
+    "candidate_scores": {
+      "additionalProperties": {
+        "$ref": "#/$defs/CandidateScore"
+      },
+      "title": "Candidate Scores",
+      "type": "object"
+    },
+    "evidence": {
+      "additionalProperties": {
+        "items": {
+          "$ref": "#/$defs/FieldEvidence"
+        },
+        "type": "array"
+      },
+      "title": "Evidence",
+      "type": "object"
+    },
+    "intended_roles": {
+      "additionalProperties": {
+        "items": {
+          "enum": [
+            "measure",
+            "dimension",
+            "temporal",
+            "grouping",
+            "filter",
+            "identifier",
+            "geographic",
+            "unknown"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "title": "Intended Roles",
+      "type": "object"
+    },
+    "match_types": {
+      "additionalProperties": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "title": "Match Types",
+      "type": "object"
+    },
+    "query_mentions": {
+      "items": {
+        "$ref": "#/$defs/QueryMention"
+      },
+      "title": "Query Mentions",
+      "type": "array"
+    },
+    "required_field_candidates": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Required Field Candidates",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "skillvis-v2-field-resolution-v0.1.0",
+      "default": "skillvis-v2-field-resolution-v0.1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "unresolved_mentions": {
+      "items": {
+        "$ref": "#/$defs/QueryMention"
+      },
+      "title": "Unresolved Mentions",
+      "type": "array"
+    }
+  },
+  "required": [
+    "query_mentions",
+    "candidate_fields",
+    "candidate_scores",
+    "match_types",
+    "evidence",
+    "intended_roles",
+    "ambiguity",
+    "required_field_candidates",
+    "unresolved_mentions",
+    "applied_rule_ids"
+  ],
+  "title": "FieldResolutionResult",
+  "type": "object"
+}

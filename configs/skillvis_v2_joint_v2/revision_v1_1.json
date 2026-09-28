@@ -1,0 +1,12 @@
+{
+  "schema_version": "skillvis-v2-joint-v2-revision-v1.0.0",
+  "config_version": "skillvis-v2-joint-field-task-v1.1.0",
+  "parent_settings_path": "configs/skillvis_v2_joint/joint_semantic_v1.json",
+  "features": [
+    "exact-span-dominates-contained-token-fragments",
+    "query-grouping-role-refines-low-cardinality-numeric-codes",
+    "operation-lexeme-inside-exact-field-span-is-not-an-operation"
+  ],
+  "status": "development_only_requires_new_protocol"
+}
+

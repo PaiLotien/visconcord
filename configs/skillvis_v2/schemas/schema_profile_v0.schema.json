@@ -1,0 +1,370 @@
+{
+  "$defs": {
+    "CategoricalSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "top_values": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/CategoryValueCount"
+          },
+          "title": "Top Values",
+          "type": "array"
+        },
+        "unique_count": {
+          "minimum": 0,
+          "title": "Unique Count",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "unique_count"
+      ],
+      "title": "CategoricalSummary",
+      "type": "object"
+    },
+    "CategoryValueCount": {
+      "additionalProperties": false,
+      "properties": {
+        "count": {
+          "minimum": 0,
+          "title": "Count",
+          "type": "integer"
+        },
+        "value": {
+          "title": "Value"
+        }
+      },
+      "required": [
+        "value",
+        "count"
+      ],
+      "title": "CategoryValueCount",
+      "type": "object"
+    },
+    "NumericSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "count": {
+          "minimum": 0,
+          "title": "Count",
+          "type": "integer"
+        },
+        "maximum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maximum"
+        },
+        "mean": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mean"
+        },
+        "median": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Median"
+        },
+        "minimum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minimum"
+        },
+        "standard_deviation": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Standard Deviation"
+        }
+      },
+      "required": [
+        "count"
+      ],
+      "title": "NumericSummary",
+      "type": "object"
+    },
+    "SchemaFieldProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "aliases": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Aliases",
+          "type": "array"
+        },
+        "cardinality": {
+          "minimum": 0,
+          "title": "Cardinality",
+          "type": "integer"
+        },
+        "categorical_summary": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CategoricalSummary"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "confidence": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "field_name": {
+          "title": "Field Name",
+          "type": "string"
+        },
+        "normalized_name": {
+          "title": "Normalized Name",
+          "type": "string"
+        },
+        "null_rate": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Null Rate",
+          "type": "number"
+        },
+        "numeric_summary": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NumericSummary"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "physical_type": {
+          "title": "Physical Type",
+          "type": "string"
+        },
+        "role_candidates": {
+          "items": {
+            "enum": [
+              "measure",
+              "dimension",
+              "temporal",
+              "grouping",
+              "filter",
+              "identifier",
+              "geographic",
+              "unknown"
+            ],
+            "type": "string"
+          },
+          "title": "Role Candidates",
+          "type": "array"
+        },
+        "sample_values": {
+          "items": {},
+          "title": "Sample Values",
+          "type": "array"
+        },
+        "semantic_type": {
+          "enum": [
+            "quantitative",
+            "categorical",
+            "temporal",
+            "identifier",
+            "ordinal",
+            "geographic",
+            "unknown"
+          ],
+          "title": "Semantic Type",
+          "type": "string"
+        },
+        "source_rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Rule Ids",
+          "type": "array"
+        },
+        "temporal_summary": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TemporalSummary"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "warnings": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "field_name",
+        "normalized_name",
+        "aliases",
+        "semantic_type",
+        "physical_type",
+        "cardinality",
+        "null_rate",
+        "sample_values",
+        "numeric_summary",
+        "temporal_summary",
+        "categorical_summary",
+        "role_candidates",
+        "confidence",
+        "source_rule_ids"
+      ],
+      "title": "SchemaFieldProfile",
+      "type": "object"
+    },
+    "TemporalSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "maximum": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maximum"
+        },
+        "minimum": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minimum"
+        },
+        "parse_ratio": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Parse Ratio",
+          "type": "number"
+        },
+        "timezone_observed": {
+          "default": false,
+          "title": "Timezone Observed",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "parse_ratio"
+      ],
+      "title": "TemporalSummary",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "applied_rule_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Applied Rule Ids",
+      "type": "array"
+    },
+    "data_access_policy": {
+      "title": "Data Access Policy",
+      "type": "string"
+    },
+    "dataset_id": {
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "failure_state": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Failure State"
+    },
+    "fields": {
+      "items": {
+        "$ref": "#/$defs/SchemaFieldProfile"
+      },
+      "title": "Fields",
+      "type": "array"
+    },
+    "row_count": {
+      "minimum": 0,
+      "title": "Row Count",
+      "type": "integer"
+    },
+    "schema_version": {
+      "const": "skillvis-v2-schema-profile-v0.1.0",
+      "default": "skillvis-v2-schema-profile-v0.1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "warnings": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "dataset_id",
+    "row_count",
+    "fields",
+    "data_access_policy",
+    "applied_rule_ids"
+  ],
+  "title": "SchemaProfile",
+  "type": "object"
+}

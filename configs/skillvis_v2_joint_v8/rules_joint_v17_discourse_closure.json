@@ -1,0 +1,30 @@
+{
+  "schema_version": "skillvis-v2-joint-v17-discourse-rule-registry-v1.0.0",
+  "status": "development_only_not_protocol_frozen",
+  "rules": [
+    {
+      "rule_id": "R-FR-080",
+      "module": "query_local_discourse_grouping_role",
+      "source_ids": ["AMAR2005", "BREHMER_MUNZNER2013", "NL4DV2020"],
+      "scope": "interpret a physically numeric explicitly grounded field as a categorical grouping role when local among/across/by/for or following group/category discourse marks it as the group key and no aggregate targets it",
+      "rationale": "Low-cardinality codes are often stored numerically but function as dimensions; query-local grammatical role is stronger than physical dtype for visualization planning.",
+      "priority": 76,
+      "failure_condition": "A numeric-coded group field in contrast mean X among Y categories is treated as a second measure, causing correlation or abstention.",
+      "conflict_policy": "Typed aggregate-target evidence preserves the measure role; absent explicit field grounding or local grouping discourse prevents conversion.",
+      "trace_fields": ["field_name", "physical_type", "query_span", "local_cue", "aggregate_target", "decision"],
+      "unit_tests": ["test_among_categories_closes_numeric_grouping_role", "test_aggregate_target_remains_measure", "test_ungrounded_numeric_field_is_unchanged"]
+    },
+    {
+      "rule_id": "R-TP-050",
+      "module": "analytical_discourse_specificity_closure",
+      "source_ids": ["AMAR2005", "BREHMER_MUNZNER2013", "NL4DV2020", "MACKINLAY1986"],
+      "scope": "promote contrast plus typed aggregation and grouping closure to comparison, or share/proportion plus explicit pie presentation and a single grouping field to composition",
+      "rationale": "Analytical discourse and presentation evidence jointly disambiguate structurally complete tasks that bare field-count heuristics misclassify.",
+      "priority": 87,
+      "failure_condition": "Contrast-with-aggregation is emitted as correlation, or explicit record proportions in a pie chart is emitted as distribution.",
+      "conflict_policy": "Correlation cues without aggregation are preserved; composition requires explicit part-to-whole wording plus explicit pie presentation; alternative hypotheses stay in the audit graph.",
+      "trace_fields": ["directive_span", "aggregation", "measure_fields", "grouping_fields", "chart_mention", "selected_goal", "suppressed_peer_tasks"],
+      "unit_tests": ["test_contrast_aggregate_group_promotes_comparison", "test_proportion_pie_promotes_composition", "test_contrast_relationship_preserves_correlation"]
+    }
+  ]
+}

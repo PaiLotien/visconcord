@@ -1,0 +1,48 @@
+{
+  "candidate_count": 1,
+  "candidate_input_unchanged": true,
+  "candidate_repair_applied": false,
+  "case_id": "M5P-033",
+  "llm_invoked": false,
+  "paid_api_invoked": false,
+  "pristine_blind": true,
+  "query_reparsed": false,
+  "repeats": [
+    {
+      "completion_tokens": 0,
+      "cpu_time_ms": 0.557,
+      "llm_calls": 0,
+      "monetary_cost": 0.0,
+      "prompt_tokens": 0,
+      "repeat": 1,
+      "result_sha256": "07804d6bd4053c12636ea24a04951d25e3ef540047e30a20a7b17448627d94da",
+      "ru_maxrss_after": 125190144,
+      "ru_maxrss_before": 125190144,
+      "wall_clock_ms": 0.556833
+    },
+    {
+      "completion_tokens": 0,
+      "cpu_time_ms": 0.547,
+      "llm_calls": 0,
+      "monetary_cost": 0.0,
+      "prompt_tokens": 0,
+      "repeat": 2,
+      "result_sha256": "07804d6bd4053c12636ea24a04951d25e3ef540047e30a20a7b17448627d94da",
+      "ru_maxrss_after": 125190144,
+      "ru_maxrss_before": 125190144,
+      "wall_clock_ms": 0.547208
+    },
+    {
+      "completion_tokens": 0,
+      "cpu_time_ms": 0.539,
+      "llm_calls": 0,
+      "monetary_cost": 0.0,
+      "prompt_tokens": 0,
+      "repeat": 3,
+      "result_sha256": "07804d6bd4053c12636ea24a04951d25e3ef540047e30a20a7b17448627d94da",
+      "ru_maxrss_after": 125190144,
+      "ru_maxrss_before": 125190144,
+      "wall_clock_ms": 0.539916
+    }
+  ]
+}

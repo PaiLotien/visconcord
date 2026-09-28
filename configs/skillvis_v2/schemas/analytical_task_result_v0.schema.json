@@ -1,0 +1,424 @@
+{
+  "$defs": {
+    "AmbiguityRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "alternatives": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "dimension": {
+          "enum": [
+            "field",
+            "task",
+            "transform",
+            "relation",
+            "query"
+          ],
+          "title": "Dimension",
+          "type": "string"
+        },
+        "evidence_span_ids": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Span Ids",
+          "type": "array"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "dimension",
+        "alternatives",
+        "reason",
+        "rule_ids"
+      ],
+      "title": "AmbiguityRecord",
+      "type": "object"
+    },
+    "EvidenceSpan": {
+      "additionalProperties": false,
+      "properties": {
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "normalized": {
+          "title": "Normalized",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "text",
+        "normalized",
+        "kind",
+        "rule_ids"
+      ],
+      "title": "EvidenceSpan",
+      "type": "object"
+    },
+    "TaskCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_spans": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence Spans",
+          "type": "array"
+        },
+        "required_roles": {
+          "items": {
+            "enum": [
+              "measure",
+              "dimension",
+              "temporal",
+              "grouping",
+              "filter",
+              "identifier",
+              "geographic",
+              "unknown"
+            ],
+            "type": "string"
+          },
+          "title": "Required Roles",
+          "type": "array"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Score",
+          "type": "number"
+        },
+        "score_components": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Score Components",
+          "type": "object"
+        },
+        "task": {
+          "enum": [
+            "comparison",
+            "ranking",
+            "trend",
+            "correlation",
+            "distribution",
+            "composition",
+            "extremum",
+            "aggregation",
+            "filtering",
+            "sorting",
+            "temporal_analysis",
+            "unresolved"
+          ],
+          "title": "Task",
+          "type": "string"
+        }
+      },
+      "required": [
+        "task",
+        "score",
+        "evidence_spans",
+        "required_roles",
+        "rule_ids",
+        "score_components"
+      ],
+      "title": "TaskCandidate",
+      "type": "object"
+    },
+    "TransformIntent": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_spans": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence Spans",
+          "type": "array"
+        },
+        "field_candidates": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Field Candidates",
+          "type": "array"
+        },
+        "negated": {
+          "default": false,
+          "title": "Negated",
+          "type": "boolean"
+        },
+        "operation": {
+          "title": "Operation",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "transform_type": {
+          "enum": [
+            "aggregate",
+            "filter",
+            "sort",
+            "limit",
+            "bin",
+            "time_unit"
+          ],
+          "title": "Transform Type",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {},
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        }
+      },
+      "required": [
+        "transform_type",
+        "operation",
+        "evidence_spans",
+        "rule_ids"
+      ],
+      "title": "TransformIntent",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "aggregation": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TransformIntent"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ambiguity": {
+      "items": {
+        "$ref": "#/$defs/AmbiguityRecord"
+      },
+      "title": "Ambiguity",
+      "type": "array"
+    },
+    "applied_rule_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Applied Rule Ids",
+      "type": "array"
+    },
+    "failure_state": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Failure State"
+    },
+    "filters": {
+      "items": {
+        "$ref": "#/$defs/TransformIntent"
+      },
+      "title": "Filters",
+      "type": "array"
+    },
+    "limit": {
+      "anyOf": [
+        {
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Limit"
+    },
+    "primary_task": {
+      "enum": [
+        "comparison",
+        "ranking",
+        "trend",
+        "correlation",
+        "distribution",
+        "composition",
+        "extremum",
+        "aggregation",
+        "filtering",
+        "sorting",
+        "temporal_analysis",
+        "unresolved"
+      ],
+      "title": "Primary Task",
+      "type": "string"
+    },
+    "query_evidence_spans": {
+      "items": {
+        "$ref": "#/$defs/EvidenceSpan"
+      },
+      "title": "Query Evidence Spans",
+      "type": "array"
+    },
+    "required_roles": {
+      "items": {
+        "enum": [
+          "measure",
+          "dimension",
+          "temporal",
+          "grouping",
+          "filter",
+          "identifier",
+          "geographic",
+          "unknown"
+        ],
+        "type": "string"
+      },
+      "title": "Required Roles",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "skillvis-v2-task-result-v0.1.0",
+      "default": "skillvis-v2-task-result-v0.1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "secondary_tasks": {
+      "items": {
+        "enum": [
+          "comparison",
+          "ranking",
+          "trend",
+          "correlation",
+          "distribution",
+          "composition",
+          "extremum",
+          "aggregation",
+          "filtering",
+          "sorting",
+          "temporal_analysis",
+          "unresolved"
+        ],
+        "type": "string"
+      },
+      "title": "Secondary Tasks",
+      "type": "array"
+    },
+    "sort": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TransformIntent"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "task_candidates": {
+      "items": {
+        "$ref": "#/$defs/TaskCandidate"
+      },
+      "title": "Task Candidates",
+      "type": "array"
+    },
+    "task_scores": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Task Scores",
+      "type": "object"
+    },
+    "temporal_scope": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Temporal Scope",
+      "type": "array"
+    },
+    "transforms": {
+      "items": {
+        "$ref": "#/$defs/TransformIntent"
+      },
+      "title": "Transforms",
+      "type": "array"
+    }
+  },
+  "required": [
+    "task_candidates",
+    "task_scores",
+    "primary_task",
+    "secondary_tasks",
+    "query_evidence_spans",
+    "required_roles",
+    "transforms",
+    "aggregation",
+    "filters",
+    "sort",
+    "temporal_scope",
+    "ambiguity",
+    "applied_rule_ids"
+  ],
+  "title": "AnalyticalTaskResult",
+  "type": "object"
+}

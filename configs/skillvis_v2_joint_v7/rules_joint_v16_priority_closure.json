@@ -1,0 +1,54 @@
+{
+  "schema_version": "skillvis-v2-joint-v16-priority-rule-registry-v1.0.0",
+  "status": "development_only_not_protocol_frozen",
+  "rules": [
+    {
+      "rule_id": "R-FR-070",
+      "module": "adjacent_generic_head_ownership",
+      "source_ids": ["NL4DV2020", "DRACO2019", "BREHMER_MUNZNER2013"],
+      "scope": "suppress a weak required-field obligation when every query-grounded token is a schema-shared head immediately following a stronger complete field mention that contains the same head",
+      "rationale": "In phrases such as customer segment groups, the trailing generic head labels the explicitly named grouping field and is not independent evidence for every schema field sharing that head.",
+      "priority": 72,
+      "failure_condition": "A trailing generic group/category/type/class/segment token promotes unrelated fields that only share the suffix.",
+      "conflict_policy": "Any explicit, semantic, alias, value, or non-adjacent independent mention preserves the obligation; candidates remain in the audit contract.",
+      "trace_fields": ["field_name", "weak_span", "adjacent_owner", "shared_tokens", "gap", "decision"],
+      "unit_tests": ["test_adjacent_generic_head_is_owned", "test_independent_explicit_field_is_preserved", "test_non_adjacent_weak_mention_is_preserved"]
+    },
+    {
+      "rule_id": "R-TP-040",
+      "module": "analytical_task_specificity_dominance",
+      "source_ids": ["AMAR2005", "BREHMER_MUNZNER2013", "NL4DV2020"],
+      "scope": "promote field-unowned rank/order/sort directives only after measure-dimension closure and remove generic comparison from the emitted task candidate set while retaining the alternative hypothesis in the audit graph",
+      "rationale": "Ranking is a specific analytical goal that entails comparison; emitting both as peer predictions harms typed task precision and obscures the primary intent.",
+      "priority": 85,
+      "failure_condition": "An explicit order or sort request falls back to comparison, or an explicit rank request emits generic comparison as a peer task.",
+      "conflict_policy": "Directive spans owned by field mentions are excluded; order/sort require an aggregation and a following by-clause; missing structural roles forbid promotion.",
+      "trace_fields": ["directive", "span", "field_span_overlap", "measure_fields", "dimension_fields", "specificity_suppression", "selected_hypothesis"],
+      "unit_tests": ["test_order_by_aggregate_promotes_ranking", "test_sort_by_aggregate_promotes_ranking", "test_order_date_does_not_promote_ranking", "test_explicit_rank_suppresses_generic_comparison_candidate"]
+    },
+    {
+      "rule_id": "R-CP-020",
+      "module": "common_plan_semantic_deduplication",
+      "source_ids": ["MACKINLAY1986", "COMPASSQL2016", "DRACO2019", "VEGALITE2017"],
+      "scope": "retain one highest-scoring deterministic representative for candidates equivalent under common chart family, field set, encoding-role groups, aggregation, binning, time unit, and typed transforms",
+      "rationale": "Native chart labels and x/y orientation variants can encode the same common visualization plan; top-k must contain distinct decisions rather than nomenclature variants.",
+      "priority": 121,
+      "failure_condition": "The candidate list contains multiple entries that normalize to the same common plan signature.",
+      "conflict_policy": "Differences in fields, channel-role groups, aggregates, binning, temporal units, filters, or typed transforms preserve both candidates; ties use the native deterministic signature.",
+      "trace_fields": ["native_signature", "common_signature", "representative", "removed_count", "preserved_differences"],
+      "unit_tests": ["test_ranking_orientation_variants_are_deduplicated", "test_distinct_field_or_transform_candidates_are_preserved", "test_common_signatures_are_deterministic"]
+    },
+    {
+      "rule_id": "R-SP-041",
+      "module": "aggregate_target_numeric_role_guard",
+      "source_ids": ["MACKINLAY1986", "AMAR2005", "NL4DV2020"],
+      "scope": "restore a physically numeric field to quantitative when a typed aggregate explicitly targets it and no value-shape temporal profile exists",
+      "rationale": "Lexical tokens such as time can denote a duration measure; explicit aggregate-role evidence is stronger than a field-name temporal hint.",
+      "priority": 74,
+      "failure_condition": "A numeric duration such as handling_time is converted into a temporal dimension despite being the explicit target of mean, sum, or median.",
+      "conflict_policy": "Value-shape temporal evidence or an existing temporal summary prevents restoration; min/max temporal extrema are left unchanged.",
+      "trace_fields": ["field_name", "physical_type", "aggregate_operation", "temporal_summary", "decision"],
+      "unit_tests": ["test_aggregate_target_numeric_duration_remains_measure", "test_value_profiled_temporal_field_is_preserved"]
+    }
+  ]
+}

@@ -1,0 +1,576 @@
+{
+  "candidate_set_id": "candidate-set-M5P-098",
+  "candidate_set_signature": "affe7df5eae88addada14a8d60f4ee88f259e5c731bcc0427d624c3c6c548026",
+  "candidates": [
+    {
+      "aggregation": null,
+      "ambiguity_state": "NONE",
+      "applied_rule_ids": [
+        "R-M5P-CANDIDATE"
+      ],
+      "audit_only": false,
+      "candidate_id": "M5P-098-C1-b083338fe6",
+      "chart_compatibility_assumptions": [
+        "context-aware validation uses frozen SchemaProfile"
+      ],
+      "chart_type": "line",
+      "deterministic_signature": "b083338fe65f2860bada1895bf393a61072c1ed17b7ca3ede88635e218c2da44",
+      "encodings": [
+        {
+          "aggregate": null,
+          "bin": false,
+          "channel": "x",
+          "field": "Telemetry Epoch 1098",
+          "semantic_type": "temporal",
+          "sort": null,
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": false,
+          "channel": "y",
+          "field": "Telemetry Flux 1098",
+          "semantic_type": "quantitative",
+          "sort": null,
+          "time_unit": null
+        }
+      ],
+      "evidence_spans": [
+        {
+          "end": 76,
+          "kind": "m5_pristine_authoring",
+          "normalized": "forecast telemetry flux 1098 beyond telemetry epoch 1098 for study unit 1098",
+          "rule_ids": [
+            "R-M5P-SEED"
+          ],
+          "start": 0,
+          "text": "Forecast Telemetry Flux 1098 beyond Telemetry Epoch 1098 for study unit 1098"
+        }
+      ],
+      "executable": true,
+      "field_role_alignment": {
+        "measure": [
+          "Telemetry Flux 1098"
+        ],
+        "temporal": [
+          "Telemetry Epoch 1098"
+        ]
+      },
+      "fields": {
+        "color": [],
+        "dimension": [],
+        "facet": [],
+        "grouping": [],
+        "measure": [
+          "Telemetry Flux 1098"
+        ],
+        "size": [],
+        "temporal": [
+          "Telemetry Epoch 1098"
+        ]
+      },
+      "filters": [],
+      "grouping": [],
+      "limit": null,
+      "mark_type": "line",
+      "rank": 1,
+      "rationale": "Source-isolated M5 component blind candidate.",
+      "rejection_reasons": [],
+      "schema_version": "skillvis-v2-visualization-candidate-v1.0.0",
+      "score_components": {
+        "ambiguity_penalty": 0.0,
+        "chart_effectiveness_score": 0.85,
+        "complexity_penalty": 0.1,
+        "deterministic_tie_breaker": 0.5,
+        "field_role_fit_score": 0.9,
+        "missing_role_penalty": 0.0,
+        "provenance_strength_score": 1.0,
+        "rule_ids": {
+          "ambiguity_penalty": [
+            "R-M5P-SCORE"
+          ],
+          "chart_effectiveness_score": [
+            "R-M5P-SCORE"
+          ],
+          "complexity_penalty": [
+            "R-M5P-SCORE"
+          ],
+          "deterministic_tie_breaker": [
+            "R-M5P-SCORE"
+          ],
+          "field_role_fit_score": [
+            "R-M5P-SCORE"
+          ],
+          "missing_role_penalty": [
+            "R-M5P-SCORE"
+          ],
+          "provenance_strength_score": [
+            "R-M5P-SCORE"
+          ],
+          "task_fit_score": [
+            "R-M5P-SCORE"
+          ],
+          "type_compatibility_score": [
+            "R-M5P-SCORE"
+          ],
+          "unsupported_feature_penalty": [
+            "R-M5P-SCORE"
+          ]
+        },
+        "task_fit_score": 0.9,
+        "type_compatibility_score": 0.9,
+        "unsupported_feature_penalty": 0.0
+      },
+      "sort": null,
+      "source_ids": [
+        "M5-PRISTINE-AUTHORING"
+      ],
+      "task_alignment": "trend",
+      "total_score": 0.86,
+      "transforms": [],
+      "unsupported_features": [],
+      "warnings": []
+    }
+  ],
+  "capability": {
+    "abstention_required": true,
+    "explanation": "forecast is outside the frozen visualization planning capability.",
+    "provenance": [
+      "R-M5P-CAPABILITY"
+    ],
+    "risk_level": "critical",
+    "supported_operations": [],
+    "unsupported_operations": [
+      "forecast"
+    ]
+  },
+  "context_id": "context-M5P-098",
+  "intent": {
+    "abstention_reason": "unsupported_scope:forecast",
+    "abstention_state": {
+      "abstained": true,
+      "reason": "unsupported_scope:forecast",
+      "stage": "semantic_safety"
+    },
+    "aggregation": null,
+    "ambiguity": [],
+    "ambiguity_state": {
+      "affected_fields": [],
+      "affected_tasks": [
+        "trend"
+      ],
+      "confidence": 1.0,
+      "evidence_spans": [
+        {
+          "end": 76,
+          "kind": "m5_pristine_authoring",
+          "normalized": "forecast telemetry flux 1098 beyond telemetry epoch 1098 for study unit 1098",
+          "rule_ids": [
+            "R-M5P-SEED"
+          ],
+          "start": 0,
+          "text": "Forecast Telemetry Flux 1098 beyond Telemetry Epoch 1098 for study unit 1098"
+        }
+      ],
+      "explanation": "Unsupported operation requires abstention.",
+      "resolution_strategy": "abstain_unsupported",
+      "state": "UNSUPPORTED_SCOPE",
+      "triggering_rules": [
+        "R-M5P-CAPABILITY"
+      ]
+    },
+    "capability_assessment": {
+      "abstention_required": true,
+      "explanation": "forecast is outside the frozen visualization planning capability.",
+      "provenance": [
+        "R-M5P-CAPABILITY"
+      ],
+      "risk_level": "critical",
+      "supported_operations": [],
+      "unsupported_operations": [
+        "forecast"
+      ]
+    },
+    "chart_mentions": [],
+    "config_version": "m5-blind-context-v1",
+    "dataset_id": "m5-blind-dataset-1098",
+    "deterministic_id": "m5-blind-intent-1098",
+    "dimensions": [],
+    "evidence_spans": [
+      {
+        "end": 76,
+        "kind": "m5_pristine_authoring",
+        "normalized": "forecast telemetry flux 1098 beyond telemetry epoch 1098 for study unit 1098",
+        "rule_ids": [
+          "R-M5P-SEED"
+        ],
+        "start": 0,
+        "text": "Forecast Telemetry Flux 1098 beyond Telemetry Epoch 1098 for study unit 1098"
+      }
+    ],
+    "field_candidates": [],
+    "filters": [],
+    "grouping_fields": [],
+    "limit": null,
+    "measures": [
+      {
+        "candidate_rank": 1,
+        "evidence": [
+          {
+            "evidence_type": "m5_pristine_context",
+            "query_span": {
+              "end": 76,
+              "kind": "m5_pristine_authoring",
+              "normalized": "forecast telemetry flux 1098 beyond telemetry epoch 1098 for study unit 1098",
+              "rule_ids": [
+                "R-M5P-SEED"
+              ],
+              "start": 0,
+              "text": "Forecast Telemetry Flux 1098 beyond Telemetry Epoch 1098 for study unit 1098"
+            },
+            "rule_id": "R-M5P-SEED",
+            "source_ids": [
+              "M5-PRISTINE-AUTHORING"
+            ],
+            "value": "Telemetry Flux 1098"
+          }
+        ],
+        "field_name": "Telemetry Flux 1098",
+        "role": "measure",
+        "rule_ids": [
+          "R-M5P-INTENT"
+        ],
+        "score": 1.0
+      }
+    ],
+    "normalized_query": "forecast telemetry flux 1098 beyond telemetry epoch 1098 for study unit 1098",
+    "primary_task": "trend",
+    "provenance": [
+      {
+        "conflict_policy": "Frozen annotation controls; no result feedback.",
+        "failure_condition": "Context fields or obligations are incomplete.",
+        "inputs": [
+          "schema_profile"
+        ],
+        "outputs": [
+          "intent_ir"
+        ],
+        "priority": 1,
+        "rationale": "Bind typed roles and obligations without query reparsing.",
+        "rule_id": "R-M5P-INTENT",
+        "scope": "frozen blind context",
+        "source_ids": [
+          "SV2-PROTOCOL"
+        ],
+        "stage": "intent_assembly",
+        "trace_fields": [
+          "fields",
+          "task",
+          "transforms"
+        ]
+      },
+      {
+        "conflict_policy": "Unsupported operation requires abstention.",
+        "failure_condition": "Capability and IntentIR disagree.",
+        "inputs": [
+          "intent_ir"
+        ],
+        "outputs": [
+          "capability_assessment"
+        ],
+        "priority": 2,
+        "rationale": "Bind supported or unsupported operations.",
+        "rule_id": "R-M5P-CAPABILITY",
+        "scope": "frozen blind capability context",
+        "source_ids": [
+          "SV2-PROTOCOL"
+        ],
+        "stage": "semantic_safety",
+        "trace_fields": [
+          "unsupported_operations",
+          "abstention_required"
+        ]
+      }
+    ],
+    "query": "Forecast Telemetry Flux 1098 beyond Telemetry Epoch 1098 for study unit 1098",
+    "registry_hash": "9bb8031a12d573377de0ca018bb3be590794606adacd559ec03a73de981d9509",
+    "safety_warnings": [],
+    "schema_version": "skillvis-v2-intent-ir-v0.2.0",
+    "sort": null,
+    "task_candidates": [
+      {
+        "evidence_spans": [
+          {
+            "end": 76,
+            "kind": "m5_pristine_authoring",
+            "normalized": "forecast telemetry flux 1098 beyond telemetry epoch 1098 for study unit 1098",
+            "rule_ids": [
+              "R-M5P-SEED"
+            ],
+            "start": 0,
+            "text": "Forecast Telemetry Flux 1098 beyond Telemetry Epoch 1098 for study unit 1098"
+          }
+        ],
+        "required_roles": [
+          "measure"
+        ],
+        "rule_ids": [
+          "R-M5P-TASK"
+        ],
+        "score": 1.0,
+        "score_components": {
+          "frozen_authoring": 1.0
+        },
+        "task": "trend"
+      }
+    ],
+    "temporal_fields": [
+      {
+        "candidate_rank": 1,
+        "evidence": [
+          {
+            "evidence_type": "m5_pristine_context",
+            "query_span": {
+              "end": 76,
+              "kind": "m5_pristine_authoring",
+              "normalized": "forecast telemetry flux 1098 beyond telemetry epoch 1098 for study unit 1098",
+              "rule_ids": [
+                "R-M5P-SEED"
+              ],
+              "start": 0,
+              "text": "Forecast Telemetry Flux 1098 beyond Telemetry Epoch 1098 for study unit 1098"
+            },
+            "rule_id": "R-M5P-SEED",
+            "source_ids": [
+              "M5-PRISTINE-AUTHORING"
+            ],
+            "value": "Telemetry Epoch 1098"
+          }
+        ],
+        "field_name": "Telemetry Epoch 1098",
+        "role": "temporal",
+        "rule_ids": [
+          "R-M5P-INTENT"
+        ],
+        "score": 1.0
+      }
+    ],
+    "unresolved_mentions": [],
+    "unsupported_scope": [
+      {
+        "evidence_spans": [
+          {
+            "end": 76,
+            "kind": "m5_pristine_authoring",
+            "normalized": "forecast telemetry flux 1098 beyond telemetry epoch 1098 for study unit 1098",
+            "rule_ids": [
+              "R-M5P-SEED"
+            ],
+            "start": 0,
+            "text": "Forecast Telemetry Flux 1098 beyond Telemetry Epoch 1098 for study unit 1098"
+          }
+        ],
+        "explanation": "forecast is excluded by the frozen capability registry.",
+        "operation": "forecast",
+        "triggering_rules": [
+          "R-M5P-CAPABILITY"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "schema": {
+    "applied_rule_ids": [
+      "R-M5P-SCHEMA"
+    ],
+    "data_access_policy": "frozen_schema_profile_only_no_raw_query_reparse",
+    "dataset_id": "m5-blind-dataset-1098",
+    "failure_state": null,
+    "fields": [
+      {
+        "aliases": [],
+        "cardinality": 12,
+        "categorical_summary": null,
+        "confidence": 1.0,
+        "field_name": "Telemetry Flux 1098",
+        "normalized_name": "telemetry flux 1098",
+        "null_rate": 0.0,
+        "numeric_summary": {
+          "count": 12,
+          "maximum": 12.0,
+          "mean": 6.0,
+          "median": 6.0,
+          "minimum": 1.0,
+          "standard_deviation": 1.0
+        },
+        "physical_type": "float64",
+        "role_candidates": [
+          "measure"
+        ],
+        "sample_values": [
+          1.0,
+          2.0
+        ],
+        "semantic_type": "quantitative",
+        "source_rule_ids": [
+          "R-M5P-SCHEMA"
+        ],
+        "temporal_summary": null,
+        "warnings": []
+      },
+      {
+        "aliases": [],
+        "cardinality": 12,
+        "categorical_summary": null,
+        "confidence": 1.0,
+        "field_name": "Telemetry Gradient 1098",
+        "normalized_name": "telemetry gradient 1098",
+        "null_rate": 0.0,
+        "numeric_summary": {
+          "count": 12,
+          "maximum": 12.0,
+          "mean": 6.0,
+          "median": 6.0,
+          "minimum": 1.0,
+          "standard_deviation": 1.0
+        },
+        "physical_type": "float64",
+        "role_candidates": [
+          "measure"
+        ],
+        "sample_values": [
+          1.0,
+          2.0
+        ],
+        "semantic_type": "quantitative",
+        "source_rule_ids": [
+          "R-M5P-SCHEMA"
+        ],
+        "temporal_summary": null,
+        "warnings": []
+      },
+      {
+        "aliases": [],
+        "cardinality": 12,
+        "categorical_summary": null,
+        "confidence": 1.0,
+        "field_name": "Telemetry Intensity 1098",
+        "normalized_name": "telemetry intensity 1098",
+        "null_rate": 0.0,
+        "numeric_summary": {
+          "count": 12,
+          "maximum": 12.0,
+          "mean": 6.0,
+          "median": 6.0,
+          "minimum": 1.0,
+          "standard_deviation": 1.0
+        },
+        "physical_type": "float64",
+        "role_candidates": [
+          "measure"
+        ],
+        "sample_values": [
+          1.0,
+          2.0
+        ],
+        "semantic_type": "quantitative",
+        "source_rule_ids": [
+          "R-M5P-SCHEMA"
+        ],
+        "temporal_summary": null,
+        "warnings": []
+      },
+      {
+        "aliases": [],
+        "cardinality": 12,
+        "categorical_summary": {
+          "top_values": [],
+          "unique_count": 12
+        },
+        "confidence": 1.0,
+        "field_name": "Telemetry Zone 1098",
+        "normalized_name": "telemetry zone 1098",
+        "null_rate": 0.0,
+        "numeric_summary": null,
+        "physical_type": "string",
+        "role_candidates": [
+          "dimension",
+          "grouping"
+        ],
+        "sample_values": [
+          "Telemetry Zone 1098 A",
+          "Telemetry Zone 1098 B"
+        ],
+        "semantic_type": "categorical",
+        "source_rule_ids": [
+          "R-M5P-SCHEMA"
+        ],
+        "temporal_summary": null,
+        "warnings": []
+      },
+      {
+        "aliases": [],
+        "cardinality": 12,
+        "categorical_summary": {
+          "top_values": [],
+          "unique_count": 12
+        },
+        "confidence": 1.0,
+        "field_name": "Telemetry Cohort 1098",
+        "normalized_name": "telemetry cohort 1098",
+        "null_rate": 0.0,
+        "numeric_summary": null,
+        "physical_type": "string",
+        "role_candidates": [
+          "dimension",
+          "grouping"
+        ],
+        "sample_values": [
+          "Telemetry Cohort 1098 A",
+          "Telemetry Cohort 1098 B"
+        ],
+        "semantic_type": "categorical",
+        "source_rule_ids": [
+          "R-M5P-SCHEMA"
+        ],
+        "temporal_summary": null,
+        "warnings": []
+      },
+      {
+        "aliases": [],
+        "cardinality": 12,
+        "categorical_summary": null,
+        "confidence": 1.0,
+        "field_name": "Telemetry Epoch 1098",
+        "normalized_name": "telemetry epoch 1098",
+        "null_rate": 0.0,
+        "numeric_summary": null,
+        "physical_type": "datetime64",
+        "role_candidates": [
+          "temporal",
+          "dimension"
+        ],
+        "sample_values": [
+          "2025-01-01",
+          "2025-02-01"
+        ],
+        "semantic_type": "temporal",
+        "source_rule_ids": [
+          "R-M5P-SCHEMA"
+        ],
+        "temporal_summary": {
+          "maximum": "2025-12-31",
+          "minimum": "2025-01-01",
+          "parse_ratio": 1.0,
+          "timezone_observed": false
+        },
+        "warnings": []
+      }
+    ],
+    "row_count": 12,
+    "schema_version": "skillvis-v2-schema-profile-v0.1.0",
+    "warnings": []
+  },
+  "schema_version": "skillvis-v2-m5-candidate-set-context-v1.0.0",
+  "source_id": "M5-PRISTINE-SYNTHETIC:masked-family"
+}

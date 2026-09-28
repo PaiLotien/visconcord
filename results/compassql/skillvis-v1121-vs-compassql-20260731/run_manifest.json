@@ -1,0 +1,1832 @@
+{
+  "artifacts": [
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-001/normalized_output.json",
+      "sha256": "254160cb5d3000d01b0c5fd44ea09a85b30df054346dc3c29771a6666694e8c8",
+      "size_bytes": 4386
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-001/process_log.json",
+      "sha256": "c9021ba49256bf0471582f2110174dcdd59df5b050af15189cd5c8b673271a1a",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-001/raw_output.json",
+      "sha256": "c84c4892a288d49a9f8e7c7bf3f2212b0b35cc7da0b5639908c8bc1e1b978e38",
+      "size_bytes": 8922
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-001/trace.json",
+      "sha256": "aae9c69aa5d35b26416e346f091d676748cf303eb346fb639fdcf5857128397c",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-002/normalized_output.json",
+      "sha256": "23472677b4a43a99b9a92a51f578598a08a82362e82a0498f2c43fbf920a5ea3",
+      "size_bytes": 4389
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-002/process_log.json",
+      "sha256": "b4466f68721b3bbc876d584bde99d5e3348b31a65ed1caae769a743acd2d9e14",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-002/raw_output.json",
+      "sha256": "c93a6dfd748ea05883350c2b99a4eaa0e8b0059e093cf875e7e13b7fe53dffbf",
+      "size_bytes": 8919
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-002/trace.json",
+      "sha256": "ca48dfbac2d8c1d6c9ac4b6864874b2ee2919bad1942756398a28d96a7059d5f",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-003/normalized_output.json",
+      "sha256": "b5f68eb0b4e24bf0317b32465acce89b292acf05b9d240c83352d51a4fb7c87a",
+      "size_bytes": 2165
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-003/process_log.json",
+      "sha256": "a34666487f53f8d1a5afcb56af56c713059bb065619a24ea544021742ab96467",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-003/raw_output.json",
+      "sha256": "d489017c91ac29fd8cfa7239f352e84dde04d17600c5c2d3a578eb803d8f2920",
+      "size_bytes": 6351
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-003/trace.json",
+      "sha256": "c08c78b9d72318ff94337a66d29d61775d805b878278d5624c59f7967ed7f2ec",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-004/normalized_output.json",
+      "sha256": "011d4acc4dcaee5c1b6d724217168eded2748920944c22585e4f11a020ec7812",
+      "size_bytes": 6285
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-004/process_log.json",
+      "sha256": "73f8356aa5e698672f2a7a051b633121c2eeb6280ff7815520387258c237e833",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-004/raw_output.json",
+      "sha256": "9640c43a48af503dd024b80fad10efea4cb3b155e27311931bc2ce34e39b6804",
+      "size_bytes": 10665
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-004/trace.json",
+      "sha256": "8f9b8fd3e17ba9d521d2ecb62525707fb76a7b7bcaafd6602514a58b5dc7cc7c",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-005/normalized_output.json",
+      "sha256": "ef82ed400d10d21778ccb29966f961aa69c5bffe7143f459f3d275425db8f638",
+      "size_bytes": 1121
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-005/process_log.json",
+      "sha256": "1db8bfbc8e565d83f049df6e5720514e0011fe39aa212eaaa60478cbbb1ce8d0",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-005/raw_output.json",
+      "sha256": "c8f4a17fd30d50a11388a7ca44e3b35f3f32975268647a04e20e8f896e744f92",
+      "size_bytes": 4957
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-005/trace.json",
+      "sha256": "3800928de4c0b3e167d9044def2b641af24d08faa64c5942cfb398ddd3e83c1f",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-006/normalized_output.json",
+      "sha256": "f444b154f72aa432ff687dd1862a68b59a564b456f3edf2155a9ff8d300f191f",
+      "size_bytes": 4290
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-006/process_log.json",
+      "sha256": "e63b9b784f92664ed8fd48601724a592b2e861cbc2b27a921d78a8f18c2d5cd4",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-006/raw_output.json",
+      "sha256": "e373aa80892cb8ba5e86e5ae3947e624eb91f41fd3ca148d2d02a34676697a66",
+      "size_bytes": 8876
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-006/trace.json",
+      "sha256": "c532fa673374d3909182ba846ee769a30558975b406153346ec071b27e384a4c",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-007/normalized_output.json",
+      "sha256": "01be4115bf3d7e0c60690cc4c5bbb22faf5d68608d30f23c85a7d8351400f91c",
+      "size_bytes": 4289
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-007/process_log.json",
+      "sha256": "98e666b621417e5aeb6343e8150ebd6c75ffee13e347fd340e91c4b69f7fde5f",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-007/raw_output.json",
+      "sha256": "1d3b88d52a90b2d57426c02fa48ef1da0bc13d910e21ce108f667e69a05afa62",
+      "size_bytes": 8869
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-007/trace.json",
+      "sha256": "a5b2e085b26593aadd351af9cfbf8c9387b4d9f985d4ed1ee563ee1756f9ca60",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-008/normalized_output.json",
+      "sha256": "858c2656b0a3db8894c8ae61931ca9d127ab451819a195c86460a2f7e50eaeea",
+      "size_bytes": 2214
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-008/process_log.json",
+      "sha256": "f7c9bf1491774354a17a872a082cbc8c1c58a281d20bc6a3af78ac20362d178d",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-008/raw_output.json",
+      "sha256": "0ae5786f62575ab43d1cf71a10f08a068827835e47f282cd5e134440ea076795",
+      "size_bytes": 6468
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-008/trace.json",
+      "sha256": "a179d8230aa9b011c0d976936944bdbe8f46e8ab4c427ff95643a68652aff242",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-009/normalized_output.json",
+      "sha256": "3d7aa6aa43209a188d6d53e712886f1a807966fa95677f235f4e982399d9f27a",
+      "size_bytes": 6388
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-009/process_log.json",
+      "sha256": "a6844311f3b81cf1f61987f9601b266e4e7c7051071f95f0f655021061a73898",
+      "size_bytes": 1014
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-009/raw_output.json",
+      "sha256": "29d653aa0b28031064a59ea78c1f107eac9be3f41288e1982b35da2afcb79d49",
+      "size_bytes": 10812
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-009/trace.json",
+      "sha256": "761904464ea444a9b799135393f50fd011641ecec182ff796c5bde517c579076",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-010/normalized_output.json",
+      "sha256": "ace117b95c6e5aa06874252fe12a8fbc5bd660dc45b7df92c5e43b893431cf40",
+      "size_bytes": 1139
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-010/process_log.json",
+      "sha256": "8ee2eca75dac5669264d70bc7ae221db94c8bf171c0ac9dae30fdafa6e320fa8",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-010/raw_output.json",
+      "sha256": "c91bea109430d356fd2c9515ee12e2d213d1fb14a0fa674a5e230d665dfcaf5a",
+      "size_bytes": 5003
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-010/trace.json",
+      "sha256": "a2e34fe085f39793d90ce7684e5670df5c1fe240d19fabf9601268b7dad23af5",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-011/normalized_output.json",
+      "sha256": "753019cb71c3ddd9701ede114b02ff53d9aca53dcf86903f54d040c98a9aa0fb",
+      "size_bytes": 4212
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-011/process_log.json",
+      "sha256": "ce5a2640e7d4f19b84d54c6527b38f1347ba19e2c7f1e750b0869dd627ca7ad8",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-011/raw_output.json",
+      "sha256": "705d783857875ec9c00d5a2cf8e9ef7867164d1d60a6d14a69cb53cadc779a9c",
+      "size_bytes": 8738
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-011/trace.json",
+      "sha256": "ee59edfb3f1045d4219e5888ac461b904b6fc3114259e6ef21d952bb92009539",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-012/normalized_output.json",
+      "sha256": "4fdf29e67eab9dadcde3bd2c7b282e825772852dc3157769d4cba18f5b79b5ff",
+      "size_bytes": 4212
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-012/process_log.json",
+      "sha256": "d744823d35c54dbd7c02cf2df0fd0e8068b07362d42fa369ac5ab80d9677313d",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-012/raw_output.json",
+      "sha256": "1515a358ac2cba9cc6aa8cfb3a512ce702659f4436dcb382f13964f21150bcad",
+      "size_bytes": 8732
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-012/trace.json",
+      "sha256": "b34dc859e92ef4c5425f87f20d798a869950738ca765d1cbcbc5fccea3e30383",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-013/normalized_output.json",
+      "sha256": "0fd6aacfb3752b9e526d19f07184469d6acdae66ec487143de3aad2a2c97bb39",
+      "size_bytes": 2196
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-013/process_log.json",
+      "sha256": "4843271aaa9f3cb7a6158f3d07b69b26098b4f8bcd1a50d9a427c655d48d1159",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-013/raw_output.json",
+      "sha256": "817a6c8cc28251125206f389699bff9b8f33e50e5bb2e19dcbf305aebab4589e",
+      "size_bytes": 6414
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-013/trace.json",
+      "sha256": "25c76e8210b54986bec18e7c033d04659e0dae40fcce23c8fb763969f8857a77",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-014/normalized_output.json",
+      "sha256": "18d5b8c9ad1660de42bb273237490d81c72e55320170c53a94a693f33d12af64",
+      "size_bytes": 6307
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-014/process_log.json",
+      "sha256": "b305a7989bd70a1371b9bc0c50ff798895b3cbc08fc1e1116c1bde5d9caea67a",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-014/raw_output.json",
+      "sha256": "ba3d91b24cb262c26175691bad10364aafbd259512cb273231839602a938d866",
+      "size_bytes": 10691
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-014/trace.json",
+      "sha256": "d7b5ac8c94be40cc33eeb8edcee650ee3a9ec3b2fd2f5f21b04a0772a7657f70",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-015/normalized_output.json",
+      "sha256": "daf7f4ab7681984d1768d4c92c607cd90efa489ab2558a3643b9461cc2849ad2",
+      "size_bytes": 1139
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-015/process_log.json",
+      "sha256": "bc414a2cd733472cffe4fe4587b9b6cef3310e3e14e7931de8752ee4ca84e2ca",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-015/raw_output.json",
+      "sha256": "76ffce4bd6f62de8bb3e6c4a67338c2c996120533a6f27b36d02b6b9638481b4",
+      "size_bytes": 4983
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-015/trace.json",
+      "sha256": "f4e42540f17e8e46b858314fb3a362c5fe49b6e7e1fa0b56e6f7ee7337614134",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-016/normalized_output.json",
+      "sha256": "4d03eb61c661e0a9121efc4f2dda7ba63b6c76c391a076ff159dc29133de6208",
+      "size_bytes": 4259
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-016/process_log.json",
+      "sha256": "6abfa3c85cc466186b0f3c9dcb6ed89ba002bf24f9b4577a030741427cf8c94a",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-016/raw_output.json",
+      "sha256": "33ebc61c893a7d9a864198bc5ccbf5a0232ecf76d81c044ea91971f7f1ffdb9f",
+      "size_bytes": 8861
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-016/trace.json",
+      "sha256": "333858d9b9fb7cc5b3facbccfb0e6d4b28f89cffc4be9a5efd7f794c61fa2134",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-017/normalized_output.json",
+      "sha256": "fd262f420908a7dc49715ca1596147bd8fccab7c3ca61de03c960320c4d69bd8",
+      "size_bytes": 4260
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-017/process_log.json",
+      "sha256": "9c84e430c4663aacb26096b698523793ed6719038e7319d1a1a1fd8efda8fbdb",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-017/raw_output.json",
+      "sha256": "b39e0a8092d31c1856289de276c2d9852b95e2e598b663d8379c153d4fde40ff",
+      "size_bytes": 8856
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-017/trace.json",
+      "sha256": "57b8346cfbc6cb66026d54381368b7021df92ba2709045e49734f6da0875180a",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-018/normalized_output.json",
+      "sha256": "112d3a54db5e0a50b8ef6888aed99bd8f67985348194aac09f1155aa9f137cb4",
+      "size_bytes": 2201
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-018/process_log.json",
+      "sha256": "5911241c303c842018ee99bd81d4bd9e7bdefc8acc6fedebd7c82eb2abd6caa2",
+      "size_bytes": 1014
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-018/raw_output.json",
+      "sha256": "c4dad9025fe344b5e89640a8d65a13bf1bdd0229044fbec47c936539eea54164",
+      "size_bytes": 6462
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-018/trace.json",
+      "sha256": "6919b2006f3b2f847638165af37c598a0dc9709d15288c7c2be3a440d011bfb6",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-019/normalized_output.json",
+      "sha256": "09282eed8bb7d4bb98fa69376983eb7234b3669dc0937d465f78ead5c9e117db",
+      "size_bytes": 6360
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-019/process_log.json",
+      "sha256": "4622283b81c551dd9fec64fa77ea0ff543149dc72405cf1617c2f9cf4a7f7332",
+      "size_bytes": 1012
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-019/raw_output.json",
+      "sha256": "086148364210d15ca4a9e02ae745c0bf1143f208123b134a1664bf4bfc4f2bc4",
+      "size_bytes": 10808
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-019/trace.json",
+      "sha256": "a0e73dfd5a15e21073795d2198647c2d51fe721b8396d3776cf7a23485bd9306",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-020/normalized_output.json",
+      "sha256": "a9eb2ef10cdf641188c61f56c39d5cb62128c3421de88b455c87034b8c2a55db",
+      "size_bytes": 1140
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-020/process_log.json",
+      "sha256": "57a76074ef8ecd71342356e9582bc1b19a797679b5bf9ff013c1ea2e4613d8df",
+      "size_bytes": 1014
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-020/raw_output.json",
+      "sha256": "af03693c35d3f8cdc90ce8d79e62850c9064faa2c69cdb02687a9fa5bed89613",
+      "size_bytes": 5035
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-020/trace.json",
+      "sha256": "926ddb1ece592d4bdeb38ea8f4645cdcbb8aad0477f33479a2c6fb660d0fef3c",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-021/normalized_output.json",
+      "sha256": "6d87bd399544eb8bcaa85ab7b91445a5df246127494ad507128b1a692a780c02",
+      "size_bytes": 4186
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-021/process_log.json",
+      "sha256": "160c81a818d18c1e4c0ccf8e952d6731277c48f465e5c1df96fab788150ffbc3",
+      "size_bytes": 1012
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-021/raw_output.json",
+      "sha256": "0221d02a62ec17e3bc57ba68575cef5fcad743f5165956d21a5412cd66193f06",
+      "size_bytes": 8702
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-021/trace.json",
+      "sha256": "53639ae734c94050a9cfa93a82b23caf0c2c170f2a241796ebe080aaf5262aae",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-022/normalized_output.json",
+      "sha256": "8bae6a775b43c566c770f25d199201fafd3dd1dfa12ffa0cda8f9fd2da48b60d",
+      "size_bytes": 4187
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-022/process_log.json",
+      "sha256": "f51076f7e091213fc3d28e60b4dd18736964b5d19bcd1a5a6f19011a7cd1af3c",
+      "size_bytes": 1014
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-022/raw_output.json",
+      "sha256": "66e4534ff9721afcd7fc14a31955418b2a79c8a7452066c9fcb15df66ffa84a3",
+      "size_bytes": 8697
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-022/trace.json",
+      "sha256": "97b77870f7b93992d6dbe831781499181848bd0aa8e15f405b64ad7704379f4c",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-023/normalized_output.json",
+      "sha256": "53b9d56a4c469f973a1f3c3c05bf303a9505b43eec8bd8c7afe5e01931cb34f6",
+      "size_bytes": 2173
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-023/process_log.json",
+      "sha256": "25e393674cad8545bab1fa57d4414c4d53ebc3482ff52bbbb4b8543ea481cea7",
+      "size_bytes": 1014
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-023/raw_output.json",
+      "sha256": "49b363a76fb484bc4b43c48e7679e5c3120ba780f99893797c5cea05f36b78f5",
+      "size_bytes": 6368
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-023/trace.json",
+      "sha256": "0655cf52920e0d74bb3527855b88a0b7a0de55db55d0d3dc8f5f2bffc28d0c07",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-024/normalized_output.json",
+      "sha256": "502a36c194445cd4c82f569cfbebbefbdaeb745eeaaf69c15f484acd465742f7",
+      "size_bytes": 6304
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-024/process_log.json",
+      "sha256": "53f4428113a287a1091d0fce18bfda134eb5246bd92a439cc74d51e2eec08126",
+      "size_bytes": 1014
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-024/raw_output.json",
+      "sha256": "86aa603852ad960bac058899e5cdab71d71e81657c7cf56a4fb7cc6af8ed7e33",
+      "size_bytes": 10690
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-024/trace.json",
+      "sha256": "6b6ea60c1e54a3eec76c7dcf6ac69eddf26dfa9d6552054f66aa61d7dad94bc0",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-025/normalized_output.json",
+      "sha256": "1699908f0186f3d12dcea95d647a6d608034a40e1ca76a56707a080a21763370",
+      "size_bytes": 1126
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-025/process_log.json",
+      "sha256": "5a1809ea6aea09e5224f6fc282e78f29af697aecdb39fe085f3ec353dfd2c37f",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-025/raw_output.json",
+      "sha256": "56036d48f6c747dc35d0b31cf1dcc36c921084f9248bafaa53710d8eeb7a8965",
+      "size_bytes": 4955
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-025/trace.json",
+      "sha256": "50cd1d3f4f5c53ebd8dfe07ad5979d90119274768bae64f2c34ac1c9bd7046d4",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-026/normalized_output.json",
+      "sha256": "9ac77febdc40a9355cafe7ccb4b887e0272081b4e193ccf24dd68db2892a23da",
+      "size_bytes": 4292
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-026/process_log.json",
+      "sha256": "b7171c639d8b549688dd695f20f8f1f41124489f441239de1a19ea6450e10b97",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-026/raw_output.json",
+      "sha256": "9478c519387127ec78b8c0a1be56d532194c148626ec33afdaa5d1173554e959",
+      "size_bytes": 8877
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-026/trace.json",
+      "sha256": "1efa87c52ff12d7fe0b2725760f05d3be4d94af3d1ea7d8b8b63b50cf568c398",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-027/normalized_output.json",
+      "sha256": "b4115e654f94bb914c9cb0c0db45c4eecc6fd41681b882521569b9e4eeba6f0b",
+      "size_bytes": 4289
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-027/process_log.json",
+      "sha256": "f8a6e76b9042fa85570bacbba2816493fdaeb3c8eb5c37c55af7c58147438875",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-027/raw_output.json",
+      "sha256": "75a58b5ea57da29a1d9c947f507a533ab34d47642a7245ec11ef340be2d9107c",
+      "size_bytes": 8868
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-027/trace.json",
+      "sha256": "cc21ecfb03fecaa32ae4ad2fc61af5b5157bf4357e947fede9f5d96754c2bed8",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-028/normalized_output.json",
+      "sha256": "44108cd0c266e5074f2efb8ef145f5cc9805f6a716e303ce4161b89ad87504dd",
+      "size_bytes": 2215
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-028/process_log.json",
+      "sha256": "28fddf9be852642d23433be363444596c0cecabd5e5a02a559ace6b1680efab9",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-028/raw_output.json",
+      "sha256": "1ed03d6797b79166f7dc429f3131a2e190ca24b85d56d4333518005bad98415d",
+      "size_bytes": 6458
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-028/trace.json",
+      "sha256": "a218dd9e6138d67c5635e102f0d42c03ac98e1c3f0ddcb322a7cc9f409c13a44",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-029/normalized_output.json",
+      "sha256": "3d25816a678464d92d41e0843df8cfd9ac6cdd0552ea8c02030b922aa4d9d367",
+      "size_bytes": 6410
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-029/process_log.json",
+      "sha256": "f2ef7cf0a117fd4378f5e15aa38372844b0aae33de8eefbfba4dac58da78d18a",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-029/raw_output.json",
+      "sha256": "5a86986708b9514a2734458158552487a0797a2123640d179deb4259aba58ded",
+      "size_bytes": 10841
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-029/trace.json",
+      "sha256": "0aa0e3f8a94e6b7d5d6d8678450b3b32beb8d1ad056f1b4a7b57056b5534b36d",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-030/normalized_output.json",
+      "sha256": "213abe8303b133ee882244cbc2e34ff60410d5e8feeb1a063cd8b3bbbb02a794",
+      "size_bytes": 1141
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-030/process_log.json",
+      "sha256": "6716ee83fa5aa887d5a9b0b3c513623fa809d34b4334fa1a2cbc220f181fdd2e",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-030/raw_output.json",
+      "sha256": "ca188378cea317072ff0b85c481597769783d8971caf1667b25b21f5dad0885e",
+      "size_bytes": 4994
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-030/trace.json",
+      "sha256": "a4490442c783d4754e3af2a04b9ac8ed0436638c8578f687c88b56767bf8dd0f",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-031/normalized_output.json",
+      "sha256": "b9173b9ffd9d1b59b969c6429cf00e8bd3f309bbe0c68c5ca2b74bd13c47b501",
+      "size_bytes": 4224
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-031/process_log.json",
+      "sha256": "f8d57a557509eb441a65a51bccba3e641016860585439bb3d711e7919ed58736",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-031/raw_output.json",
+      "sha256": "b991ccaedd550456a1eb077b9331e5798802f1e16a8f5fedcb968fbfdcbf2fbb",
+      "size_bytes": 8815
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-031/trace.json",
+      "sha256": "cfbb252757c1412bbb530f5b9c30fc14c9ee27b108ba9346568760a21e134c63",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-032/normalized_output.json",
+      "sha256": "ec3f5922541f9a074cd9e5b26aba174aa8459bcf90f81af97648537ce2e864b2",
+      "size_bytes": 4222
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-032/process_log.json",
+      "sha256": "653cbf3b6695f1fa75287e0bf2437e8b5e6e1a90f43768ff773a06e119dd5c19",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-032/raw_output.json",
+      "sha256": "d83c648d02ea3ed3f16a89a5917857268dd2533c6e66001c0394897fd6c57c66",
+      "size_bytes": 8807
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-032/trace.json",
+      "sha256": "16c6486c06a321412901b73800afdb68ee96bd5e3140d6a956c6d78c776e6c91",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-033/normalized_output.json",
+      "sha256": "58b8b00f18de3de8c3f0d2c53b30a1acb5fd094fd65283a660917510012677ae",
+      "size_bytes": 2200
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-033/process_log.json",
+      "sha256": "7e41e266cf828e21f118d46ba36f6e378a184755a7816b03d9ffab276447e3a5",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-033/raw_output.json",
+      "sha256": "130818263dec55a5b56d1f2b5b43e97b55c1d30e243d5707072caf394caa4d8a",
+      "size_bytes": 6474
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-033/trace.json",
+      "sha256": "0f028224256a9016bbdc3b6dc003add518b9b0af7c9e539010b636a1f8e7eae0",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-034/normalized_output.json",
+      "sha256": "53ac47233b4f37694baf7e17d0f2a55f856f6a40f0094df77c5fb01e1055fd0b",
+      "size_bytes": 6354
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-034/process_log.json",
+      "sha256": "d10d964502f3e5cf5485c8fed29f77d8c3eca4ec13d10e4b32c9f99ae2b6796a",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-034/raw_output.json",
+      "sha256": "65c8a1f3d9c370911f59942b560155ed940e2b0ffa20a06777f8b752746bfabe",
+      "size_bytes": 10815
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-034/trace.json",
+      "sha256": "c76029c58b28f954329a24e49155c7f34b3d59542363195d83a3031645f50edc",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-035/normalized_output.json",
+      "sha256": "0dbc01704cbf9049804386869a38e1b9339a2f4953cbc3f0eb05304b2b1d1d50",
+      "size_bytes": 1139
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-035/process_log.json",
+      "sha256": "888c3af164796e639d1187c51b984a473b6d59911f10d5fefda93cc8b541eccb",
+      "size_bytes": 1015
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-035/raw_output.json",
+      "sha256": "1d14e709c46cb8666f0b7d2122cd5d66d63efedc96100334101b344bb1c0138b",
+      "size_bytes": 5023
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/CompassQL/CQLC-035/trace.json",
+      "sha256": "7d5cf7baaa29074b740bda3307318fba4007b81b6ea25578cf09099666c5a2ec",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-001/normalized_output.json",
+      "sha256": "91f049343023857f482ec59493d402b9751564253213a4cad2bbef4aa9f6d7d9",
+      "size_bytes": 15050
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-001/process_log.json",
+      "sha256": "ebf685f306ba458811d6f075fd729657e99bb75b56ce6a94508e7425fd5a2fdf",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-001/raw_output.json",
+      "sha256": "82e1af497b459d0797e6f055bd5d9365fdef1cdf0b0c540ab0e804d78ede8f0d",
+      "size_bytes": 44424
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-001/trace.json",
+      "sha256": "b0134d7babfc2f23972442a7cc9c7cc1926ff2c2123b27cdc492380390200c37",
+      "size_bytes": 10521
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-002/normalized_output.json",
+      "sha256": "007e7876605186b76db8d89cfd3c9f31195f3976fc81a2ffa3db4f9407733fdf",
+      "size_bytes": 9728
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-002/process_log.json",
+      "sha256": "0025840a6210ead67029f12fa04838ef8a64e5e78fa20b5becf09889e49d5cc3",
+      "size_bytes": 1038
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-002/raw_output.json",
+      "sha256": "72d91bf5d65c1d84b9e185f5890a0a2e5fce8986522424acf452eb6dfa56cee7",
+      "size_bytes": 33907
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-002/trace.json",
+      "sha256": "7676a4f229b7ea97645934872ed778991e28e6279998d1dd9bdc529f0782f71e",
+      "size_bytes": 10512
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-003/normalized_output.json",
+      "sha256": "c7377e66fac7cbf307ea7e89e72e7266ce882867bcf1f2711cbf722eedabc118",
+      "size_bytes": 6471
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-003/process_log.json",
+      "sha256": "3391e980147aeb6d6cf3532348170d758083b756bab23aadf24f059b7c59d125",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-003/raw_output.json",
+      "sha256": "d7fdc2d0a5472bc7644a623f642549639494d0ecfb2ac3ac5695e67b04c1fc56",
+      "size_bytes": 27217
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-003/trace.json",
+      "sha256": "b2414bc2497bd313d8834a65a220315fbcb1118d26a448aee0c5c5efe5949487",
+      "size_bytes": 9311
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-004/normalized_output.json",
+      "sha256": "3fe5c97060a2d06f3ad0860f99f9f2016ccbfb83cf3bf277b5e7bdc7335cccc5",
+      "size_bytes": 1226
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-004/process_log.json",
+      "sha256": "00312ddc193cb8472560adadaef781306f03d0ab221f3dc5b69ffe135ce63662",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-004/raw_output.json",
+      "sha256": "b4c08e834d379b86f02d70ee1adc971ca506aef68385d8b2c821316c9f59cb21",
+      "size_bytes": 8816
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-004/trace.json",
+      "sha256": "f0a9952b931c359b287791821fe85e18ef4ef7194f6d753310672f672f18bd94",
+      "size_bytes": 9030
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-005/normalized_output.json",
+      "sha256": "8c4c6cef10bc8cd6157a413684386dc4f6790b10da40062cef98e631e7011f69",
+      "size_bytes": 16761
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-005/process_log.json",
+      "sha256": "95210be34dcca02ba56a17639c3d872525f3627bd27df16cc8beb5d72898b282",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-005/raw_output.json",
+      "sha256": "fcd0dcd178b3398de193a4eceb31c73d4db524e8a2033f5ac2ae5fe5ac6e3bce",
+      "size_bytes": 47195
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-005/trace.json",
+      "sha256": "2a82f2844e27715cdf3ae6d55334046804af9b7602a06c8deda2f1fd064e8431",
+      "size_bytes": 8427
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-006/normalized_output.json",
+      "sha256": "cb17e6d60a07a21cc8cdd392e00a7a360a85bf4401d6ec60f0304055abbd855a",
+      "size_bytes": 15245
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-006/process_log.json",
+      "sha256": "8c1301dd63dfd9ae3ba91ce8941a57132929e7a361e108a4c4e72f2ebeec6cb9",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-006/raw_output.json",
+      "sha256": "630c9e4455c9409775ee80b4230cd13180ca031875e7f3dc99c3cb235916334e",
+      "size_bytes": 44789
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-006/trace.json",
+      "sha256": "64e5318c998bad9be9bc87b1c3c146458db1e27caa8fa50bdbc3facf12d55017",
+      "size_bytes": 10593
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-007/normalized_output.json",
+      "sha256": "9c48850cfed8de8a1c27fe9e86bcbdb474cead2e9cccc92ffb904e44d12c2548",
+      "size_bytes": 9861
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-007/process_log.json",
+      "sha256": "13b2e41fc122e23f24e2393d9a1b5b5df8b8e00e90ebf54e289cdea2bf871f8e",
+      "size_bytes": 1039
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-007/raw_output.json",
+      "sha256": "865627406175d1f2d7770879a75168de31f8324eb90c2cb685423e7479cc761d",
+      "size_bytes": 34168
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-007/trace.json",
+      "sha256": "f1448ec794a50c7bdcec599cb2a60f4988d36dd9b8f494457fa20a35b4e42492",
+      "size_bytes": 10584
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-008/normalized_output.json",
+      "sha256": "c90cd644515ec00cde6b3396fd692e0d1a41a9da4781e7d40be11eab35ef47fd",
+      "size_bytes": 6555
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-008/process_log.json",
+      "sha256": "f2491472f97d2123af16490f00e7c775c91e022999a24c7c06ae4946394e82f1",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-008/raw_output.json",
+      "sha256": "8586abf22478141e1e52a67aa50a4ce6766eb9fe3f66aeaa7fba446b606f005b",
+      "size_bytes": 27401
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-008/trace.json",
+      "sha256": "d3c95c1497b1bde9422c5967207e5c99748c986df7a076b29b49e364e6d74682",
+      "size_bytes": 9375
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-009/normalized_output.json",
+      "sha256": "0f0b82c4c8b947d3bc2f7f75e937d0aef2a5d464aa1436ef64782f8d4c9323d2",
+      "size_bytes": 1245
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-009/process_log.json",
+      "sha256": "650795f3efc44bafba45fe11a43bd94ed9cf8d8c28a368466c9026e2dc4acc86",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-009/raw_output.json",
+      "sha256": "1bce9ace464e29ddf41b26c24e95b56234ce4f91aeaa1c9af5ffd94d6b98d621",
+      "size_bytes": 8871
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-009/trace.json",
+      "sha256": "eaf4a4272ee0b81594e903f2366a385eaa6e279300f34a0d4a32a125027abb5c",
+      "size_bytes": 9070
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-010/normalized_output.json",
+      "sha256": "5ece0e2692e3f119dfee1b759a7335aa304de04fe0a1b4e5fa66268e2d261ab9",
+      "size_bytes": 16935
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-010/process_log.json",
+      "sha256": "c17360b1c6caf741cf3e3b3ea84942067dd5ee640111b02013ffb737217c4f86",
+      "size_bytes": 1039
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-010/raw_output.json",
+      "sha256": "1e95a63e428f479a1224ea42da577870aae54b3b7df199317d1053138375141b",
+      "size_bytes": 47505
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-010/trace.json",
+      "sha256": "b3c7f05b604787de390f5b4bb692f76a8ec9a7b9ac5b0323fd60f8cc81bcabef",
+      "size_bytes": 8451
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-011/normalized_output.json",
+      "sha256": "33a219e987c5e27e86f84cdd632a393e7a0d683267db84e5c27720a31980aea7",
+      "size_bytes": 15075
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-011/process_log.json",
+      "sha256": "b85ad38f5f85d9d299dac7610043d288bee34c79dc57b830dbebb92e0ffb3ea2",
+      "size_bytes": 1038
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-011/raw_output.json",
+      "sha256": "b04d81d333ad652ff14b987cb696869efae3e583fdf8c88f7c4fd5e7eb2a43bb",
+      "size_bytes": 44462
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-011/trace.json",
+      "sha256": "4a880fb871896b4e9259b20857c9e7b900d4e14578290adbceb8ff49f9c5d0d3",
+      "size_bytes": 10525
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-012/normalized_output.json",
+      "sha256": "2e3501cd3203423f70c2d525f18fe2c435d9782c4a6b1b55ae05d7418e0c75ba",
+      "size_bytes": 9749
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-012/process_log.json",
+      "sha256": "ecb6d1533ebd21a6d4156edc57d253b03b7f8ac0e3359990ac47d50936a957a9",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-012/raw_output.json",
+      "sha256": "85c35df58e22dd282bd1b16585f261dfae8e1847053c56b050cdbeb1bff8df6a",
+      "size_bytes": 33938
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-012/trace.json",
+      "sha256": "11a348bbb22c3b46f08eadc81231544204da18fbe8989d4196db45c8d7431b8f",
+      "size_bytes": 10516
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-013/normalized_output.json",
+      "sha256": "13bf3eeac693756a81179d7e3d418b867d2e4536b172e7aff28c7a0e427c484c",
+      "size_bytes": 6519
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-013/process_log.json",
+      "sha256": "4784a83417aa79620b8c6f5e8a5cd0bea3892122e7035e10c860b186aa8dce2c",
+      "size_bytes": 1037
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-013/raw_output.json",
+      "sha256": "4d0b4474a7458f010d46a42555b336b92a2e475fa6feb8d2004f19f4ec38c276",
+      "size_bytes": 27311
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-013/trace.json",
+      "sha256": "6f59b4e993a5e9c215d9b558f78ad1c56995e17bf0b3f656416f83e9118a72db",
+      "size_bytes": 9339
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-014/normalized_output.json",
+      "sha256": "df1475245df329edcb56a4c7a9b42c511b7fcd9c5448960482dbc19cd9311238",
+      "size_bytes": 1245
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-014/process_log.json",
+      "sha256": "41987520c134edafeb91eee31530bd7de6d4843eabeb4079858467f61050d8c8",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-014/raw_output.json",
+      "sha256": "7caa14a3ec2aeb183234aa8f98d631d59b9e0c27ab02cf9231b01c7c10112f28",
+      "size_bytes": 8839
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-014/trace.json",
+      "sha256": "2d187f6a425759660a18324240ee94b5cf1703e50dc6a8ffc4ae83de981c11ae",
+      "size_bytes": 9030
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-015/normalized_output.json",
+      "sha256": "406d6dad5897f37e3687f001c851340a8a9733ee087b578b6f941058d464fffe",
+      "size_bytes": 23704
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-015/process_log.json",
+      "sha256": "d4e2a7b12539571eb478bf6ea27d963865f70a56a64e08d23cb5476ba1e1d515",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-015/raw_output.json",
+      "sha256": "8ad267907742d9e24322e1c13c61b1d4f4a103070ca5484db64e7bac3ee2b98c",
+      "size_bytes": 61037
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-015/trace.json",
+      "sha256": "7f180309f885c4cdc3e9087e1ed74298964886b9f9e891feed09bfc1649e4d09",
+      "size_bytes": 8431
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-016/normalized_output.json",
+      "sha256": "d082da62f095124e1f37c8b11818a7a73ce9746cd0889ab06c837063ac54701c",
+      "size_bytes": 15182
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-016/process_log.json",
+      "sha256": "d1e534c971553e4596f56629e20eb9bf52255990e51ee4032329d9de95015b25",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-016/raw_output.json",
+      "sha256": "8cbdc363365edde5ba26459413127c686c4d3f71d2b8d60a1376e479c4fd763c",
+      "size_bytes": 44705
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-016/trace.json",
+      "sha256": "2d07faa4d3a33d548043e9c05c10a393dc35fbb1a5f49707133e3808f9c8b0b5",
+      "size_bytes": 10567
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-017/normalized_output.json",
+      "sha256": "7b3751f4ba932d20a0264ecea7e36989a5d9ce0d78fd3ae4daa075bd90415569",
+      "size_bytes": 9824
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-017/process_log.json",
+      "sha256": "09f2b39451ca2b6e7132465e7c2d21cfca54bb90ce7e9ff3a8dcd6669e965137",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-017/raw_output.json",
+      "sha256": "3b9a48015afd1696671a1c178cb0707b3db097d65d1cf6f90a6b076c1c000b16",
+      "size_bytes": 34125
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-017/trace.json",
+      "sha256": "d038fb958e6241378a2d02bafd6969b479a3ad2828dfd732b42a49ac80b01a38",
+      "size_bytes": 10558
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-018/normalized_output.json",
+      "sha256": "2fbd518a5fb090b494e97031440abdf1e0fa26c59951acdc609112d1183ec076",
+      "size_bytes": 6525
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-018/process_log.json",
+      "sha256": "ada84e7dedf1807107126a7a8afbe5115a64176bd5bdc2fa26a541d04a1920ef",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-018/raw_output.json",
+      "sha256": "06b7d668070a1ab59ba0225b480fc480169b801d23c1c2c93a77cec051ff726d",
+      "size_bytes": 27362
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-018/trace.json",
+      "sha256": "3b8f9d9fe7bb62960907162c04047b316134ed00a7f45d7a67c09709ce741aac",
+      "size_bytes": 9343
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-019/normalized_output.json",
+      "sha256": "b01a455518f162f57098bef8d605cfb79a3fbea02f74d025a9d681a7049d2284",
+      "size_bytes": 1248
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-019/process_log.json",
+      "sha256": "b017ecfe34ffea75373b6930d4b85cdb98cb067dfc1cb8d49fb54f3919dfbebc",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-019/raw_output.json",
+      "sha256": "7de75d283ea59be3dc5de181712a3f47914ce047a52616bcec58e871678de60d",
+      "size_bytes": 8901
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-019/trace.json",
+      "sha256": "08c44de0204fa39bf6f5eae7fa30a66e734c86f1ec899677025465beb4563902",
+      "size_bytes": 9055
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-020/normalized_output.json",
+      "sha256": "76c0e3a78861e836e933b9c622f8cecadbbcb77b8d31c98f0eee51490f9ff29b",
+      "size_bytes": 23820
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-020/process_log.json",
+      "sha256": "e475c19456dfa1353b5b6f7b14dbc1a01b2ef16ebad25235d625e61ac7b7734b",
+      "size_bytes": 1039
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-020/raw_output.json",
+      "sha256": "6bed84fdb17acd3105d5a8aa88a736ba2bbb4db9235934c9f80be8c586cd33ec",
+      "size_bytes": 61282
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-020/trace.json",
+      "sha256": "65052482e6271ff9b956dac34bbcb87addcbc50d00a05f138908a3ffe84b3a9b",
+      "size_bytes": 8443
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-021/normalized_output.json",
+      "sha256": "406936586ddaf6887bd5f5aae59cb566736465c76f7db7443d2928c98b50942f",
+      "size_bytes": 15056
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-021/process_log.json",
+      "sha256": "7345b21074692d5f21d7e5099134002ca6105359183b7efb182596d85f5cf2cb",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-021/raw_output.json",
+      "sha256": "e412348ab993e02e041f83a8bbc2edb390f96330d10df1dd68387f717ba81dcd",
+      "size_bytes": 44427
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-021/trace.json",
+      "sha256": "ee474d0556f6bd698c1a114a2f8499ddd7ad264ade0d7285007b6165040d1c1a",
+      "size_bytes": 10519
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-022/normalized_output.json",
+      "sha256": "44aa5aa556fc4fafe420fc6cb4387063d7e8ebc35ad0c10ed9be81e92d2b141b",
+      "size_bytes": 9737
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-022/process_log.json",
+      "sha256": "4938e240954d2edf77a9bec8d94aee2ef744022e56e8f6dfe16713d5e33f725c",
+      "size_bytes": 1039
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-022/raw_output.json",
+      "sha256": "12b2d008d8143be376ae05202d43bfb1cf4cf8cbc323a6aab6ecb712732766e4",
+      "size_bytes": 33916
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-022/trace.json",
+      "sha256": "3ba41899535758377c52b5932766d5f09426dce529f5741147036d837d51b400",
+      "size_bytes": 10510
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-023/normalized_output.json",
+      "sha256": "277eb2aa83b348b4ac198c982b0b403d4499008efab920df9aed627da53deaee",
+      "size_bytes": 6486
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-023/process_log.json",
+      "sha256": "2b5c6f2054600ca4cd5813ea9f87509b4caa4c6420cb63d9a3fe7fe32f60e434",
+      "size_bytes": 1039
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-023/raw_output.json",
+      "sha256": "d692b0d3a08fb2cc1d2e92bd1db12bad4f701b97c43de08a772193123e9d58b1",
+      "size_bytes": 27245
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-023/trace.json",
+      "sha256": "0472be4c26139b89c8faa04ebdb59f8e8418860728e8fae96224feb5fee13dfa",
+      "size_bytes": 9319
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-024/normalized_output.json",
+      "sha256": "20f2a9872468650b286d8734183878a3777466fc3ec7fc8135b72a97aaa16d32",
+      "size_bytes": 1231
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-024/process_log.json",
+      "sha256": "93a1f2832c84e474f4c925fcc74cc2b055c195dba2445562bc5a819b1f775b00",
+      "size_bytes": 1037
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-024/raw_output.json",
+      "sha256": "1b57175e932f57d0ed1d06f38505e5df80409282cedbbe2de74866884bbd13ae",
+      "size_bytes": 8826
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-024/trace.json",
+      "sha256": "8584afa7cebba61c0043597a8af2426bf6fd6d4200c3dda6fce383a642c8875b",
+      "size_bytes": 9035
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-025/normalized_output.json",
+      "sha256": "2034f796d4d5a61e96fbcc24685b9c0c01186aac6f2bb2ed0dbe079ce1f341ee",
+      "size_bytes": 23583
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-025/process_log.json",
+      "sha256": "03bfb0c9197e3cb934215b9f938605d76f354172f80e970c727cfe358555a4f9",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-025/raw_output.json",
+      "sha256": "f9c6b2c376a0539d003ef30171e21ab5e2f4db147a89b43438592333cc125be0",
+      "size_bytes": 60823
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-025/trace.json",
+      "sha256": "f690ff0338d0f8e33952b7ef3455558637d3c6aee7caddd6cec59e5a91ec306b",
+      "size_bytes": 8419
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-026/normalized_output.json",
+      "sha256": "fbcf704a4512649c1907166fcfb5f9f4e10634bb55f8e0cb8a91e6b7841d9cf4",
+      "size_bytes": 15264
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-026/process_log.json",
+      "sha256": "e433df9e26706aa0d58519fa72be1e5377cde2f3bd4b19c5568e09c01576994b",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-026/raw_output.json",
+      "sha256": "4cee7625d602758fa5c0248f8e8c2c9641ac1be3de62ee3fb50dfa2ab68ca3a8",
+      "size_bytes": 44815
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-026/trace.json",
+      "sha256": "5cf3a357591c20960bf04c677e6b32b56d937e44e6185d743be9d7fb33c61027",
+      "size_bytes": 10597
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-027/normalized_output.json",
+      "sha256": "e972d4d93c724928cf04afc49d1c9da31c64dc2809dac76a49dffb66e8a21cf2",
+      "size_bytes": 9884
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-027/process_log.json",
+      "sha256": "e8df51f96a5848bafec1e6d2670ae92a517805c1db385bbb0b968280bccf8912",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-027/raw_output.json",
+      "sha256": "c70d5ba3d4be175d20a01be80dbdc8eeca95a19ecca6c0ef0b0983bbc598f726",
+      "size_bytes": 34198
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-027/trace.json",
+      "sha256": "3f23cd42943e7bdcb018bec2623bdb72d5f9811780868b5d48cec9a9aa95fa56",
+      "size_bytes": 10588
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-028/normalized_output.json",
+      "sha256": "d5520d8013361b8f89e9d6611773ebc04db912bce9f2eab934659f13d9b4fa63",
+      "size_bytes": 6551
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-028/process_log.json",
+      "sha256": "2bf95e77b76ccbf369cd5cef84db8ea875ef9a91d2f85e7563e003cab272e379",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-028/raw_output.json",
+      "sha256": "4460d49f39203a69431b806b1155d4d15d2874864e80cece6f79c865f4285076",
+      "size_bytes": 27382
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-028/trace.json",
+      "sha256": "227841cd75492dd9bdbdec7c811910058f93dd1926629c76ec0ffb7bba0c91d8",
+      "size_bytes": 9367
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-029/normalized_output.json",
+      "sha256": "99252e2d745fa93ee5273aed6e5c921ab3f26adae9f7b127bbbd2616016dc0ec",
+      "size_bytes": 1249
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-029/process_log.json",
+      "sha256": "0d393055abc53a3b751f55abd5b69462518e974f285b37975b29f1f2a317e386",
+      "size_bytes": 1038
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-029/raw_output.json",
+      "sha256": "a7d749d35fc9563e4ed0cdf1b08758f3eb9d0b6b505098ab799993940dd2397b",
+      "size_bytes": 8880
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-029/trace.json",
+      "sha256": "d2d75407bba0270e5a770e294bd531333a8e9ad38c5a6cf8c62c409855ea0397",
+      "size_bytes": 9080
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-030/normalized_output.json",
+      "sha256": "8023fb81189b1d8c90400996176a2064ec08304b1d11c27f11fac548e157b1e1",
+      "size_bytes": 23822
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-030/process_log.json",
+      "sha256": "95e00ec6b0de030b211baaa44202a411da382d06b829e555dc3c46e632f20282",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-030/raw_output.json",
+      "sha256": "f1dd64ceb4996f571661de9b72f6b5f432c61beb220997aaf52c3ac28b32d57a",
+      "size_bytes": 61242
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-030/trace.json",
+      "sha256": "77d7707466fed681425ff6f631c7e26a968256a261b01134c637b1700f0b0350",
+      "size_bytes": 8443
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-031/normalized_output.json",
+      "sha256": "9d911f100f096229fc40b7b4b9f8a9bcd69896e897408d0a60138ca3fecea8e1",
+      "size_bytes": 15130
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-031/process_log.json",
+      "sha256": "105a1031a81009a21015d4ac6c4552ec2d6c58f7672daadcf7f2dbbb52188885",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-031/raw_output.json",
+      "sha256": "68adeae2ce9cf8ebc3a5b87f36556bdaa9ed1ee741d4c7b7a8bb853b8ae37a6b",
+      "size_bytes": 44612
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-031/trace.json",
+      "sha256": "899117f183e883fef9644f0dcfb9aa73708f7a4f64cf1ebc787ce2f1330f962b",
+      "size_bytes": 10543
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-032/normalized_output.json",
+      "sha256": "ce9660e1d56286209c4c566e5abc1d0aba749aed5f37ee9a095db64e43abacae",
+      "size_bytes": 9794
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-032/process_log.json",
+      "sha256": "2429536b7f764b47dd2813826924ce78c0683e797684aab8589cc952f99395dd",
+      "size_bytes": 1039
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-032/raw_output.json",
+      "sha256": "15cfe481db353a50a3487760597db0a0291eb1a727d4343a27a70bc89e78a6df",
+      "size_bytes": 34072
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-032/trace.json",
+      "sha256": "59767c732ac0eecc4485aa99eefcb4c724da6bee20661a40c16dee16e5dff781",
+      "size_bytes": 10534
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-033/normalized_output.json",
+      "sha256": "924dfd93ca75a812d2cdfb2604e6760fe478fa296d02e06d3aecf0223d14f41e",
+      "size_bytes": 6522
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-033/process_log.json",
+      "sha256": "9c816e241f6f32d0172a9a3df9bdc35d6efbe265097dc724b81817b47d162369",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-033/raw_output.json",
+      "sha256": "31c4a516fcf5031b53ff0e2eee04d4769d21bf050800f42d0280f6b3fae82edb",
+      "size_bytes": 27372
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-033/trace.json",
+      "sha256": "f27d4b2af93dfed6b31fc8aa1fbfaeada70cdf8cb94fb94c4f6f91d79836ad7a",
+      "size_bytes": 9343
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-034/normalized_output.json",
+      "sha256": "6b2f407fadbf54730ccb114794f8654ab5bb2df6f28766d2f3789b8f6cf3a72d",
+      "size_bytes": 1243
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-034/process_log.json",
+      "sha256": "c70f58ba9c6fe45106e4f7393ddad753555205f86cb39350f9ab97b38aa4eb99",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-034/raw_output.json",
+      "sha256": "030915646c625f27dea6fbf0bb3d8ec6d1b195e0bdcda527bf58e5353202798a",
+      "size_bytes": 8909
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-034/trace.json",
+      "sha256": "138def00b5523f06c300669749ebdf719c9bf813a195f633f1057f1d322f553e",
+      "size_bytes": 9055
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-035/normalized_output.json",
+      "sha256": "24e46b2da2dc816a9b9b40ec99e935e630aecac61af4412204cc95f7101617be",
+      "size_bytes": 23603
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-035/process_log.json",
+      "sha256": "135f4d7090463bef1ce1b6519e614d3e374b2d53629853c3e0a36ea31104979d",
+      "size_bytes": 1040
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-035/raw_output.json",
+      "sha256": "45adb5a47719d1bde0a0892a76c23d1755d92f225897760880301a405b4538fa",
+      "size_bytes": 60898
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/first/SkillVIS/CQLC-035/trace.json",
+      "sha256": "73ba5c250f92eaf263d78e7d101fec955fc674bb56d969585200c717c7af9a97",
+      "size_bytes": 8419
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-001/normalized_output.json",
+      "sha256": "d24fbc74cbbc6b243b64ab381bf6a1d59f24dc836e08a0d35cc02d78f1eb3dbb",
+      "size_bytes": 4396
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-001/process_log.json",
+      "sha256": "cfa1dc58f4c78c5814549c9b16e39ef4b13b759819b8a7e0d5df26c3ec76db05",
+      "size_bytes": 1021
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-001/raw_output.json",
+      "sha256": "b8b05f4e67c5e8676d7645d803af1b6ce69c1c30c6a720e434e6f2184f952116",
+      "size_bytes": 8928
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-001/trace.json",
+      "sha256": "aae9c69aa5d35b26416e346f091d676748cf303eb346fb639fdcf5857128397c",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-008/normalized_output.json",
+      "sha256": "21f6808f2f083c699b79742d5284a53d4478042b9cd280344e6255e1c33a88c2",
+      "size_bytes": 2219
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-008/process_log.json",
+      "sha256": "4039e9f4c1a5368fcd2686dad54f716413d780378ea77b28756cca90e75e372d",
+      "size_bytes": 1018
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-008/raw_output.json",
+      "sha256": "2502b3528833a1b127bf9139519fe566c50f7efc8c70fef3a014034f89ce6b49",
+      "size_bytes": 6469
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-008/trace.json",
+      "sha256": "a179d8230aa9b011c0d976936944bdbe8f46e8ab4c427ff95643a68652aff242",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-015/normalized_output.json",
+      "sha256": "407b84a0fe632a60409306a0a32c870504d3003fc9f2e27cac73260fc6fa426a",
+      "size_bytes": 1143
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-015/process_log.json",
+      "sha256": "656ab32e62b5ee37f85ed90adbc0fa8ee9689c648f71427a7c68c5a1d4016ccb",
+      "size_bytes": 1021
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-015/raw_output.json",
+      "sha256": "6ba8d34b10c79fabc6afad07901c7933fe317966b6df0988ae6a5ddb359c827e",
+      "size_bytes": 4983
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-015/trace.json",
+      "sha256": "f4e42540f17e8e46b858314fb3a362c5fe49b6e7e1fa0b56e6f7ee7337614134",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-022/normalized_output.json",
+      "sha256": "51494dc14ac9b8f393da8b506e964692040f3aeb74d01270758427829e229078",
+      "size_bytes": 4186
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-022/process_log.json",
+      "sha256": "bfe1281152bf2ef480bf1d1e6b85b52c3660b0905c23aabe5e9046ef5899182a",
+      "size_bytes": 1021
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-022/raw_output.json",
+      "sha256": "61907dcf78173b0edf7b453c2d76594f825fd41f868934dd4a0dc07a90ed1899",
+      "size_bytes": 8692
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-022/trace.json",
+      "sha256": "97b77870f7b93992d6dbe831781499181848bd0aa8e15f405b64ad7704379f4c",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-029/normalized_output.json",
+      "sha256": "47ccd9e4dd69b4fc4c7fe7c10b8fac298d70bf22413aaa66223107f6b6f0770f",
+      "size_bytes": 6412
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-029/process_log.json",
+      "sha256": "cb57cdde756f2c7bea922771fa3e37cb082617c6ea1279a25e7173d763eec0fd",
+      "size_bytes": 1021
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-029/raw_output.json",
+      "sha256": "e0fe4ac1b36101031d4d487f3fbdbe788c21a5f39fd82521b3676993f23afaa0",
+      "size_bytes": 10839
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/CompassQL/CQLC-029/trace.json",
+      "sha256": "0aa0e3f8a94e6b7d5d6d8678450b3b32beb8d1ad056f1b4a7b57056b5534b36d",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-001/normalized_output.json",
+      "sha256": "d7ff264687cbfb89139dfbbeb62eca99675b7c8d07b7ce2474ee7261f28a7183",
+      "size_bytes": 15055
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-001/process_log.json",
+      "sha256": "ed1ce8b620a3c28769feb8f2486a5a741d8225d9c141250679c41cfcf70dfbfb",
+      "size_bytes": 1046
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-001/raw_output.json",
+      "sha256": "72efd2bfdffbcac525360f17a6d657b1025e0ac3e963d41883fcd36f5a20ed74",
+      "size_bytes": 44425
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-001/trace.json",
+      "sha256": "b0134d7babfc2f23972442a7cc9c7cc1926ff2c2123b27cdc492380390200c37",
+      "size_bytes": 10521
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-008/normalized_output.json",
+      "sha256": "67c3e91ae7c873d580b0d7ccc38561fda25576117d599a702167f7213b44f288",
+      "size_bytes": 6556
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-008/process_log.json",
+      "sha256": "8334cf0d30f7ed364596c76631e3fa7f0929f096235f7c813b11e182aab6685b",
+      "size_bytes": 1046
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-008/raw_output.json",
+      "sha256": "0aeeb1c71bf178061b2cec46cbc48a023adebde5570da74a29a164fd5a2bec8b",
+      "size_bytes": 27398
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-008/trace.json",
+      "sha256": "d3c95c1497b1bde9422c5967207e5c99748c986df7a076b29b49e364e6d74682",
+      "size_bytes": 9375
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-015/normalized_output.json",
+      "sha256": "9b62dc7343e651631da0545acea339a62f83c4bdc79b8ead0a404c1cb0b45d39",
+      "size_bytes": 23713
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-015/process_log.json",
+      "sha256": "2981179c403cdf2a5a0730ab038d44934c23b95f3098530cfc7dffc9376b1878",
+      "size_bytes": 1046
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-015/raw_output.json",
+      "sha256": "99cdb0644d4c6a133bf585449e4d472a1e4da43e07715e1f550e72762506d5fd",
+      "size_bytes": 61042
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-015/trace.json",
+      "sha256": "7f180309f885c4cdc3e9087e1ed74298964886b9f9e891feed09bfc1649e4d09",
+      "size_bytes": 8431
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-022/normalized_output.json",
+      "sha256": "35bcc8add768bf3854be7e33de5bc11a4edfa6864acb8f994bd610660071fe6d",
+      "size_bytes": 9739
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-022/process_log.json",
+      "sha256": "594078333296654fd2e6f9e09ed8e50e105c491c8f966904786164ee91db9ca9",
+      "size_bytes": 1046
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-022/raw_output.json",
+      "sha256": "42c9d5fabf66036f808611815f1df95989a804824aa18b8af3e5cda1bb647f72",
+      "size_bytes": 33914
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-022/trace.json",
+      "sha256": "3ba41899535758377c52b5932766d5f09426dce529f5741147036d837d51b400",
+      "size_bytes": 10510
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-029/normalized_output.json",
+      "sha256": "df14c5b8cfdb1f5cff894bd2a97db4b920eb23dc295b449db8fbc866ca0530f4",
+      "size_bytes": 1246
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-029/process_log.json",
+      "sha256": "8cf67eaa3bbd25df0e46e0be8ba6c175269d2fedc4a2f30ab0a507791795cf0c",
+      "size_bytes": 1046
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-029/raw_output.json",
+      "sha256": "87d037b830c208ee89fe7fad82831ce8e0441c8499d8f5df566c5f43a7dead06",
+      "size_bytes": 8873
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay2/SkillVIS/CQLC-029/trace.json",
+      "sha256": "d2d75407bba0270e5a770e294bd531333a8e9ad38c5a6cf8c62c409855ea0397",
+      "size_bytes": 9080
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-001/normalized_output.json",
+      "sha256": "0bcbe235df1b7afa9b6db6c3250437caac51b7fe2754abdf15924f46cd86e79c",
+      "size_bytes": 4394
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-001/process_log.json",
+      "sha256": "92773ff034c48d9ce886baf4c1e5609083977f9825b444e2bc8f6500ef835908",
+      "size_bytes": 1021
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-001/raw_output.json",
+      "sha256": "abcbb9cc18b6f33ee0ebbee733dff36572b2157f51feadbbc8e145a2239c0179",
+      "size_bytes": 8926
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-001/trace.json",
+      "sha256": "aae9c69aa5d35b26416e346f091d676748cf303eb346fb639fdcf5857128397c",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-008/normalized_output.json",
+      "sha256": "7a0785d76175f65554e8bd151bcee3145babbe18a3d5e70365687cb8a7bd1947",
+      "size_bytes": 2219
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-008/process_log.json",
+      "sha256": "6d4aaf7a7b05df5b33b778a69d91702b9528a21687f23c5d81abf528055c6bfd",
+      "size_bytes": 1021
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-008/raw_output.json",
+      "sha256": "04d06099602cc6c1f32bcfcfd295e46bc7428067e1d9385a43256bce1c22706a",
+      "size_bytes": 6469
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-008/trace.json",
+      "sha256": "a179d8230aa9b011c0d976936944bdbe8f46e8ab4c427ff95643a68652aff242",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-015/normalized_output.json",
+      "sha256": "82518d34431abfa53685993ed2ca73e2ec63463e01828ab2141088cf6babc173",
+      "size_bytes": 1141
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-015/process_log.json",
+      "sha256": "efcf89ac4f0f4f7740302fd1a52cc0da65febec7b16621c993389b6d97978dd3",
+      "size_bytes": 1021
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-015/raw_output.json",
+      "sha256": "c32643745f8d18c20e8c68dc6ffeed93780e2335dc11dab72ba3dc88d71d3773",
+      "size_bytes": 4981
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-015/trace.json",
+      "sha256": "f4e42540f17e8e46b858314fb3a362c5fe49b6e7e1fa0b56e6f7ee7337614134",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-022/normalized_output.json",
+      "sha256": "1c80f4a1f76409163880487989e14c42f10993d575b124fe29f6914798fed81c",
+      "size_bytes": 4191
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-022/process_log.json",
+      "sha256": "c77a57cf4f6b84bbcc67a5ecae0f218f43d88fabbcc9a3d0f036fd78655bd4c6",
+      "size_bytes": 1021
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-022/raw_output.json",
+      "sha256": "2774d5969bcb1172a94dff9e7ea2ec0addef5f7df773476ed6c2c99c148e47ac",
+      "size_bytes": 8697
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-022/trace.json",
+      "sha256": "97b77870f7b93992d6dbe831781499181848bd0aa8e15f405b64ad7704379f4c",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-029/normalized_output.json",
+      "sha256": "d4e8f53897e35c644e9176ed46a5cf1c3cffd8aad497f77ebd56b82752d8c58b",
+      "size_bytes": 6412
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-029/process_log.json",
+      "sha256": "27ee2bf7ce4482ca6149d961b102c5676aa97036f6e8e1dc16ed81bf56bd9eb7",
+      "size_bytes": 1020
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-029/raw_output.json",
+      "sha256": "e86f95a41b9522a2d8199b0e2e195776b35c3dd8eb1c504d84610d7a799203ee",
+      "size_bytes": 10839
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/CompassQL/CQLC-029/trace.json",
+      "sha256": "0aa0e3f8a94e6b7d5d6d8678450b3b32beb8d1ad056f1b4a7b57056b5534b36d",
+      "size_bytes": 945
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-001/normalized_output.json",
+      "sha256": "04988ae982992df428d41274f1f6ad4c0dabe8941a2b4b19dd2f2edc68ece340",
+      "size_bytes": 15055
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-001/process_log.json",
+      "sha256": "e0d1ed38f1944c32ad1bea68d375b9be8a2bf052cdc52650060aea3822d4e36c",
+      "size_bytes": 1046
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-001/raw_output.json",
+      "sha256": "11261051afd21bc1721bd656ff9ccf363e3e348242807774718c8aafeac0386b",
+      "size_bytes": 44425
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-001/trace.json",
+      "sha256": "b0134d7babfc2f23972442a7cc9c7cc1926ff2c2123b27cdc492380390200c37",
+      "size_bytes": 10521
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-008/normalized_output.json",
+      "sha256": "f4b74c136e06cf7dcc64e198ae7519ebed201dd2684eb6113895cb57639b7453",
+      "size_bytes": 6556
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-008/process_log.json",
+      "sha256": "20a58df3e5f273d8a26be310f04f559b348f6bb245d5d6da377c5fadc34be424",
+      "size_bytes": 1043
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-008/raw_output.json",
+      "sha256": "6c718fcecfbe633f68f602a7498333cf120d02014ea8b27bc6ccde63ed96f243",
+      "size_bytes": 27398
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-008/trace.json",
+      "sha256": "d3c95c1497b1bde9422c5967207e5c99748c986df7a076b29b49e364e6d74682",
+      "size_bytes": 9375
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-015/normalized_output.json",
+      "sha256": "9175cee200575ee3b0d111cf3c6454daafd25545db2d0c14d794dc6dd8e3d640",
+      "size_bytes": 23714
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-015/process_log.json",
+      "sha256": "23bf9525dc47a6b69ea965a4596836b8bf4661bbdd45506b31ec5567ee8082f7",
+      "size_bytes": 1046
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-015/raw_output.json",
+      "sha256": "571543de63ef9be7ff33af58323d821efe8aa4c7b7c2e5c8241a6b54ce09cc9d",
+      "size_bytes": 61043
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-015/trace.json",
+      "sha256": "7f180309f885c4cdc3e9087e1ed74298964886b9f9e891feed09bfc1649e4d09",
+      "size_bytes": 8431
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-022/normalized_output.json",
+      "sha256": "4aa744dae306356b23af1c6e3c15d0d32a4a593577936ad2633fde168aecaef6",
+      "size_bytes": 9741
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-022/process_log.json",
+      "sha256": "252fdd05f41011f7c7f8c9d12cf19a4f0563d0e05efec2c1f1671e4c50fff5d5",
+      "size_bytes": 1046
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-022/raw_output.json",
+      "sha256": "2a999d6d53839ba01c2cbded357b1594f4ecd94307560bdbd84156b9306ce60d",
+      "size_bytes": 33916
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-022/trace.json",
+      "sha256": "3ba41899535758377c52b5932766d5f09426dce529f5741147036d837d51b400",
+      "size_bytes": 10510
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-029/normalized_output.json",
+      "sha256": "c526e07a39e4d0cb35ab6d4150d0c77eef21e32ca8de4e814d492c7ab88a61d7",
+      "size_bytes": 1254
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-029/process_log.json",
+      "sha256": "200542100566d4cd73d27c39b9a812e36b1346ad0326ccb6db9e3cb56803d6e8",
+      "size_bytes": 1046
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-029/raw_output.json",
+      "sha256": "43a1a1c34150f467270af4094096b76b35ccbd8667f79b8350825bda57425ed0",
+      "size_bytes": 8881
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/artifacts/replay3/SkillVIS/CQLC-029/trace.json",
+      "sha256": "d2d75407bba0270e5a770e294bd531333a8e9ad38c5a6cf8c62c409855ea0397",
+      "size_bytes": 9080
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/evaluation_summary.json",
+      "sha256": "d22d5449ba5df60d01a8d72449a0845627a283c81671c89a12332952f85a27f6",
+      "size_bytes": 105298
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/input_parity.json",
+      "sha256": "583d196f8c781f36127155890765ed0fbbd6e718c17e7c7b92cb7e3a286ec114",
+      "size_bytes": 72
+    },
+    {
+      "path": "outputs/skillvis_v2/compassql_conformance_v1/skillvis-v1121-vs-compassql-conformance-v1-20260731/replay_validation.json",
+      "sha256": "f0db1d0ab89cedb393f91946dec51dc181a5d09f2777a211f09edb0e72bce8f5",
+      "size_bytes": 90
+    }
+  ],
+  "claim_boundary": "Reports structured partial-spec conformance, candidate behavior, and resources only. It does not measure visualization quality, chart accuracy, superiority, or non-inferiority.",
+  "deterministic_replay_pass": true,
+  "input_parity_pass": true,
+  "invocation_count": 90,
+  "protocol_amendment_path": "data/skillvis_v2/compassql_conformance_v1/protocol_amendment_v1_1.json",
+  "protocol_amendment_sha256": "b75081f4cd1780322e038de10aa377b008dc9ba128e6b9aa94368186f84648bd",
+  "protocol_lock_path": "data/skillvis_v2/compassql_conformance_v1/protocol_freeze_v1.json",
+  "protocol_lock_sha256": "d67ff916f21c77f1e22715c8af722d6c5b6623d8b393ea363ad3d6b3455e8805",
+  "run_id": "skillvis-v1121-vs-compassql-conformance-v1-20260731",
+  "schedule_sha256": "86c4e0e502bf0d3cffdcff283df01eeb6375e0e662336f7798bf8a173f6b63d7",
+  "schema_version": "skillvis-compassql-conformance-run-manifest-v1.1.0",
+  "status": "COMPLETED_CONFORMANCE_ONLY_WITH_V1_1_AMENDMENT",
+  "task_registry_sha256": "43950cbc34170a0c04b0db22c09cad947c6d363d538e3ef744864ffe6da2496a"
+}

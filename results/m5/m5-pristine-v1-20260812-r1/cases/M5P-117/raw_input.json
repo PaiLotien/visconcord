@@ -1,0 +1,869 @@
+{
+  "case_id": "M5P-117",
+  "context": {
+    "candidate_set_id": "candidate-set-M5P-117",
+    "candidate_set_signature": "7ea4c8ecb51ea05c7a0ee69abaa21f1c1c82786749d867e5ef8a3c826fc46d0a",
+    "candidates": [
+      {
+        "aggregation": null,
+        "ambiguity_state": "NONE",
+        "applied_rule_ids": [
+          "R-M5P-CANDIDATE"
+        ],
+        "audit_only": false,
+        "candidate_id": "M5P-117-C1-6f802bfc2a",
+        "chart_compatibility_assumptions": [
+          "context-aware validation uses frozen SchemaProfile"
+        ],
+        "chart_type": "pie",
+        "deterministic_signature": "6f802bfc2a9bed0919580fbee66c73c592014f694d7aa930c0320712fd554d93",
+        "encodings": [
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "theta",
+            "field": "Reactor Flux 1117",
+            "semantic_type": "quantitative",
+            "sort": null,
+            "time_unit": null
+          },
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "color",
+            "field": "Reactor Zone 1117",
+            "semantic_type": "categorical",
+            "sort": null,
+            "time_unit": null
+          }
+        ],
+        "evidence_spans": [
+          {
+            "end": 72,
+            "kind": "m5_pristine_authoring",
+            "normalized": "partition reactor flux 1117 across reactor zone 1117 for study unit 1117",
+            "rule_ids": [
+              "R-M5P-SEED"
+            ],
+            "start": 0,
+            "text": "Partition Reactor Flux 1117 across Reactor Zone 1117 for study unit 1117"
+          }
+        ],
+        "executable": true,
+        "field_role_alignment": {
+          "color": [
+            "Reactor Zone 1117"
+          ],
+          "dimension": [
+            "Reactor Zone 1117"
+          ],
+          "grouping": [
+            "Reactor Zone 1117"
+          ],
+          "measure": [
+            "Reactor Flux 1117"
+          ]
+        },
+        "fields": {
+          "color": [
+            "Reactor Zone 1117"
+          ],
+          "dimension": [
+            "Reactor Zone 1117"
+          ],
+          "facet": [],
+          "grouping": [
+            "Reactor Zone 1117"
+          ],
+          "measure": [
+            "Reactor Flux 1117"
+          ],
+          "size": [],
+          "temporal": []
+        },
+        "filters": [],
+        "grouping": [
+          "Reactor Zone 1117"
+        ],
+        "limit": null,
+        "mark_type": "bar",
+        "rank": 1,
+        "rationale": "Source-isolated M5 component blind candidate.",
+        "rejection_reasons": [],
+        "schema_version": "skillvis-v2-visualization-candidate-v1.0.0",
+        "score_components": {
+          "ambiguity_penalty": 0.0,
+          "chart_effectiveness_score": 0.85,
+          "complexity_penalty": 0.1,
+          "deterministic_tie_breaker": 0.5,
+          "field_role_fit_score": 0.9,
+          "missing_role_penalty": 0.0,
+          "provenance_strength_score": 1.0,
+          "rule_ids": {
+            "ambiguity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "chart_effectiveness_score": [
+              "R-M5P-SCORE"
+            ],
+            "complexity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "deterministic_tie_breaker": [
+              "R-M5P-SCORE"
+            ],
+            "field_role_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "missing_role_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "provenance_strength_score": [
+              "R-M5P-SCORE"
+            ],
+            "task_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "type_compatibility_score": [
+              "R-M5P-SCORE"
+            ],
+            "unsupported_feature_penalty": [
+              "R-M5P-SCORE"
+            ]
+          },
+          "task_fit_score": 0.9,
+          "type_compatibility_score": 0.9,
+          "unsupported_feature_penalty": 0.0
+        },
+        "sort": null,
+        "source_ids": [
+          "M5-PRISTINE-AUTHORING"
+        ],
+        "task_alignment": "composition",
+        "total_score": 0.97,
+        "transforms": [],
+        "unsupported_features": [],
+        "warnings": []
+      },
+      {
+        "aggregation": null,
+        "ambiguity_state": "NONE",
+        "applied_rule_ids": [
+          "R-M5P-CANDIDATE"
+        ],
+        "audit_only": false,
+        "candidate_id": "M5P-117-C2-bcfa2dfc4f",
+        "chart_compatibility_assumptions": [
+          "context-aware validation uses frozen SchemaProfile"
+        ],
+        "chart_type": "normalized_stacked_bar",
+        "deterministic_signature": "bcfa2dfc4f73a8cd3283d8677fba47acdeda2e5b18037f9d70cb6fecfcafb8af",
+        "encodings": [
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "y",
+            "field": "Reactor Flux 1117",
+            "semantic_type": "quantitative",
+            "sort": null,
+            "time_unit": null
+          },
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "color",
+            "field": "Reactor Zone 1117",
+            "semantic_type": "categorical",
+            "sort": null,
+            "time_unit": null
+          }
+        ],
+        "evidence_spans": [
+          {
+            "end": 72,
+            "kind": "m5_pristine_authoring",
+            "normalized": "partition reactor flux 1117 across reactor zone 1117 for study unit 1117",
+            "rule_ids": [
+              "R-M5P-SEED"
+            ],
+            "start": 0,
+            "text": "Partition Reactor Flux 1117 across Reactor Zone 1117 for study unit 1117"
+          }
+        ],
+        "executable": true,
+        "field_role_alignment": {
+          "color": [
+            "Reactor Zone 1117"
+          ],
+          "dimension": [
+            "Reactor Zone 1117"
+          ],
+          "grouping": [
+            "Reactor Zone 1117"
+          ],
+          "measure": [
+            "Reactor Flux 1117"
+          ]
+        },
+        "fields": {
+          "color": [
+            "Reactor Zone 1117"
+          ],
+          "dimension": [
+            "Reactor Zone 1117"
+          ],
+          "facet": [],
+          "grouping": [
+            "Reactor Zone 1117"
+          ],
+          "measure": [
+            "Reactor Flux 1117"
+          ],
+          "size": [],
+          "temporal": []
+        },
+        "filters": [],
+        "grouping": [
+          "Reactor Zone 1117"
+        ],
+        "limit": null,
+        "mark_type": "bar",
+        "rank": 2,
+        "rationale": "Source-isolated M5 component blind candidate.",
+        "rejection_reasons": [],
+        "schema_version": "skillvis-v2-visualization-candidate-v1.0.0",
+        "score_components": {
+          "ambiguity_penalty": 0.0,
+          "chart_effectiveness_score": 0.85,
+          "complexity_penalty": 0.1,
+          "deterministic_tie_breaker": 0.5,
+          "field_role_fit_score": 0.9,
+          "missing_role_penalty": 0.0,
+          "provenance_strength_score": 1.0,
+          "rule_ids": {
+            "ambiguity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "chart_effectiveness_score": [
+              "R-M5P-SCORE"
+            ],
+            "complexity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "deterministic_tie_breaker": [
+              "R-M5P-SCORE"
+            ],
+            "field_role_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "missing_role_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "provenance_strength_score": [
+              "R-M5P-SCORE"
+            ],
+            "task_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "type_compatibility_score": [
+              "R-M5P-SCORE"
+            ],
+            "unsupported_feature_penalty": [
+              "R-M5P-SCORE"
+            ]
+          },
+          "task_fit_score": 0.9,
+          "type_compatibility_score": 0.9,
+          "unsupported_feature_penalty": 0.0
+        },
+        "sort": null,
+        "source_ids": [
+          "M5-PRISTINE-AUTHORING"
+        ],
+        "task_alignment": "composition",
+        "total_score": 0.92,
+        "transforms": [],
+        "unsupported_features": [],
+        "warnings": []
+      },
+      {
+        "aggregation": null,
+        "ambiguity_state": "NONE",
+        "applied_rule_ids": [
+          "R-M5P-CANDIDATE"
+        ],
+        "audit_only": false,
+        "candidate_id": "M5P-117-C3-07d6bbc28a",
+        "chart_compatibility_assumptions": [
+          "context-aware validation uses frozen SchemaProfile"
+        ],
+        "chart_type": "pie",
+        "deterministic_signature": "07d6bbc28ac510a06ed99b3297fa8aa585e1252bc8d26e72ffb8784025139b12",
+        "encodings": [
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "theta",
+            "field": "Reactor Flux 1117",
+            "semantic_type": "quantitative",
+            "sort": null,
+            "time_unit": null
+          },
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "color",
+            "field": "Reactor Zone 1117",
+            "semantic_type": "categorical",
+            "sort": null,
+            "time_unit": null
+          }
+        ],
+        "evidence_spans": [
+          {
+            "end": 72,
+            "kind": "m5_pristine_authoring",
+            "normalized": "partition reactor flux 1117 across reactor zone 1117 for study unit 1117",
+            "rule_ids": [
+              "R-M5P-SEED"
+            ],
+            "start": 0,
+            "text": "Partition Reactor Flux 1117 across Reactor Zone 1117 for study unit 1117"
+          }
+        ],
+        "executable": true,
+        "field_role_alignment": {
+          "color": [
+            "Reactor Zone 1117"
+          ],
+          "dimension": [
+            "Reactor Zone 1117"
+          ],
+          "grouping": [
+            "Reactor Zone 1117"
+          ],
+          "measure": [
+            "Reactor Flux 1117"
+          ]
+        },
+        "fields": {
+          "color": [
+            "Reactor Zone 1117"
+          ],
+          "dimension": [
+            "Reactor Zone 1117"
+          ],
+          "facet": [],
+          "grouping": [
+            "Reactor Zone 1117"
+          ],
+          "measure": [
+            "Reactor Flux 1117"
+          ],
+          "size": [],
+          "temporal": []
+        },
+        "filters": [],
+        "grouping": [
+          "Reactor Zone 1117"
+        ],
+        "limit": null,
+        "mark_type": "arc",
+        "rank": 3,
+        "rationale": "Source-isolated M5 component blind candidate.",
+        "rejection_reasons": [],
+        "schema_version": "skillvis-v2-visualization-candidate-v1.0.0",
+        "score_components": {
+          "ambiguity_penalty": 0.0,
+          "chart_effectiveness_score": 0.85,
+          "complexity_penalty": 0.1,
+          "deterministic_tie_breaker": 0.5,
+          "field_role_fit_score": 0.9,
+          "missing_role_penalty": 0.0,
+          "provenance_strength_score": 1.0,
+          "rule_ids": {
+            "ambiguity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "chart_effectiveness_score": [
+              "R-M5P-SCORE"
+            ],
+            "complexity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "deterministic_tie_breaker": [
+              "R-M5P-SCORE"
+            ],
+            "field_role_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "missing_role_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "provenance_strength_score": [
+              "R-M5P-SCORE"
+            ],
+            "task_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "type_compatibility_score": [
+              "R-M5P-SCORE"
+            ],
+            "unsupported_feature_penalty": [
+              "R-M5P-SCORE"
+            ]
+          },
+          "task_fit_score": 0.9,
+          "type_compatibility_score": 0.9,
+          "unsupported_feature_penalty": 0.0
+        },
+        "sort": null,
+        "source_ids": [
+          "M5-PRISTINE-AUTHORING"
+        ],
+        "task_alignment": "composition",
+        "total_score": 0.91,
+        "transforms": [],
+        "unsupported_features": [],
+        "warnings": []
+      }
+    ],
+    "capability": {
+      "abstention_required": false,
+      "explanation": "The declared analytical visualization task is supported.",
+      "provenance": [
+        "R-M5P-CAPABILITY"
+      ],
+      "risk_level": "low",
+      "supported_operations": [
+        "composition"
+      ],
+      "unsupported_operations": []
+    },
+    "context_id": "context-M5P-117",
+    "intent": {
+      "abstention_reason": null,
+      "abstention_state": {
+        "abstained": false,
+        "reason": null,
+        "stage": null
+      },
+      "aggregation": null,
+      "ambiguity": [],
+      "ambiguity_state": {
+        "affected_fields": [],
+        "affected_tasks": [],
+        "confidence": 1.0,
+        "evidence_spans": [],
+        "explanation": "No material ambiguity.",
+        "resolution_strategy": "proceed",
+        "state": "NONE",
+        "triggering_rules": []
+      },
+      "capability_assessment": {
+        "abstention_required": false,
+        "explanation": "The declared analytical visualization task is supported.",
+        "provenance": [
+          "R-M5P-CAPABILITY"
+        ],
+        "risk_level": "low",
+        "supported_operations": [
+          "composition"
+        ],
+        "unsupported_operations": []
+      },
+      "chart_mentions": [],
+      "config_version": "m5-blind-context-v1",
+      "dataset_id": "m5-blind-dataset-1117",
+      "deterministic_id": "m5-blind-intent-1117",
+      "dimensions": [
+        {
+          "candidate_rank": 1,
+          "evidence": [
+            {
+              "evidence_type": "m5_pristine_context",
+              "query_span": {
+                "end": 72,
+                "kind": "m5_pristine_authoring",
+                "normalized": "partition reactor flux 1117 across reactor zone 1117 for study unit 1117",
+                "rule_ids": [
+                  "R-M5P-SEED"
+                ],
+                "start": 0,
+                "text": "Partition Reactor Flux 1117 across Reactor Zone 1117 for study unit 1117"
+              },
+              "rule_id": "R-M5P-SEED",
+              "source_ids": [
+                "M5-PRISTINE-AUTHORING"
+              ],
+              "value": "Reactor Zone 1117"
+            }
+          ],
+          "field_name": "Reactor Zone 1117",
+          "role": "dimension",
+          "rule_ids": [
+            "R-M5P-INTENT"
+          ],
+          "score": 1.0
+        }
+      ],
+      "evidence_spans": [
+        {
+          "end": 72,
+          "kind": "m5_pristine_authoring",
+          "normalized": "partition reactor flux 1117 across reactor zone 1117 for study unit 1117",
+          "rule_ids": [
+            "R-M5P-SEED"
+          ],
+          "start": 0,
+          "text": "Partition Reactor Flux 1117 across Reactor Zone 1117 for study unit 1117"
+        }
+      ],
+      "field_candidates": [],
+      "filters": [],
+      "grouping_fields": [
+        {
+          "candidate_rank": 1,
+          "evidence": [
+            {
+              "evidence_type": "m5_pristine_context",
+              "query_span": {
+                "end": 72,
+                "kind": "m5_pristine_authoring",
+                "normalized": "partition reactor flux 1117 across reactor zone 1117 for study unit 1117",
+                "rule_ids": [
+                  "R-M5P-SEED"
+                ],
+                "start": 0,
+                "text": "Partition Reactor Flux 1117 across Reactor Zone 1117 for study unit 1117"
+              },
+              "rule_id": "R-M5P-SEED",
+              "source_ids": [
+                "M5-PRISTINE-AUTHORING"
+              ],
+              "value": "Reactor Zone 1117"
+            }
+          ],
+          "field_name": "Reactor Zone 1117",
+          "role": "grouping",
+          "rule_ids": [
+            "R-M5P-INTENT"
+          ],
+          "score": 1.0
+        }
+      ],
+      "limit": null,
+      "measures": [
+        {
+          "candidate_rank": 1,
+          "evidence": [
+            {
+              "evidence_type": "m5_pristine_context",
+              "query_span": {
+                "end": 72,
+                "kind": "m5_pristine_authoring",
+                "normalized": "partition reactor flux 1117 across reactor zone 1117 for study unit 1117",
+                "rule_ids": [
+                  "R-M5P-SEED"
+                ],
+                "start": 0,
+                "text": "Partition Reactor Flux 1117 across Reactor Zone 1117 for study unit 1117"
+              },
+              "rule_id": "R-M5P-SEED",
+              "source_ids": [
+                "M5-PRISTINE-AUTHORING"
+              ],
+              "value": "Reactor Flux 1117"
+            }
+          ],
+          "field_name": "Reactor Flux 1117",
+          "role": "measure",
+          "rule_ids": [
+            "R-M5P-INTENT"
+          ],
+          "score": 1.0
+        }
+      ],
+      "normalized_query": "partition reactor flux 1117 across reactor zone 1117 for study unit 1117",
+      "primary_task": "composition",
+      "provenance": [
+        {
+          "conflict_policy": "Frozen annotation controls; no result feedback.",
+          "failure_condition": "Context fields or obligations are incomplete.",
+          "inputs": [
+            "schema_profile"
+          ],
+          "outputs": [
+            "intent_ir"
+          ],
+          "priority": 1,
+          "rationale": "Bind typed roles and obligations without query reparsing.",
+          "rule_id": "R-M5P-INTENT",
+          "scope": "frozen blind context",
+          "source_ids": [
+            "SV2-PROTOCOL"
+          ],
+          "stage": "intent_assembly",
+          "trace_fields": [
+            "fields",
+            "task",
+            "transforms"
+          ]
+        },
+        {
+          "conflict_policy": "Unsupported operation requires abstention.",
+          "failure_condition": "Capability and IntentIR disagree.",
+          "inputs": [
+            "intent_ir"
+          ],
+          "outputs": [
+            "capability_assessment"
+          ],
+          "priority": 2,
+          "rationale": "Bind supported or unsupported operations.",
+          "rule_id": "R-M5P-CAPABILITY",
+          "scope": "frozen blind capability context",
+          "source_ids": [
+            "SV2-PROTOCOL"
+          ],
+          "stage": "semantic_safety",
+          "trace_fields": [
+            "unsupported_operations",
+            "abstention_required"
+          ]
+        }
+      ],
+      "query": "Partition Reactor Flux 1117 across Reactor Zone 1117 for study unit 1117",
+      "registry_hash": "9bb8031a12d573377de0ca018bb3be590794606adacd559ec03a73de981d9509",
+      "safety_warnings": [],
+      "schema_version": "skillvis-v2-intent-ir-v0.2.0",
+      "sort": null,
+      "task_candidates": [
+        {
+          "evidence_spans": [
+            {
+              "end": 72,
+              "kind": "m5_pristine_authoring",
+              "normalized": "partition reactor flux 1117 across reactor zone 1117 for study unit 1117",
+              "rule_ids": [
+                "R-M5P-SEED"
+              ],
+              "start": 0,
+              "text": "Partition Reactor Flux 1117 across Reactor Zone 1117 for study unit 1117"
+            }
+          ],
+          "required_roles": [
+            "measure"
+          ],
+          "rule_ids": [
+            "R-M5P-TASK"
+          ],
+          "score": 1.0,
+          "score_components": {
+            "frozen_authoring": 1.0
+          },
+          "task": "composition"
+        }
+      ],
+      "temporal_fields": [],
+      "unresolved_mentions": [],
+      "unsupported_scope": [],
+      "warnings": []
+    },
+    "schema": {
+      "applied_rule_ids": [
+        "R-M5P-SCHEMA"
+      ],
+      "data_access_policy": "frozen_schema_profile_only_no_raw_query_reparse",
+      "dataset_id": "m5-blind-dataset-1117",
+      "failure_state": null,
+      "fields": [
+        {
+          "aliases": [],
+          "cardinality": 5,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Reactor Flux 1117",
+          "normalized_name": "reactor flux 1117",
+          "null_rate": 0.0,
+          "numeric_summary": {
+            "count": 5,
+            "maximum": 5.0,
+            "mean": 2.5,
+            "median": 2.5,
+            "minimum": 1.0,
+            "standard_deviation": 1.0
+          },
+          "physical_type": "float64",
+          "role_candidates": [
+            "measure"
+          ],
+          "sample_values": [
+            1.0,
+            2.0
+          ],
+          "semantic_type": "quantitative",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 5,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Reactor Gradient 1117",
+          "normalized_name": "reactor gradient 1117",
+          "null_rate": 0.0,
+          "numeric_summary": {
+            "count": 5,
+            "maximum": 5.0,
+            "mean": 2.5,
+            "median": 2.5,
+            "minimum": 1.0,
+            "standard_deviation": 1.0
+          },
+          "physical_type": "float64",
+          "role_candidates": [
+            "measure"
+          ],
+          "sample_values": [
+            1.0,
+            2.0
+          ],
+          "semantic_type": "quantitative",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 5,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Reactor Intensity 1117",
+          "normalized_name": "reactor intensity 1117",
+          "null_rate": 0.0,
+          "numeric_summary": {
+            "count": 5,
+            "maximum": 5.0,
+            "mean": 2.5,
+            "median": 2.5,
+            "minimum": 1.0,
+            "standard_deviation": 1.0
+          },
+          "physical_type": "float64",
+          "role_candidates": [
+            "measure"
+          ],
+          "sample_values": [
+            1.0,
+            2.0
+          ],
+          "semantic_type": "quantitative",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 5,
+          "categorical_summary": {
+            "top_values": [],
+            "unique_count": 5
+          },
+          "confidence": 1.0,
+          "field_name": "Reactor Zone 1117",
+          "normalized_name": "reactor zone 1117",
+          "null_rate": 0.0,
+          "numeric_summary": null,
+          "physical_type": "string",
+          "role_candidates": [
+            "dimension",
+            "grouping"
+          ],
+          "sample_values": [
+            "Reactor Zone 1117 A",
+            "Reactor Zone 1117 B"
+          ],
+          "semantic_type": "categorical",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 5,
+          "categorical_summary": {
+            "top_values": [],
+            "unique_count": 5
+          },
+          "confidence": 1.0,
+          "field_name": "Reactor Cohort 1117",
+          "normalized_name": "reactor cohort 1117",
+          "null_rate": 0.0,
+          "numeric_summary": null,
+          "physical_type": "string",
+          "role_candidates": [
+            "dimension",
+            "grouping"
+          ],
+          "sample_values": [
+            "Reactor Cohort 1117 A",
+            "Reactor Cohort 1117 B"
+          ],
+          "semantic_type": "categorical",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 5,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Reactor Epoch 1117",
+          "normalized_name": "reactor epoch 1117",
+          "null_rate": 0.0,
+          "numeric_summary": null,
+          "physical_type": "datetime64",
+          "role_candidates": [
+            "temporal",
+            "dimension"
+          ],
+          "sample_values": [
+            "2025-01-01",
+            "2025-02-01"
+          ],
+          "semantic_type": "temporal",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": {
+            "maximum": "2025-12-31",
+            "minimum": "2025-01-01",
+            "parse_ratio": 1.0,
+            "timezone_observed": false
+          },
+          "warnings": []
+        }
+      ],
+      "row_count": 5,
+      "schema_version": "skillvis-v2-schema-profile-v0.1.0",
+      "warnings": []
+    },
+    "schema_version": "skillvis-v2-m5-candidate-set-context-v1.0.0",
+    "source_id": "M5-PRISTINE-SYNTHETIC:masked-family"
+  },
+  "gold_included": false
+}

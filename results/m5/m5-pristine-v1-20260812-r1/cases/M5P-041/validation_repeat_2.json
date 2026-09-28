@@ -1,0 +1,539 @@
+{
+  "candidate_mutation_count": 0,
+  "candidate_results": [
+    {
+      "candidate_id": "M5P-041-C1-a50d5e5e50",
+      "candidate_input_hash": "a27c437d0f53b49710d395ded8ac6635274aca538a75acd27937bb1504e551a7",
+      "candidate_signature": "a50d5e5e505f8d57246fb799fac2a9caac1cd9626f2d9510ffe045cad66beded",
+      "confidence": [
+        1.0,
+        1.0
+      ],
+      "decision": "REJECT",
+      "deterministic_signature": "5d0db8669e681eba3ee4b94c4dc0e963d0299e6f2d50d22abaa280a040c77da1",
+      "eligible": false,
+      "evidence": [
+        {
+          "measure_role_mismatches": [
+            {
+              "field": "Geothermal Zone 1041",
+              "intent_measure_fields": [
+                "Geothermal Flux 1041"
+              ],
+              "schema_type": "categorical"
+            }
+          ]
+        },
+        {
+          "role_mismatches": [
+            {
+              "allowed_types": [
+                "categorical",
+                "geographic",
+                "identifier",
+                "ordinal",
+                "temporal"
+              ],
+              "field": "Geothermal Cohort 1041",
+              "intent_fields": [
+                "Geothermal Zone 1041"
+              ],
+              "role": "dimension",
+              "schema_type": "categorical"
+            }
+          ]
+        }
+      ],
+      "issue_type": [
+        "FIELD_ROLE_MISMATCH",
+        "FIELD_ROLE_MISMATCH"
+      ],
+      "issues": [
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "confidence": 1.0,
+          "decision": "REJECT",
+          "evidence": {
+            "measure_role_mismatches": [
+              {
+                "field": "Geothermal Zone 1041",
+                "intent_measure_fields": [
+                  "Geothermal Flux 1041"
+                ],
+                "schema_type": "categorical"
+              }
+            ]
+          },
+          "issue_id": "VFI-0926557950fd11a233",
+          "issue_type": "FIELD_ROLE_MISMATCH",
+          "level": "V1",
+          "penalty": 1.0,
+          "repair_applied": false,
+          "repair_proposal": {
+            "applied": false,
+            "description": "Unapplied proposal for FIELD_ROLE_MISMATCH; route to M2 under R-VF-F002.",
+            "proposal_type": "ROUTE_FIELD_RESOLUTION",
+            "rule_id": "R-VF-F002",
+            "target_stage": "M2"
+          },
+          "scope": "candidate",
+          "severity": "ERROR",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "violated_rule_ids": [
+            "R-VF-F002"
+          ]
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "confidence": 1.0,
+          "decision": "REJECT",
+          "evidence": {
+            "role_mismatches": [
+              {
+                "allowed_types": [
+                  "categorical",
+                  "geographic",
+                  "identifier",
+                  "ordinal",
+                  "temporal"
+                ],
+                "field": "Geothermal Cohort 1041",
+                "intent_fields": [
+                  "Geothermal Zone 1041"
+                ],
+                "role": "dimension",
+                "schema_type": "categorical"
+              }
+            ]
+          },
+          "issue_id": "VFI-08b8cdf152459c6387",
+          "issue_type": "FIELD_ROLE_MISMATCH",
+          "level": "V1",
+          "penalty": 1.0,
+          "repair_applied": false,
+          "repair_proposal": {
+            "applied": false,
+            "description": "Unapplied proposal for FIELD_ROLE_MISMATCH; route to M2 under R-VF-F003.",
+            "proposal_type": "ROUTE_FIELD_RESOLUTION",
+            "rule_id": "R-VF-F003",
+            "target_stage": "M2"
+          },
+          "scope": "candidate",
+          "severity": "ERROR",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "violated_rule_ids": [
+            "R-VF-F003"
+          ]
+        }
+      ],
+      "original_rank": 1,
+      "original_score": 0.86,
+      "repair_applied": false,
+      "repair_proposal": [
+        {
+          "applied": false,
+          "description": "Unapplied proposal for FIELD_ROLE_MISMATCH; route to M2 under R-VF-F002.",
+          "proposal_type": "ROUTE_FIELD_RESOLUTION",
+          "rule_id": "R-VF-F002",
+          "target_stage": "M2"
+        },
+        {
+          "applied": false,
+          "description": "Unapplied proposal for FIELD_ROLE_MISMATCH; route to M2 under R-VF-F003.",
+          "proposal_type": "ROUTE_FIELD_RESOLUTION",
+          "rule_id": "R-VF-F003",
+          "target_stage": "M2"
+        }
+      ],
+      "schema_version": "skillvis-v2-m5-candidate-result-v1.0.0",
+      "severity": [
+        "ERROR",
+        "ERROR"
+      ],
+      "source_ids": [
+        "D2",
+        "R10"
+      ],
+      "trace": [
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-C001",
+          "scope": "candidate",
+          "source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "2fa4b3599255f72142e32638c490df693a7df707a6336b72341588bc65c567ee",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-F001",
+          "scope": "candidate",
+          "source_ids": [
+            "D3",
+            "R10"
+          ],
+          "trace_signature": "d7f95c384da8e8941eb8867144f1ed1ae22762b810ca7ce8a145950e3e890559",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "measure_role_mismatches": [
+              {
+                "field": "Geothermal Zone 1041",
+                "intent_measure_fields": [
+                  "Geothermal Flux 1041"
+                ],
+                "schema_type": "categorical"
+              }
+            ]
+          },
+          "rule_id": "R-VF-F002",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "b1e2447f313808807c3e6720456146915815f053fcf7c3ad66de2432e4239d27",
+          "triggered": true
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "role_mismatches": [
+              {
+                "allowed_types": [
+                  "categorical",
+                  "geographic",
+                  "identifier",
+                  "ordinal",
+                  "temporal"
+                ],
+                "field": "Geothermal Cohort 1041",
+                "intent_fields": [
+                  "Geothermal Zone 1041"
+                ],
+                "role": "dimension",
+                "schema_type": "categorical"
+              }
+            ]
+          },
+          "rule_id": "R-VF-F003",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "5cc06b00f3e538b23e70ddc4f017d44578cf22ba8c12dbc478dd2357c2fe3d83",
+          "triggered": true
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E001",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R10"
+          ],
+          "trace_signature": "a7fc5d479f40bb9dfc9a93327a07c6e8daacc86dc41c05a8bc11990d71a7c810",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E002",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R10"
+          ],
+          "trace_signature": "5ce822f5b413c90f61e58266083acce00f0247b43b8394d836e51bf21a85be9a",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E003",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R10"
+          ],
+          "trace_signature": "35499817869d4b3c876893ebb10a769f73940e2a445d77f8dace93b2870c6e4a",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E004",
+          "scope": "candidate",
+          "source_ids": [
+            "D1",
+            "R10"
+          ],
+          "trace_signature": "a68c3e597328f9acf1a25a8da794d6b604038bc97dfff2782ba5f7f155238a19",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-T001",
+          "scope": "candidate",
+          "source_ids": [
+            "D1",
+            "R5"
+          ],
+          "trace_signature": "c305368be98776eea975ce5fb7b06f298c99795ff9359d7f9379c69f12fdbc03",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A001",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "203f202281f6c418a28ca6501f6216961d15553d81bb1bd452c9b753a0467d06",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A002",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "6a6f02a84051eecfb2d79eaff60bde33f8428ac56af795e1e44a0369efd14ab1",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A003",
+          "scope": "candidate",
+          "source_ids": [
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "dc6b860ef9bfa1f81f73052c616f95aac99e1f3a21293b3e05dbdfebd355eea8",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A004",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "505af41af9eb54ee059415236754566e04f296665cb0573e7a091bde39b5f6d9",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-U001",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R2",
+            "R10"
+          ],
+          "trace_signature": "757aa1949511111bded7f4221bcd19c9dc586a0cc56bcdefba23535e23bf7572",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-U002",
+          "scope": "candidate",
+          "source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "fd52ee7ff19a1b46aa957d14aa138815a97816e35cc0d057f4ebe718f0caed94",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-P001",
+          "scope": "candidate",
+          "source_ids": [
+            "D1",
+            "D6",
+            "D7"
+          ],
+          "trace_signature": "0603e39a38303a7ca03068fdb4e3a52fb5ffe55b56ded8ced3c2d6f337995917",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-P002",
+          "scope": "candidate",
+          "source_ids": [
+            "D7",
+            "R10"
+          ],
+          "trace_signature": "f9080082126a7f707a79c7f243290558eb02764ffb16b7ab3360dec4723df38e",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-041-C1-a50d5e5e50",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-P003",
+          "scope": "candidate",
+          "source_ids": [
+            "D7",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "304bf4e4c7768fd6b0bc68ea476e534151e578bbd81dbfe00e9bdc020494328e",
+          "triggered": false
+        }
+      ],
+      "validated_rank": 1,
+      "validated_score": 0.0,
+      "validation_penalty": 2.0,
+      "violated_rule_ids": [
+        "R-VF-F002",
+        "R-VF-F003"
+      ]
+    }
+  ],
+  "candidate_set_id": "candidate-set-M5P-041",
+  "candidate_set_input_sha256": "2db2074b90c2b53815af78f39d7e778b37ba67f9634077f3f42cf7419009a7c1",
+  "capability_sha256": "630a94d575881f0c85804763419e82f488669a8e414b716230ba4a2ca89d0630",
+  "config_sha256": "9bb8031a12d573377de0ca018bb3be590794606adacd559ec03a73de981d9509",
+  "config_version": "skillvis-v2-m5-validator-formal-v1.0.0",
+  "context_id": "context-M5P-041",
+  "deterministic_signature": "627e9e783badb31b08979ac776d38214b68ca8ee70b54ff517690b62819175de",
+  "intent_sha256": "186da8845dfd816f0235301f72091381eae40f788cfc40eec3bae71a0056e9ac",
+  "original_candidate_order": [
+    "M5P-041-C1-a50d5e5e50"
+  ],
+  "overall_decision": "NO_VALID_CANDIDATE",
+  "rejected_candidate_ids": [
+    "M5P-041-C1-a50d5e5e50"
+  ],
+  "repair_applied": false,
+  "schema_sha256": "925fe065c849c767c863f558716301a7a9983ad2455e0f6ed404346fbca25a18",
+  "schema_version": "skillvis-v2-m5-validation-set-result-v1.0.0",
+  "set_issues": [
+    {
+      "candidate_id": null,
+      "confidence": 0.85,
+      "decision": "WARN",
+      "evidence": {
+        "candidate_decisions": {
+          "M5P-041-C1-a50d5e5e50": "REJECT"
+        }
+      },
+      "issue_id": "VFI-a8df2abbcf248d297a",
+      "issue_type": "CANDIDATE_SET_EXHAUSTED",
+      "level": "V6",
+      "penalty": 0.0,
+      "repair_applied": false,
+      "repair_proposal": {
+        "applied": false,
+        "description": "Unapplied proposal for CANDIDATE_SET_EXHAUSTED; route to FUTURE_ROUTER under R-VF-S002.",
+        "proposal_type": "ROUTE_NO_VALID_CANDIDATE",
+        "rule_id": "R-VF-S002",
+        "target_stage": "FUTURE_ROUTER"
+      },
+      "scope": "candidate_set",
+      "severity": "WARNING",
+      "source_ids": [
+        "D3",
+        "SV2-PROTOCOL"
+      ],
+      "violated_rule_ids": [
+        "R-VF-S002"
+      ]
+    }
+  ],
+  "set_trace": [
+    {
+      "candidate_id": null,
+      "evidence": {
+        "status": "not_triggered"
+      },
+      "rule_id": "R-VF-S001",
+      "scope": "candidate_set",
+      "source_ids": [
+        "R3",
+        "SV2-PROTOCOL"
+      ],
+      "trace_signature": "a24131b322e6200b75608609dca73effadf10b7f258a92b0cc20f60d7034a2bc",
+      "triggered": false
+    },
+    {
+      "candidate_id": null,
+      "evidence": {
+        "candidate_decisions": {
+          "M5P-041-C1-a50d5e5e50": "REJECT"
+        }
+      },
+      "rule_id": "R-VF-S002",
+      "scope": "candidate_set",
+      "source_ids": [
+        "D3",
+        "SV2-PROTOCOL"
+      ],
+      "trace_signature": "65aecc804d9605881f80da4b0faa5bbbc81b24481011230c60acd684470bcdc0",
+      "triggered": true
+    }
+  ],
+  "validated_candidate_order": [
+    "M5P-041-C1-a50d5e5e50"
+  ]
+}

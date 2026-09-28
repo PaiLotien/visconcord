@@ -1,0 +1,39 @@
+{
+  "SkillVIS_V2_JOINT": {
+    "invocation_count": 20,
+    "metrics": {
+      "completion_tokens_total": 0,
+      "cpu_time_ms": {
+        "max": 93.07100000000001,
+        "mean": 84.89205000000001,
+        "median": 84.39500000000002,
+        "min": 78.95599999999997,
+        "n": 20
+      },
+      "invocation_wall_ms": {
+        "max": 97.65074995812029,
+        "mean": 85.70253739890177,
+        "median": 85.31327050877735,
+        "min": 79.21966700814664,
+        "n": 20
+      },
+      "llm_calls_total": 0,
+      "monetary_cost_total": 0,
+      "peak_rss_mb": {
+        "max": 117.734375,
+        "mean": 117.203125,
+        "median": 117.234375,
+        "min": 116.859375,
+        "n": 20
+      },
+      "prompt_tokens_total": 0,
+      "subprocess_wall_ms": {
+        "max": 469.8637920082547,
+        "mean": 420.19752709311433,
+        "median": 411.83683299459517,
+        "min": 397.3775419872254,
+        "n": 20
+      }
+    }
+  }
+}

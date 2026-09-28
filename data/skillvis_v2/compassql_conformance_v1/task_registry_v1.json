@@ -1,0 +1,3762 @@
+{
+  "analytical_task_counts": {
+    "comparison": 7,
+    "composition": 7,
+    "correlation": 7,
+    "distribution": 7,
+    "ranking": 7
+  },
+  "excluded_duplicate_count": 15,
+  "exclusions": [
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-021",
+      "signature": "212129ad16dd8547e6ccadfb65270832ff0acd1091d84d07290bcc7eac74639a",
+      "source_task_id": "PCS7-F-002"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-022",
+      "signature": "10ff1a69d5dc8d8edea7216ef05382563947644973e21e4fef13e7febe60c01d",
+      "source_task_id": "PCS7-F-004"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-023",
+      "signature": "8c75cf5e99457be0af5c23c9e42a1c9806a6c8a2c108f457502427046b60d25b",
+      "source_task_id": "PCS7-F-006"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-024",
+      "signature": "69dad7b2eb877fb53cc980fd0c4d10ddd310b6a42ca5698a7ccaab496c2c4420",
+      "source_task_id": "PCS7-F-008"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-025",
+      "signature": "9ff7b9d978b1905d47fd104c21b497a193e4afc19ecb0ddf1654cca35abaadd3",
+      "source_task_id": "PCS7-F-010"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-026",
+      "signature": "87e0c0d0aa559b54515baa0a507229cd8bb09d59869062039b7fd4a5e1faff9c",
+      "source_task_id": "PCS7-F-012"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-027",
+      "signature": "23218c449eac2ffcac77227e0e506a40c48c8ff286f8cc4a3eb5d7c4be04d86e",
+      "source_task_id": "PCS7-F-014"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-028",
+      "signature": "49aa7d3bc2226bcbb136d6941a6e5f9869b0608318c31fd987a24ea7fa4fb6e8",
+      "source_task_id": "PCS7-F-016"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-029",
+      "signature": "744cb1abe9b490c7ace2cef73935b4441445331ecfc9024f9556ad2e94966be7",
+      "source_task_id": "PCS7-F-018"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-030",
+      "signature": "c724703f63e223402437008585b23e0986d3ee4e1facf03b94dbf9d81f230a27",
+      "source_task_id": "PCS7-F-020"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-031",
+      "signature": "985743d916348395c273aea5f5738f7f1c7db1a40998ba4f0b9553ee69217878",
+      "source_task_id": "PCS7-F-022"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-032",
+      "signature": "72e4862314e76d3b21899e7aed1bf1d849a2f62fae139318167b9a7eaed5dc2d",
+      "source_task_id": "PCS7-F-024"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-033",
+      "signature": "e27eb730eb61d86d1f509f2b4a6c5095019a291839cab00343309b788f03c4cf",
+      "source_task_id": "PCS7-F-026"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-034",
+      "signature": "32b1aec718b833fec9f1a5d67b122c199b2c32f0107df1f731c5832d7e6949b0",
+      "source_task_id": "PCS7-F-028"
+    },
+    {
+      "reason": "duplicate structured input from formal paraphrase cell",
+      "retained_task_id": "CQLC-035",
+      "signature": "bb7035fcf01f140aaa18235ff9d5d7bd57b3190c36bee86d8fb2a20d61942e8c",
+      "source_task_id": "PCS7-F-030"
+    }
+  ],
+  "information_parity": {
+    "adapter_boundary": "CompassQL receives the contract as a native wildcard query; SkillVIS receives it as a typed source-derived IntentIR. Representation loss is logged and only conformance is scored.",
+    "both_receive": [
+      "same table bytes",
+      "selected fields",
+      "field roles",
+      "analytical task",
+      "fixed encoding constraints",
+      "required transforms",
+      "mark wildcard",
+      "top_k=5"
+    ],
+    "neither_receives": [
+      "raw natural-language query",
+      "expected mark/chart",
+      "acceptable visualization set",
+      "other system output or rank"
+    ]
+  },
+  "mode": "CONFORMANCE_ONLY",
+  "partition_counts": {
+    "formal": 15,
+    "qualification": 20
+  },
+  "registry_content_sha256": "dfdbcbc2afc6bfb8ebd1aa3ec09c99b3d89e0c72a57a86b982c518b1083059d6",
+  "schema_version": "skillvis-compassql-conformance-task-registry-v1.0.0",
+  "seed": 2026073120,
+  "selection_policy": "exhaustive unique dataset-task cells from both frozen PCS-v7 partitions; duplicate paraphrases removed by input signature; no system output consulted",
+  "source_protocol_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3",
+  "source_protocol_sha256": "3ce80662da2d89db640ed9a265aacc2b1acbec70744070881ae41e71f76cd79d",
+  "status": "BUILT_RESULT_BLIND_NOT_FROZEN",
+  "task_count": 35,
+  "tasks": [
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "comparison",
+      "common_input_sha256": "f5bc580715768cb35907280d9e024ac9ebc2507f9b94a5d02d6ea08c5910e595",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_letter_59_pcs7q",
+        "fields": [
+          {
+            "name": "glyph_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "x_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "y_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "glyph_width",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "pixel_count",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_59_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_59_metadata.json",
+        "metadata_sha256": "6927f27f6caca2e154acc0b741968f6869dcea10a14fd8eb971326a0054dccc1",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "7da8b53e04f6cffa80b7a2e93157d9fb02a877a327cbd4f57222bee037a9d1fb",
+        "source_doi": "10.24432/C5ZP40",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/59/letter+recognition",
+        "source_sha256": "9ec44e47110540d997fc2e247464a75ed3da0ad9dfcd49ded7e68fcaab04a9f7",
+        "source_uci_id": 59
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "glyph_class"
+        ],
+        "measure": [
+          "x_position"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "categorical",
+          "field": "glyph_class",
+          "time_unit": null
+        },
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "x_position",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "x_position",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "x_position",
+        "glyph_class"
+      ],
+      "source_cluster_id": "uci:59",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "comparison",
+        "uci_id": 59
+      },
+      "source_task_id": "PCS7-Q-001",
+      "task_id": "CQLC-001",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "ranking",
+      "common_input_sha256": "5a7d506bffdba0101fe6505fa977bb25da95b85c117872bbcf16b40de40f0ad0",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_letter_59_pcs7q",
+        "fields": [
+          {
+            "name": "glyph_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "x_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "y_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "glyph_width",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "pixel_count",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_59_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_59_metadata.json",
+        "metadata_sha256": "6927f27f6caca2e154acc0b741968f6869dcea10a14fd8eb971326a0054dccc1",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "7da8b53e04f6cffa80b7a2e93157d9fb02a877a327cbd4f57222bee037a9d1fb",
+        "source_doi": "10.24432/C5ZP40",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/59/letter+recognition",
+        "source_sha256": "9ec44e47110540d997fc2e247464a75ed3da0ad9dfcd49ded7e68fcaab04a9f7",
+        "source_uci_id": 59
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "glyph_class"
+        ],
+        "measure": [
+          "x_position"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "x_position",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "categorical",
+          "field": "glyph_class",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "x_position",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "x_position",
+        "glyph_class"
+      ],
+      "source_cluster_id": "uci:59",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "ranking",
+        "uci_id": 59
+      },
+      "source_task_id": "PCS7-Q-002",
+      "task_id": "CQLC-002",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "correlation",
+      "common_input_sha256": "f54673697626b1a19e0223abc34f463814b2330a8309cf2330d66ab49800618e",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_letter_59_pcs7q",
+        "fields": [
+          {
+            "name": "glyph_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "x_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "y_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "glyph_width",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "pixel_count",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_59_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_59_metadata.json",
+        "metadata_sha256": "6927f27f6caca2e154acc0b741968f6869dcea10a14fd8eb971326a0054dccc1",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "7da8b53e04f6cffa80b7a2e93157d9fb02a877a327cbd4f57222bee037a9d1fb",
+        "source_doi": "10.24432/C5ZP40",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/59/letter+recognition",
+        "source_sha256": "9ec44e47110540d997fc2e247464a75ed3da0ad9dfcd49ded7e68fcaab04a9f7",
+        "source_uci_id": 59
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "x_position",
+          "y_position"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "x_position",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "y_position",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "x_position",
+        "y_position"
+      ],
+      "source_cluster_id": "uci:59",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "correlation",
+        "uci_id": 59
+      },
+      "source_task_id": "PCS7-Q-003",
+      "task_id": "CQLC-003",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "distribution",
+      "common_input_sha256": "a02989f377941660f8204564a0e1f95525f7edb4e38fda4683031292a79e43bc",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_letter_59_pcs7q",
+        "fields": [
+          {
+            "name": "glyph_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "x_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "y_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "glyph_width",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "pixel_count",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_59_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_59_metadata.json",
+        "metadata_sha256": "6927f27f6caca2e154acc0b741968f6869dcea10a14fd8eb971326a0054dccc1",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "7da8b53e04f6cffa80b7a2e93157d9fb02a877a327cbd4f57222bee037a9d1fb",
+        "source_doi": "10.24432/C5ZP40",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/59/letter+recognition",
+        "source_sha256": "9ec44e47110540d997fc2e247464a75ed3da0ad9dfcd49ded7e68fcaab04a9f7",
+        "source_uci_id": 59
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "x_position"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": true,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "x_position",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "x_position",
+          "operation": "bin"
+        },
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "x_position"
+      ],
+      "source_cluster_id": "uci:59",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "distribution",
+        "uci_id": 59
+      },
+      "source_task_id": "PCS7-Q-004",
+      "task_id": "CQLC-004",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "composition",
+      "common_input_sha256": "8dfbdb5849919d63464a74e1c10f35ce8945c249d8f09a6e011c8076cdbda8ad",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_letter_59_pcs7q",
+        "fields": [
+          {
+            "name": "glyph_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "x_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "y_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "glyph_width",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "pixel_count",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_59_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_59_metadata.json",
+        "metadata_sha256": "6927f27f6caca2e154acc0b741968f6869dcea10a14fd8eb971326a0054dccc1",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "7da8b53e04f6cffa80b7a2e93157d9fb02a877a327cbd4f57222bee037a9d1fb",
+        "source_doi": "10.24432/C5ZP40",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/59/letter+recognition",
+        "source_sha256": "9ec44e47110540d997fc2e247464a75ed3da0ad9dfcd49ded7e68fcaab04a9f7",
+        "source_uci_id": 59
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "glyph_class"
+        ],
+        "measure": []
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "color",
+          "data_type": "categorical",
+          "field": "glyph_class",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "glyph_class"
+      ],
+      "source_cluster_id": "uci:59",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "composition",
+        "uci_id": 59
+      },
+      "source_task_id": "PCS7-Q-005",
+      "task_id": "CQLC-005",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "comparison",
+      "common_input_sha256": "4795ee226c0d2bcae84c0e4261569ea24bac270f9d2664e5d6d1d4ff1f42c126",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_yeast_110_pcs7q",
+        "fields": [
+          {
+            "name": "localization_site",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "protein_mcg_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "protein_gvh_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "alm_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "mit_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_110_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_110_metadata.json",
+        "metadata_sha256": "971a1a3647c64b4d25267c0d40beb41c020def6bc92eb01796e8106b70a94caf",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "5287eff00505bd6432f49f9624e3310a2d442cd4daf0bd92dc5b7003060ffc16",
+        "source_doi": "10.24432/C5KG68",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/110/yeast",
+        "source_sha256": "294c84c36ff131305fe1baaeb9c8c93f9a557d01d1ee676a77a31607ad3df516",
+        "source_uci_id": 110
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "localization_site"
+        ],
+        "measure": [
+          "protein_mcg_signal"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "categorical",
+          "field": "localization_site",
+          "time_unit": null
+        },
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "protein_mcg_signal",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "protein_mcg_signal",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "protein_mcg_signal",
+        "localization_site"
+      ],
+      "source_cluster_id": "uci:110",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "comparison",
+        "uci_id": 110
+      },
+      "source_task_id": "PCS7-Q-006",
+      "task_id": "CQLC-006",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "ranking",
+      "common_input_sha256": "29d4eeb5b710d65e7ad77d27f8038a44a50648a9988817e0bb1bdbec1610a15b",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_yeast_110_pcs7q",
+        "fields": [
+          {
+            "name": "localization_site",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "protein_mcg_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "protein_gvh_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "alm_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "mit_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_110_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_110_metadata.json",
+        "metadata_sha256": "971a1a3647c64b4d25267c0d40beb41c020def6bc92eb01796e8106b70a94caf",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "5287eff00505bd6432f49f9624e3310a2d442cd4daf0bd92dc5b7003060ffc16",
+        "source_doi": "10.24432/C5KG68",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/110/yeast",
+        "source_sha256": "294c84c36ff131305fe1baaeb9c8c93f9a557d01d1ee676a77a31607ad3df516",
+        "source_uci_id": 110
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "localization_site"
+        ],
+        "measure": [
+          "protein_mcg_signal"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "protein_mcg_signal",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "categorical",
+          "field": "localization_site",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "protein_mcg_signal",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "protein_mcg_signal",
+        "localization_site"
+      ],
+      "source_cluster_id": "uci:110",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "ranking",
+        "uci_id": 110
+      },
+      "source_task_id": "PCS7-Q-007",
+      "task_id": "CQLC-007",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "correlation",
+      "common_input_sha256": "5fd44df1002859c7e303a870e2748b6c37bf5c9ca11e495be0ce867df171abaf",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_yeast_110_pcs7q",
+        "fields": [
+          {
+            "name": "localization_site",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "protein_mcg_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "protein_gvh_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "alm_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "mit_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_110_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_110_metadata.json",
+        "metadata_sha256": "971a1a3647c64b4d25267c0d40beb41c020def6bc92eb01796e8106b70a94caf",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "5287eff00505bd6432f49f9624e3310a2d442cd4daf0bd92dc5b7003060ffc16",
+        "source_doi": "10.24432/C5KG68",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/110/yeast",
+        "source_sha256": "294c84c36ff131305fe1baaeb9c8c93f9a557d01d1ee676a77a31607ad3df516",
+        "source_uci_id": 110
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "protein_mcg_signal",
+          "protein_gvh_signal"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "protein_mcg_signal",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "protein_gvh_signal",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "protein_mcg_signal",
+        "protein_gvh_signal"
+      ],
+      "source_cluster_id": "uci:110",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "correlation",
+        "uci_id": 110
+      },
+      "source_task_id": "PCS7-Q-008",
+      "task_id": "CQLC-008",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "distribution",
+      "common_input_sha256": "7fee9f57523c7122565db87912c619c5e299dec8b22228b552c4b90ca5e180c7",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_yeast_110_pcs7q",
+        "fields": [
+          {
+            "name": "localization_site",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "protein_mcg_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "protein_gvh_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "alm_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "mit_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_110_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_110_metadata.json",
+        "metadata_sha256": "971a1a3647c64b4d25267c0d40beb41c020def6bc92eb01796e8106b70a94caf",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "5287eff00505bd6432f49f9624e3310a2d442cd4daf0bd92dc5b7003060ffc16",
+        "source_doi": "10.24432/C5KG68",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/110/yeast",
+        "source_sha256": "294c84c36ff131305fe1baaeb9c8c93f9a557d01d1ee676a77a31607ad3df516",
+        "source_uci_id": 110
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "protein_mcg_signal"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": true,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "protein_mcg_signal",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "protein_mcg_signal",
+          "operation": "bin"
+        },
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "protein_mcg_signal"
+      ],
+      "source_cluster_id": "uci:110",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "distribution",
+        "uci_id": 110
+      },
+      "source_task_id": "PCS7-Q-009",
+      "task_id": "CQLC-009",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "composition",
+      "common_input_sha256": "c1bcc4769152e365f09d80f15cc6e995913e68173373e2731a65115d7248ce45",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_yeast_110_pcs7q",
+        "fields": [
+          {
+            "name": "localization_site",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "protein_mcg_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "protein_gvh_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "alm_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "mit_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_110_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_110_metadata.json",
+        "metadata_sha256": "971a1a3647c64b4d25267c0d40beb41c020def6bc92eb01796e8106b70a94caf",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "5287eff00505bd6432f49f9624e3310a2d442cd4daf0bd92dc5b7003060ffc16",
+        "source_doi": "10.24432/C5KG68",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/110/yeast",
+        "source_sha256": "294c84c36ff131305fe1baaeb9c8c93f9a557d01d1ee676a77a31607ad3df516",
+        "source_uci_id": 110
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "localization_site"
+        ],
+        "measure": []
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "color",
+          "data_type": "categorical",
+          "field": "localization_site",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "localization_site"
+      ],
+      "source_cluster_id": "uci:110",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "composition",
+        "uci_id": 110
+      },
+      "source_task_id": "PCS7-Q-010",
+      "task_id": "CQLC-010",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "comparison",
+      "common_input_sha256": "1abd1551735bef11cfffb2357e861663634747ae9af3ad50a95cca6bda855780",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_raisin_850_pcs7q",
+        "fields": [
+          {
+            "name": "raisin_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "area_value",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "major_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "minor_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "perimeter_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_850_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_850_metadata.json",
+        "metadata_sha256": "c7f7d34bc46d888ce1499f692ffc0da0220f0c442cd90e9f0cacd773b3c88fb6",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "94d60b4a179fc69e98e89aaf1eab9398061b7eff65fa816036e9a4c8ccb209f6",
+        "source_doi": "10.24432/C5660T",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/850/raisin",
+        "source_sha256": "175ecbc52d351e0e0d9aa00605de09425b3a4826c5db294fabcbc24bcba955ab",
+        "source_uci_id": 850
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "raisin_class"
+        ],
+        "measure": [
+          "area_value"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "categorical",
+          "field": "raisin_class",
+          "time_unit": null
+        },
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "area_value",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "area_value",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "area_value",
+        "raisin_class"
+      ],
+      "source_cluster_id": "uci:850",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "comparison",
+        "uci_id": 850
+      },
+      "source_task_id": "PCS7-Q-011",
+      "task_id": "CQLC-011",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "ranking",
+      "common_input_sha256": "900172e7a88e5d92cf478a73b4b0d36fe80c42869ae3bda08a17f8801e678e7e",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_raisin_850_pcs7q",
+        "fields": [
+          {
+            "name": "raisin_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "area_value",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "major_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "minor_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "perimeter_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_850_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_850_metadata.json",
+        "metadata_sha256": "c7f7d34bc46d888ce1499f692ffc0da0220f0c442cd90e9f0cacd773b3c88fb6",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "94d60b4a179fc69e98e89aaf1eab9398061b7eff65fa816036e9a4c8ccb209f6",
+        "source_doi": "10.24432/C5660T",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/850/raisin",
+        "source_sha256": "175ecbc52d351e0e0d9aa00605de09425b3a4826c5db294fabcbc24bcba955ab",
+        "source_uci_id": 850
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "raisin_class"
+        ],
+        "measure": [
+          "area_value"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "area_value",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "categorical",
+          "field": "raisin_class",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "area_value",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "area_value",
+        "raisin_class"
+      ],
+      "source_cluster_id": "uci:850",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "ranking",
+        "uci_id": 850
+      },
+      "source_task_id": "PCS7-Q-012",
+      "task_id": "CQLC-012",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "correlation",
+      "common_input_sha256": "df8f4e5014b28439a114f3064e45770db15f137f34f36d3b23e720d9e97d0b5f",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_raisin_850_pcs7q",
+        "fields": [
+          {
+            "name": "raisin_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "area_value",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "major_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "minor_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "perimeter_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_850_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_850_metadata.json",
+        "metadata_sha256": "c7f7d34bc46d888ce1499f692ffc0da0220f0c442cd90e9f0cacd773b3c88fb6",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "94d60b4a179fc69e98e89aaf1eab9398061b7eff65fa816036e9a4c8ccb209f6",
+        "source_doi": "10.24432/C5660T",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/850/raisin",
+        "source_sha256": "175ecbc52d351e0e0d9aa00605de09425b3a4826c5db294fabcbc24bcba955ab",
+        "source_uci_id": 850
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "area_value",
+          "major_axis_length"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "area_value",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "major_axis_length",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "area_value",
+        "major_axis_length"
+      ],
+      "source_cluster_id": "uci:850",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "correlation",
+        "uci_id": 850
+      },
+      "source_task_id": "PCS7-Q-013",
+      "task_id": "CQLC-013",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "distribution",
+      "common_input_sha256": "e143fd66501addb8a356cb95d0552eaabfb69c85c9551c0a989f6c6899cccc26",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_raisin_850_pcs7q",
+        "fields": [
+          {
+            "name": "raisin_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "area_value",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "major_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "minor_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "perimeter_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_850_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_850_metadata.json",
+        "metadata_sha256": "c7f7d34bc46d888ce1499f692ffc0da0220f0c442cd90e9f0cacd773b3c88fb6",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "94d60b4a179fc69e98e89aaf1eab9398061b7eff65fa816036e9a4c8ccb209f6",
+        "source_doi": "10.24432/C5660T",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/850/raisin",
+        "source_sha256": "175ecbc52d351e0e0d9aa00605de09425b3a4826c5db294fabcbc24bcba955ab",
+        "source_uci_id": 850
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "area_value"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": true,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "area_value",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "area_value",
+          "operation": "bin"
+        },
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "area_value"
+      ],
+      "source_cluster_id": "uci:850",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "distribution",
+        "uci_id": 850
+      },
+      "source_task_id": "PCS7-Q-014",
+      "task_id": "CQLC-014",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "composition",
+      "common_input_sha256": "5ea8f4734a8371fbcaae151cff971d92b35fe6a5424fc4ec3e04e7e32ec219e7",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_raisin_850_pcs7q",
+        "fields": [
+          {
+            "name": "raisin_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "area_value",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "major_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "minor_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "perimeter_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_850_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_850_metadata.json",
+        "metadata_sha256": "c7f7d34bc46d888ce1499f692ffc0da0220f0c442cd90e9f0cacd773b3c88fb6",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "94d60b4a179fc69e98e89aaf1eab9398061b7eff65fa816036e9a4c8ccb209f6",
+        "source_doi": "10.24432/C5660T",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/850/raisin",
+        "source_sha256": "175ecbc52d351e0e0d9aa00605de09425b3a4826c5db294fabcbc24bcba955ab",
+        "source_uci_id": 850
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "raisin_class"
+        ],
+        "measure": []
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "color",
+          "data_type": "categorical",
+          "field": "raisin_class",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "raisin_class"
+      ],
+      "source_cluster_id": "uci:850",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "composition",
+        "uci_id": 850
+      },
+      "source_task_id": "PCS7-Q-015",
+      "task_id": "CQLC-015",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "comparison",
+      "common_input_sha256": "33a075319435af0e56514e424339596af79d574d2ce3ccaefd0d8cb1ca2b8560",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_cirrhosis_878_pcs7q",
+        "fields": [
+          {
+            "name": "treatment_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "bilirubin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "albumin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "cholesterol_level",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "survival_days",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_878_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_878_metadata.json",
+        "metadata_sha256": "65e8909db86c8490c60fede7aa38d879a87173008b23b893b2a19b48ce17f6a8",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 418,
+        "selection_seed": 202607319,
+        "sha256": "658f9ad9b320e13c211b48bacaa65dbdc2d9990f7c62aadcf7dae48c6ed00259",
+        "source_doi": "10.24432/C5R02G",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1",
+        "source_sha256": "539c167d30de2dc84d23376712b7f96b4ebb77d76f375574d02d2c51b76861cf",
+        "source_uci_id": 878
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "treatment_group"
+        ],
+        "measure": [
+          "bilirubin_level"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "categorical",
+          "field": "treatment_group",
+          "time_unit": null
+        },
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "bilirubin_level",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "bilirubin_level",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "bilirubin_level",
+        "treatment_group"
+      ],
+      "source_cluster_id": "uci:878",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "comparison",
+        "uci_id": 878
+      },
+      "source_task_id": "PCS7-Q-016",
+      "task_id": "CQLC-016",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "ranking",
+      "common_input_sha256": "e8ab564a38f622fc4e336d5adffbd5f7c44dff0dd6ace6c79147419f327285cd",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_cirrhosis_878_pcs7q",
+        "fields": [
+          {
+            "name": "treatment_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "bilirubin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "albumin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "cholesterol_level",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "survival_days",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_878_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_878_metadata.json",
+        "metadata_sha256": "65e8909db86c8490c60fede7aa38d879a87173008b23b893b2a19b48ce17f6a8",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 418,
+        "selection_seed": 202607319,
+        "sha256": "658f9ad9b320e13c211b48bacaa65dbdc2d9990f7c62aadcf7dae48c6ed00259",
+        "source_doi": "10.24432/C5R02G",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1",
+        "source_sha256": "539c167d30de2dc84d23376712b7f96b4ebb77d76f375574d02d2c51b76861cf",
+        "source_uci_id": 878
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "treatment_group"
+        ],
+        "measure": [
+          "bilirubin_level"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "bilirubin_level",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "categorical",
+          "field": "treatment_group",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "bilirubin_level",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "bilirubin_level",
+        "treatment_group"
+      ],
+      "source_cluster_id": "uci:878",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "ranking",
+        "uci_id": 878
+      },
+      "source_task_id": "PCS7-Q-017",
+      "task_id": "CQLC-017",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "correlation",
+      "common_input_sha256": "752ce1e2cb7cad080e6eb8cdf933f02129c8bfd79088d8b0d9951db12642d2cd",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_cirrhosis_878_pcs7q",
+        "fields": [
+          {
+            "name": "treatment_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "bilirubin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "albumin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "cholesterol_level",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "survival_days",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_878_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_878_metadata.json",
+        "metadata_sha256": "65e8909db86c8490c60fede7aa38d879a87173008b23b893b2a19b48ce17f6a8",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 418,
+        "selection_seed": 202607319,
+        "sha256": "658f9ad9b320e13c211b48bacaa65dbdc2d9990f7c62aadcf7dae48c6ed00259",
+        "source_doi": "10.24432/C5R02G",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1",
+        "source_sha256": "539c167d30de2dc84d23376712b7f96b4ebb77d76f375574d02d2c51b76861cf",
+        "source_uci_id": 878
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "bilirubin_level",
+          "albumin_level"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "bilirubin_level",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "albumin_level",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "bilirubin_level",
+        "albumin_level"
+      ],
+      "source_cluster_id": "uci:878",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "correlation",
+        "uci_id": 878
+      },
+      "source_task_id": "PCS7-Q-018",
+      "task_id": "CQLC-018",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "distribution",
+      "common_input_sha256": "5418b6cc807ea5dff248c50608fc7a3e26181cb579be09a2285ff616de52d5df",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_cirrhosis_878_pcs7q",
+        "fields": [
+          {
+            "name": "treatment_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "bilirubin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "albumin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "cholesterol_level",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "survival_days",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_878_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_878_metadata.json",
+        "metadata_sha256": "65e8909db86c8490c60fede7aa38d879a87173008b23b893b2a19b48ce17f6a8",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 418,
+        "selection_seed": 202607319,
+        "sha256": "658f9ad9b320e13c211b48bacaa65dbdc2d9990f7c62aadcf7dae48c6ed00259",
+        "source_doi": "10.24432/C5R02G",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1",
+        "source_sha256": "539c167d30de2dc84d23376712b7f96b4ebb77d76f375574d02d2c51b76861cf",
+        "source_uci_id": 878
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "bilirubin_level"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": true,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "bilirubin_level",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "bilirubin_level",
+          "operation": "bin"
+        },
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "bilirubin_level"
+      ],
+      "source_cluster_id": "uci:878",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "distribution",
+        "uci_id": 878
+      },
+      "source_task_id": "PCS7-Q-019",
+      "task_id": "CQLC-019",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "composition",
+      "common_input_sha256": "7721c11c12300607bbc6cde0a1ba55d5256bcd3734d57f0dd0157669882c0359",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_cirrhosis_878_pcs7q",
+        "fields": [
+          {
+            "name": "treatment_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "bilirubin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "albumin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "cholesterol_level",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "survival_days",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_878_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_878_metadata.json",
+        "metadata_sha256": "65e8909db86c8490c60fede7aa38d879a87173008b23b893b2a19b48ce17f6a8",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 418,
+        "selection_seed": 202607319,
+        "sha256": "658f9ad9b320e13c211b48bacaa65dbdc2d9990f7c62aadcf7dae48c6ed00259",
+        "source_doi": "10.24432/C5R02G",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1",
+        "source_sha256": "539c167d30de2dc84d23376712b7f96b4ebb77d76f375574d02d2c51b76861cf",
+        "source_uci_id": 878
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "treatment_group"
+        ],
+        "measure": []
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "color",
+          "data_type": "categorical",
+          "field": "treatment_group",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "treatment_group"
+      ],
+      "source_cluster_id": "uci:878",
+      "source_partition": "qualification",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "composition",
+        "uci_id": 878
+      },
+      "source_task_id": "PCS7-Q-020",
+      "task_id": "CQLC-020",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "comparison",
+      "common_input_sha256": "212129ad16dd8547e6ccadfb65270832ff0acd1091d84d07290bcc7eac74639a",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "sex_group"
+        ],
+        "measure": [
+          "motor_updrs"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "categorical",
+          "field": "sex_group",
+          "time_unit": null
+        },
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "motor_updrs",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "motor_updrs",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "motor_updrs",
+        "sex_group"
+      ],
+      "source_cluster_id": "uci:189",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "comparison",
+        "uci_id": 189
+      },
+      "source_task_id": "PCS7-F-001",
+      "task_id": "CQLC-021",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "ranking",
+      "common_input_sha256": "10ff1a69d5dc8d8edea7216ef05382563947644973e21e4fef13e7febe60c01d",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "sex_group"
+        ],
+        "measure": [
+          "motor_updrs"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "motor_updrs",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "categorical",
+          "field": "sex_group",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "motor_updrs",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "motor_updrs",
+        "sex_group"
+      ],
+      "source_cluster_id": "uci:189",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "ranking",
+        "uci_id": 189
+      },
+      "source_task_id": "PCS7-F-003",
+      "task_id": "CQLC-022",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "correlation",
+      "common_input_sha256": "8c75cf5e99457be0af5c23c9e42a1c9806a6c8a2c108f457502427046b60d25b",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "motor_updrs",
+          "total_updrs"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "motor_updrs",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "total_updrs",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "motor_updrs",
+        "total_updrs"
+      ],
+      "source_cluster_id": "uci:189",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "correlation",
+        "uci_id": 189
+      },
+      "source_task_id": "PCS7-F-005",
+      "task_id": "CQLC-023",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "distribution",
+      "common_input_sha256": "69dad7b2eb877fb53cc980fd0c4d10ddd310b6a42ca5698a7ccaab496c2c4420",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "motor_updrs"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": true,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "motor_updrs",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "motor_updrs",
+          "operation": "bin"
+        },
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "motor_updrs"
+      ],
+      "source_cluster_id": "uci:189",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "distribution",
+        "uci_id": 189
+      },
+      "source_task_id": "PCS7-F-007",
+      "task_id": "CQLC-024",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "composition",
+      "common_input_sha256": "9ff7b9d978b1905d47fd104c21b497a193e4afc19ecb0ddf1654cca35abaadd3",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "sex_group"
+        ],
+        "measure": []
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "color",
+          "data_type": "categorical",
+          "field": "sex_group",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "sex_group"
+      ],
+      "source_cluster_id": "uci:189",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "composition",
+        "uci_id": 189
+      },
+      "source_task_id": "PCS7-F-009",
+      "task_id": "CQLC-025",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "comparison",
+      "common_input_sha256": "87e0c0d0aa559b54515baa0a507229cd8bb09d59869062039b7fd4a5e1faff9c",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "occupancy_class"
+        ],
+        "measure": [
+          "sensor_1_temperature"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "categorical",
+          "field": "occupancy_class",
+          "time_unit": null
+        },
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "sensor_1_temperature",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "sensor_1_temperature",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "sensor_1_temperature",
+        "occupancy_class"
+      ],
+      "source_cluster_id": "uci:864",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "comparison",
+        "uci_id": 864
+      },
+      "source_task_id": "PCS7-F-011",
+      "task_id": "CQLC-026",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "ranking",
+      "common_input_sha256": "23218c449eac2ffcac77227e0e506a40c48c8ff286f8cc4a3eb5d7c4be04d86e",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "occupancy_class"
+        ],
+        "measure": [
+          "sensor_1_temperature"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "sensor_1_temperature",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "categorical",
+          "field": "occupancy_class",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "sensor_1_temperature",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "sensor_1_temperature",
+        "occupancy_class"
+      ],
+      "source_cluster_id": "uci:864",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "ranking",
+        "uci_id": 864
+      },
+      "source_task_id": "PCS7-F-013",
+      "task_id": "CQLC-027",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "correlation",
+      "common_input_sha256": "49aa7d3bc2226bcbb136d6941a6e5f9869b0608318c31fd987a24ea7fa4fb6e8",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "sensor_1_temperature",
+          "sensor_1_light"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "sensor_1_temperature",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "sensor_1_light",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "sensor_1_temperature",
+        "sensor_1_light"
+      ],
+      "source_cluster_id": "uci:864",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "correlation",
+        "uci_id": 864
+      },
+      "source_task_id": "PCS7-F-015",
+      "task_id": "CQLC-028",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "distribution",
+      "common_input_sha256": "744cb1abe9b490c7ace2cef73935b4441445331ecfc9024f9556ad2e94966be7",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "sensor_1_temperature"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": true,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "sensor_1_temperature",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "sensor_1_temperature",
+          "operation": "bin"
+        },
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "sensor_1_temperature"
+      ],
+      "source_cluster_id": "uci:864",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "distribution",
+        "uci_id": 864
+      },
+      "source_task_id": "PCS7-F-017",
+      "task_id": "CQLC-029",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "composition",
+      "common_input_sha256": "c724703f63e223402437008585b23e0986d3ee4e1facf03b94dbf9d81f230a27",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "occupancy_class"
+        ],
+        "measure": []
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "color",
+          "data_type": "categorical",
+          "field": "occupancy_class",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "occupancy_class"
+      ],
+      "source_cluster_id": "uci:864",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "composition",
+        "uci_id": 864
+      },
+      "source_task_id": "PCS7-F-019",
+      "task_id": "CQLC-030",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "comparison",
+      "common_input_sha256": "985743d916348395c273aea5f5738f7f1c7db1a40998ba4f0b9553ee69217878",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "age_group"
+        ],
+        "measure": [
+          "body_mass_index"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "categorical",
+          "field": "age_group",
+          "time_unit": null
+        },
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "body_mass_index",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "body_mass_index",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "body_mass_index",
+        "age_group"
+      ],
+      "source_cluster_id": "uci:887",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "comparison",
+        "uci_id": 887
+      },
+      "source_task_id": "PCS7-F-021",
+      "task_id": "CQLC-031",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "ranking",
+      "common_input_sha256": "72e4862314e76d3b21899e7aed1bf1d849a2f62fae139318167b9a7eaed5dc2d",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "age_group"
+        ],
+        "measure": [
+          "body_mass_index"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": "mean",
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "body_mass_index",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "categorical",
+          "field": "age_group",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "body_mass_index",
+          "operation": "aggregate",
+          "operator": "mean"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "body_mass_index",
+        "age_group"
+      ],
+      "source_cluster_id": "uci:887",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "ranking",
+        "uci_id": 887
+      },
+      "source_task_id": "PCS7-F-023",
+      "task_id": "CQLC-032",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "correlation",
+      "common_input_sha256": "e27eb730eb61d86d1f509f2b4a6c5095019a291839cab00343309b788f03c4cf",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "body_mass_index",
+          "blood_glucose"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "body_mass_index",
+          "time_unit": null
+        },
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "y",
+          "data_type": "quantitative",
+          "field": "blood_glucose",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "body_mass_index",
+        "blood_glucose"
+      ],
+      "source_cluster_id": "uci:887",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "correlation",
+        "uci_id": 887
+      },
+      "source_task_id": "PCS7-F-025",
+      "task_id": "CQLC-033",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "distribution",
+      "common_input_sha256": "32b1aec718b833fec9f1a5d67b122c199b2c32f0107df1f731c5832d7e6949b0",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [],
+        "measure": [
+          "body_mass_index"
+        ]
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": true,
+          "channel": "x",
+          "data_type": "quantitative",
+          "field": "body_mass_index",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "field": "body_mass_index",
+          "operation": "bin"
+        },
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "body_mass_index"
+      ],
+      "source_cluster_id": "uci:887",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "distribution",
+        "uci_id": 887
+      },
+      "source_task_id": "PCS7-F-027",
+      "task_id": "CQLC-034",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    },
+    {
+      "acceptable_set_supplied": false,
+      "analytical_task": "composition",
+      "common_input_sha256": "bb7035fcf01f140aaa18235ff9d5d7bd57b3190c36bee86d8fb2a20d61942e8c",
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "expected_mark_supplied": false,
+      "field_roles": {
+        "dimension": [
+          "age_group"
+        ],
+        "measure": []
+      },
+      "fixed_encodings": [
+        {
+          "aggregate": null,
+          "bin": null,
+          "channel": "color",
+          "data_type": "categorical",
+          "field": "age_group",
+          "time_unit": null
+        }
+      ],
+      "mode": "conformance_only",
+      "raw_natural_language_supplied": false,
+      "required_transforms": [
+        {
+          "operation": "aggregate",
+          "operator": "count"
+        }
+      ],
+      "schema_version": "skillvis-compassql-common-input-v1.0.0",
+      "selected_fields": [
+        "age_group"
+      ],
+      "source_cluster_id": "uci:887",
+      "source_partition": "formal",
+      "source_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "composition",
+        "uci_id": 887
+      },
+      "source_task_id": "PCS7-F-029",
+      "task_id": "CQLC-035",
+      "top_k": 5,
+      "unspecified_slots": [
+        "mark"
+      ]
+    }
+  ]
+}

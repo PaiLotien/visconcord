@@ -1,0 +1,132 @@
+{
+  "candidate_count_distribution": {
+    "1": 20
+  },
+  "core": {
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1.0,
+    "chart_hit_at_1": 1.0,
+    "chart_hit_at_3": 1.0,
+    "coverage": 1.0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "false_abstention": 0.0,
+    "field_f1": 1.0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "plan_success_at_1": 1.0,
+    "plan_success_at_3": 1.0,
+    "task_f1": 1.0,
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0
+  },
+  "core_by_source_arm": {
+    "uci_external_controlled_common_scope": {
+      "acceptable_candidate_precision_at_3": 1.0,
+      "acceptable_candidate_recall_at_3": 1.0,
+      "chart_hit_at_1": 1.0,
+      "chart_hit_at_3": 1.0,
+      "coverage": 1.0,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "false_abstention": 0.0,
+      "field_f1": 1.0,
+      "field_precision": 1.0,
+      "field_recall": 1.0,
+      "n": 20,
+      "plan_success_at_1": 1.0,
+      "plan_success_at_3": 1.0,
+      "task_f1": 1.0,
+      "task_precision": 1.0,
+      "task_recall": 1.0,
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    }
+  },
+  "core_raw_counts": {
+    "covered": 20,
+    "false_abstentions": 0,
+    "plan_success_at_1": 20,
+    "plan_success_at_3": 20
+  },
+  "field_micro": {
+    "f1": 1.0,
+    "fn": 0,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 32
+  },
+  "n": 20,
+  "n_core": 20,
+  "n_safety": 0,
+  "reliability": {
+    "adapter_warnings": 0,
+    "duplicate_candidates": 0,
+    "failure_rate": 0.0,
+    "invalid_rate": 0.0,
+    "provenance_completeness": 1.0,
+    "trace_completeness": 1.0
+  },
+  "resources_all_first_runs": {
+    "completion_tokens": {
+      "mean": 0.0,
+      "median": 0.0,
+      "n": 20
+    },
+    "cpu_time_ms": {
+      "mean": 84.89205000000001,
+      "median": 84.39500000000002,
+      "n": 20
+    },
+    "invocation_wall_ms": {
+      "mean": 85.70253739890177,
+      "median": 85.31327050877735,
+      "n": 20
+    },
+    "llm_calls": {
+      "mean": 0.0,
+      "median": 0.0,
+      "n": 20
+    },
+    "monetary_cost": {
+      "mean": 0.0,
+      "median": 0.0,
+      "n": 20
+    },
+    "peak_rss_mb": {
+      "mean": 117.203125,
+      "median": 117.234375,
+      "n": 20
+    },
+    "prompt_tokens": {
+      "mean": 0.0,
+      "median": 0.0,
+      "n": 20
+    },
+    "subprocess_wall_ms": {
+      "mean": 420.19752709311433,
+      "median": 411.83683299459517,
+      "n": 20
+    }
+  },
+  "safety": {
+    "correct_behavioral_abstention_count": 0,
+    "correct_behavioral_abstention_rate": null,
+    "explanation_accuracy": null,
+    "false_safe_count": 0,
+    "false_safe_rate": null,
+    "unsafe_recommendation_rate": null
+  },
+  "system_name": "SkillVIS_V2_JOINT",
+  "task_micro": {
+    "f1": 1.0,
+    "fn": 0,
+    "fp": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 20
+  }
+}

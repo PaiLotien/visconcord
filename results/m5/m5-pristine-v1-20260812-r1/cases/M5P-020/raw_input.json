@@ -1,0 +1,545 @@
+{
+  "case_id": "M5P-020",
+  "context": {
+    "candidate_set_id": "candidate-set-M5P-020",
+    "candidate_set_signature": "0b9c685d3d6f3ddeb392c7c1b948943b2e4e33df535d607b0ed392ddba308576",
+    "candidates": [
+      {
+        "aggregation": null,
+        "ambiguity_state": "NONE",
+        "applied_rule_ids": [
+          "R-M5P-CANDIDATE"
+        ],
+        "audit_only": false,
+        "candidate_id": "M5P-020-C1-0380374ef8",
+        "chart_compatibility_assumptions": [
+          "context-aware validation uses frozen SchemaProfile"
+        ],
+        "chart_type": "line",
+        "deterministic_signature": "0380374ef889b003bc7b8a07a8006aadcba9e169701c7f7cbff1c388a2154b7e",
+        "encodings": [
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "x",
+            "field": "Isotope Epoch 1020",
+            "semantic_type": "temporal",
+            "sort": null,
+            "time_unit": null
+          },
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "y",
+            "field": "Isotope Flux 1020",
+            "semantic_type": "quantitative",
+            "sort": null,
+            "time_unit": null
+          }
+        ],
+        "evidence_spans": [
+          {
+            "end": 69,
+            "kind": "m5_pristine_authoring",
+            "normalized": "trace isotope flux 1020 across isotope epoch 1020 for study unit 1020",
+            "rule_ids": [
+              "R-M5P-SEED"
+            ],
+            "start": 0,
+            "text": "Trace Isotope Flux 1020 across Isotope Epoch 1020 for study unit 1020"
+          }
+        ],
+        "executable": true,
+        "field_role_alignment": {
+          "measure": [
+            "Isotope Flux 1020"
+          ],
+          "temporal": [
+            "Isotope Epoch 1020"
+          ]
+        },
+        "fields": {
+          "color": [],
+          "dimension": [],
+          "facet": [],
+          "grouping": [],
+          "measure": [
+            "Isotope Flux 1020"
+          ],
+          "size": [],
+          "temporal": [
+            "Isotope Epoch 1020"
+          ]
+        },
+        "filters": [],
+        "grouping": [],
+        "limit": null,
+        "mark_type": "line",
+        "rank": 1,
+        "rationale": "Source-isolated M5 component blind candidate.",
+        "rejection_reasons": [],
+        "schema_version": "skillvis-v2-visualization-candidate-v1.0.0",
+        "score_components": {
+          "ambiguity_penalty": 0.0,
+          "chart_effectiveness_score": 0.85,
+          "complexity_penalty": 0.1,
+          "deterministic_tie_breaker": 0.5,
+          "field_role_fit_score": 0.9,
+          "missing_role_penalty": 0.0,
+          "provenance_strength_score": 1.0,
+          "rule_ids": {
+            "ambiguity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "chart_effectiveness_score": [
+              "R-M5P-SCORE"
+            ],
+            "complexity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "deterministic_tie_breaker": [
+              "R-M5P-SCORE"
+            ],
+            "field_role_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "missing_role_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "provenance_strength_score": [
+              "R-M5P-SCORE"
+            ],
+            "task_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "type_compatibility_score": [
+              "R-M5P-SCORE"
+            ],
+            "unsupported_feature_penalty": [
+              "R-M5P-SCORE"
+            ]
+          },
+          "task_fit_score": 0.9,
+          "type_compatibility_score": 0.9,
+          "unsupported_feature_penalty": 0.0
+        },
+        "sort": null,
+        "source_ids": [
+          "M5-PRISTINE-AUTHORING"
+        ],
+        "task_alignment": "trend",
+        "total_score": 0.86,
+        "transforms": [],
+        "unsupported_features": [],
+        "warnings": []
+      }
+    ],
+    "capability": {
+      "abstention_required": false,
+      "explanation": "The declared analytical visualization task is supported.",
+      "provenance": [
+        "R-M5P-CAPABILITY"
+      ],
+      "risk_level": "low",
+      "supported_operations": [
+        "trend"
+      ],
+      "unsupported_operations": []
+    },
+    "context_id": "context-M5P-020",
+    "intent": {
+      "abstention_reason": null,
+      "abstention_state": {
+        "abstained": false,
+        "reason": null,
+        "stage": null
+      },
+      "aggregation": null,
+      "ambiguity": [],
+      "ambiguity_state": {
+        "affected_fields": [],
+        "affected_tasks": [],
+        "confidence": 1.0,
+        "evidence_spans": [],
+        "explanation": "No material ambiguity.",
+        "resolution_strategy": "proceed",
+        "state": "NONE",
+        "triggering_rules": []
+      },
+      "capability_assessment": {
+        "abstention_required": false,
+        "explanation": "The declared analytical visualization task is supported.",
+        "provenance": [
+          "R-M5P-CAPABILITY"
+        ],
+        "risk_level": "low",
+        "supported_operations": [
+          "trend"
+        ],
+        "unsupported_operations": []
+      },
+      "chart_mentions": [],
+      "config_version": "m5-blind-context-v1",
+      "dataset_id": "m5-blind-dataset-1020",
+      "deterministic_id": "m5-blind-intent-1020",
+      "dimensions": [],
+      "evidence_spans": [
+        {
+          "end": 69,
+          "kind": "m5_pristine_authoring",
+          "normalized": "trace isotope flux 1020 across isotope epoch 1020 for study unit 1020",
+          "rule_ids": [
+            "R-M5P-SEED"
+          ],
+          "start": 0,
+          "text": "Trace Isotope Flux 1020 across Isotope Epoch 1020 for study unit 1020"
+        }
+      ],
+      "field_candidates": [],
+      "filters": [],
+      "grouping_fields": [],
+      "limit": null,
+      "measures": [
+        {
+          "candidate_rank": 1,
+          "evidence": [
+            {
+              "evidence_type": "m5_pristine_context",
+              "query_span": {
+                "end": 69,
+                "kind": "m5_pristine_authoring",
+                "normalized": "trace isotope flux 1020 across isotope epoch 1020 for study unit 1020",
+                "rule_ids": [
+                  "R-M5P-SEED"
+                ],
+                "start": 0,
+                "text": "Trace Isotope Flux 1020 across Isotope Epoch 1020 for study unit 1020"
+              },
+              "rule_id": "R-M5P-SEED",
+              "source_ids": [
+                "M5-PRISTINE-AUTHORING"
+              ],
+              "value": "Isotope Flux 1020"
+            }
+          ],
+          "field_name": "Isotope Flux 1020",
+          "role": "measure",
+          "rule_ids": [
+            "R-M5P-INTENT"
+          ],
+          "score": 1.0
+        }
+      ],
+      "normalized_query": "trace isotope flux 1020 across isotope epoch 1020 for study unit 1020",
+      "primary_task": "trend",
+      "provenance": [
+        {
+          "conflict_policy": "Frozen annotation controls; no result feedback.",
+          "failure_condition": "Context fields or obligations are incomplete.",
+          "inputs": [
+            "schema_profile"
+          ],
+          "outputs": [
+            "intent_ir"
+          ],
+          "priority": 1,
+          "rationale": "Bind typed roles and obligations without query reparsing.",
+          "rule_id": "R-M5P-INTENT",
+          "scope": "frozen blind context",
+          "source_ids": [
+            "SV2-PROTOCOL"
+          ],
+          "stage": "intent_assembly",
+          "trace_fields": [
+            "fields",
+            "task",
+            "transforms"
+          ]
+        },
+        {
+          "conflict_policy": "Unsupported operation requires abstention.",
+          "failure_condition": "Capability and IntentIR disagree.",
+          "inputs": [
+            "intent_ir"
+          ],
+          "outputs": [
+            "capability_assessment"
+          ],
+          "priority": 2,
+          "rationale": "Bind supported or unsupported operations.",
+          "rule_id": "R-M5P-CAPABILITY",
+          "scope": "frozen blind capability context",
+          "source_ids": [
+            "SV2-PROTOCOL"
+          ],
+          "stage": "semantic_safety",
+          "trace_fields": [
+            "unsupported_operations",
+            "abstention_required"
+          ]
+        }
+      ],
+      "query": "Trace Isotope Flux 1020 across Isotope Epoch 1020 for study unit 1020",
+      "registry_hash": "9bb8031a12d573377de0ca018bb3be590794606adacd559ec03a73de981d9509",
+      "safety_warnings": [],
+      "schema_version": "skillvis-v2-intent-ir-v0.2.0",
+      "sort": null,
+      "task_candidates": [
+        {
+          "evidence_spans": [
+            {
+              "end": 69,
+              "kind": "m5_pristine_authoring",
+              "normalized": "trace isotope flux 1020 across isotope epoch 1020 for study unit 1020",
+              "rule_ids": [
+                "R-M5P-SEED"
+              ],
+              "start": 0,
+              "text": "Trace Isotope Flux 1020 across Isotope Epoch 1020 for study unit 1020"
+            }
+          ],
+          "required_roles": [
+            "measure"
+          ],
+          "rule_ids": [
+            "R-M5P-TASK"
+          ],
+          "score": 1.0,
+          "score_components": {
+            "frozen_authoring": 1.0
+          },
+          "task": "trend"
+        }
+      ],
+      "temporal_fields": [
+        {
+          "candidate_rank": 1,
+          "evidence": [
+            {
+              "evidence_type": "m5_pristine_context",
+              "query_span": {
+                "end": 69,
+                "kind": "m5_pristine_authoring",
+                "normalized": "trace isotope flux 1020 across isotope epoch 1020 for study unit 1020",
+                "rule_ids": [
+                  "R-M5P-SEED"
+                ],
+                "start": 0,
+                "text": "Trace Isotope Flux 1020 across Isotope Epoch 1020 for study unit 1020"
+              },
+              "rule_id": "R-M5P-SEED",
+              "source_ids": [
+                "M5-PRISTINE-AUTHORING"
+              ],
+              "value": "Isotope Epoch 1020"
+            }
+          ],
+          "field_name": "Isotope Epoch 1020",
+          "role": "temporal",
+          "rule_ids": [
+            "R-M5P-INTENT"
+          ],
+          "score": 1.0
+        }
+      ],
+      "unresolved_mentions": [],
+      "unsupported_scope": [],
+      "warnings": []
+    },
+    "schema": {
+      "applied_rule_ids": [
+        "R-M5P-SCHEMA"
+      ],
+      "data_access_policy": "frozen_schema_profile_only_no_raw_query_reparse",
+      "dataset_id": "m5-blind-dataset-1020",
+      "failure_state": null,
+      "fields": [
+        {
+          "aliases": [],
+          "cardinality": 12,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Isotope Flux 1020",
+          "normalized_name": "isotope flux 1020",
+          "null_rate": 0.0,
+          "numeric_summary": {
+            "count": 12,
+            "maximum": 12.0,
+            "mean": 6.0,
+            "median": 6.0,
+            "minimum": 1.0,
+            "standard_deviation": 1.0
+          },
+          "physical_type": "float64",
+          "role_candidates": [
+            "measure"
+          ],
+          "sample_values": [
+            1.0,
+            2.0
+          ],
+          "semantic_type": "quantitative",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 12,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Isotope Gradient 1020",
+          "normalized_name": "isotope gradient 1020",
+          "null_rate": 0.0,
+          "numeric_summary": {
+            "count": 12,
+            "maximum": 12.0,
+            "mean": 6.0,
+            "median": 6.0,
+            "minimum": 1.0,
+            "standard_deviation": 1.0
+          },
+          "physical_type": "float64",
+          "role_candidates": [
+            "measure"
+          ],
+          "sample_values": [
+            1.0,
+            2.0
+          ],
+          "semantic_type": "quantitative",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 12,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Isotope Intensity 1020",
+          "normalized_name": "isotope intensity 1020",
+          "null_rate": 0.0,
+          "numeric_summary": {
+            "count": 12,
+            "maximum": 12.0,
+            "mean": 6.0,
+            "median": 6.0,
+            "minimum": 1.0,
+            "standard_deviation": 1.0
+          },
+          "physical_type": "float64",
+          "role_candidates": [
+            "measure"
+          ],
+          "sample_values": [
+            1.0,
+            2.0
+          ],
+          "semantic_type": "quantitative",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 12,
+          "categorical_summary": {
+            "top_values": [],
+            "unique_count": 12
+          },
+          "confidence": 1.0,
+          "field_name": "Isotope Zone 1020",
+          "normalized_name": "isotope zone 1020",
+          "null_rate": 0.0,
+          "numeric_summary": null,
+          "physical_type": "string",
+          "role_candidates": [
+            "dimension",
+            "grouping"
+          ],
+          "sample_values": [
+            "Isotope Zone 1020 A",
+            "Isotope Zone 1020 B"
+          ],
+          "semantic_type": "categorical",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 12,
+          "categorical_summary": {
+            "top_values": [],
+            "unique_count": 12
+          },
+          "confidence": 1.0,
+          "field_name": "Isotope Cohort 1020",
+          "normalized_name": "isotope cohort 1020",
+          "null_rate": 0.0,
+          "numeric_summary": null,
+          "physical_type": "string",
+          "role_candidates": [
+            "dimension",
+            "grouping"
+          ],
+          "sample_values": [
+            "Isotope Cohort 1020 A",
+            "Isotope Cohort 1020 B"
+          ],
+          "semantic_type": "categorical",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 12,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Isotope Epoch 1020",
+          "normalized_name": "isotope epoch 1020",
+          "null_rate": 0.0,
+          "numeric_summary": null,
+          "physical_type": "datetime64",
+          "role_candidates": [
+            "temporal",
+            "dimension"
+          ],
+          "sample_values": [
+            "2025-01-01",
+            "2025-02-01"
+          ],
+          "semantic_type": "temporal",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": {
+            "maximum": "2025-12-31",
+            "minimum": "2025-01-01",
+            "parse_ratio": 1.0,
+            "timezone_observed": false
+          },
+          "warnings": []
+        }
+      ],
+      "row_count": 12,
+      "schema_version": "skillvis-v2-schema-profile-v0.1.0",
+      "warnings": []
+    },
+    "schema_version": "skillvis-v2-m5-candidate-set-context-v1.0.0",
+    "source_id": "M5-PRISTINE-SYNTHETIC:masked-family"
+  },
+  "gold_included": false
+}

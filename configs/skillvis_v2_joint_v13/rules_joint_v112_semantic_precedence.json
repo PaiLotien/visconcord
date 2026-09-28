@@ -1,0 +1,30 @@
+{
+  "schema_version": "skillvis-v2-joint-v112-semantic-precedence-registry-v1.0.0",
+  "status": "development_only_not_protocol_frozen",
+  "rules": [
+    {
+      "rule_id": "R-FR-140",
+      "module": "explicit_set_noun_grouping_role",
+      "source_ids": ["AMAR2005", "BREHMER_MUNZNER2013", "NL4DV2020", "MACKINLAY1986"],
+      "scope": "bind an explicitly grounded physically numeric field as a grouping dimension when an immediately following levels, tiers, strata, or buckets noun denotes the field's value set and the field is not an aggregate target",
+      "rationale": "A field's analytical role is query-dependent: explicit set discourse denotes grouping over distinct values even when the storage type is numeric.",
+      "priority": 77,
+      "failure_condition": "Comparing mean response between numeric category levels is reduced to a two-measure correlation or safe abstention.",
+      "conflict_policy": "Requires strong field grounding and an adjacent plural set noun; aggregate-target fields, standalone level-named measures, and unmarked dual-quantitative relations are preserved.",
+      "trace_fields": ["field_name", "grounding_span", "set_noun_span", "physical_type", "aggregate_target", "decision"],
+      "unit_tests": ["test_set_noun_closes_numeric_grouping_role", "test_level_named_measure_correlation_is_preserved", "test_aggregate_target_is_not_converted"]
+    },
+    {
+      "rule_id": "R-TP-140",
+      "module": "ordering_direction_aggregation_precedence",
+      "source_ids": ["AMAR2005", "BREHMER_MUNZNER2013", "COMPASSQL2016", "VEGALITE2017"],
+      "scope": "treat highest-to-lowest, lowest-to-highest, largest-first, smallest-first, ascending, and descending language as ordering direction when a ranking relation already contains one explicit aggregate score operation",
+      "rationale": "Ranking direction and score aggregation are orthogonal transforms. An explicit mean, median, sum, min, or max defines the score; direction language orders those scores and must not invent a second aggregate.",
+      "priority": 88,
+      "failure_condition": "Rank groups by average score from highest to lowest emits both mean and max, leaving no singular aggregation and causing validator rejection.",
+      "conflict_policy": "Requires a closed ranking task, a single explicit aggregate from the normalized query, and an unambiguous direction phrase; explicit max/min remains the aggregate and non-ranking superlative questions are unchanged.",
+      "trace_fields": ["ranking_task", "explicit_aggregate", "direction_span", "removed_derived_aggregate", "sort_direction", "decision"],
+      "unit_tests": ["test_explicit_mean_dominates_directional_superlative", "test_low_to_high_preserves_median", "test_explicit_max_aggregate_is_preserved", "test_non_ranking_superlative_is_unchanged"]
+    }
+  ]
+}

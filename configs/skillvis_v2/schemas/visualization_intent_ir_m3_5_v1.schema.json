@@ -1,0 +1,1173 @@
+{
+  "$defs": {
+    "AbstentionState": {
+      "additionalProperties": false,
+      "properties": {
+        "abstained": {
+          "title": "Abstained",
+          "type": "boolean"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reason"
+        },
+        "stage": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stage"
+        }
+      },
+      "required": [
+        "abstained"
+      ],
+      "title": "AbstentionState",
+      "type": "object"
+    },
+    "AmbiguityRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "alternatives": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "dimension": {
+          "enum": [
+            "field",
+            "task",
+            "transform",
+            "relation",
+            "query"
+          ],
+          "title": "Dimension",
+          "type": "string"
+        },
+        "evidence_span_ids": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Span Ids",
+          "type": "array"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "dimension",
+        "alternatives",
+        "reason",
+        "rule_ids"
+      ],
+      "title": "AmbiguityRecord",
+      "type": "object"
+    },
+    "AmbiguityStateType": {
+      "enum": [
+        "NONE",
+        "LEXICAL_RESIDUE",
+        "MATERIAL_AMBIGUITY",
+        "MISSING_REQUIRED_ROLE",
+        "MULTIPLE_VALID_INTERPRETATIONS",
+        "UNSUPPORTED_SCOPE"
+      ],
+      "title": "AmbiguityStateType",
+      "type": "string"
+    },
+    "CandidateScore": {
+      "additionalProperties": false,
+      "properties": {
+        "alias_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Alias Score",
+          "type": "number"
+        },
+        "conflict_penalty": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Conflict Penalty",
+          "type": "number"
+        },
+        "lexical_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Lexical Score",
+          "type": "number"
+        },
+        "task_role_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Task Role Score",
+          "type": "number"
+        },
+        "total_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Total Score",
+          "type": "number"
+        },
+        "type_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Type Score",
+          "type": "number"
+        },
+        "value_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Value Score",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lexical_score",
+        "alias_score",
+        "value_score",
+        "type_score",
+        "task_role_score",
+        "conflict_penalty",
+        "total_score"
+      ],
+      "title": "CandidateScore",
+      "type": "object"
+    },
+    "CapabilityAssessment": {
+      "additionalProperties": false,
+      "properties": {
+        "abstention_required": {
+          "title": "Abstention Required",
+          "type": "boolean"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        },
+        "provenance": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Provenance",
+          "type": "array"
+        },
+        "risk_level": {
+          "enum": [
+            "unknown",
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ],
+          "title": "Risk Level",
+          "type": "string"
+        },
+        "supported_operations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supported Operations",
+          "type": "array"
+        },
+        "unsupported_operations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unsupported Operations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "supported_operations",
+        "unsupported_operations",
+        "risk_level",
+        "abstention_required",
+        "explanation",
+        "provenance"
+      ],
+      "title": "CapabilityAssessment",
+      "type": "object"
+    },
+    "DetectedTerm": {
+      "additionalProperties": false,
+      "properties": {
+        "canonical": {
+          "title": "Canonical",
+          "type": "string"
+        },
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "canonical",
+        "text",
+        "start",
+        "end",
+        "rule_ids"
+      ],
+      "title": "DetectedTerm",
+      "type": "object"
+    },
+    "EvidenceSpan": {
+      "additionalProperties": false,
+      "properties": {
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "normalized": {
+          "title": "Normalized",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "text",
+        "normalized",
+        "kind",
+        "rule_ids"
+      ],
+      "title": "EvidenceSpan",
+      "type": "object"
+    },
+    "FieldCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate_rank": {
+          "minimum": 1,
+          "title": "Candidate Rank",
+          "type": "integer"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/FieldEvidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "field_name": {
+          "title": "Field Name",
+          "type": "string"
+        },
+        "intended_roles": {
+          "items": {
+            "enum": [
+              "measure",
+              "dimension",
+              "temporal",
+              "grouping",
+              "filter",
+              "identifier",
+              "geographic",
+              "unknown"
+            ],
+            "type": "string"
+          },
+          "title": "Intended Roles",
+          "type": "array"
+        },
+        "match_types": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Match Types",
+          "type": "array"
+        },
+        "mention_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Mention Ids",
+          "type": "array"
+        },
+        "score_components": {
+          "$ref": "#/$defs/CandidateScore"
+        },
+        "source_rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Rule Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "field_name",
+        "mention_ids",
+        "candidate_rank",
+        "score_components",
+        "match_types",
+        "evidence",
+        "intended_roles",
+        "source_rule_ids"
+      ],
+      "title": "FieldCandidate",
+      "type": "object"
+    },
+    "FieldEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_type": {
+          "title": "Evidence Type",
+          "type": "string"
+        },
+        "query_span": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EvidenceSpan"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rule_id": {
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "source_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "evidence_type",
+        "query_span",
+        "value",
+        "rule_id",
+        "source_ids"
+      ],
+      "title": "FieldEvidence",
+      "type": "object"
+    },
+    "IntentFieldRef": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate_rank": {
+          "minimum": 1,
+          "title": "Candidate Rank",
+          "type": "integer"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/FieldEvidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "field_name": {
+          "title": "Field Name",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "measure",
+            "dimension",
+            "temporal",
+            "grouping",
+            "filter",
+            "identifier",
+            "geographic",
+            "unknown"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Score",
+          "type": "number"
+        }
+      },
+      "required": [
+        "field_name",
+        "role",
+        "score",
+        "candidate_rank",
+        "evidence",
+        "rule_ids"
+      ],
+      "title": "IntentFieldRef",
+      "type": "object"
+    },
+    "ProvenanceRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "conflict_policy": {
+          "title": "Conflict Policy",
+          "type": "string"
+        },
+        "failure_condition": {
+          "title": "Failure Condition",
+          "type": "string"
+        },
+        "inputs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "outputs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "priority": {
+          "title": "Priority",
+          "type": "integer"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "rule_id": {
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "scope": {
+          "title": "Scope",
+          "type": "string"
+        },
+        "source_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "stage": {
+          "enum": [
+            "query_normalization",
+            "schema_profiling",
+            "field_resolution",
+            "task_profiling",
+            "query_decomposition",
+            "intent_assembly",
+            "semantic_safety"
+          ],
+          "title": "Stage",
+          "type": "string"
+        },
+        "trace_fields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Trace Fields",
+          "type": "array"
+        }
+      },
+      "required": [
+        "stage",
+        "rule_id",
+        "source_ids",
+        "scope",
+        "rationale",
+        "priority",
+        "failure_condition",
+        "conflict_policy",
+        "trace_fields",
+        "inputs",
+        "outputs"
+      ],
+      "title": "ProvenanceRecord",
+      "type": "object"
+    },
+    "QueryMention": {
+      "additionalProperties": false,
+      "properties": {
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "mention_id": {
+          "title": "Mention Id",
+          "type": "string"
+        },
+        "mention_kind": {
+          "enum": [
+            "field",
+            "alias",
+            "value",
+            "structural",
+            "unresolved"
+          ],
+          "title": "Mention Kind",
+          "type": "string"
+        },
+        "normalized": {
+          "title": "Normalized",
+          "type": "string"
+        },
+        "source_rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Rule Ids",
+          "type": "array"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "mention_id",
+        "text",
+        "normalized",
+        "start",
+        "end",
+        "mention_kind",
+        "source_rule_ids"
+      ],
+      "title": "QueryMention",
+      "type": "object"
+    },
+    "SafetyWarning": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_spans": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence Spans",
+          "type": "array"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "severity": {
+          "enum": [
+            "info",
+            "warning",
+            "error",
+            "critical"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "warning_type": {
+          "enum": [
+            "lexical_residue",
+            "material_ambiguity",
+            "missing_required_role",
+            "multiple_valid_interpretations",
+            "unsupported_scope"
+          ],
+          "title": "Warning Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "warning_type",
+        "severity",
+        "message",
+        "evidence_spans",
+        "rule_ids"
+      ],
+      "title": "SafetyWarning",
+      "type": "object"
+    },
+    "TaskCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_spans": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence Spans",
+          "type": "array"
+        },
+        "required_roles": {
+          "items": {
+            "enum": [
+              "measure",
+              "dimension",
+              "temporal",
+              "grouping",
+              "filter",
+              "identifier",
+              "geographic",
+              "unknown"
+            ],
+            "type": "string"
+          },
+          "title": "Required Roles",
+          "type": "array"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Score",
+          "type": "number"
+        },
+        "score_components": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Score Components",
+          "type": "object"
+        },
+        "task": {
+          "enum": [
+            "comparison",
+            "ranking",
+            "trend",
+            "correlation",
+            "distribution",
+            "composition",
+            "extremum",
+            "aggregation",
+            "filtering",
+            "sorting",
+            "temporal_analysis",
+            "unresolved"
+          ],
+          "title": "Task",
+          "type": "string"
+        }
+      },
+      "required": [
+        "task",
+        "score",
+        "evidence_spans",
+        "required_roles",
+        "rule_ids",
+        "score_components"
+      ],
+      "title": "TaskCandidate",
+      "type": "object"
+    },
+    "TransformIntent": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_spans": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence Spans",
+          "type": "array"
+        },
+        "field_candidates": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Field Candidates",
+          "type": "array"
+        },
+        "negated": {
+          "default": false,
+          "title": "Negated",
+          "type": "boolean"
+        },
+        "operation": {
+          "title": "Operation",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "transform_type": {
+          "enum": [
+            "aggregate",
+            "filter",
+            "sort",
+            "limit",
+            "bin",
+            "time_unit"
+          ],
+          "title": "Transform Type",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {},
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        }
+      },
+      "required": [
+        "transform_type",
+        "operation",
+        "evidence_spans",
+        "rule_ids"
+      ],
+      "title": "TransformIntent",
+      "type": "object"
+    },
+    "TypedAmbiguityState": {
+      "additionalProperties": false,
+      "properties": {
+        "affected_fields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Affected Fields",
+          "type": "array"
+        },
+        "affected_tasks": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Affected Tasks",
+          "type": "array"
+        },
+        "confidence": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "evidence_spans": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence Spans",
+          "type": "array"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        },
+        "resolution_strategy": {
+          "enum": [
+            "proceed",
+            "ignore_lexical_residue",
+            "request_clarification",
+            "preserve_alternatives",
+            "abstain_unsupported"
+          ],
+          "title": "Resolution Strategy",
+          "type": "string"
+        },
+        "state": {
+          "$ref": "#/$defs/AmbiguityStateType"
+        },
+        "triggering_rules": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Triggering Rules",
+          "type": "array"
+        }
+      },
+      "required": [
+        "state",
+        "evidence_spans",
+        "triggering_rules",
+        "confidence",
+        "affected_fields",
+        "affected_tasks",
+        "resolution_strategy",
+        "explanation"
+      ],
+      "title": "TypedAmbiguityState",
+      "type": "object"
+    },
+    "UnsupportedScopeRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_spans": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence Spans",
+          "type": "array"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        },
+        "operation": {
+          "title": "Operation",
+          "type": "string"
+        },
+        "triggering_rules": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Triggering Rules",
+          "type": "array"
+        }
+      },
+      "required": [
+        "operation",
+        "evidence_spans",
+        "triggering_rules",
+        "explanation"
+      ],
+      "title": "UnsupportedScopeRecord",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "abstention_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Abstention Reason"
+    },
+    "abstention_state": {
+      "$ref": "#/$defs/AbstentionState"
+    },
+    "aggregation": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TransformIntent"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ambiguity": {
+      "items": {
+        "$ref": "#/$defs/AmbiguityRecord"
+      },
+      "title": "Ambiguity",
+      "type": "array"
+    },
+    "ambiguity_state": {
+      "$ref": "#/$defs/TypedAmbiguityState",
+      "default": {
+        "affected_fields": [],
+        "affected_tasks": [],
+        "confidence": 1.0,
+        "evidence_spans": [],
+        "explanation": "M3.5 semantic safety was not enabled for this execution.",
+        "resolution_strategy": "proceed",
+        "state": "NONE",
+        "triggering_rules": []
+      }
+    },
+    "capability_assessment": {
+      "$ref": "#/$defs/CapabilityAssessment",
+      "default": {
+        "abstention_required": false,
+        "explanation": "M3.5 semantic safety was not enabled for this execution.",
+        "provenance": [],
+        "risk_level": "unknown",
+        "supported_operations": [],
+        "unsupported_operations": []
+      }
+    },
+    "chart_mentions": {
+      "items": {
+        "$ref": "#/$defs/DetectedTerm"
+      },
+      "title": "Chart Mentions",
+      "type": "array"
+    },
+    "config_version": {
+      "title": "Config Version",
+      "type": "string"
+    },
+    "dataset_id": {
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "deterministic_id": {
+      "title": "Deterministic Id",
+      "type": "string"
+    },
+    "dimensions": {
+      "items": {
+        "$ref": "#/$defs/IntentFieldRef"
+      },
+      "title": "Dimensions",
+      "type": "array"
+    },
+    "evidence_spans": {
+      "items": {
+        "$ref": "#/$defs/EvidenceSpan"
+      },
+      "title": "Evidence Spans",
+      "type": "array"
+    },
+    "field_candidates": {
+      "items": {
+        "$ref": "#/$defs/FieldCandidate"
+      },
+      "title": "Field Candidates",
+      "type": "array"
+    },
+    "filters": {
+      "items": {
+        "$ref": "#/$defs/TransformIntent"
+      },
+      "title": "Filters",
+      "type": "array"
+    },
+    "grouping_fields": {
+      "items": {
+        "$ref": "#/$defs/IntentFieldRef"
+      },
+      "title": "Grouping Fields",
+      "type": "array"
+    },
+    "limit": {
+      "anyOf": [
+        {
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Limit"
+    },
+    "measures": {
+      "items": {
+        "$ref": "#/$defs/IntentFieldRef"
+      },
+      "title": "Measures",
+      "type": "array"
+    },
+    "normalized_query": {
+      "title": "Normalized Query",
+      "type": "string"
+    },
+    "primary_task": {
+      "enum": [
+        "comparison",
+        "ranking",
+        "trend",
+        "correlation",
+        "distribution",
+        "composition",
+        "extremum",
+        "aggregation",
+        "filtering",
+        "sorting",
+        "temporal_analysis",
+        "unresolved"
+      ],
+      "title": "Primary Task",
+      "type": "string"
+    },
+    "provenance": {
+      "items": {
+        "$ref": "#/$defs/ProvenanceRecord"
+      },
+      "title": "Provenance",
+      "type": "array"
+    },
+    "query": {
+      "title": "Query",
+      "type": "string"
+    },
+    "registry_hash": {
+      "title": "Registry Hash",
+      "type": "string"
+    },
+    "safety_warnings": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/SafetyWarning"
+      },
+      "title": "Safety Warnings",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "skillvis-v2-intent-ir-v0.2.0",
+      "default": "skillvis-v2-intent-ir-v0.2.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "sort": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TransformIntent"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "task_candidates": {
+      "items": {
+        "$ref": "#/$defs/TaskCandidate"
+      },
+      "title": "Task Candidates",
+      "type": "array"
+    },
+    "temporal_fields": {
+      "items": {
+        "$ref": "#/$defs/IntentFieldRef"
+      },
+      "title": "Temporal Fields",
+      "type": "array"
+    },
+    "unresolved_mentions": {
+      "items": {
+        "$ref": "#/$defs/QueryMention"
+      },
+      "title": "Unresolved Mentions",
+      "type": "array"
+    },
+    "unsupported_scope": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/UnsupportedScopeRecord"
+      },
+      "title": "Unsupported Scope",
+      "type": "array"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "config_version",
+    "registry_hash",
+    "deterministic_id",
+    "query",
+    "normalized_query",
+    "dataset_id",
+    "measures",
+    "dimensions",
+    "temporal_fields",
+    "grouping_fields",
+    "task_candidates",
+    "primary_task",
+    "aggregation",
+    "filters",
+    "sort",
+    "chart_mentions",
+    "field_candidates",
+    "unresolved_mentions",
+    "ambiguity",
+    "evidence_spans",
+    "provenance",
+    "warnings",
+    "abstention_state"
+  ],
+  "title": "VisualizationIntentIR",
+  "type": "object"
+}

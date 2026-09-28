@@ -1,0 +1,126 @@
+{
+  "schema_version": "skillvis-v2-joint-semantic-rule-registry-v1.0.0",
+  "status": "joint_semantic_development_implemented",
+  "rules": [
+    {
+      "rule_id": "R-SD-001",
+      "module": "schema_semantic_decomposition",
+      "source_ids": ["RATSQL2020", "SCHEMALINKING2020"],
+      "scope": "versioned decomposition of schema field names into entity, property, qualifier, and type concepts",
+      "rationale": "Cross-schema grounding requires field structure beyond a flat token bag.",
+      "priority": 55,
+      "failure_condition": "No registered or lexical schema component can be recovered.",
+      "conflict_policy": "Preserve every compatible concept and defer selection to contrastive field resolution.",
+      "trace_fields": ["field_name", "components", "entity_concepts", "property_concepts", "qualifier_concepts"],
+      "unit_tests": ["test_composite_schema_fields_are_decomposed"]
+    },
+    {
+      "rule_id": "R-FR-020",
+      "module": "joint_field_resolution",
+      "source_ids": ["NL4DV2020", "SCHEMALINKING2020"],
+      "scope": "schema-independent semantic mentions with explicit query spans",
+      "rationale": "Mentions must exist independently of any early commitment to a schema field.",
+      "priority": 56,
+      "failure_condition": "A semantic concept is assigned without a query span.",
+      "conflict_policy": "Overlapping mentions remain visible; longer and more specific concepts receive contrastive precedence.",
+      "trace_fields": ["mention_id", "query_span", "concept_id", "expected_roles"],
+      "unit_tests": ["test_semantic_mentions_are_span_grounded"]
+    },
+    {
+      "rule_id": "R-FR-021",
+      "module": "joint_field_resolution",
+      "source_ids": ["RATSQL2020", "SCHEMALINKING2020", "NL4DV2020"],
+      "scope": "high-recall candidate generation from lexical, concept, value, schema-component, and role evidence",
+      "rationale": "A correct field must survive into joint reasoning before precision-oriented selection occurs.",
+      "priority": 57,
+      "failure_condition": "A candidate has no auditable query-to-schema evidence edge.",
+      "conflict_policy": "Candidate generation maximizes bounded recall; it never selects by schema order.",
+      "trace_fields": ["field_candidates", "evidence_channels", "candidate_scores", "top_k"],
+      "unit_tests": ["test_cross_schema_semantic_candidates_reach_top_k"]
+    },
+    {
+      "rule_id": "R-FR-022",
+      "module": "joint_field_resolution",
+      "source_ids": ["RATSQL2020", "DATATONE2015"],
+      "scope": "contrastive selection among semantically related fields in the same schema",
+      "rationale": "A field is justified by why it fits better than nearby alternatives, not only by an isolated score.",
+      "priority": 58,
+      "failure_condition": "A competing field is suppressed without positive and negative evidence.",
+      "conflict_policy": "Specific entity-property evidence outranks generic type overlap; unresolved close alternatives remain ambiguous.",
+      "trace_fields": ["selected_field", "competing_fields", "positive_evidence", "negative_evidence", "score_margin"],
+      "unit_tests": ["test_local_identifier_beats_namespace_for_each_entity", "test_specific_type_phrase_beats_generic_type_fields"]
+    },
+    {
+      "rule_id": "R-TP-020",
+      "module": "joint_task_resolution",
+      "source_ids": ["BREHMER_MUNZNER2013", "AMAR2005"],
+      "scope": "separation of analytical goal, data operations, and presentation intent",
+      "rationale": "Aggregation, filtering, and sorting describe means; they must not replace the analytical goal.",
+      "priority": 59,
+      "failure_condition": "An auxiliary operation is emitted as the primary analytical goal.",
+      "conflict_policy": "A structurally complete core analytical goal dominates auxiliary operations.",
+      "trace_fields": ["analytical_goal", "data_operations", "presentation_hints"],
+      "unit_tests": ["test_aggregation_is_not_a_primary_goal"]
+    },
+    {
+      "rule_id": "R-TP-021",
+      "module": "joint_task_resolution",
+      "source_ids": ["BREHMER_MUNZNER2013", "NL4DV2020"],
+      "scope": "hard role and arity constraints for core analytical goals",
+      "rationale": "Task words are only valid when their required field and operation structure can be executed.",
+      "priority": 60,
+      "failure_condition": "A task survives despite a hard role or arity violation.",
+      "conflict_policy": "Hard structural constraints dominate lexical task cues and chart hints.",
+      "trace_fields": ["goal", "required_roles", "satisfied_constraints", "violated_constraints"],
+      "unit_tests": ["test_associated_count_is_not_correlation", "test_correlation_requires_two_measures"]
+    },
+    {
+      "rule_id": "R-TP-022",
+      "module": "joint_task_resolution",
+      "source_ids": ["DRACO2019", "NL4DV2020"],
+      "scope": "composition and deterministic ranking of complete field-task-operation hypotheses",
+      "rationale": "Global semantic consistency is more reliable than independent local classifications.",
+      "priority": 61,
+      "failure_condition": "A selected interpretation does not close all required roles and operations.",
+      "conflict_policy": "Complete hypotheses outrank incomplete hypotheses; soft scores never override hard violations.",
+      "trace_fields": ["hypothesis_id", "field_bindings", "operations", "score", "complete"],
+      "unit_tests": ["test_complete_interpretation_hypothesis_is_selected"]
+    },
+    {
+      "rule_id": "R-TP-023",
+      "module": "joint_task_resolution",
+      "source_ids": ["DATATONE2015", "NL4DV2020"],
+      "scope": "material ambiguity after structural hypothesis validation",
+      "rationale": "Ambiguity is material only when multiple executable interpretations differ in core semantics.",
+      "priority": 62,
+      "failure_condition": "Lexical residue alone creates a competing executable interpretation.",
+      "conflict_policy": "Preserve close complete alternatives; otherwise select the uniquely best complete hypothesis.",
+      "trace_fields": ["surviving_hypotheses", "score_margin", "ambiguity_reason"],
+      "unit_tests": ["test_only_complete_close_hypotheses_are_materially_ambiguous"]
+    },
+    {
+      "rule_id": "R-MR-020",
+      "module": "joint_semantic_obligation_graph",
+      "source_ids": ["DRACO2019", "RATSQL2020"],
+      "scope": "typed graph connecting query spans, schema fields, roles, goals, operations, and presentation hints",
+      "rationale": "Every semantic decision must expose both its evidence and constraint path.",
+      "priority": 63,
+      "failure_condition": "A selected field, role, task, or operation lacks a graph edge to evidence or a rule.",
+      "conflict_policy": "Missing proof paths prevent an interpretation from being marked complete.",
+      "trace_fields": ["nodes", "edges", "selected_hypothesis", "rule_ids"],
+      "unit_tests": ["test_joint_graph_has_proof_edges_for_selected_hypothesis"]
+    },
+    {
+      "rule_id": "R-MR-021",
+      "module": "joint_semantic_obligation_graph",
+      "source_ids": ["DATATONE2015", "DRACO2019"],
+      "scope": "delayed abstention after complete hypothesis enumeration",
+      "rationale": "Low local confidence must not terminate a query when global constraints can identify a unique safe interpretation.",
+      "priority": 64,
+      "failure_condition": "The pipeline abstains before bounded complete hypotheses are checked.",
+      "conflict_policy": "Unsupported scope and material ambiguity still dominate coverage recovery.",
+      "trace_fields": ["candidate_count", "complete_hypothesis_count", "abstention_reason"],
+      "unit_tests": ["test_global_completion_recovers_low_local_confidence"]
+    }
+  ]
+}

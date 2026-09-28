@@ -1,0 +1,65 @@
+{
+  "schema_version": "skillvis-v2-semantic-concept-registry-v1.0.0",
+  "status": "INTERNAL_VERSIONED_SEMANTIC_BRIDGE",
+  "design": {
+    "scope": "schema-local deterministic concept alignment",
+    "conflict_policy": "preserve every schema field matched within one concept; downstream ambiguity rules decide",
+    "prohibited_behavior": "no embedding similarity, no LLM inference, no cross-concept guessing"
+  },
+  "concepts": [
+    {
+      "concept_id": "revenue_value",
+      "allowed_semantic_types": ["quantitative"],
+      "query_terms": ["income", "earnings", "turnover", "revenue", "sales"],
+      "schema_terms": ["income", "earnings", "turnover", "revenue", "sales"]
+    },
+    {
+      "concept_id": "cost_value",
+      "allowed_semantic_types": ["quantitative"],
+      "query_terms": ["cost", "costs", "expense", "expenses", "fee", "fees", "charge", "charges"],
+      "schema_terms": ["cost", "expense", "fee", "freight", "charge"]
+    },
+    {
+      "concept_id": "consumption_value",
+      "allowed_semantic_types": ["quantitative"],
+      "query_terms": ["energy use", "energy usage", "consumption", "usage"],
+      "schema_terms": ["consumption", "usage", "energy"]
+    },
+    {
+      "concept_id": "geographic_area",
+      "allowed_semantic_types": ["categorical", "geographic", "ordinal"],
+      "query_terms": ["territory", "territories", "area", "areas", "region", "regions"],
+      "schema_terms": ["territory", "area", "region", "zone", "market"]
+    },
+    {
+      "concept_id": "rate_value",
+      "allowed_semantic_types": ["quantitative"],
+      "query_terms": ["rate", "ratio", "percentage", "percent"],
+      "schema_terms": ["rate", "ratio", "percentage", "percent", "pct"]
+    },
+    {
+      "concept_id": "duration_value",
+      "allowed_semantic_types": ["quantitative"],
+      "query_terms": ["duration", "elapsed time", "delivery time", "response time", "length of stay", "transit time", "cycle time"],
+      "schema_terms": ["duration", "latency", "elapsed", "seconds", "minutes", "hours", "days", "stay", "transit", "cycle", "wait", "response", "resolution"]
+    },
+    {
+      "concept_id": "quantity_value",
+      "allowed_semantic_types": ["quantitative"],
+      "query_terms": ["quantity", "volume", "units", "output", "shipments", "views"],
+      "schema_terms": ["quantity", "volume", "unit", "output", "shipped", "shipment", "view"]
+    },
+    {
+      "concept_id": "performance_score",
+      "allowed_semantic_types": ["quantitative", "ordinal"],
+      "query_terms": ["performance", "result", "results", "score", "scores"],
+      "schema_terms": ["performance", "result", "score", "grade", "rating"]
+    },
+    {
+      "concept_id": "person_compensation",
+      "allowed_semantic_types": ["quantitative"],
+      "query_terms": ["pay", "salary", "wage", "compensation"],
+      "schema_terms": ["pay", "salary", "wage", "compensation"]
+    }
+  ]
+}

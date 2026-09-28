@@ -1,0 +1,356 @@
+{
+  "claim_boundary": "prospective external-source controlled shared-capability comparison; not an official UCI benchmark and not unrestricted-language generalization",
+  "gold_type": "source-schema-and-template-derived; not human expert gold",
+  "partitions": {
+    "formal": {
+      "dataset_count": 3,
+      "datasets": [
+        {
+          "column_count": 5,
+          "dataset_id": "uci_parkinsons_189_pcs7f",
+          "fields": [
+            {
+              "name": "sex_group",
+              "native_dtype": "str",
+              "semantic_type": "categorical"
+            },
+            {
+              "name": "motor_updrs",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "total_updrs",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "jitter_percent",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "shimmer_value",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            }
+          ],
+          "filename": "uci_189_pcs7_formal.csv",
+          "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+          "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+          "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+          "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+          "row_count": 800,
+          "selection_seed": 202607319,
+          "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+          "source_doi": "10.24432/C5ZS3N",
+          "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+          "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+          "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+          "source_uci_id": 189
+        },
+        {
+          "column_count": 5,
+          "dataset_id": "uci_room_occupancy_864_pcs7f",
+          "fields": [
+            {
+              "name": "occupancy_class",
+              "native_dtype": "str",
+              "semantic_type": "categorical"
+            },
+            {
+              "name": "sensor_1_temperature",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "sensor_1_light",
+              "native_dtype": "int64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "sensor_1_sound",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "sensor_1_co2",
+              "native_dtype": "int64",
+              "semantic_type": "quantitative"
+            }
+          ],
+          "filename": "uci_864_pcs7_formal.csv",
+          "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+          "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+          "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+          "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+          "row_count": 800,
+          "selection_seed": 202607319,
+          "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+          "source_doi": "10.24432/C5P605",
+          "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+          "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+          "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+          "source_uci_id": 864
+        },
+        {
+          "column_count": 5,
+          "dataset_id": "uci_nhanes_887_pcs7f",
+          "fields": [
+            {
+              "name": "age_group",
+              "native_dtype": "str",
+              "semantic_type": "categorical"
+            },
+            {
+              "name": "body_mass_index",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "blood_glucose",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "oral_glucose_tolerance",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "blood_insulin",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            }
+          ],
+          "filename": "uci_887_pcs7_formal.csv",
+          "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+          "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+          "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+          "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+          "row_count": 800,
+          "selection_seed": 202607319,
+          "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+          "source_doi": "10.24432/C5BS66",
+          "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+          "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+          "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+          "source_uci_id": 887
+        }
+      ],
+      "task_count": 30,
+      "task_distribution": {
+        "comparison": 6,
+        "composition": 6,
+        "correlation": 6,
+        "distribution": 6,
+        "ranking": 6
+      },
+      "uci_ids": [
+        189,
+        864,
+        887
+      ]
+    },
+    "qualification": {
+      "dataset_count": 4,
+      "datasets": [
+        {
+          "column_count": 5,
+          "dataset_id": "uci_letter_59_pcs7q",
+          "fields": [
+            {
+              "name": "glyph_class",
+              "native_dtype": "str",
+              "semantic_type": "categorical"
+            },
+            {
+              "name": "x_position",
+              "native_dtype": "int64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "y_position",
+              "native_dtype": "int64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "glyph_width",
+              "native_dtype": "int64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "pixel_count",
+              "native_dtype": "int64",
+              "semantic_type": "quantitative"
+            }
+          ],
+          "filename": "uci_59_pcs7_qualification.csv",
+          "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_pcs7_qualification.csv",
+          "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_59_metadata.json",
+          "metadata_sha256": "6927f27f6caca2e154acc0b741968f6869dcea10a14fd8eb971326a0054dccc1",
+          "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+          "row_count": 800,
+          "selection_seed": 202607319,
+          "sha256": "7da8b53e04f6cffa80b7a2e93157d9fb02a877a327cbd4f57222bee037a9d1fb",
+          "source_doi": "10.24432/C5ZP40",
+          "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_raw.csv",
+          "source_repository": "https://archive.ics.uci.edu/dataset/59/letter+recognition",
+          "source_sha256": "9ec44e47110540d997fc2e247464a75ed3da0ad9dfcd49ded7e68fcaab04a9f7",
+          "source_uci_id": 59
+        },
+        {
+          "column_count": 5,
+          "dataset_id": "uci_yeast_110_pcs7q",
+          "fields": [
+            {
+              "name": "localization_site",
+              "native_dtype": "str",
+              "semantic_type": "categorical"
+            },
+            {
+              "name": "protein_mcg_signal",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "protein_gvh_signal",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "alm_score",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "mit_score",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            }
+          ],
+          "filename": "uci_110_pcs7_qualification.csv",
+          "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_pcs7_qualification.csv",
+          "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_110_metadata.json",
+          "metadata_sha256": "971a1a3647c64b4d25267c0d40beb41c020def6bc92eb01796e8106b70a94caf",
+          "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+          "row_count": 800,
+          "selection_seed": 202607319,
+          "sha256": "5287eff00505bd6432f49f9624e3310a2d442cd4daf0bd92dc5b7003060ffc16",
+          "source_doi": "10.24432/C5KG68",
+          "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_raw.csv",
+          "source_repository": "https://archive.ics.uci.edu/dataset/110/yeast",
+          "source_sha256": "294c84c36ff131305fe1baaeb9c8c93f9a557d01d1ee676a77a31607ad3df516",
+          "source_uci_id": 110
+        },
+        {
+          "column_count": 5,
+          "dataset_id": "uci_raisin_850_pcs7q",
+          "fields": [
+            {
+              "name": "raisin_class",
+              "native_dtype": "str",
+              "semantic_type": "categorical"
+            },
+            {
+              "name": "area_value",
+              "native_dtype": "int64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "major_axis_length",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "minor_axis_length",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "perimeter_value",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            }
+          ],
+          "filename": "uci_850_pcs7_qualification.csv",
+          "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_pcs7_qualification.csv",
+          "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_850_metadata.json",
+          "metadata_sha256": "c7f7d34bc46d888ce1499f692ffc0da0220f0c442cd90e9f0cacd773b3c88fb6",
+          "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+          "row_count": 800,
+          "selection_seed": 202607319,
+          "sha256": "94d60b4a179fc69e98e89aaf1eab9398061b7eff65fa816036e9a4c8ccb209f6",
+          "source_doi": "10.24432/C5660T",
+          "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_raw.csv",
+          "source_repository": "https://archive.ics.uci.edu/dataset/850/raisin",
+          "source_sha256": "175ecbc52d351e0e0d9aa00605de09425b3a4826c5db294fabcbc24bcba955ab",
+          "source_uci_id": 850
+        },
+        {
+          "column_count": 5,
+          "dataset_id": "uci_cirrhosis_878_pcs7q",
+          "fields": [
+            {
+              "name": "treatment_group",
+              "native_dtype": "str",
+              "semantic_type": "categorical"
+            },
+            {
+              "name": "bilirubin_level",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "albumin_level",
+              "native_dtype": "float64",
+              "semantic_type": "quantitative"
+            },
+            {
+              "name": "cholesterol_level",
+              "native_dtype": "str",
+              "semantic_type": "categorical"
+            },
+            {
+              "name": "survival_days",
+              "native_dtype": "int64",
+              "semantic_type": "quantitative"
+            }
+          ],
+          "filename": "uci_878_pcs7_qualification.csv",
+          "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_pcs7_qualification.csv",
+          "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_878_metadata.json",
+          "metadata_sha256": "65e8909db86c8490c60fede7aa38d879a87173008b23b893b2a19b48ce17f6a8",
+          "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+          "row_count": 418,
+          "selection_seed": 202607319,
+          "sha256": "658f9ad9b320e13c211b48bacaa65dbdc2d9990f7c62aadcf7dae48c6ed00259",
+          "source_doi": "10.24432/C5R02G",
+          "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_raw.csv",
+          "source_repository": "https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1",
+          "source_sha256": "539c167d30de2dc84d23376712b7f96b4ebb77d76f375574d02d2c51b76861cf",
+          "source_uci_id": 878
+        }
+      ],
+      "task_count": 20,
+      "task_distribution": {
+        "comparison": 4,
+        "composition": 4,
+        "correlation": 4,
+        "distribution": 4,
+        "ranking": 4
+      },
+      "uci_ids": [
+        59,
+        110,
+        850,
+        878
+      ]
+    }
+  },
+  "schema_version": "skillvis-pcs-v7-source-manifest-v1.0.0",
+  "selection_blind_to_system_outputs": true,
+  "selection_seed": 202607319,
+  "source": "UCI Machine Learning Repository",
+  "status": "FROZEN_PREEXECUTION"
+}

@@ -1,0 +1,6 @@
+{
+  "original_lock_content_included": false,
+  "original_lock_name": "protocol_freeze_v1.json",
+  "original_lock_sha256": "3ce80662da2d89db640ed9a265aacc2b1acbec70744070881ae41e71f76cd79d",
+  "reason": "Original immutable content embeds a workstation-specific NL4DV interpreter path; the hash is retained without publishing that path."
+}

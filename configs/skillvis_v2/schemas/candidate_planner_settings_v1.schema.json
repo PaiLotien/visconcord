@@ -1,0 +1,221 @@
+{
+  "$defs": {
+    "CandidatePlannerGates": {
+      "additionalProperties": false,
+      "properties": {
+        "acceptable_candidate_recall_at_3_min": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Acceptable Candidate Recall At 3 Min",
+          "type": "number"
+        },
+        "deterministic_replay_rate_min": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Deterministic Replay Rate Min",
+          "type": "number"
+        },
+        "duplicate_candidate_rate_max": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Duplicate Candidate Rate Max",
+          "type": "number"
+        },
+        "provenance_completeness_rate_min": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Provenance Completeness Rate Min",
+          "type": "number"
+        },
+        "schema_validation_rate_min": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Schema Validation Rate Min",
+          "type": "number"
+        },
+        "score_decomposition_completeness_rate_min": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Score Decomposition Completeness Rate Min",
+          "type": "number"
+        },
+        "top1_acceptable_rate_min": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Top1 Acceptable Rate Min",
+          "type": "number"
+        },
+        "unsupported_executable_candidate_rate_max": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Unsupported Executable Candidate Rate Max",
+          "type": "number"
+        }
+      },
+      "required": [
+        "top1_acceptable_rate_min",
+        "acceptable_candidate_recall_at_3_min",
+        "unsupported_executable_candidate_rate_max",
+        "duplicate_candidate_rate_max",
+        "deterministic_replay_rate_min",
+        "provenance_completeness_rate_min",
+        "score_decomposition_completeness_rate_min",
+        "schema_validation_rate_min"
+      ],
+      "title": "CandidatePlannerGates",
+      "type": "object"
+    },
+    "CandidateScoreWeights": {
+      "additionalProperties": false,
+      "properties": {
+        "ambiguity_penalty": {
+          "minimum": 0,
+          "title": "Ambiguity Penalty",
+          "type": "number"
+        },
+        "chart_effectiveness": {
+          "minimum": 0,
+          "title": "Chart Effectiveness",
+          "type": "number"
+        },
+        "complexity_penalty": {
+          "minimum": 0,
+          "title": "Complexity Penalty",
+          "type": "number"
+        },
+        "deterministic_tie_breaker": {
+          "minimum": 0,
+          "title": "Deterministic Tie Breaker",
+          "type": "number"
+        },
+        "field_role_fit": {
+          "minimum": 0,
+          "title": "Field Role Fit",
+          "type": "number"
+        },
+        "missing_role_penalty": {
+          "minimum": 0,
+          "title": "Missing Role Penalty",
+          "type": "number"
+        },
+        "provenance_strength": {
+          "minimum": 0,
+          "title": "Provenance Strength",
+          "type": "number"
+        },
+        "task_fit": {
+          "minimum": 0,
+          "title": "Task Fit",
+          "type": "number"
+        },
+        "type_compatibility": {
+          "minimum": 0,
+          "title": "Type Compatibility",
+          "type": "number"
+        },
+        "unsupported_feature_penalty": {
+          "minimum": 0,
+          "title": "Unsupported Feature Penalty",
+          "type": "number"
+        }
+      },
+      "required": [
+        "task_fit",
+        "field_role_fit",
+        "type_compatibility",
+        "chart_effectiveness",
+        "provenance_strength",
+        "deterministic_tie_breaker",
+        "ambiguity_penalty",
+        "missing_role_penalty",
+        "unsupported_feature_penalty",
+        "complexity_penalty"
+      ],
+      "title": "CandidateScoreWeights",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "audit_only_on_missing_roles": {
+      "title": "Audit Only On Missing Roles",
+      "type": "boolean"
+    },
+    "chart_complexity": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Chart Complexity",
+      "type": "object"
+    },
+    "chart_vocabulary": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Chart Vocabulary",
+      "type": "array"
+    },
+    "core_tasks": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Core Tasks",
+      "type": "array"
+    },
+    "explicit_chart_hints_are_hard_constraints": {
+      "title": "Explicit Chart Hints Are Hard Constraints",
+      "type": "boolean"
+    },
+    "gates": {
+      "$ref": "#/$defs/CandidatePlannerGates"
+    },
+    "max_candidates": {
+      "maximum": 20,
+      "minimum": 1,
+      "title": "Max Candidates",
+      "type": "integer"
+    },
+    "pie_max_categories": {
+      "minimum": 2,
+      "title": "Pie Max Categories",
+      "type": "integer"
+    },
+    "schema_version": {
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "score_formula": {
+      "title": "Score Formula",
+      "type": "string"
+    },
+    "score_weights": {
+      "$ref": "#/$defs/CandidateScoreWeights"
+    },
+    "task_chart_effectiveness": {
+      "additionalProperties": {
+        "additionalProperties": {
+          "type": "number"
+        },
+        "type": "object"
+      },
+      "title": "Task Chart Effectiveness",
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "max_candidates",
+    "pie_max_categories",
+    "explicit_chart_hints_are_hard_constraints",
+    "audit_only_on_missing_roles",
+    "core_tasks",
+    "chart_vocabulary",
+    "score_formula",
+    "score_weights",
+    "task_chart_effectiveness",
+    "chart_complexity",
+    "gates"
+  ],
+  "title": "CandidatePlannerSettings",
+  "type": "object"
+}

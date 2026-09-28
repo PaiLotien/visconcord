@@ -1,0 +1,39 @@
+{
+  "schema_version": "skillvis-v2-schema-semantic-registry-v1.0.0",
+  "status": "development_only_versioned",
+  "concepts": [
+    {"concept_id": "entity.project", "kind": "entity", "query_terms": ["project", "projects"], "schema_terms": ["project"]},
+    {"concept_id": "entity.collection", "kind": "entity", "query_terms": ["collection", "collections"], "schema_terms": ["collection"]},
+    {"concept_id": "entity.customer", "kind": "entity", "query_terms": ["customer", "customers", "client", "clients"], "schema_terms": ["customer", "client", "cust"]},
+    {"concept_id": "entity.subject", "kind": "entity", "query_terms": ["subject", "subjects", "person", "people", "participant", "participants"], "schema_terms": ["subject", "person", "participant"]},
+    {"concept_id": "property.local_identifier", "kind": "property", "query_terms": ["identifier", "identifiers", "identity", "identities", "id", "ids"], "schema_terms": ["local id", "identifier", "identity"]},
+    {"concept_id": "property.namespace", "kind": "qualifier", "query_terms": ["namespace", "namespaces"], "schema_terms": ["namespace", "id namespace"]},
+    {"concept_id": "property.gender", "kind": "property", "query_terms": ["gender", "genders", "sex"], "schema_terms": ["gender", "sex"]},
+    {"concept_id": "property.ethnicity", "kind": "property", "query_terms": ["ethnic", "ethnicity", "ethnicities"], "schema_terms": ["ethnic", "ethnicity"]},
+    {"concept_id": "property.taxonomy", "kind": "property", "query_terms": ["species", "taxonomy", "taxonomic"], "schema_terms": ["species", "taxonomy", "taxon"]},
+    {"concept_id": "property.assay_type", "kind": "property", "query_terms": ["assay", "assays", "experiment", "experiments", "experimental type", "testing category", "testing categories"], "schema_terms": ["assay type", "assay", "experiment type"]},
+    {"concept_id": "property.file_format", "kind": "property", "query_terms": ["file format", "file formats", "digital format", "digital formats", "format of file", "format of files"], "schema_terms": ["file format"]},
+    {"concept_id": "property.mime_type", "kind": "property", "query_terms": ["mime type", "media type", "document kind", "document kinds"], "schema_terms": ["mime type", "media type"]},
+    {"concept_id": "property.data_type", "kind": "property", "query_terms": ["data type", "data types", "type of data", "types of data", "information type", "information types", "kind of information", "kinds of information"], "schema_terms": ["data type", "information type"]},
+    {"concept_id": "property.compression_format", "kind": "property", "query_terms": ["compression format", "compressed format", "archive format"], "schema_terms": ["compression format"]},
+    {"concept_id": "measure.file_size", "kind": "measure", "query_terms": ["file size", "file sizes", "byte size", "byte sizes", "size of file", "size of files", "how big"], "schema_terms": ["size in bytes", "file size", "byte size"]},
+    {"concept_id": "measure.revenue", "kind": "measure", "query_terms": ["revenue", "income", "earnings", "sales"], "schema_terms": ["revenue", "income", "earnings", "sales"]},
+    {"concept_id": "property.role", "kind": "property", "query_terms": ["role", "roles", "role id", "role ids"], "schema_terms": ["role", "role id"]},
+    {"concept_id": "property.biofluid", "kind": "property", "query_terms": ["biofluid", "biofluids", "body fluid", "body fluids"], "schema_terms": ["biofluid", "body fluid"]},
+    {"concept_id": "property.category_type", "kind": "generic", "query_terms": ["type", "types", "category", "categories", "kind", "kinds", "sort", "sorts"], "schema_terms": ["type", "category", "kind", "format"]}
+  ],
+  "contrastive_rules": [
+    {
+      "rule_id": "local_identifier_over_namespace_for_entity_instances",
+      "positive_schema_terms": ["local id"],
+      "negative_schema_terms": ["namespace"],
+      "query_cues": ["each", "per", "by", "identifier", "identifiers", "identity", "identities"],
+      "unless_query_cues": ["namespace", "namespaces"]
+    },
+    {
+      "rule_id": "specific_type_phrase_over_generic_type",
+      "positive_concept_kinds": ["property", "measure"],
+      "negative_concept_kinds": ["generic"]
+    }
+  ]
+}

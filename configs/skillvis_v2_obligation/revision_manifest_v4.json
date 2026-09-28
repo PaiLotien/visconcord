@@ -1,0 +1,220 @@
+{
+  "schema_version": "skillvis-v2-obligation-revision-lock-v1.0.0",
+  "status": "FROZEN_BEFORE_FIRST_HOLDOUT_INVOCATION",
+  "revision": "skillvis-v2-obligation-closure-v4.0.0",
+  "freeze_date": "2026-07-28",
+  "scope": "internal hardening only; not PCS and not for publication claims",
+  "holdout_policy": "one execution after this lock; implementation changes invalidate the holdout",
+  "files": [
+    {
+      "path": "configs/skillvis_v2_accuracy/candidate_planner_v2.json",
+      "size": 4411,
+      "sha256": "821ccf6d6cc0226b69cfffe546a318ef19d8627f8365f37d0e82a6622944e7ac"
+    },
+    {
+      "path": "configs/skillvis_v2_accuracy/revision_manifest_v2.json",
+      "size": 2384,
+      "sha256": "deb955e1ab17bc04651743bfcc0d615d95f6e1a44e8480549ae15207547418f1"
+    },
+    {
+      "path": "configs/skillvis_v2_accuracy/revision_manifest_v3.json",
+      "size": 2519,
+      "sha256": "7c6c547c2b533e17c6a5b012a982af4c2293a9d925cd6e71ae5540c204ae5f0e"
+    },
+    {
+      "path": "configs/skillvis_v2_accuracy/rules_m1_m3_v2.json",
+      "size": 22177,
+      "sha256": "86e726a68d78446e6e6f45468e90907b6d20cfd6718ba71f28c7b07aa45cdd1a"
+    },
+    {
+      "path": "configs/skillvis_v2_accuracy/rules_m3_5_safety_v2.json",
+      "size": 4115,
+      "sha256": "3ab7b4c7992e06ce06d6e6b171e4f038226d9f8465dfa1218e01e3373a920b4b"
+    },
+    {
+      "path": "configs/skillvis_v2_accuracy/rules_m4_candidate_planner_v2.json",
+      "size": 7306,
+      "sha256": "7ce2d90035c44dea4e68357adb15fc95fadb9ab5239a0ff4ffe671e8d332e69c"
+    },
+    {
+      "path": "configs/skillvis_v2_accuracy/semantic_concept_registry_v3.json",
+      "size": 2890,
+      "sha256": "5811650d481fb1da0c89e4b252879886df43d149bdadfeb51b27bac534b955a9"
+    },
+    {
+      "path": "configs/skillvis_v2_obligation/candidate_planner_v4.json",
+      "size": 4417,
+      "sha256": "221a9c649ebd1ed9aaa64fe3313297d70dec1c207cc3c9903c181367b5619ea5"
+    },
+    {
+      "path": "configs/skillvis_v2_obligation/rules_m3_5_safety_v4.json",
+      "size": 7050,
+      "sha256": "ee2d39b696fb03f9b787371ed7b9625aa47bd8e0618b35a4740a13f50db6348c"
+    },
+    {
+      "path": "configs/skillvis_v2_obligation/rules_m4_candidate_planner_v4.json",
+      "size": 9230,
+      "sha256": "a441ca6bf2b48911f35ab2a48c78c93957085acca66b175caf9060c7d98305a8"
+    },
+    {
+      "path": "data/skillvis_v2_obligation/manifest_v1.json",
+      "size": 2152,
+      "sha256": "ea5d82b880b4703f3f54cf83848e3c8460297ce9caa09799d1bf8320ee125221"
+    },
+    {
+      "path": "data/skillvis_v2_obligation/obligation_development_v1.json",
+      "size": 105644,
+      "sha256": "3a4ed39cb9bdce0c7ff47a04a7c8de03a8265a51c4188c109d1560eca19bd016"
+    },
+    {
+      "path": "data/skillvis_v2_obligation/obligation_holdout_v1.json",
+      "size": 51555,
+      "sha256": "f069e5c7baf3dfd7e2081d952c893e15839d8df14cb151d98d2719d14414facf"
+    },
+    {
+      "path": "scripts/skillvis_v2/build_obligation_hardening_sets.py",
+      "size": 13105,
+      "sha256": "42417d50c9776b8e643f2f1e17c6e6e166f0d979f185e396657c78f620c35e89"
+    },
+    {
+      "path": "scripts/skillvis_v2/evaluate_obligation_revision.py",
+      "size": 7795,
+      "sha256": "207651d981dbeb4fccad85ad9a400ad614e4225c97f4da6ccf29b6a00c3e5fa2"
+    },
+    {
+      "path": "scripts/skillvis_v2/freeze_obligation_revision.py",
+      "size": 3341,
+      "sha256": "8b8039882d9a0cf71ecc81584e4a0fffe0bc7fd96fa5f23c676a9499705a4543"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/__init__.py",
+      "size": 812,
+      "sha256": "af8856462467f0b2f7fbf27fd6765936e9c6adad4955a591ca78e3cbef6356d2"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/candidate_planner.py",
+      "size": 51449,
+      "sha256": "048f8b3b5cbaefd43527fbe3d87232410ad9759c2b0eef1f3f929241070a76b4"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/config.py",
+      "size": 7671,
+      "sha256": "edec9153f5c97f3f108394a2579944d374e9e6a3efb3f96bbe0c09e9cc945e81"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/contracts.py",
+      "size": 21168,
+      "sha256": "e6be39b076d55e86e62f60fb8ebefd53e5ecb8dd226af6195cc8b3b43c0491fd"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/evaluation.py",
+      "size": 13039,
+      "sha256": "7b740ea78659c73d0ea57b8a890cb8809cd433995c97596474015c42f02ae37a"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/field_resolution.py",
+      "size": 30214,
+      "sha256": "2d4db6547433d97c0601b23629e1a87fd8a8e02de3667478d18ac0912ff7026b"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/memory.py",
+      "size": 15409,
+      "sha256": "7565751dd2af36cc78b3c1456fb186a358ed6c9c0d123f8e9f22bf3063ea348e"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/memory_pipeline.py",
+      "size": 7097,
+      "sha256": "b38e02d93a65d7dd722c2f6d36495d4bd720306f0c125da41e845298eb472e0f"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/optimization_evaluation.py",
+      "size": 16359,
+      "sha256": "ac9349d4f8b7effb7d22ba0fdc2148039c3ffa6da0a2850f99fe4b1f7b127ac2"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/pipeline.py",
+      "size": 13394,
+      "sha256": "66f5e0fa0011b50a1690c77a875824af28ef508831b7dd0e46da465275c39660"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/query_normalization.py",
+      "size": 12619,
+      "sha256": "66885f29dbd042ebba103f7286c79b55abcd3dfd78d3bedf3fb7f4cf8ff6197b"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/rules.py",
+      "size": 4375,
+      "sha256": "5cba634e05cf3159cbadeb07f72e7e36139e3588a9f94ee701bc5c9f0c8dd48d"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/schema_profiling.py",
+      "size": 12997,
+      "sha256": "9d56d3fa7703ffb301e9feacc70e04295a55bfd44f73d1cf05eeb1b5964ab8f6"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/semantic_concepts.py",
+      "size": 5185,
+      "sha256": "5ea42aad0d9f9339054e2a5188ed5ed3191e580d0e93b20ffb3dd54fcbaf7148"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/semantic_safety.py",
+      "size": 21596,
+      "sha256": "bba99040aaced6e671102ba3ef32b26c517f425ebca9e990ad32d410cafb1e3f"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/source_identity.py",
+      "size": 7024,
+      "sha256": "3850d89a486d98774c58a58247475a5a6b569d32094cab1afe9acf7abfd53d52"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/task_profiling.py",
+      "size": 33803,
+      "sha256": "cd1caebaa9bafb717dd200e824041e4a8b2d8f20ace08b264ffa491ddcd9d1e5"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/validator.py",
+      "size": 21927,
+      "sha256": "21f8abb6745bd2c36e545b02cadad10e345cc8dc04b1dd45e0d4c104155391d9"
+    },
+    {
+      "path": "src/skillvis_v2_accuracy/validator_formal.py",
+      "size": 45160,
+      "sha256": "cb1439f5e8c3b9e598fc58e5fafe13c539d30b088a14d6c4af3fc150b49f031f"
+    },
+    {
+      "path": "src/skillvis_v2_obligation/__init__.py",
+      "size": 364,
+      "sha256": "5cfd5b5bc381ae731eccd4db812484298d8a907545d7f88e288fa736d7f5a326"
+    },
+    {
+      "path": "src/skillvis_v2_obligation/candidate_planner.py",
+      "size": 10287,
+      "sha256": "521cb9170fa824acd841f4a22b855c7d52c22c99fa11a5afcf1600f9917374e0"
+    },
+    {
+      "path": "src/skillvis_v2_obligation/config.py",
+      "size": 1612,
+      "sha256": "dd46bd8694bf1a6cd01e238bb5670ddb8303fd4e97acfe49a38a5d45ee375ae6"
+    },
+    {
+      "path": "src/skillvis_v2_obligation/intent_compiler.py",
+      "size": 10272,
+      "sha256": "34dfe526e1f8b9a8caffead56bceedc6d2257186dff5b56a000bd55aa360a63b"
+    },
+    {
+      "path": "src/skillvis_v2_obligation/pipeline.py",
+      "size": 5217,
+      "sha256": "6f267a821985b97f284ee014390479f3ab2cfb0ab0076cb6a006425764fe90c9"
+    },
+    {
+      "path": "src/skillvis_v2_obligation/semantic_safety.py",
+      "size": 6019,
+      "sha256": "f8627772b36e7e5ac8e8b4c14e9248dbe7fd1f4d9b1bfdd711d68ca391842d61"
+    },
+    {
+      "path": "tests/skillvis_v2/test_obligation_closure_v4.py",
+      "size": 5743,
+      "sha256": "ef056b83ce45107be8dd6b13bf6ea45cce85bb9c887376a607797d4a8c8d1b6c"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "conflict_policy": {
+      "title": "Conflict Policy",
+      "type": "string"
+    },
+    "failure_condition": {
+      "title": "Failure Condition",
+      "type": "string"
+    },
+    "module": {
+      "title": "Module",
+      "type": "string"
+    },
+    "priority": {
+      "minimum": 1,
+      "title": "Priority",
+      "type": "integer"
+    },
+    "rationale": {
+      "title": "Rationale",
+      "type": "string"
+    },
+    "rule_id": {
+      "title": "Rule Id",
+      "type": "string"
+    },
+    "scope": {
+      "title": "Scope",
+      "type": "string"
+    },
+    "source_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Ids",
+      "type": "array"
+    },
+    "trace_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Trace Fields",
+      "type": "array"
+    },
+    "unit_tests": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unit Tests",
+      "type": "array"
+    }
+  },
+  "required": [
+    "rule_id",
+    "module",
+    "source_ids",
+    "scope",
+    "rationale",
+    "priority",
+    "failure_condition",
+    "conflict_policy",
+    "trace_fields",
+    "unit_tests"
+  ],
+  "title": "RuleDefinition",
+  "type": "object"
+}

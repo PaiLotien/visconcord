@@ -1,0 +1,858 @@
+{
+  "$defs": {
+    "AmbiguityStateType": {
+      "enum": [
+        "NONE",
+        "LEXICAL_RESIDUE",
+        "MATERIAL_AMBIGUITY",
+        "MISSING_REQUIRED_ROLE",
+        "MULTIPLE_VALID_INTERPRETATIONS",
+        "UNSUPPORTED_SCOPE"
+      ],
+      "title": "AmbiguityStateType",
+      "type": "string"
+    },
+    "CandidateChartType": {
+      "enum": [
+        "bar",
+        "grouped_bar",
+        "dot_plot",
+        "horizontal_bar",
+        "top_k_bar",
+        "line",
+        "multi_line",
+        "scatter",
+        "grouped_scatter",
+        "histogram",
+        "box_plot",
+        "stacked_bar",
+        "normalized_stacked_bar",
+        "pie",
+        "ranked_bar",
+        "highlighted_extremum"
+      ],
+      "title": "CandidateChartType",
+      "type": "string"
+    },
+    "CandidateDiversitySummary": {
+      "additionalProperties": false,
+      "properties": {
+        "chart_family_count": {
+          "minimum": 0,
+          "title": "Chart Family Count",
+          "type": "integer"
+        },
+        "encoding_signature_count": {
+          "minimum": 0,
+          "title": "Encoding Signature Count",
+          "type": "integer"
+        },
+        "task_interpretation_count": {
+          "minimum": 0,
+          "title": "Task Interpretation Count",
+          "type": "integer"
+        },
+        "transform_signature_count": {
+          "minimum": 0,
+          "title": "Transform Signature Count",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "chart_family_count",
+        "encoding_signature_count",
+        "transform_signature_count",
+        "task_interpretation_count"
+      ],
+      "title": "CandidateDiversitySummary",
+      "type": "object"
+    },
+    "CandidateEncoding": {
+      "additionalProperties": false,
+      "properties": {
+        "aggregate": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Aggregate"
+        },
+        "bin": {
+          "default": false,
+          "title": "Bin",
+          "type": "boolean"
+        },
+        "channel": {
+          "enum": [
+            "x",
+            "y",
+            "color",
+            "size",
+            "row",
+            "column",
+            "theta",
+            "detail"
+          ],
+          "title": "Channel",
+          "type": "string"
+        },
+        "field": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Field"
+        },
+        "semantic_type": {
+          "enum": [
+            "quantitative",
+            "categorical",
+            "temporal",
+            "identifier",
+            "ordinal",
+            "geographic",
+            "unknown"
+          ],
+          "title": "Semantic Type",
+          "type": "string"
+        },
+        "sort": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sort"
+        },
+        "time_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Time Unit"
+        }
+      },
+      "required": [
+        "channel",
+        "semantic_type"
+      ],
+      "title": "CandidateEncoding",
+      "type": "object"
+    },
+    "CandidateFields": {
+      "additionalProperties": false,
+      "properties": {
+        "color": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Color",
+          "type": "array"
+        },
+        "dimension": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Dimension",
+          "type": "array"
+        },
+        "facet": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Facet",
+          "type": "array"
+        },
+        "grouping": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Grouping",
+          "type": "array"
+        },
+        "measure": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Measure",
+          "type": "array"
+        },
+        "size": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Size",
+          "type": "array"
+        },
+        "temporal": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Temporal",
+          "type": "array"
+        }
+      },
+      "title": "CandidateFields",
+      "type": "object"
+    },
+    "CandidateScoreComponents": {
+      "additionalProperties": false,
+      "properties": {
+        "ambiguity_penalty": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Ambiguity Penalty",
+          "type": "number"
+        },
+        "chart_effectiveness_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Chart Effectiveness Score",
+          "type": "number"
+        },
+        "complexity_penalty": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Complexity Penalty",
+          "type": "number"
+        },
+        "deterministic_tie_breaker": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Deterministic Tie Breaker",
+          "type": "number"
+        },
+        "field_role_fit_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Field Role Fit Score",
+          "type": "number"
+        },
+        "missing_role_penalty": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Missing Role Penalty",
+          "type": "number"
+        },
+        "provenance_strength_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Provenance Strength Score",
+          "type": "number"
+        },
+        "rule_ids": {
+          "additionalProperties": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "title": "Rule Ids",
+          "type": "object"
+        },
+        "task_fit_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Task Fit Score",
+          "type": "number"
+        },
+        "type_compatibility_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Type Compatibility Score",
+          "type": "number"
+        },
+        "unsupported_feature_penalty": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Unsupported Feature Penalty",
+          "type": "number"
+        }
+      },
+      "required": [
+        "task_fit_score",
+        "field_role_fit_score",
+        "type_compatibility_score",
+        "chart_effectiveness_score",
+        "ambiguity_penalty",
+        "missing_role_penalty",
+        "unsupported_feature_penalty",
+        "complexity_penalty",
+        "provenance_strength_score",
+        "deterministic_tie_breaker",
+        "rule_ids"
+      ],
+      "title": "CandidateScoreComponents",
+      "type": "object"
+    },
+    "CandidateTransform": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_spans": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence Spans",
+          "type": "array"
+        },
+        "field_candidates": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Field Candidates",
+          "type": "array"
+        },
+        "negated": {
+          "default": false,
+          "title": "Negated",
+          "type": "boolean"
+        },
+        "operation": {
+          "title": "Operation",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "transform_type": {
+          "enum": [
+            "aggregate",
+            "filter",
+            "sort",
+            "limit",
+            "bin",
+            "time_unit",
+            "stack",
+            "normalize",
+            "highlight"
+          ],
+          "title": "Transform Type",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {},
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        }
+      },
+      "required": [
+        "transform_type",
+        "operation",
+        "rule_ids"
+      ],
+      "title": "CandidateTransform",
+      "type": "object"
+    },
+    "EvidenceSpan": {
+      "additionalProperties": false,
+      "properties": {
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "normalized": {
+          "title": "Normalized",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "text",
+        "normalized",
+        "kind",
+        "rule_ids"
+      ],
+      "title": "EvidenceSpan",
+      "type": "object"
+    },
+    "ProvenanceRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "conflict_policy": {
+          "title": "Conflict Policy",
+          "type": "string"
+        },
+        "failure_condition": {
+          "title": "Failure Condition",
+          "type": "string"
+        },
+        "inputs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "outputs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "priority": {
+          "title": "Priority",
+          "type": "integer"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "rule_id": {
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "scope": {
+          "title": "Scope",
+          "type": "string"
+        },
+        "source_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "stage": {
+          "enum": [
+            "query_normalization",
+            "schema_profiling",
+            "field_resolution",
+            "task_profiling",
+            "query_decomposition",
+            "intent_assembly",
+            "semantic_safety",
+            "candidate_planning"
+          ],
+          "title": "Stage",
+          "type": "string"
+        },
+        "trace_fields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Trace Fields",
+          "type": "array"
+        }
+      },
+      "required": [
+        "stage",
+        "rule_id",
+        "source_ids",
+        "scope",
+        "rationale",
+        "priority",
+        "failure_condition",
+        "conflict_policy",
+        "trace_fields",
+        "inputs",
+        "outputs"
+      ],
+      "title": "ProvenanceRecord",
+      "type": "object"
+    },
+    "VisualizationCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "aggregation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CandidateTransform"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ambiguity_state": {
+          "$ref": "#/$defs/AmbiguityStateType"
+        },
+        "applied_rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Applied Rule Ids",
+          "type": "array"
+        },
+        "audit_only": {
+          "title": "Audit Only",
+          "type": "boolean"
+        },
+        "candidate_id": {
+          "title": "Candidate Id",
+          "type": "string"
+        },
+        "chart_compatibility_assumptions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Chart Compatibility Assumptions",
+          "type": "array"
+        },
+        "chart_type": {
+          "$ref": "#/$defs/CandidateChartType"
+        },
+        "deterministic_signature": {
+          "title": "Deterministic Signature",
+          "type": "string"
+        },
+        "encodings": {
+          "items": {
+            "$ref": "#/$defs/CandidateEncoding"
+          },
+          "title": "Encodings",
+          "type": "array"
+        },
+        "evidence_spans": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence Spans",
+          "type": "array"
+        },
+        "executable": {
+          "title": "Executable",
+          "type": "boolean"
+        },
+        "field_role_alignment": {
+          "additionalProperties": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "title": "Field Role Alignment",
+          "type": "object"
+        },
+        "fields": {
+          "$ref": "#/$defs/CandidateFields"
+        },
+        "filters": {
+          "items": {
+            "$ref": "#/$defs/CandidateTransform"
+          },
+          "title": "Filters",
+          "type": "array"
+        },
+        "grouping": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Grouping",
+          "type": "array"
+        },
+        "limit": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Limit"
+        },
+        "mark_type": {
+          "enum": [
+            "bar",
+            "point",
+            "line",
+            "arc",
+            "boxplot"
+          ],
+          "title": "Mark Type",
+          "type": "string"
+        },
+        "rank": {
+          "minimum": 1,
+          "title": "Rank",
+          "type": "integer"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "rejection_reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rejection Reasons",
+          "type": "array"
+        },
+        "schema_version": {
+          "const": "skillvis-v2-visualization-candidate-v1.0.0",
+          "default": "skillvis-v2-visualization-candidate-v1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "score_components": {
+          "$ref": "#/$defs/CandidateScoreComponents"
+        },
+        "sort": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CandidateTransform"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "task_alignment": {
+          "enum": [
+            "comparison",
+            "ranking",
+            "trend",
+            "correlation",
+            "distribution",
+            "composition",
+            "extremum",
+            "aggregation",
+            "filtering",
+            "sorting",
+            "temporal_analysis",
+            "unresolved"
+          ],
+          "title": "Task Alignment",
+          "type": "string"
+        },
+        "total_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Total Score",
+          "type": "number"
+        },
+        "transforms": {
+          "items": {
+            "$ref": "#/$defs/CandidateTransform"
+          },
+          "title": "Transforms",
+          "type": "array"
+        },
+        "unsupported_features": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unsupported Features",
+          "type": "array"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "candidate_id",
+        "chart_type",
+        "mark_type",
+        "fields",
+        "encodings",
+        "transforms",
+        "aggregation",
+        "filters",
+        "sort",
+        "grouping",
+        "task_alignment",
+        "field_role_alignment",
+        "chart_compatibility_assumptions",
+        "score_components",
+        "total_score",
+        "rank",
+        "rationale",
+        "evidence_spans",
+        "applied_rule_ids",
+        "source_ids",
+        "ambiguity_state",
+        "warnings",
+        "unsupported_features",
+        "executable",
+        "audit_only",
+        "rejection_reasons",
+        "deterministic_signature"
+      ],
+      "title": "VisualizationCandidate",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "abstained": {
+      "title": "Abstained",
+      "type": "boolean"
+    },
+    "abstention_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Abstention Reason"
+    },
+    "candidates": {
+      "items": {
+        "$ref": "#/$defs/VisualizationCandidate"
+      },
+      "title": "Candidates",
+      "type": "array"
+    },
+    "config_version": {
+      "title": "Config Version",
+      "type": "string"
+    },
+    "deterministic_signature": {
+      "title": "Deterministic Signature",
+      "type": "string"
+    },
+    "diversity": {
+      "$ref": "#/$defs/CandidateDiversitySummary"
+    },
+    "duplicate_count": {
+      "minimum": 0,
+      "title": "Duplicate Count",
+      "type": "integer"
+    },
+    "intent_id": {
+      "title": "Intent Id",
+      "type": "string"
+    },
+    "post_dedup_count": {
+      "minimum": 0,
+      "title": "Post Dedup Count",
+      "type": "integer"
+    },
+    "post_ranking_count": {
+      "minimum": 0,
+      "title": "Post Ranking Count",
+      "type": "integer"
+    },
+    "provenance": {
+      "items": {
+        "$ref": "#/$defs/ProvenanceRecord"
+      },
+      "title": "Provenance",
+      "type": "array"
+    },
+    "raw_candidate_count": {
+      "minimum": 0,
+      "title": "Raw Candidate Count",
+      "type": "integer"
+    },
+    "registry_hash": {
+      "title": "Registry Hash",
+      "type": "string"
+    },
+    "rejection_reasons": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Rejection Reasons",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "skillvis-v2-candidate-planning-result-v1.0.0",
+      "default": "skillvis-v2-candidate-planning-result-v1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "intent_id",
+    "config_version",
+    "registry_hash",
+    "candidates",
+    "raw_candidate_count",
+    "post_dedup_count",
+    "post_ranking_count",
+    "duplicate_count",
+    "diversity",
+    "abstained",
+    "abstention_reason",
+    "warnings",
+    "rejection_reasons",
+    "provenance",
+    "deterministic_signature"
+  ],
+  "title": "CandidatePlanningResult",
+  "type": "object"
+}

@@ -1,0 +1,127 @@
+{
+  "$defs": {
+    "AmbiguityStateType": {
+      "enum": [
+        "NONE",
+        "LEXICAL_RESIDUE",
+        "MATERIAL_AMBIGUITY",
+        "MISSING_REQUIRED_ROLE",
+        "MULTIPLE_VALID_INTERPRETATIONS",
+        "UNSUPPORTED_SCOPE"
+      ],
+      "title": "AmbiguityStateType",
+      "type": "string"
+    },
+    "EvidenceSpan": {
+      "additionalProperties": false,
+      "properties": {
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "normalized": {
+          "title": "Normalized",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "text",
+        "normalized",
+        "kind",
+        "rule_ids"
+      ],
+      "title": "EvidenceSpan",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "affected_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Affected Fields",
+      "type": "array"
+    },
+    "affected_tasks": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Affected Tasks",
+      "type": "array"
+    },
+    "confidence": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "evidence_spans": {
+      "items": {
+        "$ref": "#/$defs/EvidenceSpan"
+      },
+      "title": "Evidence Spans",
+      "type": "array"
+    },
+    "explanation": {
+      "title": "Explanation",
+      "type": "string"
+    },
+    "resolution_strategy": {
+      "enum": [
+        "proceed",
+        "ignore_lexical_residue",
+        "request_clarification",
+        "preserve_alternatives",
+        "abstain_unsupported"
+      ],
+      "title": "Resolution Strategy",
+      "type": "string"
+    },
+    "state": {
+      "$ref": "#/$defs/AmbiguityStateType"
+    },
+    "triggering_rules": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Triggering Rules",
+      "type": "array"
+    }
+  },
+  "required": [
+    "state",
+    "evidence_spans",
+    "triggering_rules",
+    "confidence",
+    "affected_fields",
+    "affected_tasks",
+    "resolution_strategy",
+    "explanation"
+  ],
+  "title": "TypedAmbiguityState",
+  "type": "object"
+}

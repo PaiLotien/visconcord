@@ -1,0 +1,72 @@
+{
+  "all_metrics_required": true,
+  "failure_action": "HOLD; formal schedule remains sealed",
+  "metrics": {
+    "chart_hit_at_1": {
+      "direction": "min",
+      "threshold": 0.75
+    },
+    "coverage": {
+      "direction": "min",
+      "threshold": 0.8
+    },
+    "failed_rate": {
+      "direction": "max",
+      "threshold": 0.0
+    },
+    "field_recall": {
+      "direction": "min",
+      "threshold": 0.8
+    },
+    "input_parity_rate": {
+      "direction": "min",
+      "threshold": 1.0
+    },
+    "invalid_rate": {
+      "direction": "max",
+      "threshold": 0.0
+    },
+    "llm_calls": {
+      "direction": "max",
+      "threshold": 0
+    },
+    "monetary_cost": {
+      "direction": "max",
+      "threshold": 0.0
+    },
+    "plan_success_at_1": {
+      "direction": "min",
+      "threshold": 0.55
+    },
+    "provenance_completeness": {
+      "direction": "min",
+      "threshold": 1.0
+    },
+    "replay_pass_rate": {
+      "direction": "min",
+      "threshold": 1.0
+    },
+    "task_f1": {
+      "direction": "min",
+      "threshold": 0.75
+    },
+    "trace_completeness": {
+      "direction": "min",
+      "threshold": 1.0
+    },
+    "transform_recall_at_1": {
+      "direction": "min",
+      "threshold": 0.75
+    },
+    "worker_success_rate": {
+      "direction": "min",
+      "threshold": 1.0
+    }
+  },
+  "pass_action": "authorize only the already frozen formal schedule",
+  "post_gate_tuning": "forbidden",
+  "purpose": "final-version engineering readiness; not publication comparison evidence",
+  "schema_version": "skillvis-pcs-v7-qualification-gate-v1.0.0",
+  "status": "PREDECLARED_BEFORE_FIRST_QUALIFICATION_INVOCATION",
+  "threshold_origin": "unchanged PCS-v3 gate family; thresholds not fitted to PCS-v7 outputs"
+}

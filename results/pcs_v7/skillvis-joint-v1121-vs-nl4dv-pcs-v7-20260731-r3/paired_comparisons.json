@@ -1,0 +1,122 @@
+{
+  "bootstrap": {
+    "acceptable_candidate_precision_at_3": {
+      "ci95": [
+        0.5,
+        0.9
+      ],
+      "clusters": 3,
+      "left_minus_right": 0.7,
+      "method": "source-arm-stratified cluster-paired percentile bootstrap",
+      "metric": "acceptable_candidate_precision_at_3",
+      "samples": 10000,
+      "seed": 20260728
+    },
+    "chart_hit_at_1": {
+      "ci95": [
+        0.2,
+        0.4
+      ],
+      "clusters": 3,
+      "left_minus_right": 0.26666666666666666,
+      "method": "source-arm-stratified cluster-paired percentile bootstrap",
+      "metric": "chart_hit_at_1",
+      "samples": 10000,
+      "seed": 20260728
+    },
+    "chart_hit_at_3": {
+      "ci95": [
+        0.2,
+        0.4
+      ],
+      "clusters": 3,
+      "left_minus_right": 0.26666666666666666,
+      "method": "source-arm-stratified cluster-paired percentile bootstrap",
+      "metric": "chart_hit_at_3",
+      "samples": 10000,
+      "seed": 20260728
+    },
+    "encoding_role_satisfaction_at_1": {
+      "ci95": [
+        0.4,
+        0.7
+      ],
+      "clusters": 3,
+      "left_minus_right": 0.5333333333333333,
+      "method": "source-arm-stratified cluster-paired percentile bootstrap",
+      "metric": "encoding_role_satisfaction_at_1",
+      "samples": 10000,
+      "seed": 20260728
+    },
+    "field_f1": {
+      "ci95": [
+        0.3333333333333333,
+        0.4
+      ],
+      "clusters": 3,
+      "left_minus_right": 0.3777777777777778,
+      "method": "source-arm-stratified cluster-paired percentile bootstrap",
+      "metric": "field_f1",
+      "samples": 10000,
+      "seed": 20260728
+    },
+    "plan_success_at_1": {
+      "ci95": [
+        0.6,
+        1.0
+      ],
+      "clusters": 3,
+      "left_minus_right": 0.8,
+      "method": "source-arm-stratified cluster-paired percentile bootstrap",
+      "metric": "plan_success_at_1",
+      "samples": 10000,
+      "seed": 20260728
+    },
+    "plan_success_at_3": {
+      "ci95": [
+        0.6,
+        1.0
+      ],
+      "clusters": 3,
+      "left_minus_right": 0.8,
+      "method": "source-arm-stratified cluster-paired percentile bootstrap",
+      "metric": "plan_success_at_3",
+      "samples": 10000,
+      "seed": 20260728
+    },
+    "task_f1": {
+      "ci95": [
+        0.4666666666666667,
+        0.8666666666666667
+      ],
+      "clusters": 3,
+      "left_minus_right": 0.6666666666666666,
+      "method": "source-arm-stratified cluster-paired percentile bootstrap",
+      "metric": "task_f1",
+      "samples": 10000,
+      "seed": 20260728
+    },
+    "transform_recall_at_1": {
+      "ci95": [
+        0.6,
+        0.8
+      ],
+      "clusters": 3,
+      "left_minus_right": 0.6666666666666666,
+      "method": "source-arm-stratified cluster-paired percentile bootstrap",
+      "metric": "transform_recall_at_1",
+      "samples": 10000,
+      "seed": 20260728
+    }
+  },
+  "mcnemar_discordant_counts": {
+    "plan_success_at_1": {
+      "left_0_right_1": 0,
+      "left_1_right_0": 24
+    },
+    "plan_success_at_3": {
+      "left_0_right_1": 0,
+      "left_1_right_0": 24
+    }
+  }
+}

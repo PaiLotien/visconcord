@@ -1,0 +1,54 @@
+{
+  "schema_version": "skillvis-v2-joint-v15-closure-rule-registry-v1.0.0",
+  "status": "development_only_not_protocol_frozen",
+  "rules": [
+    {
+      "rule_id": "R-SP-040",
+      "module": "temporal_value_shape_profiling",
+      "source_ids": ["MUNZNER2014", "VEGALITE2017", "NL4DV2020"],
+      "scope": "infer a temporal semantic type from a bounded column sample when at least 80 percent of non-null strings match a registered calendar or timestamp morphology and at least two distinct values parse",
+      "rationale": "Physical string type does not determine visualization semantic type; timestamp morphology is positive evidence even when a producer omits the separator between an ISO date and time.",
+      "priority": 41,
+      "failure_condition": "A date or timestamp column is treated as categorical solely because its serialized representation is non-standard but deterministically parseable.",
+      "conflict_policy": "Existing temporal types win; numeric identifiers are excluded; morphology and parse thresholds must both pass; profiling never rewrites source values.",
+      "trace_fields": ["field_name", "physical_type", "sample_count", "shape_match_ratio", "parse_ratio", "matched_morphologies", "semantic_type"],
+      "unit_tests": ["test_compact_timestamp_is_temporal", "test_standard_timestamp_is_temporal", "test_identifier_strings_remain_categorical"]
+    },
+    {
+      "rule_id": "R-FR-060",
+      "module": "typed_field_evidence_strength",
+      "source_ids": ["MACKINLAY1986", "NL4DV2020", "DRACO2019"],
+      "scope": "classify every field-resolution evidence item as explicit grounding, semantic grounding, schema inference, contextual support, or weak overlap",
+      "rationale": "Lexical observations, schema-derived inferences, and task-conditioned compatibility have different epistemic force and must not be interchangeable in required-field decisions.",
+      "priority": 70,
+      "failure_condition": "A schema inference or contextual compatibility signal is treated as equivalent to a query-grounded field mention.",
+      "conflict_policy": "The classification is immutable and auditable; it does not change candidate scores by itself and unknown evidence types default to contextual support.",
+      "trace_fields": ["field_name", "evidence_type", "strength", "query_span", "source_rule"],
+      "unit_tests": ["test_evidence_strength_taxonomy_is_total", "test_schema_semantic_evidence_is_not_explicit", "test_unknown_evidence_defaults_to_contextual"]
+    },
+    {
+      "rule_id": "R-FR-061",
+      "module": "hierarchical_field_mention_ownership",
+      "source_ids": ["NL4DV2020", "BREHMER_MUNZNER2013", "DRACO2019"],
+      "scope": "remove a required-field obligation only when all of its query-grounded token support is owned by one or more stronger explicit field mentions and no independent complete mention remains",
+      "rationale": "A weak phrase window may cross two complete mentions, so ownership must be decided token by token rather than by requiring one owner span to contain the entire window.",
+      "priority": 71,
+      "failure_condition": "A phrase such as convex area across grain class creates an extra grain-area obligation because a weak window combines tokens owned by convex-area and grain-class mentions.",
+      "conflict_policy": "Any independent complete explicit, alias, acronym, value, or semantic mention preserves the obligation; schema inference and contextual support cannot defeat explicit multi-owner coverage.",
+      "trace_fields": ["field_name", "evidence_strengths", "observed_tokens", "owner_fields", "owner_spans", "independent_support", "decision"],
+      "unit_tests": ["test_multi_owner_weak_window_is_suppressed", "test_independent_full_mention_is_preserved", "test_candidates_remain_in_audit_contract"]
+    },
+    {
+      "rule_id": "R-SA-020",
+      "module": "unsupported_operation_taxonomy",
+      "source_ids": ["BREHMER_MUNZNER2013", "MUNZNER2014", "NL4DV2020"],
+      "scope": "map unsupported governing-operation lexemes to a versioned canonical label while preserving the matched lexical form and span",
+      "rationale": "Forecast and prediction are related but distinct requested operations; an explicit predict verb must not be relabeled as forecast merely because future scope is also present.",
+      "priority": 93,
+      "failure_condition": "A query safely abstains but reports a canonical unsupported-operation label inconsistent with its governing verb.",
+      "conflict_policy": "Explicit forecast lexemes map to forecast; explicit predict lexemes map to prediction even with future modifiers; project plus future scope maps to forecast; field-grounded spans are excluded before classification.",
+      "trace_fields": ["canonical_operation", "operation_family", "lexical_form", "span", "field_span_precedence", "risk_level"],
+      "unit_tests": ["test_predict_future_maps_to_prediction", "test_forecast_maps_to_forecast", "test_project_future_maps_to_forecast", "test_operation_named_field_is_not_misclassified"]
+    }
+  ]
+}

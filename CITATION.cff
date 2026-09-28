@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "VisConcord: Aligning Recommendation and Validation Rules with Visualization Research Findings"
+message: "If you use this repository, please cite the VisConcord paper and the specific release."
+type: software
+authors:
+  - family-names: Zhao
+    given-names: Feifan
+  - family-names: Gao
+    given-names: Zhiqi
+    orcid: "https://orcid.org/0009-0008-4898-2521"
+  - family-names: Zhang
+    given-names: Xiangxuan
+  - family-names: Wang
+    given-names: Yining
+  - family-names: Yan
+    given-names: Sitong
+  - family-names: Wang
+    given-names: Xumeng
+version: 1.0.0
+date-released: 2026-09-28
+keywords:
+  - visualization recommendation
+  - visualization validation
+  - provenance
+  - design rules
+license: MIT

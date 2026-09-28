@@ -1,0 +1,1409 @@
+{
+  "partition": "qualification",
+  "schema_version": "skillvis-pcs-v7-task-set-v1.0.0",
+  "seed": 202607319,
+  "status": "FROZEN_PREEXECUTION_RESULT_BLIND",
+  "task_count": 20,
+  "tasks": [
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_letter_59_pcs7q",
+        "fields": [
+          {
+            "name": "glyph_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "x_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "y_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "glyph_width",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "pixel_count",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_59_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_59_metadata.json",
+        "metadata_sha256": "6927f27f6caca2e154acc0b741968f6869dcea10a14fd8eb971326a0054dccc1",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "7da8b53e04f6cffa80b7a2e93157d9fb02a877a327cbd4f57222bee037a9d1fb",
+        "source_doi": "10.24432/C5ZP40",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/59/letter+recognition",
+        "source_sha256": "9ec44e47110540d997fc2e247464a75ed3da0ad9dfcd49ded7e68fcaab04a9f7",
+        "source_uci_id": 59
+      },
+      "natural_language_query": "Compare mean x_position across glyph_class with a bar chart.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "comparison",
+        "uci_id": 59
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:59",
+      "stratum": {
+        "analytical_task": "comparison",
+        "chart_family": "bar",
+        "paraphrase_index": 1,
+        "template_family": "comparison",
+        "uci_id": 59
+      },
+      "task_id": "PCS7-Q-001"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_letter_59_pcs7q",
+        "fields": [
+          {
+            "name": "glyph_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "x_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "y_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "glyph_width",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "pixel_count",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_59_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_59_metadata.json",
+        "metadata_sha256": "6927f27f6caca2e154acc0b741968f6869dcea10a14fd8eb971326a0054dccc1",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "7da8b53e04f6cffa80b7a2e93157d9fb02a877a327cbd4f57222bee037a9d1fb",
+        "source_doi": "10.24432/C5ZP40",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/59/letter+recognition",
+        "source_sha256": "9ec44e47110540d997fc2e247464a75ed3da0ad9dfcd49ded7e68fcaab04a9f7",
+        "source_uci_id": 59
+      },
+      "natural_language_query": "Rank glyph_class by average x_position from highest to lowest in a horizontal bar chart.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "ranking",
+        "uci_id": 59
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:59",
+      "stratum": {
+        "analytical_task": "ranking",
+        "chart_family": "ranking_bar",
+        "paraphrase_index": 1,
+        "template_family": "ranking",
+        "uci_id": 59
+      },
+      "task_id": "PCS7-Q-002"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_letter_59_pcs7q",
+        "fields": [
+          {
+            "name": "glyph_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "x_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "y_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "glyph_width",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "pixel_count",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_59_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_59_metadata.json",
+        "metadata_sha256": "6927f27f6caca2e154acc0b741968f6869dcea10a14fd8eb971326a0054dccc1",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "7da8b53e04f6cffa80b7a2e93157d9fb02a877a327cbd4f57222bee037a9d1fb",
+        "source_doi": "10.24432/C5ZP40",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/59/letter+recognition",
+        "source_sha256": "9ec44e47110540d997fc2e247464a75ed3da0ad9dfcd49ded7e68fcaab04a9f7",
+        "source_uci_id": 59
+      },
+      "natural_language_query": "Make a scatter plot relating x_position to y_position.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "correlation",
+        "uci_id": 59
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:59",
+      "stratum": {
+        "analytical_task": "correlation",
+        "chart_family": "scatter",
+        "paraphrase_index": 1,
+        "template_family": "correlation",
+        "uci_id": 59
+      },
+      "task_id": "PCS7-Q-003"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_letter_59_pcs7q",
+        "fields": [
+          {
+            "name": "glyph_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "x_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "y_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "glyph_width",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "pixel_count",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_59_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_59_metadata.json",
+        "metadata_sha256": "6927f27f6caca2e154acc0b741968f6869dcea10a14fd8eb971326a0054dccc1",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "7da8b53e04f6cffa80b7a2e93157d9fb02a877a327cbd4f57222bee037a9d1fb",
+        "source_doi": "10.24432/C5ZP40",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/59/letter+recognition",
+        "source_sha256": "9ec44e47110540d997fc2e247464a75ed3da0ad9dfcd49ded7e68fcaab04a9f7",
+        "source_uci_id": 59
+      },
+      "natural_language_query": "Inspect the frequency distribution of x_position in a histogram.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "distribution",
+        "uci_id": 59
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:59",
+      "stratum": {
+        "analytical_task": "distribution",
+        "chart_family": "histogram",
+        "paraphrase_index": 1,
+        "template_family": "distribution",
+        "uci_id": 59
+      },
+      "task_id": "PCS7-Q-004"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_letter_59_pcs7q",
+        "fields": [
+          {
+            "name": "glyph_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "x_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "y_position",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "glyph_width",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "pixel_count",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_59_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_59_metadata.json",
+        "metadata_sha256": "6927f27f6caca2e154acc0b741968f6869dcea10a14fd8eb971326a0054dccc1",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "7da8b53e04f6cffa80b7a2e93157d9fb02a877a327cbd4f57222bee037a9d1fb",
+        "source_doi": "10.24432/C5ZP40",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_59_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/59/letter+recognition",
+        "source_sha256": "9ec44e47110540d997fc2e247464a75ed3da0ad9dfcd49ded7e68fcaab04a9f7",
+        "source_uci_id": 59
+      },
+      "natural_language_query": "Represent record shares by glyph_class with a pie chart.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "composition",
+        "uci_id": 59
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:59",
+      "stratum": {
+        "analytical_task": "composition",
+        "chart_family": "pie",
+        "paraphrase_index": 1,
+        "template_family": "composition",
+        "uci_id": 59
+      },
+      "task_id": "PCS7-Q-005"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_yeast_110_pcs7q",
+        "fields": [
+          {
+            "name": "localization_site",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "protein_mcg_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "protein_gvh_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "alm_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "mit_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_110_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_110_metadata.json",
+        "metadata_sha256": "971a1a3647c64b4d25267c0d40beb41c020def6bc92eb01796e8106b70a94caf",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "5287eff00505bd6432f49f9624e3310a2d442cd4daf0bd92dc5b7003060ffc16",
+        "source_doi": "10.24432/C5KG68",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/110/yeast",
+        "source_sha256": "294c84c36ff131305fe1baaeb9c8c93f9a557d01d1ee676a77a31607ad3df516",
+        "source_uci_id": 110
+      },
+      "natural_language_query": "Compare mean protein_mcg_signal across localization_site with a bar chart.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "comparison",
+        "uci_id": 110
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:110",
+      "stratum": {
+        "analytical_task": "comparison",
+        "chart_family": "bar",
+        "paraphrase_index": 1,
+        "template_family": "comparison",
+        "uci_id": 110
+      },
+      "task_id": "PCS7-Q-006"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_yeast_110_pcs7q",
+        "fields": [
+          {
+            "name": "localization_site",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "protein_mcg_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "protein_gvh_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "alm_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "mit_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_110_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_110_metadata.json",
+        "metadata_sha256": "971a1a3647c64b4d25267c0d40beb41c020def6bc92eb01796e8106b70a94caf",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "5287eff00505bd6432f49f9624e3310a2d442cd4daf0bd92dc5b7003060ffc16",
+        "source_doi": "10.24432/C5KG68",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/110/yeast",
+        "source_sha256": "294c84c36ff131305fe1baaeb9c8c93f9a557d01d1ee676a77a31607ad3df516",
+        "source_uci_id": 110
+      },
+      "natural_language_query": "Rank localization_site by average protein_mcg_signal from highest to lowest in a horizontal bar chart.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "ranking",
+        "uci_id": 110
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:110",
+      "stratum": {
+        "analytical_task": "ranking",
+        "chart_family": "ranking_bar",
+        "paraphrase_index": 1,
+        "template_family": "ranking",
+        "uci_id": 110
+      },
+      "task_id": "PCS7-Q-007"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_yeast_110_pcs7q",
+        "fields": [
+          {
+            "name": "localization_site",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "protein_mcg_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "protein_gvh_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "alm_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "mit_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_110_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_110_metadata.json",
+        "metadata_sha256": "971a1a3647c64b4d25267c0d40beb41c020def6bc92eb01796e8106b70a94caf",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "5287eff00505bd6432f49f9624e3310a2d442cd4daf0bd92dc5b7003060ffc16",
+        "source_doi": "10.24432/C5KG68",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/110/yeast",
+        "source_sha256": "294c84c36ff131305fe1baaeb9c8c93f9a557d01d1ee676a77a31607ad3df516",
+        "source_uci_id": 110
+      },
+      "natural_language_query": "Make a scatter plot relating protein_mcg_signal to protein_gvh_signal.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "correlation",
+        "uci_id": 110
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:110",
+      "stratum": {
+        "analytical_task": "correlation",
+        "chart_family": "scatter",
+        "paraphrase_index": 1,
+        "template_family": "correlation",
+        "uci_id": 110
+      },
+      "task_id": "PCS7-Q-008"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_yeast_110_pcs7q",
+        "fields": [
+          {
+            "name": "localization_site",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "protein_mcg_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "protein_gvh_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "alm_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "mit_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_110_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_110_metadata.json",
+        "metadata_sha256": "971a1a3647c64b4d25267c0d40beb41c020def6bc92eb01796e8106b70a94caf",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "5287eff00505bd6432f49f9624e3310a2d442cd4daf0bd92dc5b7003060ffc16",
+        "source_doi": "10.24432/C5KG68",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/110/yeast",
+        "source_sha256": "294c84c36ff131305fe1baaeb9c8c93f9a557d01d1ee676a77a31607ad3df516",
+        "source_uci_id": 110
+      },
+      "natural_language_query": "Inspect the frequency distribution of protein_mcg_signal in a histogram.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "distribution",
+        "uci_id": 110
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:110",
+      "stratum": {
+        "analytical_task": "distribution",
+        "chart_family": "histogram",
+        "paraphrase_index": 1,
+        "template_family": "distribution",
+        "uci_id": 110
+      },
+      "task_id": "PCS7-Q-009"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_yeast_110_pcs7q",
+        "fields": [
+          {
+            "name": "localization_site",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "protein_mcg_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "protein_gvh_signal",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "alm_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "mit_score",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_110_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_110_metadata.json",
+        "metadata_sha256": "971a1a3647c64b4d25267c0d40beb41c020def6bc92eb01796e8106b70a94caf",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "5287eff00505bd6432f49f9624e3310a2d442cd4daf0bd92dc5b7003060ffc16",
+        "source_doi": "10.24432/C5KG68",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_110_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/110/yeast",
+        "source_sha256": "294c84c36ff131305fe1baaeb9c8c93f9a557d01d1ee676a77a31607ad3df516",
+        "source_uci_id": 110
+      },
+      "natural_language_query": "Represent record shares by localization_site with a pie chart.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "composition",
+        "uci_id": 110
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:110",
+      "stratum": {
+        "analytical_task": "composition",
+        "chart_family": "pie",
+        "paraphrase_index": 1,
+        "template_family": "composition",
+        "uci_id": 110
+      },
+      "task_id": "PCS7-Q-010"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_raisin_850_pcs7q",
+        "fields": [
+          {
+            "name": "raisin_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "area_value",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "major_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "minor_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "perimeter_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_850_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_850_metadata.json",
+        "metadata_sha256": "c7f7d34bc46d888ce1499f692ffc0da0220f0c442cd90e9f0cacd773b3c88fb6",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "94d60b4a179fc69e98e89aaf1eab9398061b7eff65fa816036e9a4c8ccb209f6",
+        "source_doi": "10.24432/C5660T",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/850/raisin",
+        "source_sha256": "175ecbc52d351e0e0d9aa00605de09425b3a4826c5db294fabcbc24bcba955ab",
+        "source_uci_id": 850
+      },
+      "natural_language_query": "Compare mean area_value across raisin_class with a bar chart.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "comparison",
+        "uci_id": 850
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:850",
+      "stratum": {
+        "analytical_task": "comparison",
+        "chart_family": "bar",
+        "paraphrase_index": 1,
+        "template_family": "comparison",
+        "uci_id": 850
+      },
+      "task_id": "PCS7-Q-011"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_raisin_850_pcs7q",
+        "fields": [
+          {
+            "name": "raisin_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "area_value",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "major_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "minor_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "perimeter_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_850_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_850_metadata.json",
+        "metadata_sha256": "c7f7d34bc46d888ce1499f692ffc0da0220f0c442cd90e9f0cacd773b3c88fb6",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "94d60b4a179fc69e98e89aaf1eab9398061b7eff65fa816036e9a4c8ccb209f6",
+        "source_doi": "10.24432/C5660T",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/850/raisin",
+        "source_sha256": "175ecbc52d351e0e0d9aa00605de09425b3a4826c5db294fabcbc24bcba955ab",
+        "source_uci_id": 850
+      },
+      "natural_language_query": "Rank raisin_class by average area_value from highest to lowest in a horizontal bar chart.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "ranking",
+        "uci_id": 850
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:850",
+      "stratum": {
+        "analytical_task": "ranking",
+        "chart_family": "ranking_bar",
+        "paraphrase_index": 1,
+        "template_family": "ranking",
+        "uci_id": 850
+      },
+      "task_id": "PCS7-Q-012"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_raisin_850_pcs7q",
+        "fields": [
+          {
+            "name": "raisin_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "area_value",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "major_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "minor_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "perimeter_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_850_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_850_metadata.json",
+        "metadata_sha256": "c7f7d34bc46d888ce1499f692ffc0da0220f0c442cd90e9f0cacd773b3c88fb6",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "94d60b4a179fc69e98e89aaf1eab9398061b7eff65fa816036e9a4c8ccb209f6",
+        "source_doi": "10.24432/C5660T",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/850/raisin",
+        "source_sha256": "175ecbc52d351e0e0d9aa00605de09425b3a4826c5db294fabcbc24bcba955ab",
+        "source_uci_id": 850
+      },
+      "natural_language_query": "Make a scatter plot relating area_value to major_axis_length.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "correlation",
+        "uci_id": 850
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:850",
+      "stratum": {
+        "analytical_task": "correlation",
+        "chart_family": "scatter",
+        "paraphrase_index": 1,
+        "template_family": "correlation",
+        "uci_id": 850
+      },
+      "task_id": "PCS7-Q-013"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_raisin_850_pcs7q",
+        "fields": [
+          {
+            "name": "raisin_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "area_value",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "major_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "minor_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "perimeter_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_850_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_850_metadata.json",
+        "metadata_sha256": "c7f7d34bc46d888ce1499f692ffc0da0220f0c442cd90e9f0cacd773b3c88fb6",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "94d60b4a179fc69e98e89aaf1eab9398061b7eff65fa816036e9a4c8ccb209f6",
+        "source_doi": "10.24432/C5660T",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/850/raisin",
+        "source_sha256": "175ecbc52d351e0e0d9aa00605de09425b3a4826c5db294fabcbc24bcba955ab",
+        "source_uci_id": 850
+      },
+      "natural_language_query": "Inspect the frequency distribution of area_value in a histogram.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "distribution",
+        "uci_id": 850
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:850",
+      "stratum": {
+        "analytical_task": "distribution",
+        "chart_family": "histogram",
+        "paraphrase_index": 1,
+        "template_family": "distribution",
+        "uci_id": 850
+      },
+      "task_id": "PCS7-Q-014"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_raisin_850_pcs7q",
+        "fields": [
+          {
+            "name": "raisin_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "area_value",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "major_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "minor_axis_length",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "perimeter_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_850_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_850_metadata.json",
+        "metadata_sha256": "c7f7d34bc46d888ce1499f692ffc0da0220f0c442cd90e9f0cacd773b3c88fb6",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "94d60b4a179fc69e98e89aaf1eab9398061b7eff65fa816036e9a4c8ccb209f6",
+        "source_doi": "10.24432/C5660T",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_850_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/850/raisin",
+        "source_sha256": "175ecbc52d351e0e0d9aa00605de09425b3a4826c5db294fabcbc24bcba955ab",
+        "source_uci_id": 850
+      },
+      "natural_language_query": "Represent record shares by raisin_class with a pie chart.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "composition",
+        "uci_id": 850
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:850",
+      "stratum": {
+        "analytical_task": "composition",
+        "chart_family": "pie",
+        "paraphrase_index": 1,
+        "template_family": "composition",
+        "uci_id": 850
+      },
+      "task_id": "PCS7-Q-015"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_cirrhosis_878_pcs7q",
+        "fields": [
+          {
+            "name": "treatment_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "bilirubin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "albumin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "cholesterol_level",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "survival_days",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_878_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_878_metadata.json",
+        "metadata_sha256": "65e8909db86c8490c60fede7aa38d879a87173008b23b893b2a19b48ce17f6a8",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 418,
+        "selection_seed": 202607319,
+        "sha256": "658f9ad9b320e13c211b48bacaa65dbdc2d9990f7c62aadcf7dae48c6ed00259",
+        "source_doi": "10.24432/C5R02G",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1",
+        "source_sha256": "539c167d30de2dc84d23376712b7f96b4ebb77d76f375574d02d2c51b76861cf",
+        "source_uci_id": 878
+      },
+      "natural_language_query": "Compare mean bilirubin_level across treatment_group with a bar chart.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "comparison",
+        "uci_id": 878
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:878",
+      "stratum": {
+        "analytical_task": "comparison",
+        "chart_family": "bar",
+        "paraphrase_index": 1,
+        "template_family": "comparison",
+        "uci_id": 878
+      },
+      "task_id": "PCS7-Q-016"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_cirrhosis_878_pcs7q",
+        "fields": [
+          {
+            "name": "treatment_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "bilirubin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "albumin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "cholesterol_level",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "survival_days",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_878_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_878_metadata.json",
+        "metadata_sha256": "65e8909db86c8490c60fede7aa38d879a87173008b23b893b2a19b48ce17f6a8",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 418,
+        "selection_seed": 202607319,
+        "sha256": "658f9ad9b320e13c211b48bacaa65dbdc2d9990f7c62aadcf7dae48c6ed00259",
+        "source_doi": "10.24432/C5R02G",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1",
+        "source_sha256": "539c167d30de2dc84d23376712b7f96b4ebb77d76f375574d02d2c51b76861cf",
+        "source_uci_id": 878
+      },
+      "natural_language_query": "Rank treatment_group by average bilirubin_level from highest to lowest in a horizontal bar chart.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "ranking",
+        "uci_id": 878
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:878",
+      "stratum": {
+        "analytical_task": "ranking",
+        "chart_family": "ranking_bar",
+        "paraphrase_index": 1,
+        "template_family": "ranking",
+        "uci_id": 878
+      },
+      "task_id": "PCS7-Q-017"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_cirrhosis_878_pcs7q",
+        "fields": [
+          {
+            "name": "treatment_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "bilirubin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "albumin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "cholesterol_level",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "survival_days",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_878_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_878_metadata.json",
+        "metadata_sha256": "65e8909db86c8490c60fede7aa38d879a87173008b23b893b2a19b48ce17f6a8",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 418,
+        "selection_seed": 202607319,
+        "sha256": "658f9ad9b320e13c211b48bacaa65dbdc2d9990f7c62aadcf7dae48c6ed00259",
+        "source_doi": "10.24432/C5R02G",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1",
+        "source_sha256": "539c167d30de2dc84d23376712b7f96b4ebb77d76f375574d02d2c51b76861cf",
+        "source_uci_id": 878
+      },
+      "natural_language_query": "Make a scatter plot relating bilirubin_level to albumin_level.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "correlation",
+        "uci_id": 878
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:878",
+      "stratum": {
+        "analytical_task": "correlation",
+        "chart_family": "scatter",
+        "paraphrase_index": 1,
+        "template_family": "correlation",
+        "uci_id": 878
+      },
+      "task_id": "PCS7-Q-018"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_cirrhosis_878_pcs7q",
+        "fields": [
+          {
+            "name": "treatment_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "bilirubin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "albumin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "cholesterol_level",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "survival_days",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_878_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_878_metadata.json",
+        "metadata_sha256": "65e8909db86c8490c60fede7aa38d879a87173008b23b893b2a19b48ce17f6a8",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 418,
+        "selection_seed": 202607319,
+        "sha256": "658f9ad9b320e13c211b48bacaa65dbdc2d9990f7c62aadcf7dae48c6ed00259",
+        "source_doi": "10.24432/C5R02G",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1",
+        "source_sha256": "539c167d30de2dc84d23376712b7f96b4ebb77d76f375574d02d2c51b76861cf",
+        "source_uci_id": 878
+      },
+      "natural_language_query": "Inspect the frequency distribution of bilirubin_level in a histogram.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "distribution",
+        "uci_id": 878
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:878",
+      "stratum": {
+        "analytical_task": "distribution",
+        "chart_family": "histogram",
+        "paraphrase_index": 1,
+        "template_family": "distribution",
+        "uci_id": 878
+      },
+      "task_id": "PCS7-Q-019"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_cirrhosis_878_pcs7q",
+        "fields": [
+          {
+            "name": "treatment_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "bilirubin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "albumin_level",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "cholesterol_level",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "survival_days",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_878_pcs7_qualification.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_pcs7_qualification.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_878_metadata.json",
+        "metadata_sha256": "65e8909db86c8490c60fede7aa38d879a87173008b23b893b2a19b48ce17f6a8",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 418,
+        "selection_seed": 202607319,
+        "sha256": "658f9ad9b320e13c211b48bacaa65dbdc2d9990f7c62aadcf7dae48c6ed00259",
+        "source_doi": "10.24432/C5R02G",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_878_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1",
+        "source_sha256": "539c167d30de2dc84d23376712b7f96b4ebb77d76f375574d02d2c51b76861cf",
+        "source_uci_id": 878
+      },
+      "natural_language_query": "Represent record shares by treatment_group with a pie chart.",
+      "partition": "qualification",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "composition",
+        "uci_id": 878
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:878",
+      "stratum": {
+        "analytical_task": "composition",
+        "chart_family": "pie",
+        "paraphrase_index": 1,
+        "template_family": "composition",
+        "uci_id": 878
+      },
+      "task_id": "PCS7-Q-020"
+    }
+  ]
+}

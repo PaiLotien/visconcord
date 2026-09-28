@@ -1,0 +1,55 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "abstention_required": {
+      "title": "Abstention Required",
+      "type": "boolean"
+    },
+    "explanation": {
+      "title": "Explanation",
+      "type": "string"
+    },
+    "provenance": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Provenance",
+      "type": "array"
+    },
+    "risk_level": {
+      "enum": [
+        "unknown",
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "title": "Risk Level",
+      "type": "string"
+    },
+    "supported_operations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Supported Operations",
+      "type": "array"
+    },
+    "unsupported_operations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unsupported Operations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "supported_operations",
+    "unsupported_operations",
+    "risk_level",
+    "abstention_required",
+    "explanation",
+    "provenance"
+  ],
+  "title": "CapabilityAssessment",
+  "type": "object"
+}

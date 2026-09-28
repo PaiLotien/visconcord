@@ -1,0 +1,41 @@
+{
+  "excluded": [
+    {
+      "category": "secrets",
+      "examples": [
+        ".env",
+        "API keys",
+        "provider credentials"
+      ],
+      "reason": "Never part of a research artifact."
+    },
+    {
+      "category": "human private evidence",
+      "examples": [
+        "completed A/B packets",
+        "human role declarations",
+        "advisor authorization screenshot and completed authorization"
+      ],
+      "reason": "Not needed to reproduce component metrics and requires an explicit ethics/consent release decision."
+    },
+    {
+      "category": "path-bearing raw comparison traces",
+      "examples": [
+        "PCS-v7 raw invocations",
+        "CompassQL raw invocations"
+      ],
+      "reason": "They contain local absolute paths. Publication-level summaries, task/gold assets, replay summaries, and lock identities are retained."
+    },
+    {
+      "category": "out-of-scope development branches",
+      "examples": [
+        "v1.12.2 rejected candidate",
+        "Memory prototypes",
+        "Quda readiness",
+        "internal LLM/provider experiments"
+      ],
+      "reason": "Not part of the final Joint v1.12.1 method."
+    }
+  ],
+  "schema_version": "skillvis-anonymous-release-exclusion-ledger-v1.0.0"
+}

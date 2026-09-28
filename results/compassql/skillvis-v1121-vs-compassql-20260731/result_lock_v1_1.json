@@ -1,0 +1,12 @@
+{
+  "evaluation_summary_sha256": "d22d5449ba5df60d01a8d72449a0845627a283c81671c89a12332952f85a27f6",
+  "hash_validation_sha256": "1679d47b7616aed25394deb0b99c12eed24d23df00d8be9ff1b8d5aed8cdb87a",
+  "input_parity_sha256": "583d196f8c781f36127155890765ed0fbbd6e718c17e7c7b92cb7e3a286ec114",
+  "protocol_amendment_sha256": "b75081f4cd1780322e038de10aa377b008dc9ba128e6b9aa94368186f84648bd",
+  "protocol_lock_sha256": "d67ff916f21c77f1e22715c8af722d6c5b6623d8b393ea363ad3d6b3455e8805",
+  "quality_or_superiority_claim_authorized": false,
+  "replay_validation_sha256": "f0db1d0ab89cedb393f91946dec51dc181a5d09f2777a211f09edb0e72bce8f5",
+  "run_manifest_sha256": "75055c69015b691a4b9fed63d52cb87ef2b480f0893c2191d6f7fdc5bd47245d",
+  "schema_version": "skillvis-compassql-conformance-result-lock-v1.1.0",
+  "status": "LOCKED_COMPLETED_CONFORMANCE_ONLY"
+}

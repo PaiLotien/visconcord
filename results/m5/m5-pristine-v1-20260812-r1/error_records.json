@@ -1,0 +1,227 @@
+[
+  {
+    "candidate_id": "M5P-032-C1-fa6c94cdea",
+    "case_id": "M5P-032",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-F002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-F002",
+      "R-VF-F003"
+    ]
+  },
+  {
+    "candidate_id": "M5P-035-C1-6b4f7f389d",
+    "case_id": "M5P-035",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-F002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-F002",
+      "R-VF-F003"
+    ]
+  },
+  {
+    "candidate_id": "M5P-038-C1-12f39ba056",
+    "case_id": "M5P-038",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-F002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-F002",
+      "R-VF-F003"
+    ]
+  },
+  {
+    "candidate_id": "M5P-041-C1-a50d5e5e50",
+    "case_id": "M5P-041",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-F002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-F002",
+      "R-VF-F003"
+    ]
+  },
+  {
+    "candidate_id": "M5P-044-C1-62626e300e",
+    "case_id": "M5P-044",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-F002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-F002",
+      "R-VF-F003"
+    ]
+  },
+  {
+    "candidate_id": "M5P-111-C1-b5df35760e",
+    "case_id": "M5P-111",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-E002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-E002",
+      "R-VF-P001"
+    ]
+  },
+  {
+    "candidate_id": "M5P-112-C1-166961d423",
+    "case_id": "M5P-112",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-E002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-E002",
+      "R-VF-P001"
+    ]
+  },
+  {
+    "candidate_id": "M5P-113-C1-794d7c68f7",
+    "case_id": "M5P-113",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-E002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-E002",
+      "R-VF-P001"
+    ]
+  },
+  {
+    "candidate_id": "M5P-114-C1-e336266a65",
+    "case_id": "M5P-114",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-E002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-E002",
+      "R-VF-P001"
+    ]
+  },
+  {
+    "candidate_id": "M5P-115-C1-759a9072bc",
+    "case_id": "M5P-115",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-E002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-E002",
+      "R-VF-P001"
+    ]
+  },
+  {
+    "candidate_id": "M5P-116-C1-49125b6d76",
+    "case_id": "M5P-116",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-E002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-E002",
+      "R-VF-P001"
+    ]
+  },
+  {
+    "candidate_id": "M5P-117-C1-6f802bfc2a",
+    "case_id": "M5P-117",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-E002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-E002",
+      "R-VF-P001"
+    ]
+  },
+  {
+    "candidate_id": "M5P-118-C1-a5293214e5",
+    "case_id": "M5P-118",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-E002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-E002",
+      "R-VF-P001"
+    ]
+  },
+  {
+    "candidate_id": "M5P-119-C1-c343008af2",
+    "case_id": "M5P-119",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-E002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-E002",
+      "R-VF-P001"
+    ]
+  },
+  {
+    "candidate_id": "M5P-120-C1-b9889880d4",
+    "case_id": "M5P-120",
+    "expected_actions": [
+      "REJECT"
+    ],
+    "expected_rules": [
+      "R-VF-E002"
+    ],
+    "observed_action": "REJECT",
+    "observed_rules": [
+      "R-VF-E002",
+      "R-VF-P001"
+    ]
+  }
+]

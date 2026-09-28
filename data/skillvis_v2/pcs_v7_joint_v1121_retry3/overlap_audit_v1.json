@@ -1,0 +1,43 @@
+{
+  "aborted_preexecution_source_reuse": {
+    "directories": [
+      "data/skillvis_v2/pcs_v7_joint_v1121",
+      "data/skillvis_v2/pcs_v7_joint_v1121_retry2"
+    ],
+    "policy": "Excluded from prior-system-exposure overlap only; source reuse remains explicitly disclosed.",
+    "reused_uci_ids": [
+      59,
+      110,
+      189,
+      850,
+      864,
+      878,
+      887
+    ],
+    "system_invocations_in_aborted_directories": 0
+  },
+  "audit_completed_before_any_system_invocation": true,
+  "cross_partition_exact_query_overlap_count": 0,
+  "cross_partition_source_byte_overlap": [],
+  "cross_partition_uci_id_overlap": [],
+  "historical_json_files_scanned": 6985,
+  "historical_query_count": 9124,
+  "historical_source_byte_overlap": [],
+  "historical_uci_id_overlap": [],
+  "normalized_exact_query_overlaps": [],
+  "pass": true,
+  "schema_version": "skillvis-pcs-v7-overlap-audit-v1.0.0",
+  "status": "PASS",
+  "system_outputs_consulted": false,
+  "template_family_overlap": {
+    "claim_boundary": "The study estimates new-source behavior within a predeclared shared capability slice, not unrestricted language generalization.",
+    "families": [
+      "comparison",
+      "ranking",
+      "correlation",
+      "distribution",
+      "composition"
+    ],
+    "status": "EXPECTED_BY_DESIGN"
+  }
+}

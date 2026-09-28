@@ -1,0 +1,811 @@
+{
+  "quality_invocation_count": 60,
+  "replay_repetitions": 3,
+  "replay_system_task_group_count": 10,
+  "replay_task_ids": [
+    "PCS7-F-004",
+    "PCS7-F-007",
+    "PCS7-F-012",
+    "PCS7-F-019",
+    "PCS7-F-025"
+  ],
+  "run_id": "skillvis-joint-v1121-vs-nl4dv-pcs-v7-20260731-r3",
+  "schedule": [
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 1,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-004"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 2,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-011"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 3,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-001"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 4,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-028"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 5,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-030"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 6,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-007"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 7,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-020"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 8,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-025"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 9,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-015"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 10,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-007"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 11,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-024"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 12,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-003"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 13,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-026"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 14,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-015"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 15,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-029"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 16,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-027"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 17,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-006"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 18,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-009"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 19,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-020"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 20,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-028"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 21,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-008"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 22,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-027"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 23,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-017"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 24,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-004"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 25,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-012"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 26,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-014"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 27,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-002"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 28,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-018"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 29,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-007"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 30,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-019"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 31,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-024"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 32,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-013"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 33,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-016"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 34,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-004"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 35,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-002"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 36,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-023"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 37,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-014"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 38,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-004"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 39,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-003"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 40,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-013"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 41,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-030"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 42,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-021"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 43,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-004"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 44,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-025"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 45,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-019"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 46,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-019"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 47,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-012"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 48,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-005"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 49,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-016"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 50,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-026"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 51,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-029"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 52,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-022"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 53,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-007"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 54,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-012"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 55,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-018"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 56,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-019"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 57,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-010"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 58,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-025"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 59,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-007"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 60,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-012"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 61,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-025"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 62,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-025"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 63,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-012"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 64,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-005"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 65,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-025"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 66,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-019"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 67,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-017"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 68,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-001"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 69,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-022"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 2,
+      "sequence": 70,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-007"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource",
+        "replay"
+      ],
+      "repeat": 1,
+      "sequence": 71,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-004"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 72,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-010"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 73,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-023"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 74,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-012"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 75,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-021"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 76,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-009"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 77,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-006"
+    },
+    {
+      "purposes": [
+        "replay"
+      ],
+      "repeat": 3,
+      "sequence": 78,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-019"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 79,
+      "system": "NL4DV",
+      "task_id": "PCS7-F-008"
+    },
+    {
+      "purposes": [
+        "formal_quality",
+        "resource"
+      ],
+      "repeat": 1,
+      "sequence": 80,
+      "system": "SkillVIS_V2_JOINT",
+      "task_id": "PCS7-F-011"
+    }
+  ],
+  "schedule_content_sha256": "f024a835493c55c40eda2db2d3213dc6c6cbd4b02717ff5378649f6bc42d82e7",
+  "schema_version": "skillvis-pcs-v7-formal-schedule-v1.0.0",
+  "seed": 202607319,
+  "status": "SEALED_BEFORE_QUALIFICATION; EXECUTE_ONLY_AFTER_PASS",
+  "task_count": 30,
+  "total_invocation_count": 80
+}

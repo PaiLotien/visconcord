@@ -1,0 +1,869 @@
+{
+  "case_id": "M5P-119",
+  "context": {
+    "candidate_set_id": "candidate-set-M5P-119",
+    "candidate_set_signature": "ebdd604b9c898f505016cd1315c00533b03168d0dd4acd7e75b115be1c4daa71",
+    "candidates": [
+      {
+        "aggregation": null,
+        "ambiguity_state": "NONE",
+        "applied_rule_ids": [
+          "R-M5P-CANDIDATE"
+        ],
+        "audit_only": false,
+        "candidate_id": "M5P-119-C1-c343008af2",
+        "chart_compatibility_assumptions": [
+          "context-aware validation uses frozen SchemaProfile"
+        ],
+        "chart_type": "pie",
+        "deterministic_signature": "c343008af2bacdeabe85ea8a927e738832aab418e7823ca1a7f21301b0cf9343",
+        "encodings": [
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "theta",
+            "field": "Mangrove Flux 1119",
+            "semantic_type": "quantitative",
+            "sort": null,
+            "time_unit": null
+          },
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "color",
+            "field": "Mangrove Zone 1119",
+            "semantic_type": "categorical",
+            "sort": null,
+            "time_unit": null
+          }
+        ],
+        "evidence_spans": [
+          {
+            "end": 74,
+            "kind": "m5_pristine_authoring",
+            "normalized": "partition mangrove flux 1119 across mangrove zone 1119 for study unit 1119",
+            "rule_ids": [
+              "R-M5P-SEED"
+            ],
+            "start": 0,
+            "text": "Partition Mangrove Flux 1119 across Mangrove Zone 1119 for study unit 1119"
+          }
+        ],
+        "executable": true,
+        "field_role_alignment": {
+          "color": [
+            "Mangrove Zone 1119"
+          ],
+          "dimension": [
+            "Mangrove Zone 1119"
+          ],
+          "grouping": [
+            "Mangrove Zone 1119"
+          ],
+          "measure": [
+            "Mangrove Flux 1119"
+          ]
+        },
+        "fields": {
+          "color": [
+            "Mangrove Zone 1119"
+          ],
+          "dimension": [
+            "Mangrove Zone 1119"
+          ],
+          "facet": [],
+          "grouping": [
+            "Mangrove Zone 1119"
+          ],
+          "measure": [
+            "Mangrove Flux 1119"
+          ],
+          "size": [],
+          "temporal": []
+        },
+        "filters": [],
+        "grouping": [
+          "Mangrove Zone 1119"
+        ],
+        "limit": null,
+        "mark_type": "bar",
+        "rank": 1,
+        "rationale": "Source-isolated M5 component blind candidate.",
+        "rejection_reasons": [],
+        "schema_version": "skillvis-v2-visualization-candidate-v1.0.0",
+        "score_components": {
+          "ambiguity_penalty": 0.0,
+          "chart_effectiveness_score": 0.85,
+          "complexity_penalty": 0.1,
+          "deterministic_tie_breaker": 0.5,
+          "field_role_fit_score": 0.9,
+          "missing_role_penalty": 0.0,
+          "provenance_strength_score": 1.0,
+          "rule_ids": {
+            "ambiguity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "chart_effectiveness_score": [
+              "R-M5P-SCORE"
+            ],
+            "complexity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "deterministic_tie_breaker": [
+              "R-M5P-SCORE"
+            ],
+            "field_role_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "missing_role_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "provenance_strength_score": [
+              "R-M5P-SCORE"
+            ],
+            "task_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "type_compatibility_score": [
+              "R-M5P-SCORE"
+            ],
+            "unsupported_feature_penalty": [
+              "R-M5P-SCORE"
+            ]
+          },
+          "task_fit_score": 0.9,
+          "type_compatibility_score": 0.9,
+          "unsupported_feature_penalty": 0.0
+        },
+        "sort": null,
+        "source_ids": [
+          "M5-PRISTINE-AUTHORING"
+        ],
+        "task_alignment": "composition",
+        "total_score": 0.97,
+        "transforms": [],
+        "unsupported_features": [],
+        "warnings": []
+      },
+      {
+        "aggregation": null,
+        "ambiguity_state": "NONE",
+        "applied_rule_ids": [
+          "R-M5P-CANDIDATE"
+        ],
+        "audit_only": false,
+        "candidate_id": "M5P-119-C2-06a9bd8ff5",
+        "chart_compatibility_assumptions": [
+          "context-aware validation uses frozen SchemaProfile"
+        ],
+        "chart_type": "normalized_stacked_bar",
+        "deterministic_signature": "06a9bd8ff5232361dd947322f66fa1f84c55f1504d9c7c5c05feda1eb4e4badf",
+        "encodings": [
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "y",
+            "field": "Mangrove Flux 1119",
+            "semantic_type": "quantitative",
+            "sort": null,
+            "time_unit": null
+          },
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "color",
+            "field": "Mangrove Zone 1119",
+            "semantic_type": "categorical",
+            "sort": null,
+            "time_unit": null
+          }
+        ],
+        "evidence_spans": [
+          {
+            "end": 74,
+            "kind": "m5_pristine_authoring",
+            "normalized": "partition mangrove flux 1119 across mangrove zone 1119 for study unit 1119",
+            "rule_ids": [
+              "R-M5P-SEED"
+            ],
+            "start": 0,
+            "text": "Partition Mangrove Flux 1119 across Mangrove Zone 1119 for study unit 1119"
+          }
+        ],
+        "executable": true,
+        "field_role_alignment": {
+          "color": [
+            "Mangrove Zone 1119"
+          ],
+          "dimension": [
+            "Mangrove Zone 1119"
+          ],
+          "grouping": [
+            "Mangrove Zone 1119"
+          ],
+          "measure": [
+            "Mangrove Flux 1119"
+          ]
+        },
+        "fields": {
+          "color": [
+            "Mangrove Zone 1119"
+          ],
+          "dimension": [
+            "Mangrove Zone 1119"
+          ],
+          "facet": [],
+          "grouping": [
+            "Mangrove Zone 1119"
+          ],
+          "measure": [
+            "Mangrove Flux 1119"
+          ],
+          "size": [],
+          "temporal": []
+        },
+        "filters": [],
+        "grouping": [
+          "Mangrove Zone 1119"
+        ],
+        "limit": null,
+        "mark_type": "bar",
+        "rank": 2,
+        "rationale": "Source-isolated M5 component blind candidate.",
+        "rejection_reasons": [],
+        "schema_version": "skillvis-v2-visualization-candidate-v1.0.0",
+        "score_components": {
+          "ambiguity_penalty": 0.0,
+          "chart_effectiveness_score": 0.85,
+          "complexity_penalty": 0.1,
+          "deterministic_tie_breaker": 0.5,
+          "field_role_fit_score": 0.9,
+          "missing_role_penalty": 0.0,
+          "provenance_strength_score": 1.0,
+          "rule_ids": {
+            "ambiguity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "chart_effectiveness_score": [
+              "R-M5P-SCORE"
+            ],
+            "complexity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "deterministic_tie_breaker": [
+              "R-M5P-SCORE"
+            ],
+            "field_role_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "missing_role_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "provenance_strength_score": [
+              "R-M5P-SCORE"
+            ],
+            "task_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "type_compatibility_score": [
+              "R-M5P-SCORE"
+            ],
+            "unsupported_feature_penalty": [
+              "R-M5P-SCORE"
+            ]
+          },
+          "task_fit_score": 0.9,
+          "type_compatibility_score": 0.9,
+          "unsupported_feature_penalty": 0.0
+        },
+        "sort": null,
+        "source_ids": [
+          "M5-PRISTINE-AUTHORING"
+        ],
+        "task_alignment": "composition",
+        "total_score": 0.92,
+        "transforms": [],
+        "unsupported_features": [],
+        "warnings": []
+      },
+      {
+        "aggregation": null,
+        "ambiguity_state": "NONE",
+        "applied_rule_ids": [
+          "R-M5P-CANDIDATE"
+        ],
+        "audit_only": false,
+        "candidate_id": "M5P-119-C3-5e8bad526f",
+        "chart_compatibility_assumptions": [
+          "context-aware validation uses frozen SchemaProfile"
+        ],
+        "chart_type": "pie",
+        "deterministic_signature": "5e8bad526f7bc372c36f34f8e6b7300a71840ff7f1b5ef1bc09a8952bb969f52",
+        "encodings": [
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "theta",
+            "field": "Mangrove Flux 1119",
+            "semantic_type": "quantitative",
+            "sort": null,
+            "time_unit": null
+          },
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "color",
+            "field": "Mangrove Zone 1119",
+            "semantic_type": "categorical",
+            "sort": null,
+            "time_unit": null
+          }
+        ],
+        "evidence_spans": [
+          {
+            "end": 74,
+            "kind": "m5_pristine_authoring",
+            "normalized": "partition mangrove flux 1119 across mangrove zone 1119 for study unit 1119",
+            "rule_ids": [
+              "R-M5P-SEED"
+            ],
+            "start": 0,
+            "text": "Partition Mangrove Flux 1119 across Mangrove Zone 1119 for study unit 1119"
+          }
+        ],
+        "executable": true,
+        "field_role_alignment": {
+          "color": [
+            "Mangrove Zone 1119"
+          ],
+          "dimension": [
+            "Mangrove Zone 1119"
+          ],
+          "grouping": [
+            "Mangrove Zone 1119"
+          ],
+          "measure": [
+            "Mangrove Flux 1119"
+          ]
+        },
+        "fields": {
+          "color": [
+            "Mangrove Zone 1119"
+          ],
+          "dimension": [
+            "Mangrove Zone 1119"
+          ],
+          "facet": [],
+          "grouping": [
+            "Mangrove Zone 1119"
+          ],
+          "measure": [
+            "Mangrove Flux 1119"
+          ],
+          "size": [],
+          "temporal": []
+        },
+        "filters": [],
+        "grouping": [
+          "Mangrove Zone 1119"
+        ],
+        "limit": null,
+        "mark_type": "arc",
+        "rank": 3,
+        "rationale": "Source-isolated M5 component blind candidate.",
+        "rejection_reasons": [],
+        "schema_version": "skillvis-v2-visualization-candidate-v1.0.0",
+        "score_components": {
+          "ambiguity_penalty": 0.0,
+          "chart_effectiveness_score": 0.85,
+          "complexity_penalty": 0.1,
+          "deterministic_tie_breaker": 0.5,
+          "field_role_fit_score": 0.9,
+          "missing_role_penalty": 0.0,
+          "provenance_strength_score": 1.0,
+          "rule_ids": {
+            "ambiguity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "chart_effectiveness_score": [
+              "R-M5P-SCORE"
+            ],
+            "complexity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "deterministic_tie_breaker": [
+              "R-M5P-SCORE"
+            ],
+            "field_role_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "missing_role_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "provenance_strength_score": [
+              "R-M5P-SCORE"
+            ],
+            "task_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "type_compatibility_score": [
+              "R-M5P-SCORE"
+            ],
+            "unsupported_feature_penalty": [
+              "R-M5P-SCORE"
+            ]
+          },
+          "task_fit_score": 0.9,
+          "type_compatibility_score": 0.9,
+          "unsupported_feature_penalty": 0.0
+        },
+        "sort": null,
+        "source_ids": [
+          "M5-PRISTINE-AUTHORING"
+        ],
+        "task_alignment": "composition",
+        "total_score": 0.91,
+        "transforms": [],
+        "unsupported_features": [],
+        "warnings": []
+      }
+    ],
+    "capability": {
+      "abstention_required": false,
+      "explanation": "The declared analytical visualization task is supported.",
+      "provenance": [
+        "R-M5P-CAPABILITY"
+      ],
+      "risk_level": "low",
+      "supported_operations": [
+        "composition"
+      ],
+      "unsupported_operations": []
+    },
+    "context_id": "context-M5P-119",
+    "intent": {
+      "abstention_reason": null,
+      "abstention_state": {
+        "abstained": false,
+        "reason": null,
+        "stage": null
+      },
+      "aggregation": null,
+      "ambiguity": [],
+      "ambiguity_state": {
+        "affected_fields": [],
+        "affected_tasks": [],
+        "confidence": 1.0,
+        "evidence_spans": [],
+        "explanation": "No material ambiguity.",
+        "resolution_strategy": "proceed",
+        "state": "NONE",
+        "triggering_rules": []
+      },
+      "capability_assessment": {
+        "abstention_required": false,
+        "explanation": "The declared analytical visualization task is supported.",
+        "provenance": [
+          "R-M5P-CAPABILITY"
+        ],
+        "risk_level": "low",
+        "supported_operations": [
+          "composition"
+        ],
+        "unsupported_operations": []
+      },
+      "chart_mentions": [],
+      "config_version": "m5-blind-context-v1",
+      "dataset_id": "m5-blind-dataset-1119",
+      "deterministic_id": "m5-blind-intent-1119",
+      "dimensions": [
+        {
+          "candidate_rank": 1,
+          "evidence": [
+            {
+              "evidence_type": "m5_pristine_context",
+              "query_span": {
+                "end": 74,
+                "kind": "m5_pristine_authoring",
+                "normalized": "partition mangrove flux 1119 across mangrove zone 1119 for study unit 1119",
+                "rule_ids": [
+                  "R-M5P-SEED"
+                ],
+                "start": 0,
+                "text": "Partition Mangrove Flux 1119 across Mangrove Zone 1119 for study unit 1119"
+              },
+              "rule_id": "R-M5P-SEED",
+              "source_ids": [
+                "M5-PRISTINE-AUTHORING"
+              ],
+              "value": "Mangrove Zone 1119"
+            }
+          ],
+          "field_name": "Mangrove Zone 1119",
+          "role": "dimension",
+          "rule_ids": [
+            "R-M5P-INTENT"
+          ],
+          "score": 1.0
+        }
+      ],
+      "evidence_spans": [
+        {
+          "end": 74,
+          "kind": "m5_pristine_authoring",
+          "normalized": "partition mangrove flux 1119 across mangrove zone 1119 for study unit 1119",
+          "rule_ids": [
+            "R-M5P-SEED"
+          ],
+          "start": 0,
+          "text": "Partition Mangrove Flux 1119 across Mangrove Zone 1119 for study unit 1119"
+        }
+      ],
+      "field_candidates": [],
+      "filters": [],
+      "grouping_fields": [
+        {
+          "candidate_rank": 1,
+          "evidence": [
+            {
+              "evidence_type": "m5_pristine_context",
+              "query_span": {
+                "end": 74,
+                "kind": "m5_pristine_authoring",
+                "normalized": "partition mangrove flux 1119 across mangrove zone 1119 for study unit 1119",
+                "rule_ids": [
+                  "R-M5P-SEED"
+                ],
+                "start": 0,
+                "text": "Partition Mangrove Flux 1119 across Mangrove Zone 1119 for study unit 1119"
+              },
+              "rule_id": "R-M5P-SEED",
+              "source_ids": [
+                "M5-PRISTINE-AUTHORING"
+              ],
+              "value": "Mangrove Zone 1119"
+            }
+          ],
+          "field_name": "Mangrove Zone 1119",
+          "role": "grouping",
+          "rule_ids": [
+            "R-M5P-INTENT"
+          ],
+          "score": 1.0
+        }
+      ],
+      "limit": null,
+      "measures": [
+        {
+          "candidate_rank": 1,
+          "evidence": [
+            {
+              "evidence_type": "m5_pristine_context",
+              "query_span": {
+                "end": 74,
+                "kind": "m5_pristine_authoring",
+                "normalized": "partition mangrove flux 1119 across mangrove zone 1119 for study unit 1119",
+                "rule_ids": [
+                  "R-M5P-SEED"
+                ],
+                "start": 0,
+                "text": "Partition Mangrove Flux 1119 across Mangrove Zone 1119 for study unit 1119"
+              },
+              "rule_id": "R-M5P-SEED",
+              "source_ids": [
+                "M5-PRISTINE-AUTHORING"
+              ],
+              "value": "Mangrove Flux 1119"
+            }
+          ],
+          "field_name": "Mangrove Flux 1119",
+          "role": "measure",
+          "rule_ids": [
+            "R-M5P-INTENT"
+          ],
+          "score": 1.0
+        }
+      ],
+      "normalized_query": "partition mangrove flux 1119 across mangrove zone 1119 for study unit 1119",
+      "primary_task": "composition",
+      "provenance": [
+        {
+          "conflict_policy": "Frozen annotation controls; no result feedback.",
+          "failure_condition": "Context fields or obligations are incomplete.",
+          "inputs": [
+            "schema_profile"
+          ],
+          "outputs": [
+            "intent_ir"
+          ],
+          "priority": 1,
+          "rationale": "Bind typed roles and obligations without query reparsing.",
+          "rule_id": "R-M5P-INTENT",
+          "scope": "frozen blind context",
+          "source_ids": [
+            "SV2-PROTOCOL"
+          ],
+          "stage": "intent_assembly",
+          "trace_fields": [
+            "fields",
+            "task",
+            "transforms"
+          ]
+        },
+        {
+          "conflict_policy": "Unsupported operation requires abstention.",
+          "failure_condition": "Capability and IntentIR disagree.",
+          "inputs": [
+            "intent_ir"
+          ],
+          "outputs": [
+            "capability_assessment"
+          ],
+          "priority": 2,
+          "rationale": "Bind supported or unsupported operations.",
+          "rule_id": "R-M5P-CAPABILITY",
+          "scope": "frozen blind capability context",
+          "source_ids": [
+            "SV2-PROTOCOL"
+          ],
+          "stage": "semantic_safety",
+          "trace_fields": [
+            "unsupported_operations",
+            "abstention_required"
+          ]
+        }
+      ],
+      "query": "Partition Mangrove Flux 1119 across Mangrove Zone 1119 for study unit 1119",
+      "registry_hash": "9bb8031a12d573377de0ca018bb3be590794606adacd559ec03a73de981d9509",
+      "safety_warnings": [],
+      "schema_version": "skillvis-v2-intent-ir-v0.2.0",
+      "sort": null,
+      "task_candidates": [
+        {
+          "evidence_spans": [
+            {
+              "end": 74,
+              "kind": "m5_pristine_authoring",
+              "normalized": "partition mangrove flux 1119 across mangrove zone 1119 for study unit 1119",
+              "rule_ids": [
+                "R-M5P-SEED"
+              ],
+              "start": 0,
+              "text": "Partition Mangrove Flux 1119 across Mangrove Zone 1119 for study unit 1119"
+            }
+          ],
+          "required_roles": [
+            "measure"
+          ],
+          "rule_ids": [
+            "R-M5P-TASK"
+          ],
+          "score": 1.0,
+          "score_components": {
+            "frozen_authoring": 1.0
+          },
+          "task": "composition"
+        }
+      ],
+      "temporal_fields": [],
+      "unresolved_mentions": [],
+      "unsupported_scope": [],
+      "warnings": []
+    },
+    "schema": {
+      "applied_rule_ids": [
+        "R-M5P-SCHEMA"
+      ],
+      "data_access_policy": "frozen_schema_profile_only_no_raw_query_reparse",
+      "dataset_id": "m5-blind-dataset-1119",
+      "failure_state": null,
+      "fields": [
+        {
+          "aliases": [],
+          "cardinality": 5,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Mangrove Flux 1119",
+          "normalized_name": "mangrove flux 1119",
+          "null_rate": 0.0,
+          "numeric_summary": {
+            "count": 5,
+            "maximum": 5.0,
+            "mean": 2.5,
+            "median": 2.5,
+            "minimum": 1.0,
+            "standard_deviation": 1.0
+          },
+          "physical_type": "float64",
+          "role_candidates": [
+            "measure"
+          ],
+          "sample_values": [
+            1.0,
+            2.0
+          ],
+          "semantic_type": "quantitative",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 5,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Mangrove Gradient 1119",
+          "normalized_name": "mangrove gradient 1119",
+          "null_rate": 0.0,
+          "numeric_summary": {
+            "count": 5,
+            "maximum": 5.0,
+            "mean": 2.5,
+            "median": 2.5,
+            "minimum": 1.0,
+            "standard_deviation": 1.0
+          },
+          "physical_type": "float64",
+          "role_candidates": [
+            "measure"
+          ],
+          "sample_values": [
+            1.0,
+            2.0
+          ],
+          "semantic_type": "quantitative",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 5,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Mangrove Intensity 1119",
+          "normalized_name": "mangrove intensity 1119",
+          "null_rate": 0.0,
+          "numeric_summary": {
+            "count": 5,
+            "maximum": 5.0,
+            "mean": 2.5,
+            "median": 2.5,
+            "minimum": 1.0,
+            "standard_deviation": 1.0
+          },
+          "physical_type": "float64",
+          "role_candidates": [
+            "measure"
+          ],
+          "sample_values": [
+            1.0,
+            2.0
+          ],
+          "semantic_type": "quantitative",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 5,
+          "categorical_summary": {
+            "top_values": [],
+            "unique_count": 5
+          },
+          "confidence": 1.0,
+          "field_name": "Mangrove Zone 1119",
+          "normalized_name": "mangrove zone 1119",
+          "null_rate": 0.0,
+          "numeric_summary": null,
+          "physical_type": "string",
+          "role_candidates": [
+            "dimension",
+            "grouping"
+          ],
+          "sample_values": [
+            "Mangrove Zone 1119 A",
+            "Mangrove Zone 1119 B"
+          ],
+          "semantic_type": "categorical",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 5,
+          "categorical_summary": {
+            "top_values": [],
+            "unique_count": 5
+          },
+          "confidence": 1.0,
+          "field_name": "Mangrove Cohort 1119",
+          "normalized_name": "mangrove cohort 1119",
+          "null_rate": 0.0,
+          "numeric_summary": null,
+          "physical_type": "string",
+          "role_candidates": [
+            "dimension",
+            "grouping"
+          ],
+          "sample_values": [
+            "Mangrove Cohort 1119 A",
+            "Mangrove Cohort 1119 B"
+          ],
+          "semantic_type": "categorical",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 5,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Mangrove Epoch 1119",
+          "normalized_name": "mangrove epoch 1119",
+          "null_rate": 0.0,
+          "numeric_summary": null,
+          "physical_type": "datetime64",
+          "role_candidates": [
+            "temporal",
+            "dimension"
+          ],
+          "sample_values": [
+            "2025-01-01",
+            "2025-02-01"
+          ],
+          "semantic_type": "temporal",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": {
+            "maximum": "2025-12-31",
+            "minimum": "2025-01-01",
+            "parse_ratio": 1.0,
+            "timezone_observed": false
+          },
+          "warnings": []
+        }
+      ],
+      "row_count": 5,
+      "schema_version": "skillvis-v2-schema-profile-v0.1.0",
+      "warnings": []
+    },
+    "schema_version": "skillvis-v2-m5-candidate-set-context-v1.0.0",
+    "source_id": "M5-PRISTINE-SYNTHETIC:masked-family"
+  },
+  "gold_included": false
+}

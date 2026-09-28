@@ -1,0 +1,1442 @@
+[
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-001",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-002",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-003",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-004",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-005",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-006",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-007",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-008",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-009",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-010",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-011",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-012",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-013",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-014",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-015",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-016",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-017",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-018",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-019",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-020",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-021",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-022",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-023",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-024",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-025",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-026",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-027",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-028",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-029",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-030",
+    "category": "valid_candidate",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-031",
+    "category": "field_role_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-032",
+    "category": "field_role_error",
+    "errors": [
+      {
+        "candidate_id": "M5P-032-C1-fa6c94cdea",
+        "case_id": "M5P-032",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-F002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-F002",
+          "R-VF-F003"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-033",
+    "category": "field_role_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-034",
+    "category": "field_role_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-035",
+    "category": "field_role_error",
+    "errors": [
+      {
+        "candidate_id": "M5P-035-C1-6b4f7f389d",
+        "case_id": "M5P-035",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-F002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-F002",
+          "R-VF-F003"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-036",
+    "category": "field_role_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-037",
+    "category": "field_role_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-038",
+    "category": "field_role_error",
+    "errors": [
+      {
+        "candidate_id": "M5P-038-C1-12f39ba056",
+        "case_id": "M5P-038",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-F002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-F002",
+          "R-VF-F003"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-039",
+    "category": "field_role_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-040",
+    "category": "field_role_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-041",
+    "category": "field_role_error",
+    "errors": [
+      {
+        "candidate_id": "M5P-041-C1-a50d5e5e50",
+        "case_id": "M5P-041",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-F002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-F002",
+          "R-VF-F003"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-042",
+    "category": "field_role_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-043",
+    "category": "field_role_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-044",
+    "category": "field_role_error",
+    "errors": [
+      {
+        "candidate_id": "M5P-044-C1-62626e300e",
+        "case_id": "M5P-044",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-F002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-F002",
+          "R-VF-F003"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-045",
+    "category": "field_role_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-046",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-047",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-048",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-049",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-050",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-051",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-052",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-053",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-054",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-055",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-056",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-057",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-058",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-059",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-060",
+    "category": "encoding_type_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-061",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-062",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-063",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-064",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-065",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-066",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-067",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-068",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-069",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-070",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-071",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-072",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-073",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-074",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-075",
+    "category": "task_chart_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-076",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-077",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-078",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-079",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-080",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-081",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-082",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-083",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-084",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-085",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-086",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-087",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-088",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-089",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-090",
+    "category": "aggregation_data_grain_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-091",
+    "category": "unsupported_design_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-092",
+    "category": "unsupported_design_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-093",
+    "category": "unsupported_design_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-094",
+    "category": "unsupported_design_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-095",
+    "category": "unsupported_design_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-096",
+    "category": "unsupported_design_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-097",
+    "category": "unsupported_design_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-098",
+    "category": "unsupported_design_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-099",
+    "category": "unsupported_design_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-100",
+    "category": "unsupported_design_error",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "NO_VALID_CANDIDATE"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-101",
+    "category": "perceptual_soft_issue",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-102",
+    "category": "perceptual_soft_issue",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-103",
+    "category": "perceptual_soft_issue",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-104",
+    "category": "perceptual_soft_issue",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-105",
+    "category": "perceptual_soft_issue",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-106",
+    "category": "perceptual_soft_issue",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-107",
+    "category": "perceptual_soft_issue",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-108",
+    "category": "perceptual_soft_issue",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-109",
+    "category": "perceptual_soft_issue",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 1,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-110",
+    "category": "perceptual_soft_issue",
+    "errors": [],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 3,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-111",
+    "category": "candidate_set_ranking",
+    "errors": [
+      {
+        "candidate_id": "M5P-111-C1-b5df35760e",
+        "case_id": "M5P-111",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-E002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-E002",
+          "R-VF-P001"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 3,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-112",
+    "category": "candidate_set_ranking",
+    "errors": [
+      {
+        "candidate_id": "M5P-112-C1-166961d423",
+        "case_id": "M5P-112",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-E002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-E002",
+          "R-VF-P001"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 3,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-113",
+    "category": "candidate_set_ranking",
+    "errors": [
+      {
+        "candidate_id": "M5P-113-C1-794d7c68f7",
+        "case_id": "M5P-113",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-E002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-E002",
+          "R-VF-P001"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 3,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-114",
+    "category": "candidate_set_ranking",
+    "errors": [
+      {
+        "candidate_id": "M5P-114-C1-e336266a65",
+        "case_id": "M5P-114",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-E002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-E002",
+          "R-VF-P001"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 3,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-115",
+    "category": "candidate_set_ranking",
+    "errors": [
+      {
+        "candidate_id": "M5P-115-C1-759a9072bc",
+        "case_id": "M5P-115",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-E002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-E002",
+          "R-VF-P001"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 3,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-116",
+    "category": "candidate_set_ranking",
+    "errors": [
+      {
+        "candidate_id": "M5P-116-C1-49125b6d76",
+        "case_id": "M5P-116",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-E002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-E002",
+          "R-VF-P001"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 3,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-117",
+    "category": "candidate_set_ranking",
+    "errors": [
+      {
+        "candidate_id": "M5P-117-C1-6f802bfc2a",
+        "case_id": "M5P-117",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-E002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-E002",
+          "R-VF-P001"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 3,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-118",
+    "category": "candidate_set_ranking",
+    "errors": [
+      {
+        "candidate_id": "M5P-118-C1-a5293214e5",
+        "case_id": "M5P-118",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-E002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-E002",
+          "R-VF-P001"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 3,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-119",
+    "category": "candidate_set_ranking",
+    "errors": [
+      {
+        "candidate_id": "M5P-119-C1-c343008af2",
+        "case_id": "M5P-119",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-E002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-E002",
+          "R-VF-P001"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  },
+  {
+    "byte_deterministic": true,
+    "candidate_count": 3,
+    "candidate_mutation_count": 0,
+    "case_id": "M5P-120",
+    "category": "candidate_set_ranking",
+    "errors": [
+      {
+        "candidate_id": "M5P-120-C1-b9889880d4",
+        "case_id": "M5P-120",
+        "expected_actions": [
+          "REJECT"
+        ],
+        "expected_rules": [
+          "R-VF-E002"
+        ],
+        "observed_action": "REJECT",
+        "observed_rules": [
+          "R-VF-E002",
+          "R-VF-P001"
+        ]
+      }
+    ],
+    "semantic_deterministic": true,
+    "set_decision": "ANSWERABLE_WITH_WARNINGS"
+  }
+]

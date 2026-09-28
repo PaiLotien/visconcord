@@ -1,0 +1,647 @@
+{
+  "first_invocation_count": 70,
+  "replay_invocation_count": 20,
+  "replay_task_ids": [
+    "CQLC-001",
+    "CQLC-008",
+    "CQLC-015",
+    "CQLC-022",
+    "CQLC-029"
+  ],
+  "schedule": [
+    {
+      "invocation_id": "first:SkillVIS:CQLC-032",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-032"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-021",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-021"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-007",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-007"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-023",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-023"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-002",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-002"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-010",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-010"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-018",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-018"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-020",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-020"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-011",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-011"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-018",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-018"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-019",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-019"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-008",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-008"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-005",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-005"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-035",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-035"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-033",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-033"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-025",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-025"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-003",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-003"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-009",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-009"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-026",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-026"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-020",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-020"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-023",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-023"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-004",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-004"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-031",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-031"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-022",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-022"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-012",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-012"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-017",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-017"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-027",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-027"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-025",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-025"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-035",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-035"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-034",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-034"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-013",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-013"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-014",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-014"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-029",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-029"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-015",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-015"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-015",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-015"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-022",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-022"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-024",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-024"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-027",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-027"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-011",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-011"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-007",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-007"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-028",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-028"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-028",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-028"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-008",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-008"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-006",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-006"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-006",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-006"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-001",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-001"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-029",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-029"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-016",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-016"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-021",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-021"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-017",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-017"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-005",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-005"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-014",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-014"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-031",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-031"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-030",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-030"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-024",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-024"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-016",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-016"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-004",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-004"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-033",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-033"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-030",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-030"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-001",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-001"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-003",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-003"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-009",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-009"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-012",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-012"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-010",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-010"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-026",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-026"
+    },
+    {
+      "invocation_id": "first:SkillVIS:CQLC-019",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "SkillVIS",
+      "task_id": "CQLC-019"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-034",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-034"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-032",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-032"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-002",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-002"
+    },
+    {
+      "invocation_id": "first:CompassQL:CQLC-013",
+      "phase": "first",
+      "repeat_index": 1,
+      "system": "CompassQL",
+      "task_id": "CQLC-013"
+    },
+    {
+      "invocation_id": "replay3:SkillVIS:CQLC-001",
+      "phase": "replay3",
+      "repeat_index": 3,
+      "system": "SkillVIS",
+      "task_id": "CQLC-001"
+    },
+    {
+      "invocation_id": "replay3:CompassQL:CQLC-001",
+      "phase": "replay3",
+      "repeat_index": 3,
+      "system": "CompassQL",
+      "task_id": "CQLC-001"
+    },
+    {
+      "invocation_id": "replay3:SkillVIS:CQLC-008",
+      "phase": "replay3",
+      "repeat_index": 3,
+      "system": "SkillVIS",
+      "task_id": "CQLC-008"
+    },
+    {
+      "invocation_id": "replay3:SkillVIS:CQLC-029",
+      "phase": "replay3",
+      "repeat_index": 3,
+      "system": "SkillVIS",
+      "task_id": "CQLC-029"
+    },
+    {
+      "invocation_id": "replay2:CompassQL:CQLC-015",
+      "phase": "replay2",
+      "repeat_index": 2,
+      "system": "CompassQL",
+      "task_id": "CQLC-015"
+    },
+    {
+      "invocation_id": "replay3:CompassQL:CQLC-022",
+      "phase": "replay3",
+      "repeat_index": 3,
+      "system": "CompassQL",
+      "task_id": "CQLC-022"
+    },
+    {
+      "invocation_id": "replay2:CompassQL:CQLC-029",
+      "phase": "replay2",
+      "repeat_index": 2,
+      "system": "CompassQL",
+      "task_id": "CQLC-029"
+    },
+    {
+      "invocation_id": "replay3:SkillVIS:CQLC-015",
+      "phase": "replay3",
+      "repeat_index": 3,
+      "system": "SkillVIS",
+      "task_id": "CQLC-015"
+    },
+    {
+      "invocation_id": "replay2:SkillVIS:CQLC-022",
+      "phase": "replay2",
+      "repeat_index": 2,
+      "system": "SkillVIS",
+      "task_id": "CQLC-022"
+    },
+    {
+      "invocation_id": "replay2:SkillVIS:CQLC-001",
+      "phase": "replay2",
+      "repeat_index": 2,
+      "system": "SkillVIS",
+      "task_id": "CQLC-001"
+    },
+    {
+      "invocation_id": "replay2:SkillVIS:CQLC-008",
+      "phase": "replay2",
+      "repeat_index": 2,
+      "system": "SkillVIS",
+      "task_id": "CQLC-008"
+    },
+    {
+      "invocation_id": "replay3:SkillVIS:CQLC-022",
+      "phase": "replay3",
+      "repeat_index": 3,
+      "system": "SkillVIS",
+      "task_id": "CQLC-022"
+    },
+    {
+      "invocation_id": "replay3:CompassQL:CQLC-029",
+      "phase": "replay3",
+      "repeat_index": 3,
+      "system": "CompassQL",
+      "task_id": "CQLC-029"
+    },
+    {
+      "invocation_id": "replay3:CompassQL:CQLC-015",
+      "phase": "replay3",
+      "repeat_index": 3,
+      "system": "CompassQL",
+      "task_id": "CQLC-015"
+    },
+    {
+      "invocation_id": "replay2:SkillVIS:CQLC-029",
+      "phase": "replay2",
+      "repeat_index": 2,
+      "system": "SkillVIS",
+      "task_id": "CQLC-029"
+    },
+    {
+      "invocation_id": "replay2:CompassQL:CQLC-001",
+      "phase": "replay2",
+      "repeat_index": 2,
+      "system": "CompassQL",
+      "task_id": "CQLC-001"
+    },
+    {
+      "invocation_id": "replay3:CompassQL:CQLC-008",
+      "phase": "replay3",
+      "repeat_index": 3,
+      "system": "CompassQL",
+      "task_id": "CQLC-008"
+    },
+    {
+      "invocation_id": "replay2:SkillVIS:CQLC-015",
+      "phase": "replay2",
+      "repeat_index": 2,
+      "system": "SkillVIS",
+      "task_id": "CQLC-015"
+    },
+    {
+      "invocation_id": "replay2:CompassQL:CQLC-008",
+      "phase": "replay2",
+      "repeat_index": 2,
+      "system": "CompassQL",
+      "task_id": "CQLC-008"
+    },
+    {
+      "invocation_id": "replay2:CompassQL:CQLC-022",
+      "phase": "replay2",
+      "repeat_index": 2,
+      "system": "CompassQL",
+      "task_id": "CQLC-022"
+    }
+  ],
+  "schema_version": "skillvis-compassql-conformance-schedule-v1.0.0",
+  "seed": 2026073120,
+  "status": "BUILT_BEFORE_SYSTEM_INVOCATION_NOT_FROZEN",
+  "total_invocation_count": 90
+}

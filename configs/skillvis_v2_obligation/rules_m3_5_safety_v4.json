@@ -1,0 +1,102 @@
+{
+  "schema_version": "skillvis-v2-safety-rule-registry-v4.0.0",
+  "status": "impact_aware_safety_v2_implemented",
+  "rules": [
+    {
+      "rule_id": "R-SA-001",
+      "module": "semantic_safety",
+      "source_ids": ["N7"],
+      "scope": "impact-aware residual tokens after task, role, and typed-transform obligations are complete",
+      "rationale": "Residual surface tokens are non-material only when they cannot alter a task, role, constraint, or capability decision.",
+      "priority": 70,
+      "failure_condition": "A residue token changes a required field, task, operation, threshold, or relation.",
+      "conflict_policy": "Material impact takes precedence over lexical-residue classification.",
+      "trace_fields": ["unresolved_mentions", "lexical_residue", "evidence_spans", "resolution_strategy"],
+      "unit_tests": ["test_lexical_residue_is_non_material", "test_show_is_not_ambiguous"]
+    },
+    {
+      "rule_id": "R-SA-002",
+      "module": "semantic_safety",
+      "source_ids": ["N7", "D4", "D5"],
+      "scope": "material qualifiers, unrepresented constraints, missing task roles, and surviving interpretation alternatives",
+      "rationale": "Planning safety depends on distinguishing missing obligations and real semantic alternatives from lexical noise.",
+      "priority": 71,
+      "failure_condition": "No evidence span or affected semantic object can be identified.",
+      "conflict_policy": "Missing required roles outrank material qualifiers; material qualifiers outrank multiple valid interpretations.",
+      "trace_fields": ["ambiguity_state", "affected_fields", "affected_tasks", "confidence", "resolution_strategy"],
+      "unit_tests": ["test_material_ambiguity_requires_clarification", "test_missing_role_is_typed", "test_multiple_valid_interpretations_are_preserved"]
+    },
+    {
+      "rule_id": "R-SA-003",
+      "module": "semantic_safety",
+      "source_ids": ["D4", "N7"],
+      "scope": "versioned capability vocabulary after analytical task profiling",
+      "rationale": "A valid field does not imply that the requested governing operation is supported.",
+      "priority": 72,
+      "failure_condition": "The governing operation is outside both the supported and unsupported versioned vocabularies.",
+      "conflict_policy": "Any explicit unsupported governing operation dominates supported structural fallback tasks.",
+      "trace_fields": ["supported_operations", "unsupported_operations", "risk_level", "evidence_spans"],
+      "unit_tests": ["test_forecast_is_unsupported", "test_causal_and_network_scope", "test_unsupported_join"]
+    },
+    {
+      "rule_id": "R-SA-004",
+      "module": "semantic_safety",
+      "source_ids": ["N7"],
+      "scope": "capability assessments containing one or more unsupported operations",
+      "rationale": "Unsupported requests must terminate before candidate planning instead of yielding a plausible but unsafe visualization task.",
+      "priority": 73,
+      "failure_condition": "Unsupported operation evidence is absent.",
+      "conflict_policy": "Force semantic-safety abstention and retain upstream task candidates only as diagnostic evidence.",
+      "trace_fields": ["abstention_required", "abstention_reason", "unsupported_scope", "safety_warnings"],
+      "unit_tests": ["test_unsupported_operation_forces_abstention", "test_no_fallback_to_line_chart"]
+    },
+    {
+      "rule_id": "R-SA-005",
+      "module": "semantic_safety",
+      "source_ids": ["D4", "N7"],
+      "scope": "queries with no detected unsupported governing operation",
+      "rationale": "Capability checking must preserve supported descriptive visualization tasks and avoid false abstention.",
+      "priority": 74,
+      "failure_condition": "An unsupported governing operation or an upstream failure is present.",
+      "conflict_policy": "Do not change upstream fields, tasks, or transforms; safety may only type ambiguity or abstain.",
+      "trace_fields": ["supported_operations", "risk_level", "pass_through", "provenance"],
+      "unit_tests": ["test_supported_comparison_passes", "test_supported_trend_passes"]
+    },
+    {
+      "rule_id": "R-SA-006",
+      "module": "semantic_safety",
+      "source_ids": ["D4", "N7"],
+      "scope": "capability lexemes whose complete evidence span is grounded inside a schema field mention",
+      "rationale": "The same token can denote an operation or a measured attribute; schema-grounded field evidence must be checked before a capability gate treats it as a governing operation.",
+      "priority": 69,
+      "failure_condition": "A lexeme is suppressed without a stronger exact, alias, normalized, or semantic-concept field span that contains it.",
+      "conflict_policy": "A separate governing verb or future/intervention cue dominates field-span precedence; otherwise the grounded field interpretation is retained.",
+      "trace_fields": ["operation_lexeme", "query_span", "grounded_field", "grounding_type", "governing_cue"],
+      "unit_tests": ["test_schema_grounded_forecast_field_is_supported", "test_governing_forecast_verb_still_abstains", "test_schema_grounded_network_score_is_supported"]
+    },
+    {
+      "rule_id": "R-IC-001",
+      "module": "intent_obligation_compiler",
+      "source_ids": ["D2", "N7", "R10"],
+      "scope": "overlapping field mentions where a shorter field span is fully contained by a longer equally grounded field span of the same role",
+      "rationale": "Longest grounded schema mentions prevent a generic field from shadowing a more specific requested field while retaining auditable evidence.",
+      "priority": 75,
+      "failure_condition": "A shorter field is removed without complete span containment and equivalent or stronger grounding for the longer field.",
+      "conflict_policy": "Do not collapse non-contained mentions or fields with distinct roles.",
+      "trace_fields": ["shadowed_field", "retained_field", "query_spans", "roles"],
+      "unit_tests": ["test_longest_grounded_field_span_wins", "test_distinct_field_mentions_are_preserved"]
+    },
+    {
+      "rule_id": "R-IC-002",
+      "module": "intent_obligation_compiler",
+      "source_ids": ["D3", "D4", "N7"],
+      "scope": "auxiliary filtering intent with grounded measure and display dimension, and supported lexical time-unit or ranking obligations",
+      "rationale": "Auxiliary operations must decorate a visualization task instead of replacing it, and explicit sort/time-unit obligations must remain typed before planning.",
+      "priority": 76,
+      "failure_condition": "A visualization task or transform is introduced without grounded fields and direct query evidence.",
+      "conflict_policy": "Existing typed task and transform declarations always win; the compiler only closes a uniquely determined obligation.",
+      "trace_fields": ["primary_task", "secondary_tasks", "transforms", "evidence_spans"],
+      "unit_tests": ["test_filtering_is_auxiliary_to_grounded_comparison", "test_monthly_creates_time_unit_obligation", "test_ranking_creates_sort_obligation"]
+    }
+  ]
+}

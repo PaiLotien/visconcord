@@ -1,0 +1,6 @@
+{
+  "original_lock_content_included": false,
+  "original_lock_name": "protocol_freeze_v1.json",
+  "original_lock_sha256": "d67ff916f21c77f1e22715c8af722d6c5b6623d8b393ea363ad3d6b3455e8805",
+  "reason": "Original immutable content embeds a workstation-specific Node path; the hash is retained without publishing that path."
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "skillvis-v2-joint-v110-temporal-context-registry-v1.0.0",
+  "status": "development_only_not_protocol_frozen",
+  "rules": [
+    {
+      "rule_id": "R-SP-110",
+      "module": "correlation_scoped_numeric_temporal_guard",
+      "source_ids": ["MACKINLAY1986", "BREHMER_MUNZNER2013", "NL4DV2020"],
+      "scope": "restore a required, physically numeric field from a lexical temporal-name hint to a quantitative query-local role when explicit correlation discourse binds it to another numeric field and neither value-shape nor trend discourse supports a temporal interpretation",
+      "rationale": "Field-name hints are weak schema evidence. For a relationship task, typed task evidence and numeric value shape should dominate a suffix such as time when the values do not parse as temporal data.",
+      "priority": 82,
+      "failure_condition": "A numeric measure named time_value is treated as a temporal axis in a query such as plot time_value against monetary_value.",
+      "conflict_policy": "Do not apply when the query contains trend discourse, the field has a temporal value summary, fewer than two required numeric-shaped fields are grounded, or the field lacks strong query grounding.",
+      "trace_fields": ["field", "physical_type", "numeric_summary", "temporal_summary", "correlation_cue", "trend_cue", "grounding", "decision"],
+      "unit_tests": ["test_numeric_temporal_name_is_quantitative_in_correlation_context", "test_numeric_year_is_temporal_in_trend_context", "test_temporal_value_shape_is_preserved"]
+    }
+  ]
+}

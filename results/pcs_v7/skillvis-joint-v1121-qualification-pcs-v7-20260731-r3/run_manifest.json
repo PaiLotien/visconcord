@@ -1,0 +1,15 @@
+{
+  "claim_boundary": "Engineering gate on a fresh source-isolated controlled set; not a system-comparison result.",
+  "invocation_count": 30,
+  "llm_or_paid_api_used": false,
+  "memory_used": false,
+  "protocol_lock_sha256": "3ce80662da2d89db640ed9a265aacc2b1acbec70744070881ae41e71f76cd79d",
+  "protocol_namespace": "PCS-v7-Joint-v1.12.1-qualification",
+  "run_id": "skillvis-joint-v1121-qualification-pcs-v7-20260731-r3",
+  "schema_version": "skillvis-pcs-v7-qualification-run-manifest-v1.0.0",
+  "status": "PASS",
+  "task_count": 20,
+  "worker_status_counts": {
+    "success": 30
+  }
+}

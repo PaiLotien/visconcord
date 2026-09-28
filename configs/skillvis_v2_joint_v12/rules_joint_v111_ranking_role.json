@@ -1,0 +1,30 @@
+{
+  "schema_version": "skillvis-v2-joint-v111-ranking-role-registry-v1.0.0",
+  "status": "development_only_not_protocol_frozen",
+  "rules": [
+    {
+      "rule_id": "R-FR-120",
+      "module": "ranking_target_role_binding",
+      "source_ids": ["BREHMER_MUNZNER2013", "AMAR2005", "NL4DV2020"],
+      "scope": "bind an explicitly grounded numeric-coded field as a grouping dimension when it is the target of a rank/order directive and a distinct field is introduced after by, using, based on, or according to with an explicit aggregate",
+      "rationale": "Ranking is a typed relation between entities and a score expression. Physical numeric type alone cannot distinguish a category code from the measure used to score it.",
+      "priority": 83,
+      "failure_condition": "Rank cell_band using average cell_total is reduced to correlation because both fields are physically numeric.",
+      "conflict_policy": "Do not convert a field without a grounded target span between the ranking directive and linkage phrase, a distinct grounded score field after the linkage, and an explicit aggregate operation.",
+      "trace_fields": ["target_field", "score_field", "directive_span", "link_span", "aggregation_span", "grounding", "decision"],
+      "unit_tests": ["test_numeric_ranking_target_becomes_grouping_dimension", "test_correlation_numeric_fields_are_not_converted", "test_ranking_without_grounded_target_is_not_rewritten"]
+    },
+    {
+      "rule_id": "R-TP-130",
+      "module": "ranking_directive_role_closure",
+      "source_ids": ["BREHMER_MUNZNER2013", "AMAR2005", "NL4DV2020"],
+      "scope": "emit ranking as the sole analytical task when a rank/order directive is supported by an R-FR-120 target dimension, a distinct quantitative score field, and an explicit aggregate",
+      "rationale": "A task decision should be closed from the typed target-score relation even when a surface ranking synonym is absent from the normalization lexicon.",
+      "priority": 84,
+      "failure_condition": "Order tier_value according to average quality_total has correct field roles but remains a generic comparison.",
+      "conflict_policy": "Requires the independently traced R-FR-120 role binding, a complete dimension-measure structure, and aggregation; it cannot fire from a rank/order token alone.",
+      "trace_fields": ["directive_span", "target_dimension", "score_measure", "aggregation", "prior_role_rule", "decision"],
+      "unit_tests": ["test_according_to_ranking_closes_to_ranking", "test_rank_keyword_without_role_binding_does_not_force_task"]
+    }
+  ]
+}

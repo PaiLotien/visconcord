@@ -1,0 +1,36 @@
+{
+  "schema_version": "skillvis-v2-config-v0.2.0",
+  "config_version": "skillvis-v2-m3-5-safety-v1.0.0",
+  "enabled": true,
+  "rule_registry_path": "configs/skillvis_v2/rules_m1_m3_v0.json",
+  "safety_rule_registry_path": "configs/skillvis_v2/rules_m3_5_safety_v1.json",
+  "feature_flags": {
+    "enable_m1_query_normalization": true,
+    "enable_m1_schema_profiling": true,
+    "enable_m2_field_resolution": true,
+    "enable_m3_task_profiling": true,
+    "enable_m3_query_decomposition": true,
+    "enable_m3_5_semantic_safety": true,
+    "enable_value_matching": true,
+    "enable_candidate_planner": false,
+    "enable_semantic_validator": false,
+    "enable_selective_recovery": false,
+    "enable_llm": false
+  },
+  "resolver_weights": {
+    "lexical": 0.72,
+    "alias": 0.7,
+    "value": 0.62,
+    "type_compatible": 0.08,
+    "task_role": 0.08,
+    "structural_recovery": 0.55,
+    "conflict": 0.25
+  },
+  "field_candidate_threshold": 0.5,
+  "ambiguity_margin": 0.08,
+  "task_candidate_threshold": 0.45,
+  "max_value_cardinality": 64,
+  "max_sample_values": 16,
+  "max_profile_rows": 10000,
+  "deterministic_seed": 3517
+}

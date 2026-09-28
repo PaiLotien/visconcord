@@ -1,0 +1,4358 @@
+{
+  "schema_version": "skillvis-v2-knowledge-source-registry-v1.0.0",
+  "method_version": "skillvis-v2-joint-semantic-precedence-v1.12.1",
+  "generated_by": "research/skillvis_v2/paper_assets/build_knowledge_traceability.py",
+  "collection_policy": {
+    "source_priority": [
+      "peer-reviewed visualization theory and perception work",
+      "official visualization-system papers and repositories",
+      "adjacent schema-linking and semantic-parsing work",
+      "project protocol rules, explicitly separated from prior knowledge"
+    ],
+    "translation_gate": [
+      "extract a scoped knowledge statement",
+      "record source, scope, failure condition, and conflict policy",
+      "encode a deterministic rule with trace fields and unit-test names",
+      "evaluate on development data",
+      "freeze before independent qualification or formal evidence"
+    ],
+    "exclusions": [
+      "no rule is admitted solely because it improves a held-out or formal result",
+      "no universal chart ranking is inferred from a context-specific perception study",
+      "LLM outputs and system outputs are not treated as gold knowledge"
+    ]
+  },
+  "source_aliases": {
+    "AMAR2005": "D5",
+    "BREHMER_MUNZNER2013": "D4",
+    "COMPASSQL2016": "R3",
+    "DATATONE2015": "X2",
+    "DRACO2019": "R1",
+    "MACKINLAY1986": "D1",
+    "MUNZNER2014": "X1",
+    "NL4DV2020": "N1",
+    "RATSQL2020": "S1",
+    "SCHEMALINKING2020": "S3",
+    "VEGALITE2017": "R10"
+  },
+  "sources": [
+    {
+      "source_id": "D1",
+      "title": "Automating the Design of Graphical Presentations of Relational Information",
+      "authors": "Jock Mackinlay",
+      "year": 1986,
+      "venue": "ACM Transactions on Graphics",
+      "venue_family": "visualization / graphics journal",
+      "url": "https://doi.org/10.1145/22949.22950",
+      "github": null,
+      "knowledge_contribution": "Expressiveness and effectiveness criteria for automated graphical design.",
+      "adoption_status": "implemented as scoped chart/encoding validity and preference rules"
+    },
+    {
+      "source_id": "D2",
+      "title": "The Grammar of Graphics",
+      "authors": "Leland Wilkinson",
+      "year": 2005,
+      "venue": "Springer book",
+      "venue_family": "visualization book",
+      "url": "https://doi.org/10.1007/0-387-28695-0",
+      "github": null,
+      "knowledge_contribution": "Separation of data, transformations, scales, coordinates, guides, and marks.",
+      "adoption_status": "implemented in typed IR, field roles, transforms, and validation contracts"
+    },
+    {
+      "source_id": "D3",
+      "title": "A Nested Model for Visualization Design and Validation",
+      "authors": "Tamara Munzner",
+      "year": 2009,
+      "venue": "IEEE TVCG / IEEE InfoVis",
+      "venue_family": "VIS / TVCG",
+      "url": "https://doi.org/10.1109/TVCG.2009.111",
+      "github": null,
+      "knowledge_contribution": "Stage-specific design levels and validation; upstream errors propagate.",
+      "adoption_status": "implemented as stage-local contracts, Validator routes, and level-specific evaluation"
+    },
+    {
+      "source_id": "D4",
+      "title": "A Multi-Level Typology of Abstract Visualization Tasks",
+      "authors": "Matthew Brehmer and Tamara Munzner",
+      "year": 2013,
+      "venue": "IEEE TVCG / IEEE InfoVis",
+      "venue_family": "VIS / TVCG",
+      "url": "https://www.cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/",
+      "github": null,
+      "knowledge_contribution": "Why-how-what task vocabulary and task sequences.",
+      "adoption_status": "implemented as bounded analytical-task labels and role-aware task traces"
+    },
+    {
+      "source_id": "D5",
+      "title": "Low-Level Components of Analytic Activity in Information Visualization",
+      "authors": "Robert Amar, James Eagan, and John Stasko",
+      "year": 2005,
+      "venue": "IEEE InfoVis",
+      "venue_family": "VIS",
+      "url": "https://doi.org/10.1109/INFVIS.2005.1532136",
+      "github": null,
+      "knowledge_contribution": "Ten low-level analytical task categories.",
+      "adoption_status": "implemented as task vocabulary and controlled evaluation strata"
+    },
+    {
+      "source_id": "D6",
+      "title": "Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",
+      "authors": "William Cleveland and Robert McGill",
+      "year": 1984,
+      "venue": "Journal of the American Statistical Association",
+      "venue_family": "statistics / perception journal",
+      "url": "https://doi.org/10.1080/01621459.1984.10478080",
+      "github": null,
+      "knowledge_contribution": "Empirical effectiveness ordering for elementary perceptual judgments.",
+      "adoption_status": "implemented only as scoped soft Validator warnings; never a hard universal ranking"
+    },
+    {
+      "source_id": "D7",
+      "title": "A Review and Collation of Graphical Perception Knowledge for Visualization Recommendation",
+      "authors": "Zehua Zeng and Leilani Battle",
+      "year": 2023,
+      "venue": "ACM CHI",
+      "venue_family": "HCI",
+      "url": "https://doi.org/10.1145/3544548.3581349",
+      "github": null,
+      "knowledge_contribution": "Collation of graphical-perception findings and their translation limits.",
+      "adoption_status": "implemented as provenance-bearing, scoped soft preference and cardinality rules"
+    },
+    {
+      "source_id": "N1",
+      "title": "NL4DV: A Toolkit for Generating Analytic Specifications for Data Visualization from Natural Language Queries",
+      "authors": "Arpit Narechania, Arjun Srinivasan, and John Stasko",
+      "year": 2021,
+      "venue": "IEEE TVCG (IEEE VIS 2020)",
+      "venue_family": "VIS / TVCG",
+      "url": "https://arxiv.org/abs/2008.10723",
+      "github": "https://github.com/nl4dv/nl4dv",
+      "knowledge_contribution": "NL-to-attribute/task/visualization parsing with explicit ambiguity metadata.",
+      "adoption_status": "implemented as evidence-preserving normalization, field/task outputs, and a system baseline"
+    },
+    {
+      "source_id": "N2",
+      "title": "NL4DV: A Toolkit for Generating Analytic Specifications for Data Visualization from Natural Language Queries (Conversational Extension)",
+      "authors": "Pranav Mitra, Arpit Narechania, Alex Endert, and John Stasko",
+      "year": 2022,
+      "venue": "IEEE VIS",
+      "venue_family": "VIS",
+      "url": "https://arxiv.org/abs/2207.00189",
+      "github": "https://github.com/nl4dv/nl4dv",
+      "knowledge_contribution": "Dialog state, follow-up utterances, and clarification.",
+      "adoption_status": "surveyed; outside the current single-turn final method"
+    },
+    {
+      "source_id": "N3",
+      "title": "Prompt4Vis",
+      "authors": "Shuaimin Li, Xuanang Chen, Yuanfeng Song, Yunze Song, and Chen Zhang",
+      "year": 2025,
+      "venue": "The VLDB Journal",
+      "venue_family": "database journal",
+      "url": "https://doi.org/10.1007/s00778-025-00912-0",
+      "github": null,
+      "knowledge_contribution": "Schema filtering and example-based LLM NL2VIS generation.",
+      "adoption_status": "surveyed; not transferred into deterministic rules"
+    },
+    {
+      "source_id": "N4",
+      "title": "nvAgent: Automated Data Visualization from Natural Language via Collaborative Agents",
+      "authors": "Geliang Ouyang et al.",
+      "year": 2025,
+      "venue": "ACL",
+      "venue_family": "NLP",
+      "url": "https://aclanthology.org/2025.acl-long.960/",
+      "github": "https://github.com/geliang0114/nvAgent",
+      "knowledge_contribution": "Processor-composer-validator agent separation and context filtering.",
+      "adoption_status": "architectural comparison only; no direct rule adoption"
+    },
+    {
+      "source_id": "N5",
+      "title": "DeepVIS",
+      "authors": "Zhihao Shuai, Boyan Li, Siyu Yan, Yuyu Luo, and Weikai Yang",
+      "year": 2025,
+      "venue": "IEEE TVCG / IEEE VIS",
+      "venue_family": "VIS / TVCG",
+      "url": "https://arxiv.org/abs/2508.01700",
+      "github": "https://github.com/VICA-Lab-HKUST-GZ/DeepVIS",
+      "knowledge_contribution": "Five-stage model-generated visualization reasoning and correction.",
+      "adoption_status": "surveyed; staged trace is conceptually related but not a deterministic source"
+    },
+    {
+      "source_id": "N6",
+      "title": "nvBench: A Large-Scale Synthesized Dataset for Cross-Domain Natural Language to Visualization Task",
+      "authors": "Yuyu Luo, Jiawei Tang, and Guoliang Li",
+      "year": 2021,
+      "venue": "arXiv preprint; presented at the IEEE VIS 2021 NLVIZ Workshop",
+      "venue_family": "NL2VIS benchmark",
+      "url": "https://arxiv.org/abs/2112.12926",
+      "github": "https://github.com/TsinghuaDatabaseGroup/nvBench",
+      "knowledge_contribution": "Large-scale NL2VIS task and visualization-query benchmark.",
+      "adoption_status": "historical evaluation source; not an executable rule source"
+    },
+    {
+      "source_id": "N7",
+      "title": "nvBench 2.0: A Benchmark for Natural Language to Visualization under Ambiguity",
+      "authors": "Tianqi Luo et al.",
+      "year": 2025,
+      "venue": "NeurIPS",
+      "venue_family": "machine learning",
+      "url": "https://arxiv.org/abs/2503.12880",
+      "github": "https://github.com/HKUSTDial/nvBench-2.0",
+      "knowledge_contribution": "Variable-length candidate sets, multi-gold ambiguity, and staged reasoning.",
+      "adoption_status": "implemented in ambiguity states, candidate multiplicity, and evaluation contracts"
+    },
+    {
+      "source_id": "N8",
+      "title": "VisEval: A Benchmark for Data Visualization in the Era of Large Language Models",
+      "authors": "Nan Chen, Yuge Zhang, Jiahang Xu, Kan Ren, and Yuqing Yang",
+      "year": 2024,
+      "venue": "IEEE TVCG / IEEE VIS",
+      "venue_family": "VIS / TVCG",
+      "url": "https://www.microsoft.com/en-us/research/publication/viseval-a-benchmark-for-data-visualization-in-the-era-of-large-language-models/",
+      "github": null,
+      "knowledge_contribution": "Separates visualization validity, legality, and readability.",
+      "adoption_status": "evaluation inspiration; not used as a current end-to-end benchmark"
+    },
+    {
+      "source_id": "N9",
+      "title": "ChartGPT",
+      "authors": "Yuan Tian et al.",
+      "year": 2024,
+      "venue": "IEEE TVCG",
+      "venue_family": "VIS / TVCG",
+      "url": "https://arxiv.org/abs/2311.01920",
+      "github": "https://github.com/bebinca/ChartGPT-materials",
+      "knowledge_contribution": "Intermediate reasoning and interactive correction for underspecified chart requests.",
+      "adoption_status": "surveyed; current method does not copy its LLM reasoning"
+    },
+    {
+      "source_id": "R1",
+      "title": "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco",
+      "authors": "Dominik Moritz, Chenglong Wang, Greg L. Nelson, Halden Lin, Adam M. Smith, Bill Howe, and Jeffrey Heer",
+      "year": 2019,
+      "venue": "IEEE TVCG (IEEE VIS 2018)",
+      "venue_family": "VIS / TVCG",
+      "url": "https://idl.cs.washington.edu/files/2019-Draco-InfoVis.pdf",
+      "github": "https://github.com/uwdata/draco",
+      "knowledge_contribution": "Hard and weighted soft constraints over partial visualization specifications.",
+      "adoption_status": "implemented as hard/soft rule separation and Validator provenance; no direct experiment"
+    },
+    {
+      "source_id": "R10",
+      "title": "Vega-Lite: A Grammar of Interactive Graphics",
+      "authors": "Arvind Satyanarayan, Dominik Moritz, Kanit Wongsuphasawat, and Jeffrey Heer",
+      "year": 2017,
+      "venue": "IEEE TVCG (IEEE InfoVis 2016)",
+      "venue_family": "VIS / TVCG",
+      "url": "https://vis.csail.mit.edu/pubs/vega-lite/",
+      "github": "https://github.com/vega/vega-lite",
+      "knowledge_contribution": "Declarative typed grammar with transformations, encodings, and interaction.",
+      "adoption_status": "implemented in output contracts, channel/type checks, and schema validation"
+    },
+    {
+      "source_id": "R2",
+      "title": "Draco 2: An Extensible Platform to Model Visualization Design",
+      "authors": "Junran Yang, Péter Ferenc Gyarmati, Zehua Zeng, and Dominik Moritz",
+      "year": 2023,
+      "venue": "IEEE VIS Short Paper",
+      "venue_family": "VIS",
+      "url": "https://dig.cmu.edu/publications/2023-draco2.html",
+      "github": "https://github.com/cmudig/draco2",
+      "knowledge_contribution": "Modular constraint-system architecture and APIs.",
+      "adoption_status": "implemented as architectural guidance for modular registries; no direct experiment"
+    },
+    {
+      "source_id": "R3",
+      "title": "Towards a General-Purpose Query Language for Visualization Recommendation",
+      "authors": "Kanit Wongsuphasawat, Dominik Moritz, Anushka Anand, Jock Mackinlay, Bill Howe, and Jeffrey Heer",
+      "year": 2016,
+      "venue": "HILDA at ACM SIGMOD",
+      "venue_family": "database / visualization workshop",
+      "url": "https://idl.cs.washington.edu/files/2016-CompassQL-HILDA.pdf",
+      "github": "https://github.com/vega/compassql",
+      "knowledge_contribution": "Enumerate, constrain, group, and rank completions of partial Vega-Lite specifications.",
+      "adoption_status": "implemented in candidate enumeration/deduplication and used as aligned structured baseline"
+    },
+    {
+      "source_id": "R4",
+      "title": "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations",
+      "authors": "Kanit Wongsuphasawat et al.",
+      "year": 2016,
+      "venue": "IEEE TVCG (IEEE InfoVis 2015)",
+      "venue_family": "VIS / TVCG",
+      "url": "https://idl.cs.washington.edu/files/2016-Voyager-InfoVis.pdf",
+      "github": "https://github.com/vega/voyager",
+      "knowledge_contribution": "Mixed-initiative related-view galleries backed by CompassQL.",
+      "adoption_status": "candidate-diversity inspiration; interactive gallery is outside current scope"
+    },
+    {
+      "source_id": "R5",
+      "title": "TaskVis: Task-Oriented Visualization Recommendation",
+      "authors": "Leixian Shen, Enya Shen, Zhiwei Tai, Yiran Song, and Jianmin Wang",
+      "year": 2021,
+      "venue": "EuroVis Short Paper",
+      "venue_family": "EuroVis",
+      "url": "https://diglib.eg.org/items/d55d5d9b-1eab-4a8d-9601-a1c2754340dd",
+      "github": null,
+      "knowledge_contribution": "Task-to-visualization rule base, ASP enumeration, and ranking.",
+      "adoption_status": "implemented in task-chart compatibility and candidate planning"
+    },
+    {
+      "source_id": "R6",
+      "title": "Data2Vis: Automatic Generation of Data Visualizations Using Sequence-to-Sequence Recurrent Neural Networks",
+      "authors": "Victor Dibia and Çağatay Demiralp",
+      "year": 2018,
+      "venue": "arXiv",
+      "venue_family": "machine learning / visualization",
+      "url": "https://arxiv.org/abs/1804.03126",
+      "github": "https://github.com/victordibia/data2vis",
+      "knowledge_contribution": "Learned mapping from data descriptions to Vega-Lite.",
+      "adoption_status": "related work only"
+    },
+    {
+      "source_id": "R7",
+      "title": "LIDA: A Tool for Automatic Generation of Grammar-Agnostic Visualizations and Infographics using Large Language Models",
+      "authors": "Victor Dibia",
+      "year": 2023,
+      "venue": "ACL System Demonstrations",
+      "venue_family": "NLP",
+      "url": "https://aclanthology.org/2023.acl-demo.11/",
+      "github": "https://github.com/microsoft/lida",
+      "knowledge_contribution": "Modular LLM roles for summarization, goals, generation, evaluation, and repair.",
+      "adoption_status": "recovery-interface inspiration; not a deterministic rule source"
+    },
+    {
+      "source_id": "R8",
+      "title": "Data Formulator: AI-Powered Concept-Driven Visualization Authoring",
+      "authors": "Chenglong Wang, John Thompson, and Bongshin Lee",
+      "year": 2023,
+      "venue": "IEEE VIS",
+      "venue_family": "VIS",
+      "url": "https://arxiv.org/abs/2309.10094",
+      "github": "https://github.com/microsoft/data-formulator",
+      "knowledge_contribution": "Concept binding separates high-level intent from data transformation.",
+      "adoption_status": "typed binding inspiration; different input contract prevents direct ranking"
+    },
+    {
+      "source_id": "R9",
+      "title": "Data Formulator 2: Iteratively Creating Rich Visualizations with AI",
+      "authors": "Chenglong Wang, Bongshin Lee, Steven Drucker, Dan Marshall, and Jianfeng Gao",
+      "year": 2024,
+      "venue": "arXiv",
+      "venue_family": "visualization / HCI",
+      "url": "https://arxiv.org/abs/2408.16119",
+      "github": "https://github.com/microsoft/data-formulator",
+      "knowledge_contribution": "Blended NL/UI authoring with iterative data threads and history.",
+      "adoption_status": "recovery/iteration inspiration; outside the single-turn comparison contract"
+    },
+    {
+      "source_id": "S1",
+      "title": "RAT-SQL: Relation-Aware Schema Encoding and Linking for Text-to-SQL Parsers",
+      "authors": "Bailin Wang, Richard Shin, Xiaodong Liu, Oleksandr Polozov, and Matthew Richardson",
+      "year": 2020,
+      "venue": "ACL",
+      "venue_family": "NLP",
+      "url": "https://aclanthology.org/2020.acl-main.677/",
+      "github": "https://github.com/microsoft/rat-sql",
+      "knowledge_contribution": "Relation-aware schema representation and name-based schema linking.",
+      "adoption_status": "translated into deterministic field-relation evidence, not the neural model"
+    },
+    {
+      "source_id": "S2",
+      "title": "BRIDGE: Bridging Textual and Tabular Data for Cross-Database Semantic Parsing",
+      "authors": "Xi Victoria Lin, Richard Socher, and Caiming Xiong",
+      "year": 2020,
+      "venue": "Findings of EMNLP",
+      "venue_family": "NLP",
+      "url": "https://arxiv.org/abs/2012.12627",
+      "github": "https://github.com/salesforce/TabularSemanticParsing",
+      "knowledge_contribution": "Value anchors and constrained schema-aware decoding.",
+      "adoption_status": "implemented as bounded value-mention evidence and schema consistency"
+    },
+    {
+      "source_id": "S3",
+      "title": "Re-examining the Role of Schema Linking in Text-to-SQL",
+      "authors": "Wenqiang Lei et al.",
+      "year": 2020,
+      "venue": "EMNLP",
+      "venue_family": "NLP",
+      "url": "https://aclanthology.org/2020.emnlp-main.564/",
+      "github": null,
+      "knowledge_contribution": "Controlled analysis of schema-linking components.",
+      "adoption_status": "supports separate field-resolution evaluation and traceability"
+    },
+    {
+      "source_id": "S4",
+      "title": "RESDSQL: Decoupling Schema Linking and Skeleton Parsing for Text-to-SQL",
+      "authors": "Haoyang Li, Jing Zhang, Cuiping Li, and Hong Chen",
+      "year": 2023,
+      "venue": "AAAI",
+      "venue_family": "AI",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/26535",
+      "github": "https://github.com/RUCKBReasoning/RESDSQL",
+      "knowledge_contribution": "Decouples schema ranking from structural parsing.",
+      "adoption_status": "implemented as separation between field ranking and task/plan construction"
+    },
+    {
+      "source_id": "SV2-PROTOCOL",
+      "title": "SkillVIS v2 internal typed-contract and audit policy",
+      "authors": "SkillVIS authors",
+      "year": 2026,
+      "venue": "project protocol",
+      "venue_family": "SkillVIS engineering",
+      "url": "docs/skillvis_v2/m5_formal_protocol_v2_correction.md",
+      "github": null,
+      "knowledge_contribution": "Fail-closed permissions, typed outputs, provenance, and non-mutation boundaries.",
+      "adoption_status": "SkillVIS engineering contribution; not prior visualization theory"
+    },
+    {
+      "source_id": "X1",
+      "title": "Visualization Analysis and Design",
+      "authors": "Tamara Munzner",
+      "year": 2014,
+      "venue": "CRC Press book",
+      "venue_family": "visualization book",
+      "url": "https://www.cs.ubc.ca/~tmm/vadbook/",
+      "github": null,
+      "knowledge_contribution": "Visualization abstraction, idiom design, validation, and nested design decisions.",
+      "adoption_status": "used by legacy final-lineage rules as a conceptual source"
+    },
+    {
+      "source_id": "X2",
+      "title": "DataTone: Managing Ambiguity in Natural Language Interfaces for Data Visualization",
+      "authors": "Tong Gao, Mira Dontcheva, Eytan Adar, Zhicheng Liu, and Karrie Karahalios",
+      "year": 2015,
+      "venue": "ACM UIST",
+      "venue_family": "HCI",
+      "url": "https://doi.org/10.1145/2807442.2807478",
+      "github": null,
+      "knowledge_contribution": "Interactive handling of ambiguity in natural-language visualization interfaces.",
+      "adoption_status": "legacy joint-semantic source for typed ambiguity and mixed-initiative resolution"
+    }
+  ],
+  "runtime_registries": {
+    "m1_m4": {
+      "rule_count": 87,
+      "registry_sha256": "d56dbfd2afdaa6688d197c2bec0853b4a1453066e9fbafe49e67acf1ab9c75f6",
+      "rules": [
+        {
+          "rule_id": "R-QN-003",
+          "module": "query_normalization",
+          "source_ids": [
+            "N1",
+            "N7"
+          ],
+          "scope": "Unicode, case and whitespace normalization",
+          "rationale": "Equivalent surface forms need stable matching while original evidence remains recoverable.",
+          "priority": 1,
+          "failure_condition": "Input is empty or not a string.",
+          "conflict_policy": "Original text and per-token spans are authoritative.",
+          "trace_fields": [
+            "original_query",
+            "normalized_query",
+            "token_spans"
+          ],
+          "unit_tests": [
+            "test_case_whitespace_normalization",
+            "test_empty_query_failure"
+          ],
+          "declared_source_ids": [
+            "N1",
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-QN-006",
+          "module": "query_normalization",
+          "source_ids": [
+            "N7"
+          ],
+          "scope": "registered negation and limitation tokens",
+          "rationale": "Filters and exclusions lose meaning if negation is removed.",
+          "priority": 2,
+          "failure_condition": "Token is outside the registered vocabulary.",
+          "conflict_policy": "Never drop negation; attach it only to an explicit filter during decomposition.",
+          "trace_fields": [
+            "token",
+            "start",
+            "end"
+          ],
+          "unit_tests": [
+            "test_negation_preserved",
+            "test_limitation_preserved"
+          ],
+          "declared_source_ids": [
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-QN-001",
+          "module": "query_normalization",
+          "source_ids": [
+            "N1"
+          ],
+          "scope": "registered English chart tokens and aliases",
+          "rationale": "Compact and synonymous chart tokens must remain explicit downstream evidence.",
+          "priority": 10,
+          "failure_condition": "Token is not in the registered vocabulary or collides with a schema term.",
+          "conflict_policy": "Preserve the original token and record the canonical alternative; never delete the source span.",
+          "trace_fields": [
+            "original_token",
+            "canonical_chart",
+            "start",
+            "end"
+          ],
+          "unit_tests": [
+            "test_compact_chart_mentions",
+            "test_original_span_preserved"
+          ],
+          "declared_source_ids": [
+            "N1"
+          ],
+          "canonical_source_ids": [
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-QN-002",
+          "module": "query_normalization",
+          "source_ids": [
+            "N7"
+          ],
+          "scope": "registered task, temporal, aggregation, ranking and channel phrases",
+          "rationale": "Planning stages require explicit operation hints rather than a single keyword-to-chart decision.",
+          "priority": 11,
+          "failure_condition": "Phrase is outside the versioned vocabulary.",
+          "conflict_policy": "Retain all detected compatible hints; conflicting hints become explicit evidence, not priority overwrite.",
+          "trace_fields": [
+            "phrase",
+            "canonical_term",
+            "term_kind",
+            "start",
+            "end"
+          ],
+          "unit_tests": [
+            "test_operation_terms",
+            "test_conflicting_terms_preserved"
+          ],
+          "declared_source_ids": [
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-QN-004",
+          "module": "query_normalization",
+          "source_ids": [
+            "N1"
+          ],
+          "scope": "bounded inflections, schema abbreviations, snake_case and camelCase field forms",
+          "rationale": "Equivalent surface forms should share lexical evidence without changing the observed query span.",
+          "priority": 12,
+          "failure_condition": "Normalization is outside the registered morphology or abbreviation vocabulary.",
+          "conflict_policy": "Lemmas are auxiliary; normalized query keeps the observed token.",
+          "trace_fields": [
+            "token",
+            "lemma",
+            "start",
+            "end"
+          ],
+          "unit_tests": [
+            "test_plural_lemmas",
+            "test_lemma_does_not_replace_query"
+          ],
+          "declared_source_ids": [
+            "N1"
+          ],
+          "canonical_source_ids": [
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-QN-005",
+          "module": "query_normalization",
+          "source_ids": [
+            "D5",
+            "N7"
+          ],
+          "scope": "registered comparative, superlative, top and bottom expressions",
+          "rationale": "Ranking and extremum intent depends on degree and limit evidence.",
+          "priority": 13,
+          "failure_condition": "Comparative expression is outside the registered vocabulary.",
+          "conflict_policy": "Opposing directions are both retained and later marked ambiguous.",
+          "trace_fields": [
+            "expression",
+            "degree",
+            "direction",
+            "start",
+            "end"
+          ],
+          "unit_tests": [
+            "test_superlative_detection",
+            "test_top_bottom_detection"
+          ],
+          "declared_source_ids": [
+            "D5",
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "D5",
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SP-001",
+          "module": "schema_profiling",
+          "source_ids": [
+            "R10"
+          ],
+          "scope": "single-table physical/semantic typing including parseable timestamps and bounded year-valued fields",
+          "rationale": "Physical dtype and visualization semantic type are distinct; value-shape evidence can recover legacy temporal columns.",
+          "priority": 20,
+          "failure_condition": "Field has no non-null values and no reliable physical type evidence.",
+          "conflict_policy": "Retain physical dtype and emit semantic unknown when evidence conflicts.",
+          "trace_fields": [
+            "field_name",
+            "physical_type",
+            "semantic_type",
+            "confidence"
+          ],
+          "unit_tests": [
+            "test_physical_semantic_separation",
+            "test_all_null_unknown"
+          ],
+          "declared_source_ids": [
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SP-003",
+          "module": "schema_profiling",
+          "source_ids": [
+            "R10",
+            "S4"
+          ],
+          "scope": "cardinality, null rate and value distribution profiling",
+          "rationale": "Role compatibility cannot be inferred from column name alone.",
+          "priority": 21,
+          "failure_condition": "Data values are unavailable.",
+          "conflict_policy": "Profile missing statistics explicitly; do not invent defaults.",
+          "trace_fields": [
+            "row_count",
+            "cardinality",
+            "null_rate",
+            "summaries"
+          ],
+          "unit_tests": [
+            "test_profile_statistics",
+            "test_missing_values"
+          ],
+          "declared_source_ids": [
+            "R10",
+            "S4"
+          ],
+          "canonical_source_ids": [
+            "R10",
+            "S4"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SP-004",
+          "module": "schema_profiling",
+          "source_ids": [
+            "R10"
+          ],
+          "scope": "datetime dtype or date-like value evidence",
+          "rationale": "Temporal roles require value/dtype evidence and should not rely only on field names.",
+          "priority": 22,
+          "failure_condition": "Date parse evidence is weak or based only on a name token.",
+          "conflict_policy": "Weak name evidence produces a warning or unknown; dtype/value evidence controls the decision.",
+          "trace_fields": [
+            "field_name",
+            "parse_ratio",
+            "physical_type",
+            "name_hint"
+          ],
+          "unit_tests": [
+            "test_temporal_dtype",
+            "test_temporal_string_values",
+            "test_year_name_alone_not_forced"
+          ],
+          "declared_source_ids": [
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SP-005",
+          "module": "schema_profiling",
+          "source_ids": [
+            "R10",
+            "S1"
+          ],
+          "scope": "identifier, ordinal and geographic classification with multiple evidence signals",
+          "rationale": "Special semantic types need value-distribution evidence in addition to names.",
+          "priority": 23,
+          "failure_condition": "Only a name hint is present or evidence families disagree.",
+          "conflict_policy": "Prefer unknown/categorical and record a warning rather than force a special type.",
+          "trace_fields": [
+            "field_name",
+            "name_hints",
+            "value_hints",
+            "uniqueness_ratio"
+          ],
+          "unit_tests": [
+            "test_identifier_requires_uniqueness",
+            "test_geographic_requires_values",
+            "test_ordinal_evidence"
+          ],
+          "declared_source_ids": [
+            "R10",
+            "S1"
+          ],
+          "canonical_source_ids": [
+            "R10",
+            "S1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SP-002",
+          "module": "schema_profiling",
+          "source_ids": [
+            "S2"
+          ],
+          "scope": "bounded low-cardinality value anchors under the configured access policy",
+          "rationale": "Observed values may ground query mentions to fields.",
+          "priority": 24,
+          "failure_condition": "Value matching is disabled, cardinality exceeds the bound, or samples are unavailable.",
+          "conflict_policy": "Colliding values remain candidates for every matching field.",
+          "trace_fields": [
+            "field_name",
+            "cardinality",
+            "sample_policy"
+          ],
+          "unit_tests": [
+            "test_bounded_value_samples",
+            "test_high_cardinality_value_gate"
+          ],
+          "declared_source_ids": [
+            "S2"
+          ],
+          "canonical_source_ids": [
+            "S2"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-001",
+          "module": "field_resolution",
+          "source_ids": [
+            "N1",
+            "S1"
+          ],
+          "scope": "explicit normalized field-name mentions",
+          "rationale": "Explicit fields must not be replaced by schema-order defaults.",
+          "priority": 30,
+          "failure_condition": "No complete field-name span occurs in the query.",
+          "conflict_policy": "All exact collisions remain candidates.",
+          "trace_fields": [
+            "field_name",
+            "query_span",
+            "lexical_score"
+          ],
+          "unit_tests": [
+            "test_exact_field_match",
+            "test_exact_collision"
+          ],
+          "declared_source_ids": [
+            "N1",
+            "S1"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "S1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-002",
+          "module": "field_resolution",
+          "source_ids": [
+            "N1"
+          ],
+          "scope": "versioned aliases supplied with the dataset",
+          "rationale": "User language may use a documented alternate field name.",
+          "priority": 31,
+          "failure_condition": "Alias metadata is absent or the alias does not occur.",
+          "conflict_policy": "Exact field names outrank aliases; alias collisions remain ambiguous.",
+          "trace_fields": [
+            "field_name",
+            "alias",
+            "query_span",
+            "alias_score"
+          ],
+          "unit_tests": [
+            "test_alias_match",
+            "test_alias_collision"
+          ],
+          "declared_source_ids": [
+            "N1"
+          ],
+          "canonical_source_ids": [
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-003",
+          "module": "field_resolution",
+          "source_ids": [
+            "S2"
+          ],
+          "scope": "exact casefolded matches to bounded profiled values",
+          "rationale": "A value mention can identify the field that supplies a filter or grouping dimension.",
+          "priority": 32,
+          "failure_condition": "Value index is gated, missing or collides across fields.",
+          "conflict_policy": "Every colliding field is retained with an ambiguity record.",
+          "trace_fields": [
+            "field_name",
+            "matched_value",
+            "query_span",
+            "value_score"
+          ],
+          "unit_tests": [
+            "test_value_match",
+            "test_value_collision"
+          ],
+          "declared_source_ids": [
+            "S2"
+          ],
+          "canonical_source_ids": [
+            "S2"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-005",
+          "module": "field_resolution",
+          "source_ids": [
+            "N1",
+            "S1"
+          ],
+          "scope": "singular/plural, abbreviation-expanded, snake_case and camelCase field forms",
+          "rationale": "Normalized field phrases should match common schema naming conventions and inflections.",
+          "priority": 33,
+          "failure_condition": "Normalized token sets have no complete or near-complete correspondence.",
+          "conflict_policy": "Exact lexical evidence outranks normalized evidence.",
+          "trace_fields": [
+            "field_tokens",
+            "query_terms",
+            "normalized_score"
+          ],
+          "unit_tests": [
+            "test_normalized_lexical_match"
+          ],
+          "declared_source_ids": [
+            "N1",
+            "S1"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "S1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-006",
+          "module": "field_resolution",
+          "source_ids": [
+            "S1"
+          ],
+          "scope": "multi-token fields with non-trivial token overlap",
+          "rationale": "Natural language may omit modifiers from a column label.",
+          "priority": 34,
+          "failure_condition": "Only generic tokens overlap or overlap is below the configured threshold.",
+          "conflict_policy": "Token overlap cannot displace exact/alias evidence; ties remain candidates.",
+          "trace_fields": [
+            "field_tokens",
+            "overlap_tokens",
+            "lexical_score"
+          ],
+          "unit_tests": [
+            "test_token_overlap",
+            "test_generic_token_rejected"
+          ],
+          "declared_source_ids": [
+            "S1"
+          ],
+          "canonical_source_ids": [
+            "S1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-007",
+          "module": "field_resolution",
+          "source_ids": [
+            "R10",
+            "S4"
+          ],
+          "scope": "already evidenced field candidates",
+          "rationale": "Semantic type provides a small compatibility signal, not permission to invent a field.",
+          "priority": 35,
+          "failure_condition": "Candidate has no lexical, alias or value evidence.",
+          "conflict_policy": "Type compatibility cannot create a candidate on its own.",
+          "trace_fields": [
+            "field_name",
+            "semantic_type",
+            "expected_roles",
+            "type_score"
+          ],
+          "unit_tests": [
+            "test_type_score_requires_base_evidence",
+            "test_no_type_only_fallback"
+          ],
+          "declared_source_ids": [
+            "R10",
+            "S4"
+          ],
+          "canonical_source_ids": [
+            "R10",
+            "S4"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-008",
+          "module": "field_resolution",
+          "source_ids": [
+            "D4",
+            "N7"
+          ],
+          "scope": "already evidenced candidates with explicit task or operation hints",
+          "rationale": "Task roles may rank fields while preserving the underlying evidence.",
+          "priority": 36,
+          "failure_condition": "No task/operation evidence or no base field evidence.",
+          "conflict_policy": "Task-role score is a small component and cannot override exact conflicts.",
+          "trace_fields": [
+            "field_name",
+            "task_hints",
+            "role_candidates",
+            "task_role_score"
+          ],
+          "unit_tests": [
+            "test_task_conditioned_score",
+            "test_task_score_not_candidate_source"
+          ],
+          "declared_source_ids": [
+            "D4",
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-009",
+          "module": "field_resolution",
+          "source_ids": [
+            "D2",
+            "N7",
+            "R10"
+          ],
+          "scope": "multi-field preservation, unresolved mentions, and unique label recovery for explicit each-entity structure",
+          "rationale": "Required-field recovery preserves named fields and can expose a unique human-readable entity label as structural evidence.",
+          "priority": 37,
+          "failure_condition": "A mention has no candidate above threshold.",
+          "conflict_policy": "Do not collapse different mentions into one field; unresolved mentions are explicit.",
+          "trace_fields": [
+            "mention_ids",
+            "required_field_candidates",
+            "unresolved_mentions"
+          ],
+          "unit_tests": [
+            "test_multi_field_preservation",
+            "test_unresolved_required_field"
+          ],
+          "declared_source_ids": [
+            "D2",
+            "N7",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D2",
+            "N7",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-010",
+          "module": "field_resolution",
+          "source_ids": [
+            "D4",
+            "N1"
+          ],
+          "scope": "versioned query/schema concept pairs within the active single-table schema",
+          "rationale": "A bounded semantic bridge covers stable domain synonyms while preserving ties and a registry hash; it does not use embedding or LLM guesses.",
+          "priority": 38,
+          "failure_condition": "No registered concept connects a query span to a schema field surface.",
+          "conflict_policy": "All fields aligned through the same concept remain candidates and enter ordinary field ambiguity handling.",
+          "trace_fields": [
+            "concept_id",
+            "query_span",
+            "field_name",
+            "concept_registry_sha256"
+          ],
+          "unit_tests": [
+            "test_semantic_concept_grounding",
+            "test_semantic_concept_ties_are_preserved"
+          ],
+          "declared_source_ids": [
+            "D4",
+            "N1"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-004",
+          "module": "field_resolution",
+          "source_ids": [
+            "S4"
+          ],
+          "scope": "all M2 field resolution",
+          "rationale": "Schema linking must be independent from chart construction.",
+          "priority": 39,
+          "failure_condition": "A downstream chart hint is used as field evidence.",
+          "conflict_policy": "Reject unregistered field evidence and never inject schema-order defaults.",
+          "trace_fields": [
+            "candidate_inputs",
+            "candidate_outputs"
+          ],
+          "unit_tests": [
+            "test_chart_hint_does_not_inject_field",
+            "test_no_schema_order_fallback"
+          ],
+          "declared_source_ids": [
+            "S4"
+          ],
+          "canonical_source_ids": [
+            "S4"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-011",
+          "module": "field_resolution",
+          "source_ids": [
+            "D4",
+            "N7"
+          ],
+          "scope": "identifier-only partial matches governed by explicit row-count phrases",
+          "rationale": "An entity noun in a row-count expression denotes the counted row population and must not become an unintended visual dimension.",
+          "priority": 39,
+          "failure_condition": "The match has stronger exact, alias, value, or grouping evidence.",
+          "conflict_policy": "Retain the identifier candidate and evidence in the trace but exclude it from required visual fields.",
+          "trace_fields": [
+            "count_span",
+            "entity_span",
+            "identifier_field",
+            "required_field_decision"
+          ],
+          "unit_tests": [
+            "test_count_entity_identifier_not_visual_dimension"
+          ],
+          "declared_source_ids": [
+            "D4",
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-001",
+          "module": "task_profiling",
+          "source_ids": [
+            "D4",
+            "D5"
+          ],
+          "scope": "declared SkillVIS v2 analytical task vocabulary",
+          "rationale": "Task candidates require operational semantics separate from chart type.",
+          "priority": 40,
+          "failure_condition": "Intent is outside the declared task vocabulary.",
+          "conflict_policy": "Compatible primary and secondary tasks coexist.",
+          "trace_fields": [
+            "task",
+            "score_components",
+            "evidence_spans",
+            "required_roles"
+          ],
+          "unit_tests": [
+            "test_task_vocabulary",
+            "test_secondary_tasks"
+          ],
+          "declared_source_ids": [
+            "D4",
+            "D5"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "D5"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SP-040",
+          "module": "temporal_value_shape_profiling",
+          "source_ids": [
+            "MUNZNER2014",
+            "VEGALITE2017",
+            "NL4DV2020"
+          ],
+          "scope": "infer a temporal semantic type from a bounded column sample when at least 80 percent of non-null strings match a registered calendar or timestamp morphology and at least two distinct values parse",
+          "rationale": "Physical string type does not determine visualization semantic type; timestamp morphology is positive evidence even when a producer omits the separator between an ISO date and time.",
+          "priority": 41,
+          "failure_condition": "A date or timestamp column is treated as categorical solely because its serialized representation is non-standard but deterministically parseable.",
+          "conflict_policy": "Existing temporal types win; numeric identifiers are excluded; morphology and parse thresholds must both pass; profiling never rewrites source values.",
+          "trace_fields": [
+            "field_name",
+            "physical_type",
+            "sample_count",
+            "shape_match_ratio",
+            "parse_ratio",
+            "matched_morphologies",
+            "semantic_type"
+          ],
+          "unit_tests": [
+            "test_compact_timestamp_is_temporal",
+            "test_standard_timestamp_is_temporal",
+            "test_identifier_strings_remain_categorical"
+          ],
+          "declared_source_ids": [
+            "MUNZNER2014",
+            "VEGALITE2017",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "X1",
+            "R10",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-004",
+          "module": "task_profiling",
+          "source_ids": [
+            "D4",
+            "D5",
+            "N1"
+          ],
+          "scope": "registered explicit analytical task phrases",
+          "rationale": "Explicit task language is direct evidence but must not directly choose a chart.",
+          "priority": 41,
+          "failure_condition": "No registered task phrase occurs.",
+          "conflict_policy": "Multiple explicit task phrases become multiple scored candidates.",
+          "trace_fields": [
+            "task_term",
+            "task",
+            "query_span",
+            "lexical_score"
+          ],
+          "unit_tests": [
+            "test_explicit_task_terms",
+            "test_task_not_chart_mapping"
+          ],
+          "declared_source_ids": [
+            "D4",
+            "D5",
+            "N1"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "D5",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-002",
+          "module": "task_profiling",
+          "source_ids": [
+            "N1",
+            "N7"
+          ],
+          "scope": "task inference from explicit chart evidence, schema roles, and raw or derived analytical measures",
+          "rationale": "Task inference combines query, schema, and derived-measure evidence; a chart token alone remains insufficient.",
+          "priority": 42,
+          "failure_condition": "A required chart/task role lacks grounded raw or derived field evidence.",
+          "conflict_policy": "Explicit incompatible task remains a separate candidate.",
+          "trace_fields": [
+            "temporal_spans",
+            "temporal_fields",
+            "measure_fields",
+            "trend_score"
+          ],
+          "unit_tests": [
+            "test_structural_trend",
+            "test_chart_alone_not_trend"
+          ],
+          "declared_source_ids": [
+            "N1",
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-005",
+          "module": "task_profiling",
+          "source_ids": [
+            "D5",
+            "N7"
+          ],
+          "scope": "ranking, extremum and top/bottom expressions",
+          "rationale": "Superlatives imply ranking direction and often a bounded extremum result.",
+          "priority": 43,
+          "failure_condition": "Degree/direction evidence is absent.",
+          "conflict_policy": "Opposing directions produce ambiguity; do not select one silently.",
+          "trace_fields": [
+            "ranking_spans",
+            "direction",
+            "limit",
+            "task_scores"
+          ],
+          "unit_tests": [
+            "test_highest_total_sales",
+            "test_top_n",
+            "test_direction_conflict"
+          ],
+          "declared_source_ids": [
+            "D5",
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "D5",
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-003",
+          "module": "task_profiling",
+          "source_ids": [
+            "N7"
+          ],
+          "scope": "underspecified one- or multi-field requests",
+          "rationale": "Insufficient evidence should produce alternatives or unresolved state, not a forced default.",
+          "priority": 48,
+          "failure_condition": "Explicit task evidence resolves the interpretation.",
+          "conflict_policy": "Retain tied plausible tasks and mark task ambiguity.",
+          "trace_fields": [
+            "field_roles",
+            "task_alternatives",
+            "ambiguity"
+          ],
+          "unit_tests": [
+            "test_bare_single_measure_ambiguity",
+            "test_bare_two_measure_ambiguity"
+          ],
+          "declared_source_ids": [
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-QD-001",
+          "module": "query_decomposition",
+          "source_ids": [
+            "N7",
+            "R10"
+          ],
+          "scope": "registered aggregate, filter, bin, sort, limit and time-unit expressions",
+          "rationale": "Transform obligations are part of semantic correctness.",
+          "priority": 50,
+          "failure_condition": "Operation is neither explicit nor one of the registered implicit-count constructions.",
+          "conflict_policy": "Conflicting operations remain separate transforms and raise ambiguity.",
+          "trace_fields": [
+            "operation",
+            "field_candidates",
+            "value",
+            "evidence_spans"
+          ],
+          "unit_tests": [
+            "test_aggregation_transform",
+            "test_sort_limit_transform",
+            "test_filter_transform"
+          ],
+          "declared_source_ids": [
+            "N7",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "N7",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-QD-002",
+          "module": "query_decomposition",
+          "source_ids": [
+            "D4"
+          ],
+          "scope": "resolved field candidates with explicit or structural roles",
+          "rationale": "Measures, groups, time and filters must remain distinct.",
+          "priority": 51,
+          "failure_condition": "Field role evidence is absent or conflicting.",
+          "conflict_policy": "Retain multiple roles when evidence is tied; never overwrite an upstream candidate.",
+          "trace_fields": [
+            "field_name",
+            "semantic_type",
+            "assigned_roles",
+            "role_evidence"
+          ],
+          "unit_tests": [
+            "test_measure_dimension_roles",
+            "test_grouping_role",
+            "test_role_conflict"
+          ],
+          "declared_source_ids": [
+            "D4"
+          ],
+          "canonical_source_ids": [
+            "D4"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-QD-003",
+          "module": "query_decomposition",
+          "source_ids": [
+            "N7",
+            "R10"
+          ],
+          "scope": "explicit filter values, negation, time scopes and numeric top/bottom limits",
+          "rationale": "Filter polarity, temporal scope and limits cannot be reconstructed after they are dropped.",
+          "priority": 52,
+          "failure_condition": "Attachment between expression and field is unresolved.",
+          "conflict_policy": "Record unresolved attachment or alternatives instead of guessing.",
+          "trace_fields": [
+            "filter_value",
+            "negated",
+            "temporal_scope",
+            "limit",
+            "attachment"
+          ],
+          "unit_tests": [
+            "test_negated_filter",
+            "test_temporal_scope",
+            "test_numeric_limit"
+          ],
+          "declared_source_ids": [
+            "N7",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "N7",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-QD-004",
+          "module": "query_decomposition",
+          "source_ids": [
+            "N7",
+            "R10"
+          ],
+          "scope": "inclusive numeric threshold phrases such as at least and at most",
+          "rationale": "Threshold language must compile into a typed filter and must not leak into ranking or extremum detection.",
+          "priority": 53,
+          "failure_condition": "The numeric threshold cannot be attached to a grounded quantitative or ordinal field.",
+          "conflict_policy": "Unattached thresholds remain material ambiguity; they are never converted to rank direction.",
+          "trace_fields": [
+            "threshold_span",
+            "operation",
+            "value",
+            "field_candidates"
+          ],
+          "unit_tests": [
+            "test_inclusive_threshold_not_ranking",
+            "test_inclusive_threshold_transform"
+          ],
+          "declared_source_ids": [
+            "N7",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "N7",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SD-001",
+          "module": "schema_semantic_decomposition",
+          "source_ids": [
+            "RATSQL2020",
+            "SCHEMALINKING2020"
+          ],
+          "scope": "versioned decomposition of schema field names into entity, property, qualifier, and type concepts",
+          "rationale": "Cross-schema grounding requires field structure beyond a flat token bag.",
+          "priority": 55,
+          "failure_condition": "No registered or lexical schema component can be recovered.",
+          "conflict_policy": "Preserve every compatible concept and defer selection to contrastive field resolution.",
+          "trace_fields": [
+            "field_name",
+            "components",
+            "entity_concepts",
+            "property_concepts",
+            "qualifier_concepts"
+          ],
+          "unit_tests": [
+            "test_composite_schema_fields_are_decomposed"
+          ],
+          "declared_source_ids": [
+            "RATSQL2020",
+            "SCHEMALINKING2020"
+          ],
+          "canonical_source_ids": [
+            "S1",
+            "S3"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-020",
+          "module": "joint_field_resolution",
+          "source_ids": [
+            "NL4DV2020",
+            "SCHEMALINKING2020"
+          ],
+          "scope": "schema-independent semantic mentions with explicit query spans",
+          "rationale": "Mentions must exist independently of any early commitment to a schema field.",
+          "priority": 56,
+          "failure_condition": "A semantic concept is assigned without a query span.",
+          "conflict_policy": "Overlapping mentions remain visible; longer and more specific concepts receive contrastive precedence.",
+          "trace_fields": [
+            "mention_id",
+            "query_span",
+            "concept_id",
+            "expected_roles"
+          ],
+          "unit_tests": [
+            "test_semantic_mentions_are_span_grounded"
+          ],
+          "declared_source_ids": [
+            "NL4DV2020",
+            "SCHEMALINKING2020"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "S3"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-021",
+          "module": "joint_field_resolution",
+          "source_ids": [
+            "RATSQL2020",
+            "SCHEMALINKING2020",
+            "NL4DV2020"
+          ],
+          "scope": "high-recall candidate generation from lexical, concept, value, schema-component, and role evidence",
+          "rationale": "A correct field must survive into joint reasoning before precision-oriented selection occurs.",
+          "priority": 57,
+          "failure_condition": "A candidate has no auditable query-to-schema evidence edge.",
+          "conflict_policy": "Candidate generation maximizes bounded recall; it never selects by schema order.",
+          "trace_fields": [
+            "field_candidates",
+            "evidence_channels",
+            "candidate_scores",
+            "top_k"
+          ],
+          "unit_tests": [
+            "test_cross_schema_semantic_candidates_reach_top_k"
+          ],
+          "declared_source_ids": [
+            "RATSQL2020",
+            "SCHEMALINKING2020",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "S1",
+            "S3",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-022",
+          "module": "joint_field_resolution",
+          "source_ids": [
+            "RATSQL2020",
+            "DATATONE2015"
+          ],
+          "scope": "contrastive selection among semantically related fields in the same schema",
+          "rationale": "A field is justified by why it fits better than nearby alternatives, not only by an isolated score.",
+          "priority": 58,
+          "failure_condition": "A competing field is suppressed without positive and negative evidence.",
+          "conflict_policy": "Specific entity-property evidence outranks generic type overlap; unresolved close alternatives remain ambiguous.",
+          "trace_fields": [
+            "selected_field",
+            "competing_fields",
+            "positive_evidence",
+            "negative_evidence",
+            "score_margin"
+          ],
+          "unit_tests": [
+            "test_local_identifier_beats_namespace_for_each_entity",
+            "test_specific_type_phrase_beats_generic_type_fields"
+          ],
+          "declared_source_ids": [
+            "RATSQL2020",
+            "DATATONE2015"
+          ],
+          "canonical_source_ids": [
+            "S1",
+            "X2"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-020",
+          "module": "joint_task_resolution",
+          "source_ids": [
+            "BREHMER_MUNZNER2013",
+            "AMAR2005"
+          ],
+          "scope": "separation of analytical goal, data operations, and presentation intent",
+          "rationale": "Aggregation, filtering, and sorting describe means; they must not replace the analytical goal.",
+          "priority": 59,
+          "failure_condition": "An auxiliary operation is emitted as the primary analytical goal.",
+          "conflict_policy": "A structurally complete core analytical goal dominates auxiliary operations.",
+          "trace_fields": [
+            "analytical_goal",
+            "data_operations",
+            "presentation_hints"
+          ],
+          "unit_tests": [
+            "test_aggregation_is_not_a_primary_goal"
+          ],
+          "declared_source_ids": [
+            "BREHMER_MUNZNER2013",
+            "AMAR2005"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "D5"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-MR-001",
+          "module": "intent_assembly",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "scope": "multi-field VisualizationIntentIR roles",
+          "rationale": "Roles are arrays and relations, not scalar x/y/color slots.",
+          "priority": 60,
+          "failure_condition": "Field evidence is missing or below threshold.",
+          "conflict_policy": "Preserve all supported roles and explicit role ambiguity.",
+          "trace_fields": [
+            "measures",
+            "dimensions",
+            "temporal_fields",
+            "grouping_fields"
+          ],
+          "unit_tests": [
+            "test_multi_field_ir",
+            "test_no_scalar_role_loss"
+          ],
+          "declared_source_ids": [
+            "D2",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D2",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-021",
+          "module": "joint_task_resolution",
+          "source_ids": [
+            "BREHMER_MUNZNER2013",
+            "NL4DV2020"
+          ],
+          "scope": "hard role and arity constraints for core analytical goals",
+          "rationale": "Task words are only valid when their required field and operation structure can be executed.",
+          "priority": 60,
+          "failure_condition": "A task survives despite a hard role or arity violation.",
+          "conflict_policy": "Hard structural constraints dominate lexical task cues and chart hints.",
+          "trace_fields": [
+            "goal",
+            "required_roles",
+            "satisfied_constraints",
+            "violated_constraints"
+          ],
+          "unit_tests": [
+            "test_associated_count_is_not_correlation",
+            "test_correlation_requires_two_measures"
+          ],
+          "declared_source_ids": [
+            "BREHMER_MUNZNER2013",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-MR-002",
+          "module": "intent_assembly",
+          "source_ids": [
+            "N7"
+          ],
+          "scope": "deterministic IR candidate ordering and identity",
+          "rationale": "Equivalent evidence must serialize identically and variable candidates must not be cloned.",
+          "priority": 61,
+          "failure_condition": "Input order is nondeterministic or duplicate candidates are present.",
+          "conflict_policy": "Sort by score, rank and stable names; deduplicate only exact semantic duplicates.",
+          "trace_fields": [
+            "candidate_order",
+            "deterministic_id",
+            "registry_hash"
+          ],
+          "unit_tests": [
+            "test_deterministic_replay",
+            "test_candidate_uniqueness"
+          ],
+          "declared_source_ids": [
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-022",
+          "module": "joint_task_resolution",
+          "source_ids": [
+            "DRACO2019",
+            "NL4DV2020"
+          ],
+          "scope": "composition and deterministic ranking of complete field-task-operation hypotheses",
+          "rationale": "Global semantic consistency is more reliable than independent local classifications.",
+          "priority": 61,
+          "failure_condition": "A selected interpretation does not close all required roles and operations.",
+          "conflict_policy": "Complete hypotheses outrank incomplete hypotheses; soft scores never override hard violations.",
+          "trace_fields": [
+            "hypothesis_id",
+            "field_bindings",
+            "operations",
+            "score",
+            "complete"
+          ],
+          "unit_tests": [
+            "test_complete_interpretation_hypothesis_is_selected"
+          ],
+          "declared_source_ids": [
+            "DRACO2019",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "R1",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-023",
+          "module": "joint_task_resolution",
+          "source_ids": [
+            "DATATONE2015",
+            "NL4DV2020"
+          ],
+          "scope": "material ambiguity after structural hypothesis validation",
+          "rationale": "Ambiguity is material only when multiple executable interpretations differ in core semantics.",
+          "priority": 62,
+          "failure_condition": "Lexical residue alone creates a competing executable interpretation.",
+          "conflict_policy": "Preserve close complete alternatives; otherwise select the uniquely best complete hypothesis.",
+          "trace_fields": [
+            "surviving_hypotheses",
+            "score_margin",
+            "ambiguity_reason"
+          ],
+          "unit_tests": [
+            "test_only_complete_close_hypotheses_are_materially_ambiguous"
+          ],
+          "declared_source_ids": [
+            "DATATONE2015",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "X2",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-MR-020",
+          "module": "joint_semantic_obligation_graph",
+          "source_ids": [
+            "DRACO2019",
+            "RATSQL2020"
+          ],
+          "scope": "typed graph connecting query spans, schema fields, roles, goals, operations, and presentation hints",
+          "rationale": "Every semantic decision must expose both its evidence and constraint path.",
+          "priority": 63,
+          "failure_condition": "A selected field, role, task, or operation lacks a graph edge to evidence or a rule.",
+          "conflict_policy": "Missing proof paths prevent an interpretation from being marked complete.",
+          "trace_fields": [
+            "nodes",
+            "edges",
+            "selected_hypothesis",
+            "rule_ids"
+          ],
+          "unit_tests": [
+            "test_joint_graph_has_proof_edges_for_selected_hypothesis"
+          ],
+          "declared_source_ids": [
+            "DRACO2019",
+            "RATSQL2020"
+          ],
+          "canonical_source_ids": [
+            "R1",
+            "S1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-MR-021",
+          "module": "joint_semantic_obligation_graph",
+          "source_ids": [
+            "DATATONE2015",
+            "DRACO2019"
+          ],
+          "scope": "delayed abstention after complete hypothesis enumeration",
+          "rationale": "Low local confidence must not terminate a query when global constraints can identify a unique safe interpretation.",
+          "priority": 64,
+          "failure_condition": "The pipeline abstains before bounded complete hypotheses are checked.",
+          "conflict_policy": "Unsupported scope and material ambiguity still dominate coverage recovery.",
+          "trace_fields": [
+            "candidate_count",
+            "complete_hypothesis_count",
+            "abstention_reason"
+          ],
+          "unit_tests": [
+            "test_global_completion_recovers_low_local_confidence"
+          ],
+          "declared_source_ids": [
+            "DATATONE2015",
+            "DRACO2019"
+          ],
+          "canonical_source_ids": [
+            "X2",
+            "R1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-030",
+          "module": "contextual_field_grounding",
+          "source_ids": [
+            "NL4DV2020",
+            "SCHEMALINKING2020"
+          ],
+          "scope": "suppress a generic value/values field obligation when the token is an adjacent nominal head of another explicitly grounded field",
+          "rationale": "An exact schema-name match is evidence, not proof of an independent field reference; local syntax must distinguish 'profit values' from 'profit and value'.",
+          "priority": 65,
+          "failure_condition": "A generic value field survives as an independent obligation despite an adjacent grounded measure with no coordination cue.",
+          "conflict_policy": "Preserve the generic field candidate for audit, remove only its required obligation; explicit standalone or coordinated mentions remain required.",
+          "trace_fields": [
+            "generic_field",
+            "generic_span",
+            "head_field",
+            "head_span",
+            "intervening_text"
+          ],
+          "unit_tests": [
+            "test_generic_value_head_is_suppressed",
+            "test_explicit_value_field_is_preserved"
+          ],
+          "declared_source_ids": [
+            "NL4DV2020",
+            "SCHEMALINKING2020"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "S3"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-030",
+          "module": "explicit_ranking_goal",
+          "source_ids": [
+            "BREHMER_MUNZNER2013",
+            "AMAR2005"
+          ],
+          "scope": "compile an explicit rank/ranking directive into a ranking analytical goal when dimension and measure roles are structurally complete",
+          "rationale": "Ranking is an analytical goal, whereas sorting is its execution operation; an explicit ranking directive must not fall back to generic comparison.",
+          "priority": 66,
+          "failure_condition": "An executable explicit ranking request is selected as comparison, or ranking is forced without both measure and dimension roles.",
+          "conflict_policy": "Explicit structurally complete ranking outranks comparison; incomplete ranking remains unresolved or is handled by existing safe ambiguity logic.",
+          "trace_fields": [
+            "ranking_span",
+            "measure_fields",
+            "dimension_fields",
+            "selected_hypothesis_id"
+          ],
+          "unit_tests": [
+            "test_explicit_rank_compiles_to_ranking",
+            "test_sort_only_does_not_force_ranking",
+            "test_rank_without_roles_is_not_forced"
+          ],
+          "declared_source_ids": [
+            "BREHMER_MUNZNER2013",
+            "AMAR2005"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "D5"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-040",
+          "module": "operator_scoped_field_role_resolution",
+          "source_ids": [
+            "NL4DV2020",
+            "BREHMER_MUNZNER2013",
+            "DRACO2019"
+          ],
+          "scope": "resolve a physically numeric low-cardinality field as a query-local measure when an explicit aggregate operation binds to that field and no local grouping cue binds to it",
+          "rationale": "Schema semantic type and query role are distinct. A global by/across cue must not convert an aggregate operand into a grouping dimension when the cue locally modifies another field.",
+          "priority": 67,
+          "failure_condition": "A numeric aggregate operand is treated as a dimension because an unrelated grouping cue exists elsewhere in the query.",
+          "conflict_policy": "Explicit operator-to-field binding outranks global grouping evidence; local grouping evidence on the same field blocks promotion; non-numeric fields are never promoted.",
+          "trace_fields": [
+            "field_name",
+            "physical_type",
+            "aggregate_operation",
+            "operator_span",
+            "local_grouping_evidence",
+            "previous_roles",
+            "resolved_role"
+          ],
+          "unit_tests": [
+            "test_operator_scoped_numeric_operands_become_measures",
+            "test_numeric_grouping_fields_remain_dimensions",
+            "test_non_numeric_aggregate_target_is_not_promoted"
+          ],
+          "declared_source_ids": [
+            "NL4DV2020",
+            "BREHMER_MUNZNER2013",
+            "DRACO2019"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "D4",
+            "R1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-051",
+          "module": "field_mention_ownership",
+          "source_ids": [
+            "NL4DV2020",
+            "BREHMER_MUNZNER2013"
+          ],
+          "scope": "separate an analytical-operation cue from a similarly named field when the remaining phrase is fully grounded by another explicit field",
+          "rationale": "In phrases such as distribution of demand, distribution denotes an analytical task unless the similarly named schema field has independent strong evidence.",
+          "priority": 68,
+          "failure_condition": "An analytical operation token is counted both as task evidence and as an independent required field.",
+          "conflict_policy": "A complete exact or alias mention of the operation-named field wins; otherwise operation ownership plus an explicit base field suppresses only the weak obligation.",
+          "trace_fields": [
+            "field_name",
+            "operation_tokens",
+            "base_tokens",
+            "owner_field",
+            "weak_span"
+          ],
+          "unit_tests": [
+            "test_operation_owned_field_overlap_is_suppressed",
+            "test_exact_operation_named_field_is_preserved"
+          ],
+          "declared_source_ids": [
+            "NL4DV2020",
+            "BREHMER_MUNZNER2013"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "D4"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-050",
+          "module": "field_mention_ownership",
+          "source_ids": [
+            "NL4DV2020",
+            "BREHMER_MUNZNER2013",
+            "DRACO2019"
+          ],
+          "scope": "remove a required-field obligation when its only lexical support is a schema-shared token already owned by a stronger complete field mention",
+          "rationale": "Token overlap is useful for recall but a shared schema token such as area must not create independent field obligations when it occurs only inside an explicitly grounded longer field phrase.",
+          "priority": 69,
+          "failure_condition": "One complete field mention expands into several unrelated required fields through a shared schema token.",
+          "conflict_policy": "Independent exact, normalized, alias, acronym, semantic-concept, or value evidence preserves the field; only weak overlap evidence may be suppressed.",
+          "trace_fields": [
+            "field_name",
+            "weak_span",
+            "matched_tokens",
+            "shared_tokens",
+            "owner_field",
+            "owner_span"
+          ],
+          "unit_tests": [
+            "test_shared_token_obligations_are_suppressed",
+            "test_independent_complete_mentions_are_preserved",
+            "test_value_and_alias_evidence_are_preserved"
+          ],
+          "declared_source_ids": [
+            "NL4DV2020",
+            "BREHMER_MUNZNER2013",
+            "DRACO2019"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "D4",
+            "R1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SA-006",
+          "module": "semantic_safety",
+          "source_ids": [
+            "D4",
+            "N7"
+          ],
+          "scope": "capability lexemes whose complete evidence span is grounded inside a schema field mention",
+          "rationale": "The same token can denote an operation or a measured attribute; schema-grounded field evidence must be checked before a capability gate treats it as a governing operation.",
+          "priority": 69,
+          "failure_condition": "A lexeme is suppressed without a stronger exact, alias, normalized, or semantic-concept field span that contains it.",
+          "conflict_policy": "A separate governing verb or future/intervention cue dominates field-span precedence; otherwise the grounded field interpretation is retained.",
+          "trace_fields": [
+            "operation_lexeme",
+            "query_span",
+            "grounded_field",
+            "grounding_type",
+            "governing_cue"
+          ],
+          "unit_tests": [
+            "test_schema_grounded_forecast_field_is_supported",
+            "test_governing_forecast_verb_still_abstains",
+            "test_schema_grounded_network_score_is_supported"
+          ],
+          "declared_source_ids": [
+            "D4",
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-060",
+          "module": "typed_field_evidence_strength",
+          "source_ids": [
+            "MACKINLAY1986",
+            "NL4DV2020",
+            "DRACO2019"
+          ],
+          "scope": "classify every field-resolution evidence item as explicit grounding, semantic grounding, schema inference, contextual support, or weak overlap",
+          "rationale": "Lexical observations, schema-derived inferences, and task-conditioned compatibility have different epistemic force and must not be interchangeable in required-field decisions.",
+          "priority": 70,
+          "failure_condition": "A schema inference or contextual compatibility signal is treated as equivalent to a query-grounded field mention.",
+          "conflict_policy": "The classification is immutable and auditable; it does not change candidate scores by itself and unknown evidence types default to contextual support.",
+          "trace_fields": [
+            "field_name",
+            "evidence_type",
+            "strength",
+            "query_span",
+            "source_rule"
+          ],
+          "unit_tests": [
+            "test_evidence_strength_taxonomy_is_total",
+            "test_schema_semantic_evidence_is_not_explicit",
+            "test_unknown_evidence_defaults_to_contextual"
+          ],
+          "declared_source_ids": [
+            "MACKINLAY1986",
+            "NL4DV2020",
+            "DRACO2019"
+          ],
+          "canonical_source_ids": [
+            "D1",
+            "N1",
+            "R1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SA-001",
+          "module": "semantic_safety",
+          "source_ids": [
+            "N7"
+          ],
+          "scope": "impact-aware residual tokens after task, role, and typed-transform obligations are complete",
+          "rationale": "Residual surface tokens are non-material only when they cannot alter a task, role, constraint, or capability decision.",
+          "priority": 70,
+          "failure_condition": "A residue token changes a required field, task, operation, threshold, or relation.",
+          "conflict_policy": "Material impact takes precedence over lexical-residue classification.",
+          "trace_fields": [
+            "unresolved_mentions",
+            "lexical_residue",
+            "evidence_spans",
+            "resolution_strategy"
+          ],
+          "unit_tests": [
+            "test_lexical_residue_is_non_material",
+            "test_show_is_not_ambiguous"
+          ],
+          "declared_source_ids": [
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-061",
+          "module": "hierarchical_field_mention_ownership",
+          "source_ids": [
+            "NL4DV2020",
+            "BREHMER_MUNZNER2013",
+            "DRACO2019"
+          ],
+          "scope": "remove a required-field obligation only when all of its query-grounded token support is owned by one or more stronger explicit field mentions and no independent complete mention remains",
+          "rationale": "A weak phrase window may cross two complete mentions, so ownership must be decided token by token rather than by requiring one owner span to contain the entire window.",
+          "priority": 71,
+          "failure_condition": "A phrase such as convex area across grain class creates an extra grain-area obligation because a weak window combines tokens owned by convex-area and grain-class mentions.",
+          "conflict_policy": "Any independent complete explicit, alias, acronym, value, or semantic mention preserves the obligation; schema inference and contextual support cannot defeat explicit multi-owner coverage.",
+          "trace_fields": [
+            "field_name",
+            "evidence_strengths",
+            "observed_tokens",
+            "owner_fields",
+            "owner_spans",
+            "independent_support",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_multi_owner_weak_window_is_suppressed",
+            "test_independent_full_mention_is_preserved",
+            "test_candidates_remain_in_audit_contract"
+          ],
+          "declared_source_ids": [
+            "NL4DV2020",
+            "BREHMER_MUNZNER2013",
+            "DRACO2019"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "D4",
+            "R1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SA-002",
+          "module": "semantic_safety",
+          "source_ids": [
+            "N7",
+            "D4",
+            "D5"
+          ],
+          "scope": "material qualifiers, unrepresented constraints, missing task roles, and surviving interpretation alternatives",
+          "rationale": "Planning safety depends on distinguishing missing obligations and real semantic alternatives from lexical noise.",
+          "priority": 71,
+          "failure_condition": "No evidence span or affected semantic object can be identified.",
+          "conflict_policy": "Missing required roles outrank material qualifiers; material qualifiers outrank multiple valid interpretations.",
+          "trace_fields": [
+            "ambiguity_state",
+            "affected_fields",
+            "affected_tasks",
+            "confidence",
+            "resolution_strategy"
+          ],
+          "unit_tests": [
+            "test_material_ambiguity_requires_clarification",
+            "test_missing_role_is_typed",
+            "test_multiple_valid_interpretations_are_preserved"
+          ],
+          "declared_source_ids": [
+            "N7",
+            "D4",
+            "D5"
+          ],
+          "canonical_source_ids": [
+            "N7",
+            "D4",
+            "D5"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-070",
+          "module": "adjacent_generic_head_ownership",
+          "source_ids": [
+            "NL4DV2020",
+            "DRACO2019",
+            "BREHMER_MUNZNER2013"
+          ],
+          "scope": "suppress a weak required-field obligation when every query-grounded token is a schema-shared head immediately following a stronger complete field mention that contains the same head",
+          "rationale": "In phrases such as customer segment groups, the trailing generic head labels the explicitly named grouping field and is not independent evidence for every schema field sharing that head.",
+          "priority": 72,
+          "failure_condition": "A trailing generic group/category/type/class/segment token promotes unrelated fields that only share the suffix.",
+          "conflict_policy": "Any explicit, semantic, alias, value, or non-adjacent independent mention preserves the obligation; candidates remain in the audit contract.",
+          "trace_fields": [
+            "field_name",
+            "weak_span",
+            "adjacent_owner",
+            "shared_tokens",
+            "gap",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_adjacent_generic_head_is_owned",
+            "test_independent_explicit_field_is_preserved",
+            "test_non_adjacent_weak_mention_is_preserved"
+          ],
+          "declared_source_ids": [
+            "NL4DV2020",
+            "DRACO2019",
+            "BREHMER_MUNZNER2013"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "R1",
+            "D4"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SA-003",
+          "module": "semantic_safety",
+          "source_ids": [
+            "D4",
+            "N7"
+          ],
+          "scope": "versioned capability vocabulary after analytical task profiling",
+          "rationale": "A valid field does not imply that the requested governing operation is supported.",
+          "priority": 72,
+          "failure_condition": "The governing operation is outside both the supported and unsupported versioned vocabularies.",
+          "conflict_policy": "Any explicit unsupported governing operation dominates supported structural fallback tasks.",
+          "trace_fields": [
+            "supported_operations",
+            "unsupported_operations",
+            "risk_level",
+            "evidence_spans"
+          ],
+          "unit_tests": [
+            "test_forecast_is_unsupported",
+            "test_causal_and_network_scope",
+            "test_unsupported_join"
+          ],
+          "declared_source_ids": [
+            "D4",
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SA-004",
+          "module": "semantic_safety",
+          "source_ids": [
+            "N7"
+          ],
+          "scope": "capability assessments containing one or more unsupported operations",
+          "rationale": "Unsupported requests must terminate before candidate planning instead of yielding a plausible but unsafe visualization task.",
+          "priority": 73,
+          "failure_condition": "Unsupported operation evidence is absent.",
+          "conflict_policy": "Force semantic-safety abstention and retain upstream task candidates only as diagnostic evidence.",
+          "trace_fields": [
+            "abstention_required",
+            "abstention_reason",
+            "unsupported_scope",
+            "safety_warnings"
+          ],
+          "unit_tests": [
+            "test_unsupported_operation_forces_abstention",
+            "test_no_fallback_to_line_chart"
+          ],
+          "declared_source_ids": [
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SA-005",
+          "module": "semantic_safety",
+          "source_ids": [
+            "D4",
+            "N7"
+          ],
+          "scope": "queries with no detected unsupported governing operation",
+          "rationale": "Capability checking must preserve supported descriptive visualization tasks and avoid false abstention.",
+          "priority": 74,
+          "failure_condition": "An unsupported governing operation or an upstream failure is present.",
+          "conflict_policy": "Do not change upstream fields, tasks, or transforms; safety may only type ambiguity or abstain.",
+          "trace_fields": [
+            "supported_operations",
+            "risk_level",
+            "pass_through",
+            "provenance"
+          ],
+          "unit_tests": [
+            "test_supported_comparison_passes",
+            "test_supported_trend_passes"
+          ],
+          "declared_source_ids": [
+            "D4",
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SP-041",
+          "module": "aggregate_target_numeric_role_guard",
+          "source_ids": [
+            "MACKINLAY1986",
+            "AMAR2005",
+            "NL4DV2020"
+          ],
+          "scope": "restore a physically numeric field to quantitative when a typed aggregate explicitly targets it and no value-shape temporal profile exists",
+          "rationale": "Lexical tokens such as time can denote a duration measure; explicit aggregate-role evidence is stronger than a field-name temporal hint.",
+          "priority": 74,
+          "failure_condition": "A numeric duration such as handling_time is converted into a temporal dimension despite being the explicit target of mean, sum, or median.",
+          "conflict_policy": "Value-shape temporal evidence or an existing temporal summary prevents restoration; min/max temporal extrema are left unchanged.",
+          "trace_fields": [
+            "field_name",
+            "physical_type",
+            "aggregate_operation",
+            "temporal_summary",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_aggregate_target_numeric_duration_remains_measure",
+            "test_value_profiled_temporal_field_is_preserved"
+          ],
+          "declared_source_ids": [
+            "MACKINLAY1986",
+            "AMAR2005",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "D1",
+            "D5",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-IC-001",
+          "module": "intent_obligation_compiler",
+          "source_ids": [
+            "D2",
+            "N7",
+            "R10"
+          ],
+          "scope": "overlapping field mentions where a shorter field span is fully contained by a longer equally grounded field span of the same role",
+          "rationale": "Longest grounded schema mentions prevent a generic field from shadowing a more specific requested field while retaining auditable evidence.",
+          "priority": 75,
+          "failure_condition": "A shorter field is removed without complete span containment and equivalent or stronger grounding for the longer field.",
+          "conflict_policy": "Do not collapse non-contained mentions or fields with distinct roles.",
+          "trace_fields": [
+            "shadowed_field",
+            "retained_field",
+            "query_spans",
+            "roles"
+          ],
+          "unit_tests": [
+            "test_longest_grounded_field_span_wins",
+            "test_distinct_field_mentions_are_preserved"
+          ],
+          "declared_source_ids": [
+            "D2",
+            "N7",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D2",
+            "N7",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SP-150",
+          "module": "grouped_extremum_numeric_role_guard",
+          "source_ids": [
+            "MACKINLAY1986",
+            "AMAR2005",
+            "NL4DV2020"
+          ],
+          "scope": "restore a physically numeric field from a weak temporal-name role to quantitative when an explicit grouped min/max aggregation targets it, a distinct grouping dimension is grounded, and no temporal value summary or trend discourse exists",
+          "rationale": "Minimum and maximum can summarize numeric duration measures. A lexical time token is weaker than numeric value shape plus an explicit aggregate-target and grouping relation.",
+          "priority": 75,
+          "failure_condition": "Minimum wait_time by desk is encoded as a temporal axis and rejected despite numeric values and an explicit grouped aggregate.",
+          "conflict_policy": "Any parsed temporal value summary, datetime physical type, missing grouping dimension, absent explicit aggregate target, or trend discourse prevents restoration.",
+          "trace_fields": [
+            "field_name",
+            "numeric_summary",
+            "temporal_summary",
+            "aggregate_operation",
+            "grouping_dimension",
+            "trend_cue",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_grouped_numeric_duration_min_is_measure",
+            "test_grouped_numeric_duration_max_is_measure",
+            "test_year_value_shape_remains_temporal"
+          ],
+          "declared_source_ids": [
+            "MACKINLAY1986",
+            "AMAR2005",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "D1",
+            "D5",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-080",
+          "module": "query_local_discourse_grouping_role",
+          "source_ids": [
+            "AMAR2005",
+            "BREHMER_MUNZNER2013",
+            "NL4DV2020"
+          ],
+          "scope": "interpret a physically numeric explicitly grounded field as a categorical grouping role when local among/across/by/for or following group/category discourse marks it as the group key and no aggregate targets it",
+          "rationale": "Low-cardinality codes are often stored numerically but function as dimensions; query-local grammatical role is stronger than physical dtype for visualization planning.",
+          "priority": 76,
+          "failure_condition": "A numeric-coded group field in contrast mean X among Y categories is treated as a second measure, causing correlation or abstention.",
+          "conflict_policy": "Typed aggregate-target evidence preserves the measure role; absent explicit field grounding or local grouping discourse prevents conversion.",
+          "trace_fields": [
+            "field_name",
+            "physical_type",
+            "query_span",
+            "local_cue",
+            "aggregate_target",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_among_categories_closes_numeric_grouping_role",
+            "test_aggregate_target_remains_measure",
+            "test_ungrounded_numeric_field_is_unchanged"
+          ],
+          "declared_source_ids": [
+            "AMAR2005",
+            "BREHMER_MUNZNER2013",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "D5",
+            "D4",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-IC-002",
+          "module": "intent_obligation_compiler",
+          "source_ids": [
+            "D3",
+            "D4",
+            "N7"
+          ],
+          "scope": "auxiliary filtering intent with grounded measure and display dimension, and supported lexical time-unit or ranking obligations",
+          "rationale": "Auxiliary operations must decorate a visualization task instead of replacing it, and explicit sort/time-unit obligations must remain typed before planning.",
+          "priority": 76,
+          "failure_condition": "A visualization task or transform is introduced without grounded fields and direct query evidence.",
+          "conflict_policy": "Existing typed task and transform declarations always win; the compiler only closes a uniquely determined obligation.",
+          "trace_fields": [
+            "primary_task",
+            "secondary_tasks",
+            "transforms",
+            "evidence_spans"
+          ],
+          "unit_tests": [
+            "test_filtering_is_auxiliary_to_grounded_comparison",
+            "test_monthly_creates_time_unit_obligation",
+            "test_ranking_creates_sort_obligation"
+          ],
+          "declared_source_ids": [
+            "D3",
+            "D4",
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "D3",
+            "D4",
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-140",
+          "module": "explicit_set_noun_grouping_role",
+          "source_ids": [
+            "AMAR2005",
+            "BREHMER_MUNZNER2013",
+            "NL4DV2020",
+            "MACKINLAY1986"
+          ],
+          "scope": "bind an explicitly grounded physically numeric field as a grouping dimension when an immediately following levels, tiers, strata, or buckets noun denotes the field's value set and the field is not an aggregate target",
+          "rationale": "A field's analytical role is query-dependent: explicit set discourse denotes grouping over distinct values even when the storage type is numeric.",
+          "priority": 77,
+          "failure_condition": "Comparing mean response between numeric category levels is reduced to a two-measure correlation or safe abstention.",
+          "conflict_policy": "Requires strong field grounding and an adjacent plural set noun; aggregate-target fields, standalone level-named measures, and unmarked dual-quantitative relations are preserved.",
+          "trace_fields": [
+            "field_name",
+            "grounding_span",
+            "set_noun_span",
+            "physical_type",
+            "aggregate_target",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_set_noun_closes_numeric_grouping_role",
+            "test_level_named_measure_correlation_is_preserved",
+            "test_aggregate_target_is_not_converted"
+          ],
+          "declared_source_ids": [
+            "AMAR2005",
+            "BREHMER_MUNZNER2013",
+            "NL4DV2020",
+            "MACKINLAY1986"
+          ],
+          "canonical_source_ids": [
+            "D5",
+            "D4",
+            "N1",
+            "D1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-090",
+          "module": "typed_operation_span_ownership",
+          "source_ids": [
+            "NL4DV2020",
+            "AMAR2005",
+            "BREHMER_MUNZNER2013"
+          ],
+          "scope": "remove a required-field obligation when all of its query-grounded evidence is weak token overlap wholly covered by typed operation evidence spans and the candidate has no independent explicit or semantic grounding",
+          "rationale": "Words such as mean, average, sum, and count denote analytical operations and must not independently ground schema fields that merely contain those tokens.",
+          "priority": 79,
+          "failure_condition": "The aggregation word average adds capital_average when the query explicitly requests capital_total.",
+          "conflict_policy": "Exact full-field, alias, value, acronym, or semantic grounding always preserves the field; candidates and raw evidence remain available for audit.",
+          "trace_fields": [
+            "field_name",
+            "weak_spans",
+            "operation_spans",
+            "independent_grounding",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_aggregate_token_does_not_ground_field",
+            "test_exact_average_field_is_preserved",
+            "test_operation_ownership_retains_audit_candidate"
+          ],
+          "declared_source_ids": [
+            "NL4DV2020",
+            "AMAR2005",
+            "BREHMER_MUNZNER2013"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "D5",
+            "D4"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-001",
+          "module": "candidate_planning",
+          "source_ids": [
+            "R1",
+            "R2",
+            "R3"
+          ],
+          "scope": "declared M4 chart grammar and typed IR roles",
+          "rationale": "Hard data, role, safety, and grammar constraints determine whether a partial design can be completed.",
+          "priority": 80,
+          "failure_condition": "A required role is absent, safety requires abstention, or a chart is outside the versioned vocabulary.",
+          "conflict_policy": "Hard failure cannot be offset by a soft preference score.",
+          "trace_fields": [
+            "task",
+            "required_roles",
+            "field_roles",
+            "chart_vocabulary",
+            "rejection_reasons"
+          ],
+          "unit_tests": [
+            "test_missing_role_returns_zero",
+            "test_unsupported_scope_returns_zero",
+            "test_chart_vocabulary_is_bounded"
+          ],
+          "declared_source_ids": [
+            "R1",
+            "R2",
+            "R3"
+          ],
+          "canonical_source_ids": [
+            "R1",
+            "R2",
+            "R3"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-002",
+          "module": "candidate_planning",
+          "source_ids": [
+            "D1",
+            "R3",
+            "R5"
+          ],
+          "scope": "supported core analytical tasks with complete typed field roles",
+          "rationale": "Task-specific chart families enumerate genuine alternative completions rather than one forced chart.",
+          "priority": 81,
+          "failure_condition": "Task is auxiliary, unresolved, or outside the supported core task set.",
+          "conflict_policy": "Enumerate only templates whose required roles are satisfied.",
+          "trace_fields": [
+            "task",
+            "chart_type",
+            "mark_type",
+            "template",
+            "task_alignment"
+          ],
+          "unit_tests": [
+            "test_chart_family_branches",
+            "test_true_variable_length_candidates"
+          ],
+          "declared_source_ids": [
+            "D1",
+            "R3",
+            "R5"
+          ],
+          "canonical_source_ids": [
+            "D1",
+            "R3",
+            "R5"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-100",
+          "module": "typed_composite_span_segmentation",
+          "source_ids": [
+            "NL4DV2020",
+            "BREHMER_MUNZNER2013",
+            "AMAR2005"
+          ],
+          "scope": "suppress a required candidate when every grounded span is either weak evidence owned by a normalized operation span or a false exact mention that decomposes into an operation span followed by the prefix of another independently exact full-field span",
+          "rationale": "Longest lexical matching can create a false field such as mean_volume across the analytical operator mean and the real field volume_total; typed span ownership must precede field obligation emission.",
+          "priority": 81,
+          "failure_condition": "The phrase mean volume_total independently grounds both volume_total and schema field mean_volume.",
+          "conflict_policy": "Standalone exact/alias/value/semantic evidence remains protected; decomposition requires an explicit typed operation and a distinct exact owner field with adjacent spans.",
+          "trace_fields": [
+            "candidate",
+            "candidate_span",
+            "operation_span",
+            "owner_field",
+            "owner_span",
+            "segmentation",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_composite_exact_span_is_segmented",
+            "test_standalone_operation_named_field_is_preserved",
+            "test_real_owner_field_is_preserved"
+          ],
+          "declared_source_ids": [
+            "NL4DV2020",
+            "BREHMER_MUNZNER2013",
+            "AMAR2005"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "D4",
+            "D5"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-003",
+          "module": "candidate_planning",
+          "source_ids": [
+            "D2",
+            "R10",
+            "N7"
+          ],
+          "scope": "field and encoding assignment from raw, aggregate-derived, and row-count VisualizationIntentIR roles",
+          "rationale": "Candidate encodings preserve raw and derived semantic roles, including fieldless row count, without inventing schema fields.",
+          "priority": 82,
+          "failure_condition": "The requested encoding requires a field role absent from the IR.",
+          "conflict_policy": "Retain distinct color/facet branches only when both are role-compatible.",
+          "trace_fields": [
+            "fields",
+            "encodings",
+            "grouping",
+            "field_role_alignment",
+            "evidence_spans"
+          ],
+          "unit_tests": [
+            "test_grouped_comparison",
+            "test_temporal_trend",
+            "test_correlation_encoding",
+            "test_encoding_diversity"
+          ],
+          "declared_source_ids": [
+            "D2",
+            "R10",
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "D2",
+            "R10",
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SP-110",
+          "module": "correlation_scoped_numeric_temporal_guard",
+          "source_ids": [
+            "MACKINLAY1986",
+            "BREHMER_MUNZNER2013",
+            "NL4DV2020"
+          ],
+          "scope": "restore a required, physically numeric field from a lexical temporal-name hint to a quantitative query-local role when explicit correlation discourse binds it to another numeric field and neither value-shape nor trend discourse supports a temporal interpretation",
+          "rationale": "Field-name hints are weak schema evidence. For a relationship task, typed task evidence and numeric value shape should dominate a suffix such as time when the values do not parse as temporal data.",
+          "priority": 82,
+          "failure_condition": "A numeric measure named time_value is treated as a temporal axis in a query such as plot time_value against monetary_value.",
+          "conflict_policy": "Do not apply when the query contains trend discourse, the field has a temporal value summary, fewer than two required numeric-shaped fields are grounded, or the field lacks strong query grounding.",
+          "trace_fields": [
+            "field",
+            "physical_type",
+            "numeric_summary",
+            "temporal_summary",
+            "correlation_cue",
+            "trend_cue",
+            "grounding",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_numeric_temporal_name_is_quantitative_in_correlation_context",
+            "test_numeric_year_is_temporal_in_trend_context",
+            "test_temporal_value_shape_is_preserved"
+          ],
+          "declared_source_ids": [
+            "MACKINLAY1986",
+            "BREHMER_MUNZNER2013",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "D1",
+            "D4",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-004",
+          "module": "candidate_planning",
+          "source_ids": [
+            "D1",
+            "D7",
+            "R5"
+          ],
+          "scope": "surviving hard-valid candidate completions",
+          "rationale": "Soft effectiveness preferences must remain componentized, source-scoped, and auditable.",
+          "priority": 83,
+          "failure_condition": "A score component or configured weight is missing.",
+          "conflict_policy": "The fixed formula combines components; scores never override hard rejection.",
+          "trace_fields": [
+            "score_components",
+            "score_weights",
+            "total_score",
+            "ranking_key"
+          ],
+          "unit_tests": [
+            "test_score_component_completeness",
+            "test_fixed_score_formula",
+            "test_deterministic_tie"
+          ],
+          "declared_source_ids": [
+            "D1",
+            "D7",
+            "R5"
+          ],
+          "canonical_source_ids": [
+            "D1",
+            "D7",
+            "R5"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-FR-120",
+          "module": "ranking_target_role_binding",
+          "source_ids": [
+            "BREHMER_MUNZNER2013",
+            "AMAR2005",
+            "NL4DV2020"
+          ],
+          "scope": "bind an explicitly grounded numeric-coded field as a grouping dimension when it is the target of a rank/order directive and a distinct field is introduced after by, using, based on, or according to with an explicit aggregate",
+          "rationale": "Ranking is a typed relation between entities and a score expression. Physical numeric type alone cannot distinguish a category code from the measure used to score it.",
+          "priority": 83,
+          "failure_condition": "Rank cell_band using average cell_total is reduced to correlation because both fields are physically numeric.",
+          "conflict_policy": "Do not convert a field without a grounded target span between the ranking directive and linkage phrase, a distinct grounded score field after the linkage, and an explicit aggregate operation.",
+          "trace_fields": [
+            "target_field",
+            "score_field",
+            "directive_span",
+            "link_span",
+            "aggregation_span",
+            "grounding",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_numeric_ranking_target_becomes_grouping_dimension",
+            "test_correlation_numeric_fields_are_not_converted",
+            "test_ranking_without_grounded_target_is_not_rewritten"
+          ],
+          "declared_source_ids": [
+            "BREHMER_MUNZNER2013",
+            "AMAR2005",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "D5",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-005",
+          "module": "candidate_planning",
+          "source_ids": [
+            "N7",
+            "R3"
+          ],
+          "scope": "all enumerated M4 candidate specifications",
+          "rationale": "Semantic-equivalent candidates must be deduplicated before ranking, and top-k must never be padded.",
+          "priority": 84,
+          "failure_condition": "Canonical signature inputs are incomplete or nondeterministic.",
+          "conflict_policy": "Keep one canonical representative per signature; never clone a survivor.",
+          "trace_fields": [
+            "deterministic_signature",
+            "raw_count",
+            "post_dedup_count",
+            "duplicate_count"
+          ],
+          "unit_tests": [
+            "test_candidate_dedup",
+            "test_no_top_k_padding",
+            "test_signature_stability"
+          ],
+          "declared_source_ids": [
+            "N7",
+            "R3"
+          ],
+          "canonical_source_ids": [
+            "N7",
+            "R3"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-130",
+          "module": "ranking_directive_role_closure",
+          "source_ids": [
+            "BREHMER_MUNZNER2013",
+            "AMAR2005",
+            "NL4DV2020"
+          ],
+          "scope": "emit ranking as the sole analytical task when a rank/order directive is supported by an R-FR-120 target dimension, a distinct quantitative score field, and an explicit aggregate",
+          "rationale": "A task decision should be closed from the typed target-score relation even when a surface ranking synonym is absent from the normalization lexicon.",
+          "priority": 84,
+          "failure_condition": "Order tier_value according to average quality_total has correct field roles but remains a generic comparison.",
+          "conflict_policy": "Requires the independently traced R-FR-120 role binding, a complete dimension-measure structure, and aggregation; it cannot fire from a rank/order token alone.",
+          "trace_fields": [
+            "directive_span",
+            "target_dimension",
+            "score_measure",
+            "aggregation",
+            "prior_role_rule",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_according_to_ranking_closes_to_ranking",
+            "test_rank_keyword_without_role_binding_does_not_force_task"
+          ],
+          "declared_source_ids": [
+            "BREHMER_MUNZNER2013",
+            "AMAR2005",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "D5",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-006",
+          "module": "candidate_planning",
+          "source_ids": [
+            "R3",
+            "R4",
+            "N7"
+          ],
+          "scope": "distinct hard-valid candidate set after deduplication",
+          "rationale": "Variable-length output should preserve genuine chart-family, encoding, transform, and task diversity within a fixed budget.",
+          "priority": 85,
+          "failure_condition": "A diversity branch violates a hard constraint or only renames an identical encoding.",
+          "conflict_policy": "Quality constraints dominate diversity; fewer candidates are valid.",
+          "trace_fields": [
+            "candidate_count",
+            "chart_family_diversity",
+            "encoding_diversity",
+            "transform_diversity",
+            "task_diversity"
+          ],
+          "unit_tests": [
+            "test_multiple_valid_candidates",
+            "test_diversity_does_not_create_invalid_candidate"
+          ],
+          "declared_source_ids": [
+            "R3",
+            "R4",
+            "N7"
+          ],
+          "canonical_source_ids": [
+            "R3",
+            "R4",
+            "N7"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-040",
+          "module": "analytical_task_specificity_dominance",
+          "source_ids": [
+            "AMAR2005",
+            "BREHMER_MUNZNER2013",
+            "NL4DV2020"
+          ],
+          "scope": "promote field-unowned rank/order/sort directives only after measure-dimension closure and remove generic comparison from the emitted task candidate set while retaining the alternative hypothesis in the audit graph",
+          "rationale": "Ranking is a specific analytical goal that entails comparison; emitting both as peer predictions harms typed task precision and obscures the primary intent.",
+          "priority": 85,
+          "failure_condition": "An explicit order or sort request falls back to comparison, or an explicit rank request emits generic comparison as a peer task.",
+          "conflict_policy": "Directive spans owned by field mentions are excluded; order/sort require an aggregation and a following by-clause; missing structural roles forbid promotion.",
+          "trace_fields": [
+            "directive",
+            "span",
+            "field_span_overlap",
+            "measure_fields",
+            "dimension_fields",
+            "specificity_suppression",
+            "selected_hypothesis"
+          ],
+          "unit_tests": [
+            "test_order_by_aggregate_promotes_ranking",
+            "test_sort_by_aggregate_promotes_ranking",
+            "test_order_date_does_not_promote_ranking",
+            "test_explicit_rank_suppresses_generic_comparison_candidate"
+          ],
+          "declared_source_ids": [
+            "AMAR2005",
+            "BREHMER_MUNZNER2013",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "D5",
+            "D4",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-007",
+          "module": "candidate_planning",
+          "source_ids": [
+            "N1",
+            "R3",
+            "R10"
+          ],
+          "scope": "explicit chart mentions that are compatible with the typed task and field roles",
+          "rationale": "A compatible explicit chart request constrains enumeration; an incompatible hint must remain visible instead of being silently replaced.",
+          "priority": 86,
+          "failure_condition": "The explicit chart family is unsupported or role-incompatible.",
+          "conflict_policy": "Compatible hint is a hard filter; incompatible hint yields zero executable candidates and a recorded reason.",
+          "trace_fields": [
+            "chart_mentions",
+            "compatible_templates",
+            "rejection_reasons"
+          ],
+          "unit_tests": [
+            "test_explicit_chart_hint_unique_candidate",
+            "test_incompatible_chart_hint_is_not_repaired"
+          ],
+          "declared_source_ids": [
+            "N1",
+            "R3",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "N1",
+            "R3",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-008",
+          "module": "candidate_planning",
+          "source_ids": [
+            "D2",
+            "R3",
+            "R10"
+          ],
+          "scope": "group-representing charts with mathematically certain duplicate group keys and no explicit aggregation",
+          "rationale": "A candidate must declare its data-grain operation; the planner uses a versioned unit-aware mean/sum policy instead of leaving M5 to reject an incomplete design.",
+          "priority": 87,
+          "failure_condition": "Measure units disagree or no grounded measure field is available.",
+          "conflict_policy": "Explicit aggregation always wins; unknown or mixed units use the conservative mean policy and retain an audit assumption.",
+          "trace_fields": [
+            "row_count",
+            "group_cardinality_bound",
+            "measure_fields",
+            "unit_tokens",
+            "aggregation_operation"
+          ],
+          "unit_tests": [
+            "test_implicit_group_aggregation_is_declared",
+            "test_explicit_aggregation_is_not_overridden"
+          ],
+          "declared_source_ids": [
+            "D2",
+            "R3",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D2",
+            "R3",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-050",
+          "module": "analytical_discourse_specificity_closure",
+          "source_ids": [
+            "AMAR2005",
+            "BREHMER_MUNZNER2013",
+            "NL4DV2020",
+            "MACKINLAY1986"
+          ],
+          "scope": "promote contrast plus typed aggregation and grouping closure to comparison, or share/proportion plus explicit pie presentation and a single grouping field to composition",
+          "rationale": "Analytical discourse and presentation evidence jointly disambiguate structurally complete tasks that bare field-count heuristics misclassify.",
+          "priority": 87,
+          "failure_condition": "Contrast-with-aggregation is emitted as correlation, or explicit record proportions in a pie chart is emitted as distribution.",
+          "conflict_policy": "Correlation cues without aggregation are preserved; composition requires explicit part-to-whole wording plus explicit pie presentation; alternative hypotheses stay in the audit graph.",
+          "trace_fields": [
+            "directive_span",
+            "aggregation",
+            "measure_fields",
+            "grouping_fields",
+            "chart_mention",
+            "selected_goal",
+            "suppressed_peer_tasks"
+          ],
+          "unit_tests": [
+            "test_contrast_aggregate_group_promotes_comparison",
+            "test_proportion_pie_promotes_composition",
+            "test_contrast_relationship_preserves_correlation"
+          ],
+          "declared_source_ids": [
+            "AMAR2005",
+            "BREHMER_MUNZNER2013",
+            "NL4DV2020",
+            "MACKINLAY1986"
+          ],
+          "canonical_source_ids": [
+            "D5",
+            "D4",
+            "N1",
+            "D1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-009",
+          "module": "candidate_planning",
+          "source_ids": [
+            "D2",
+            "R3",
+            "R10"
+          ],
+          "scope": "multi-measure comparison over one grounded dimension",
+          "rationale": "A typed fold prevents the planner from silently dropping all but the first requested measure in grouped comparison designs.",
+          "priority": 88,
+          "failure_condition": "Fewer than two grounded quantitative fields or no comparison dimension is available.",
+          "conflict_policy": "All folded source measures remain explicit; derived key/value fields are declared by the transform and checked by M5.",
+          "trace_fields": [
+            "source_measure_fields",
+            "derived_key_field",
+            "derived_value_field",
+            "encodings"
+          ],
+          "unit_tests": [
+            "test_multi_measure_fold_preserves_all_measures",
+            "test_validator_accepts_declared_fold_fields"
+          ],
+          "declared_source_ids": [
+            "D2",
+            "R3",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D2",
+            "R3",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-012",
+          "module": "candidate_construction_isolation",
+          "source_ids": [
+            "DRACO2019",
+            "VEGALITE2017"
+          ],
+          "scope": "validate channel uniqueness per enumerated row and isolate a malformed candidate without aborting valid sibling candidates",
+          "rationale": "A typed candidate contract is a safety boundary. Construction failures must be auditable row-level rejections rather than process-wide exceptions.",
+          "priority": 88,
+          "failure_condition": "One invalid candidate row aborts the full planning request or duplicate channels are silently repaired.",
+          "conflict_policy": "Identical duplicate encodings are deduplicated; conflicting duplicate channels are rejected without guessing or channel reassignment; valid sibling rows continue.",
+          "trace_fields": [
+            "chart_type",
+            "channel",
+            "fields",
+            "rejection_reason",
+            "surviving_candidate_count"
+          ],
+          "unit_tests": [
+            "test_conflicting_duplicate_channel_is_rejected_per_row",
+            "test_identical_duplicate_encoding_is_deduplicated",
+            "test_valid_sibling_survives_invalid_row"
+          ],
+          "declared_source_ids": [
+            "DRACO2019",
+            "VEGALITE2017"
+          ],
+          "canonical_source_ids": [
+            "R1",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-140",
+          "module": "ordering_direction_aggregation_precedence",
+          "source_ids": [
+            "AMAR2005",
+            "BREHMER_MUNZNER2013",
+            "COMPASSQL2016",
+            "VEGALITE2017"
+          ],
+          "scope": "treat highest-to-lowest, lowest-to-highest, largest-first, smallest-first, ascending, and descending language as ordering direction when a ranking relation already contains one explicit aggregate score operation",
+          "rationale": "Ranking direction and score aggregation are orthogonal transforms. An explicit mean, median, sum, min, or max defines the score; direction language orders those scores and must not invent a second aggregate.",
+          "priority": 88,
+          "failure_condition": "Rank groups by average score from highest to lowest emits both mean and max, leaving no singular aggregation and causing validator rejection.",
+          "conflict_policy": "Requires a closed ranking task, a single explicit aggregate from the normalized query, and an unambiguous direction phrase; explicit max/min remains the aggregate and non-ranking superlative questions are unchanged.",
+          "trace_fields": [
+            "ranking_task",
+            "explicit_aggregate",
+            "direction_span",
+            "removed_derived_aggregate",
+            "sort_direction",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_explicit_mean_dominates_directional_superlative",
+            "test_low_to_high_preserves_median",
+            "test_explicit_max_aggregate_is_preserved",
+            "test_non_ranking_superlative_is_unchanged"
+          ],
+          "declared_source_ids": [
+            "AMAR2005",
+            "BREHMER_MUNZNER2013",
+            "COMPASSQL2016",
+            "VEGALITE2017"
+          ],
+          "canonical_source_ids": [
+            "D5",
+            "D4",
+            "R3",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-010",
+          "module": "candidate_planning",
+          "source_ids": [
+            "D2",
+            "D3",
+            "R3",
+            "R10"
+          ],
+          "scope": "required field-role obligations compiled from VisualizationIntentIR before chart-template completion",
+          "rationale": "A candidate may choose among valid encodings but may not silently drop a grounded analytical field; filter-only fields remain in data scope without becoming visual grouping channels.",
+          "priority": 89,
+          "failure_condition": "Any required field obligation is absent from the candidate data scope or assigned an incompatible role.",
+          "conflict_policy": "Hard obligation completeness dominates chart score; candidates that cannot close the obligation are not emitted.",
+          "trace_fields": [
+            "obligation_id",
+            "required_fields",
+            "candidate_fields",
+            "filter_only_fields",
+            "coverage"
+          ],
+          "unit_tests": [
+            "test_boxplot_preserves_grouping_dimension",
+            "test_filter_field_is_scoped_not_grouped",
+            "test_no_required_field_is_dropped"
+          ],
+          "declared_source_ids": [
+            "D2",
+            "D3",
+            "R3",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D2",
+            "D3",
+            "R3",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-TP-141",
+          "module": "typed_ranking_relation_preclosure",
+          "source_ids": [
+            "AMAR2005",
+            "BREHMER_MUNZNER2013",
+            "COMPASSQL2016",
+            "NL4DV2020"
+          ],
+          "scope": "close ranking from an explicit rank/order target-link-score relation, one explicit score aggregation, typed dimension and measure roles, and an unambiguous order-direction phrase before generic grouped-superlative interpretation can dominate",
+          "rationale": "A ranking request is a relation among entity target, aggregate score, and ordering direction; closing those roles jointly prevents direction words from being mistaken for a second aggregate and removes entailed comparison/extremum peer labels.",
+          "priority": 89,
+          "failure_condition": "Order vendors by median cost from smallest to largest remains comparison, or ranking is emitted together with extremum.",
+          "conflict_policy": "Requires distinct strongly grounded target and score fields, an explicit aggregation targeting the score, a recognized linkage phrase, and exactly one direction; missing roles or non-ranking superlatives remain unchanged.",
+          "trace_fields": [
+            "directive_span",
+            "target_dimension",
+            "link_span",
+            "score_measure",
+            "explicit_aggregation",
+            "direction_span",
+            "suppressed_tasks",
+            "decision"
+          ],
+          "unit_tests": [
+            "test_preclosure_order_relation_becomes_ranking",
+            "test_ranking_suppresses_peer_extremum",
+            "test_missing_link_does_not_force_ranking",
+            "test_non_ranking_superlative_is_preserved"
+          ],
+          "declared_source_ids": [
+            "AMAR2005",
+            "BREHMER_MUNZNER2013",
+            "COMPASSQL2016",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "D5",
+            "D4",
+            "R3",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-011",
+          "module": "candidate_planning",
+          "source_ids": [
+            "D3",
+            "D4",
+            "N7",
+            "R10"
+          ],
+          "scope": "typed filter, sort, time-unit, aggregation, limit, and fold obligations at the IntentIR-to-candidate boundary",
+          "rationale": "Transform semantics are part of the visualization plan contract and must survive template enumeration independently of chart ranking.",
+          "priority": 90,
+          "failure_condition": "A typed transform obligation is absent or materially altered in an emitted candidate.",
+          "conflict_policy": "Explicit typed transforms dominate planner defaults; unresolved conflicts yield no executable candidate.",
+          "trace_fields": [
+            "obligation_id",
+            "required_transforms",
+            "candidate_transforms",
+            "coverage"
+          ],
+          "unit_tests": [
+            "test_time_unit_survives_planning",
+            "test_rank_sort_survives_planning",
+            "test_filter_survives_without_grouping"
+          ],
+          "declared_source_ids": [
+            "D3",
+            "D4",
+            "N7",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D3",
+            "D4",
+            "N7",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-SA-020",
+          "module": "unsupported_operation_taxonomy",
+          "source_ids": [
+            "BREHMER_MUNZNER2013",
+            "MUNZNER2014",
+            "NL4DV2020"
+          ],
+          "scope": "map unsupported governing-operation lexemes to a versioned canonical label while preserving the matched lexical form and span",
+          "rationale": "Forecast and prediction are related but distinct requested operations; an explicit predict verb must not be relabeled as forecast merely because future scope is also present.",
+          "priority": 93,
+          "failure_condition": "A query safely abstains but reports a canonical unsupported-operation label inconsistent with its governing verb.",
+          "conflict_policy": "Explicit forecast lexemes map to forecast; explicit predict lexemes map to prediction even with future modifiers; project plus future scope maps to forecast; field-grounded spans are excluded before classification.",
+          "trace_fields": [
+            "canonical_operation",
+            "operation_family",
+            "lexical_form",
+            "span",
+            "field_span_precedence",
+            "risk_level"
+          ],
+          "unit_tests": [
+            "test_predict_future_maps_to_prediction",
+            "test_forecast_maps_to_forecast",
+            "test_project_future_maps_to_forecast",
+            "test_operation_named_field_is_not_misclassified"
+          ],
+          "declared_source_ids": [
+            "BREHMER_MUNZNER2013",
+            "MUNZNER2014",
+            "NL4DV2020"
+          ],
+          "canonical_source_ids": [
+            "D4",
+            "X1",
+            "N1"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        },
+        {
+          "rule_id": "R-CP-020",
+          "module": "common_plan_semantic_deduplication",
+          "source_ids": [
+            "MACKINLAY1986",
+            "COMPASSQL2016",
+            "DRACO2019",
+            "VEGALITE2017"
+          ],
+          "scope": "retain one highest-scoring deterministic representative for candidates equivalent under common chart family, field set, encoding-role groups, aggregation, binning, time unit, and typed transforms",
+          "rationale": "Native chart labels and x/y orientation variants can encode the same common visualization plan; top-k must contain distinct decisions rather than nomenclature variants.",
+          "priority": 121,
+          "failure_condition": "The candidate list contains multiple entries that normalize to the same common plan signature.",
+          "conflict_policy": "Differences in fields, channel-role groups, aggregates, binning, temporal units, filters, or typed transforms preserve both candidates; ties use the native deterministic signature.",
+          "trace_fields": [
+            "native_signature",
+            "common_signature",
+            "representative",
+            "removed_count",
+            "preserved_differences"
+          ],
+          "unit_tests": [
+            "test_ranking_orientation_variants_are_deduplicated",
+            "test_distinct_field_or_transform_candidates_are_preserved",
+            "test_common_signatures_are_deterministic"
+          ],
+          "declared_source_ids": [
+            "MACKINLAY1986",
+            "COMPASSQL2016",
+            "DRACO2019",
+            "VEGALITE2017"
+          ],
+          "canonical_source_ids": [
+            "D1",
+            "R3",
+            "R1",
+            "R10"
+          ],
+          "runtime_registry": "joint_v1.12.1_m1_m4"
+        }
+      ]
+    },
+    "m5": {
+      "rule_count": 20,
+      "config_path": "configs/skillvis_v2/validator_formal_v1.json",
+      "config_sha256": "9bb8031a12d573377de0ca018bb3be590794606adacd559ec03a73de981d9509",
+      "rules": [
+        {
+          "rule_id": "R-VF-C001",
+          "source_id": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "level": "V0",
+          "issue_type": "CONTEXT_IDENTITY_MISMATCH",
+          "scope": "SchemaProfile, VisualizationIntentIR, CapabilityAssessment, and candidate-set identity.",
+          "precondition": "A formal validation context is supplied.",
+          "evidence_requirement": "dataset IDs, capability hashes, candidate IDs, ranks, and signatures.",
+          "severity": "CRITICAL",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "ROUTE_CONTEXT_ASSEMBLY",
+          "repair_target_stage": "M5_INPUT",
+          "failure_example": "Schema dataset_id differs from IntentIR dataset_id.",
+          "limitation": "Pydantic parse failures occur before rule execution and are reported as process failures.",
+          "declared_source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "canonical_source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-F001",
+          "source_id": [
+            "D3",
+            "R10"
+          ],
+          "level": "V1",
+          "issue_type": "FIELD_NOT_IN_SCHEMA",
+          "scope": "All candidate fields, encodings, and transforms.",
+          "precondition": "SchemaProfile is valid.",
+          "evidence_requirement": "referenced field and complete schema field-name set.",
+          "severity": "CRITICAL",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "ROUTE_FIELD_RESOLUTION",
+          "repair_target_stage": "M2",
+          "failure_example": "Candidate references AirflowAdjusted, absent from the schema.",
+          "limitation": "Checks schema membership, not whether upstream semantic linking was optimal.",
+          "declared_source_ids": [
+            "D3",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D3",
+            "R10"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-F002",
+          "source_id": [
+            "D2",
+            "R10"
+          ],
+          "level": "V1",
+          "issue_type": "FIELD_ROLE_MISMATCH",
+          "scope": "Candidate measure roles.",
+          "precondition": "Referenced measure exists in schema.",
+          "evidence_requirement": "candidate measure, schema semantic type, and IntentIR measure role.",
+          "severity": "ERROR",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "ROUTE_FIELD_RESOLUTION",
+          "repair_target_stage": "M2",
+          "failure_example": "Habitat Class is declared as a quantitative measure.",
+          "limitation": "A semantically numeric identifier may require upstream schema correction.",
+          "declared_source_ids": [
+            "D2",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D2",
+            "R10"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-F003",
+          "source_id": [
+            "D2",
+            "R10"
+          ],
+          "level": "V1",
+          "issue_type": "FIELD_ROLE_MISMATCH",
+          "scope": "Dimension, temporal, grouping, color, size, and facet roles.",
+          "precondition": "Referenced role field exists in schema.",
+          "evidence_requirement": "candidate role assignment, schema semantic type, and matching IntentIR role.",
+          "severity": "ERROR",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "ROUTE_FIELD_RESOLUTION",
+          "repair_target_stage": "M2",
+          "failure_example": "A numeric load field is used as the temporal role.",
+          "limitation": "Color may encode quantitative values; grouping and color are therefore checked separately.",
+          "declared_source_ids": [
+            "D2",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D2",
+            "R10"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-E001",
+          "source_id": [
+            "R1",
+            "R10"
+          ],
+          "level": "V2",
+          "issue_type": "ENCODING_TYPE_MISMATCH",
+          "scope": "Encoding channel and schema semantic type.",
+          "precondition": "Encoding field exists in schema.",
+          "evidence_requirement": "channel, field, declared type, schema type, and encoding-type matrix entry.",
+          "severity": "ERROR",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "REENCODE_FROM_EXISTING_ROLE",
+          "repair_target_stage": "M4",
+          "failure_example": "Categorical turbine class is encoded on quantitative size.",
+          "limitation": "The matrix defines grammar compatibility, not perceptual optimality.",
+          "declared_source_ids": [
+            "R1",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "R1",
+            "R10"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-E002",
+          "source_id": [
+            "R1",
+            "R10"
+          ],
+          "level": "V2",
+          "issue_type": "MARK_CHART_MISMATCH",
+          "scope": "Chart type and mark.",
+          "precondition": "Chart type belongs to the formal grammar.",
+          "evidence_requirement": "observed chart/mark and required formal mark.",
+          "severity": "ERROR",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "CHANGE_MARK_TO_DECLARED_CHART",
+          "repair_target_stage": "M4",
+          "failure_example": "A line chart is emitted with a point mark.",
+          "limitation": "Layered and composite marks are outside v1.",
+          "declared_source_ids": [
+            "R1",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "R1",
+            "R10"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-E003",
+          "source_id": [
+            "R1",
+            "R10"
+          ],
+          "level": "V2",
+          "issue_type": "REQUIRED_CHANNEL_MISSING",
+          "scope": "Required channels for each formal chart type.",
+          "precondition": "Chart and mark are in the formal grammar.",
+          "evidence_requirement": "observed channels and frozen required-channel set.",
+          "severity": "ERROR",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "ROUTE_CANDIDATE_PLANNER",
+          "repair_target_stage": "M4",
+          "failure_example": "A pie design has no theta encoding.",
+          "limitation": "Optional channels are not required by this rule.",
+          "declared_source_ids": [
+            "R1",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "R1",
+            "R10"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-E004",
+          "source_id": [
+            "D1",
+            "R10"
+          ],
+          "level": "V2",
+          "issue_type": "ENCODING_TYPE_MISMATCH",
+          "scope": "Scatter and grouped-scatter axes.",
+          "precondition": "Candidate chart is scatter or grouped_scatter.",
+          "evidence_requirement": "x/y fields and schema semantic types.",
+          "severity": "ERROR",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "ROUTE_FIELD_RESOLUTION",
+          "repair_target_stage": "M2",
+          "failure_example": "A categorical zone field is used as scatter y.",
+          "limitation": "Non-Cartesian correlation designs are outside v1.",
+          "declared_source_ids": [
+            "D1",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D1",
+            "R10"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-T001",
+          "source_id": [
+            "D1",
+            "R5"
+          ],
+          "level": "V3",
+          "issue_type": "TASK_CHART_MISMATCH",
+          "scope": "Candidate task_alignment and chart type.",
+          "precondition": "Task is represented in the formal compatibility matrix.",
+          "evidence_requirement": "task, chart, allowed chart set, and IntentIR task candidates.",
+          "severity": "ERROR",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "ROUTE_CANDIDATE_PLANNER",
+          "repair_target_stage": "M4",
+          "failure_example": "A temporal trend uses a pie chart.",
+          "limitation": "Compatibility is representational capability, not a single-best-chart rule.",
+          "declared_source_ids": [
+            "D1",
+            "R5"
+          ],
+          "canonical_source_ids": [
+            "D1",
+            "R5"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-A001",
+          "source_id": [
+            "D2",
+            "R10"
+          ],
+          "level": "V4",
+          "issue_type": "AGGREGATION_OBLIGATION_MISMATCH",
+          "scope": "Explicit IntentIR aggregation obligation.",
+          "precondition": "IntentIR contains an aggregation.",
+          "evidence_requirement": "intent and candidate operations, fields, and transforms.",
+          "severity": "ERROR",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "ALIGN_WITH_INTENT_AGGREGATION",
+          "repair_target_stage": "M4",
+          "failure_example": "Intent requires mean Thermal Load but candidate declares sum.",
+          "limitation": "Does not invent an aggregation when intent and certain-grain evidence are both absent.",
+          "declared_source_ids": [
+            "D2",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D2",
+            "R10"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-A002",
+          "source_id": [
+            "D2",
+            "R10"
+          ],
+          "level": "V4",
+          "issue_type": "AGGREGATION_INTERNAL_MISMATCH",
+          "scope": "Candidate aggregation, transforms, and aggregate encodings.",
+          "precondition": "Candidate declares an aggregation.",
+          "evidence_requirement": "declared aggregation, matching transform count, and encoding aggregate values.",
+          "severity": "ERROR",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "ALIGN_AGGREGATION_REPRESENTATIONS",
+          "repair_target_stage": "M4",
+          "failure_example": "Candidate aggregation is mean but encoding aggregate is sum.",
+          "limitation": "Nested aggregation is outside v1.",
+          "declared_source_ids": [
+            "D2",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D2",
+            "R10"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-A003",
+          "source_id": [
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "level": "V4",
+          "issue_type": "TRANSFORM_OBLIGATION_MISSING",
+          "scope": "IntentIR filter, sort, and limit obligations.",
+          "precondition": "IntentIR declares one or more non-aggregation transforms.",
+          "evidence_requirement": "canonical intent and candidate transform signatures.",
+          "severity": "ERROR",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "RESTORE_INTENT_TRANSFORM",
+          "repair_target_stage": "M4",
+          "failure_example": "Top-5 intent loses its limit or descending sort.",
+          "limitation": "Equivalent algebraic rewrites are not recognized in v1.",
+          "declared_source_ids": [
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "canonical_source_ids": [
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-A004",
+          "source_id": [
+            "D2",
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "level": "V4",
+          "issue_type": "DATA_GRAIN_CONFLICT",
+          "scope": "Group-representing charts with mathematically certain duplicate grouping rows.",
+          "precondition": "row_count exceeds the product of encoded grouping-key cardinalities.",
+          "evidence_requirement": "row count, grouping fields, cardinalities, chart scope, and aggregation absence.",
+          "severity": "ERROR",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "REQUEST_AGGREGATION_POLICY",
+          "repair_target_stage": "M3",
+          "failure_example": "Twenty rows map to four category groups but a bar candidate declares no aggregation.",
+          "limitation": "This conservative bound detects certain duplicates only; it cannot prove uniqueness when the bound does not trigger.",
+          "declared_source_ids": [
+            "D2",
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "canonical_source_ids": [
+            "D2",
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-U001",
+          "source_id": [
+            "R1",
+            "R2",
+            "R10"
+          ],
+          "level": "V5",
+          "issue_type": "UNSUPPORTED_DESIGN",
+          "scope": "Candidate executable/audit-only/unsupported/rejection state and formal grammar.",
+          "precondition": "Candidate reaches M5.",
+          "evidence_requirement": "candidate state and formal chart/mark/channel vocabulary.",
+          "severity": "CRITICAL",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "ROUTE_CAPABILITY_REVIEW",
+          "repair_target_stage": "M3.5",
+          "failure_example": "A candidate carries unsupported_chart:heatmap.",
+          "limitation": "A future grammar version may explicitly add currently unsupported designs.",
+          "declared_source_ids": [
+            "R1",
+            "R2",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "R1",
+            "R2",
+            "R10"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-U002",
+          "source_id": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "level": "V5",
+          "issue_type": "SAFETY_BYPASS",
+          "scope": "CapabilityAssessment and IntentIR abstention pass-through.",
+          "precondition": "Capability requires abstention or IntentIR is abstained.",
+          "evidence_requirement": "unsupported operations, risk, abstention state, and surviving candidate.",
+          "severity": "CRITICAL",
+          "allowed_action": "REJECT",
+          "penalty_key": "REJECT",
+          "repair_proposal": "ROUTE_SEMANTIC_SAFETY",
+          "repair_target_stage": "M3.5",
+          "failure_example": "A forecast request reaches M5 as an ordinary line candidate.",
+          "limitation": "M5 does not reinterpret the original query.",
+          "declared_source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "canonical_source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-P001",
+          "source_id": [
+            "D1",
+            "D6",
+            "D7"
+          ],
+          "level": "V6",
+          "issue_type": "PERCEPTUAL_EFFECTIVENESS_WARNING",
+          "scope": "Pie angle/area comparison.",
+          "precondition": "Candidate chart is pie and no hard rule is required for this concern.",
+          "evidence_requirement": "chart, task, encodings, and source scope.",
+          "severity": "WARNING",
+          "allowed_action": "DEMOTE",
+          "penalty_key": "DEMOTE_PIE_EFFECTIVENESS",
+          "repair_proposal": "CONSIDER_POSITION_LENGTH_ALTERNATIVE",
+          "repair_target_stage": "M4",
+          "failure_example": "A valid composition pie is less effective for precise comparison.",
+          "limitation": "The rule is a scoped preference and never invalidates a valid explicit pie request.",
+          "declared_source_ids": [
+            "D1",
+            "D6",
+            "D7"
+          ],
+          "canonical_source_ids": [
+            "D1",
+            "D6",
+            "D7"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-P002",
+          "source_id": [
+            "D7",
+            "R10"
+          ],
+          "level": "V6",
+          "issue_type": "HIGH_CARDINALITY_WARNING",
+          "scope": "Pie, color, series, and facet encodings using SchemaProfile cardinality.",
+          "precondition": "Encoded field cardinality exceeds a frozen threshold.",
+          "evidence_requirement": "schema field cardinality, channel, threshold, and config version.",
+          "severity": "WARNING",
+          "allowed_action": "DEMOTE",
+          "penalty_key": "DEMOTE_HIGH_CARDINALITY",
+          "repair_proposal": "CONSIDER_FILTER_GROUP_OR_FACET",
+          "repair_target_stage": "M4",
+          "failure_example": "Seventeen sensor groups are encoded by color.",
+          "limitation": "Thresholds are engineering defaults, not universal perceptual laws.",
+          "declared_source_ids": [
+            "D7",
+            "R10"
+          ],
+          "canonical_source_ids": [
+            "D7",
+            "R10"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-P003",
+          "source_id": [
+            "D7",
+            "SV2-PROTOCOL"
+          ],
+          "level": "V6",
+          "issue_type": "ENCODING_OVERLOAD_WARNING",
+          "scope": "Candidate encoding and auxiliary-channel counts.",
+          "precondition": "Frozen count threshold is exceeded.",
+          "evidence_requirement": "encoding count, auxiliary channels, and threshold.",
+          "severity": "WARNING",
+          "allowed_action": "DEMOTE",
+          "penalty_key": "DEMOTE_ENCODING_OVERLOAD",
+          "repair_proposal": "CONSIDER_REDUCING_CHANNELS",
+          "repair_target_stage": "M4",
+          "failure_example": "A scatter simultaneously uses x, y, color, and size.",
+          "limitation": "Does not model display size, accessibility, or interaction.",
+          "declared_source_ids": [
+            "D7",
+            "SV2-PROTOCOL"
+          ],
+          "canonical_source_ids": [
+            "D7",
+            "SV2-PROTOCOL"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-S001",
+          "source_id": [
+            "R3",
+            "SV2-PROTOCOL"
+          ],
+          "level": "V6",
+          "issue_type": "DUPLICATE_CANDIDATE_WARNING",
+          "scope": "Complete candidate set.",
+          "precondition": "Two candidates share a deterministic signature.",
+          "evidence_requirement": "candidate IDs and duplicate signatures.",
+          "severity": "WARNING",
+          "allowed_action": "WARN",
+          "penalty_key": "SET_WARNING",
+          "repair_proposal": "ROUTE_SET_DEDUPLICATION",
+          "repair_target_stage": "M4",
+          "failure_example": "Top-k contains two semantic clones.",
+          "limitation": "Signature quality depends on the upstream canonicalization definition.",
+          "declared_source_ids": [
+            "R3",
+            "SV2-PROTOCOL"
+          ],
+          "canonical_source_ids": [
+            "R3",
+            "SV2-PROTOCOL"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        },
+        {
+          "rule_id": "R-VF-S002",
+          "source_id": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "level": "V6",
+          "issue_type": "CANDIDATE_SET_EXHAUSTED",
+          "scope": "Complete validated candidate set.",
+          "precondition": "Every candidate is rejected.",
+          "evidence_requirement": "all candidate decisions and violated hard rules.",
+          "severity": "WARNING",
+          "allowed_action": "WARN",
+          "penalty_key": "SET_WARNING",
+          "repair_proposal": "ROUTE_NO_VALID_CANDIDATE",
+          "repair_target_stage": "FUTURE_ROUTER",
+          "failure_example": "All three candidates violate a hard field or safety rule.",
+          "limitation": "The Validator does not create a replacement candidate.",
+          "declared_source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "canonical_source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "runtime_registry": "m5_validator_formal_v1"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "source_count": 33,
+    "sources_with_implemented_rules": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "N1",
+      "N7",
+      "R1",
+      "R10",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "SV2-PROTOCOL",
+      "X1",
+      "X2"
+    ],
+    "sources_without_implemented_rules": 11,
+    "m1_m4_rule_count": 87,
+    "m5_rule_count": 20,
+    "total_rule_count": 107,
+    "module_rule_counts": {
+      "adjacent_generic_head_ownership": 1,
+      "aggregate_target_numeric_role_guard": 1,
+      "analytical_discourse_specificity_closure": 1,
+      "analytical_task_specificity_dominance": 1,
+      "candidate_construction_isolation": 1,
+      "candidate_planning": 11,
+      "common_plan_semantic_deduplication": 1,
+      "contextual_field_grounding": 1,
+      "correlation_scoped_numeric_temporal_guard": 1,
+      "explicit_ranking_goal": 1,
+      "explicit_set_noun_grouping_role": 1,
+      "field_mention_ownership": 2,
+      "field_resolution": 11,
+      "grouped_extremum_numeric_role_guard": 1,
+      "hierarchical_field_mention_ownership": 1,
+      "intent_assembly": 2,
+      "intent_obligation_compiler": 2,
+      "joint_field_resolution": 3,
+      "joint_semantic_obligation_graph": 2,
+      "joint_task_resolution": 4,
+      "m5_validator": 20,
+      "operator_scoped_field_role_resolution": 1,
+      "ordering_direction_aggregation_precedence": 1,
+      "query_decomposition": 4,
+      "query_local_discourse_grouping_role": 1,
+      "query_normalization": 6,
+      "ranking_directive_role_closure": 1,
+      "ranking_target_role_binding": 1,
+      "schema_profiling": 5,
+      "schema_semantic_decomposition": 1,
+      "semantic_safety": 6,
+      "task_profiling": 5,
+      "temporal_value_shape_profiling": 1,
+      "typed_composite_span_segmentation": 1,
+      "typed_field_evidence_strength": 1,
+      "typed_operation_span_ownership": 1,
+      "typed_ranking_relation_preclosure": 1,
+      "unsupported_operation_taxonomy": 1
+    },
+    "surveyed_or_related_only_sources": [
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "N6",
+      "N8",
+      "N9",
+      "R6",
+      "R7",
+      "R8",
+      "R9"
+    ],
+    "unresolved_source_ids": []
+  },
+  "source_to_rules": {
+    "D1": [
+      "R-CP-002",
+      "R-CP-004",
+      "R-CP-020",
+      "R-FR-060",
+      "R-FR-140",
+      "R-SP-041",
+      "R-SP-110",
+      "R-SP-150",
+      "R-TP-050",
+      "R-VF-E004",
+      "R-VF-P001",
+      "R-VF-T001"
+    ],
+    "D2": [
+      "R-CP-003",
+      "R-CP-008",
+      "R-CP-009",
+      "R-CP-010",
+      "R-FR-009",
+      "R-IC-001",
+      "R-MR-001",
+      "R-VF-A001",
+      "R-VF-A002",
+      "R-VF-A004",
+      "R-VF-F002",
+      "R-VF-F003"
+    ],
+    "D3": [
+      "R-CP-010",
+      "R-CP-011",
+      "R-IC-002",
+      "R-VF-C001",
+      "R-VF-F001",
+      "R-VF-S002",
+      "R-VF-U002"
+    ],
+    "D4": [
+      "R-CP-011",
+      "R-FR-008",
+      "R-FR-010",
+      "R-FR-011",
+      "R-FR-040",
+      "R-FR-050",
+      "R-FR-051",
+      "R-FR-061",
+      "R-FR-070",
+      "R-FR-080",
+      "R-FR-090",
+      "R-FR-100",
+      "R-FR-120",
+      "R-FR-140",
+      "R-IC-002",
+      "R-QD-002",
+      "R-SA-002",
+      "R-SA-003",
+      "R-SA-005",
+      "R-SA-006",
+      "R-SA-020",
+      "R-SP-110",
+      "R-TP-001",
+      "R-TP-004",
+      "R-TP-020",
+      "R-TP-021",
+      "R-TP-030",
+      "R-TP-040",
+      "R-TP-050",
+      "R-TP-130",
+      "R-TP-140",
+      "R-TP-141"
+    ],
+    "D5": [
+      "R-FR-080",
+      "R-FR-090",
+      "R-FR-100",
+      "R-FR-120",
+      "R-FR-140",
+      "R-QN-005",
+      "R-SA-002",
+      "R-SP-041",
+      "R-SP-150",
+      "R-TP-001",
+      "R-TP-004",
+      "R-TP-005",
+      "R-TP-020",
+      "R-TP-030",
+      "R-TP-040",
+      "R-TP-050",
+      "R-TP-130",
+      "R-TP-140",
+      "R-TP-141"
+    ],
+    "D6": [
+      "R-VF-P001"
+    ],
+    "D7": [
+      "R-CP-004",
+      "R-VF-P001",
+      "R-VF-P002",
+      "R-VF-P003"
+    ],
+    "N1": [
+      "R-CP-007",
+      "R-FR-001",
+      "R-FR-002",
+      "R-FR-005",
+      "R-FR-010",
+      "R-FR-020",
+      "R-FR-021",
+      "R-FR-030",
+      "R-FR-040",
+      "R-FR-050",
+      "R-FR-051",
+      "R-FR-060",
+      "R-FR-061",
+      "R-FR-070",
+      "R-FR-080",
+      "R-FR-090",
+      "R-FR-100",
+      "R-FR-120",
+      "R-FR-140",
+      "R-QN-001",
+      "R-QN-003",
+      "R-QN-004",
+      "R-SA-020",
+      "R-SP-040",
+      "R-SP-041",
+      "R-SP-110",
+      "R-SP-150",
+      "R-TP-002",
+      "R-TP-004",
+      "R-TP-021",
+      "R-TP-022",
+      "R-TP-023",
+      "R-TP-040",
+      "R-TP-050",
+      "R-TP-130",
+      "R-TP-141"
+    ],
+    "N7": [
+      "R-CP-003",
+      "R-CP-005",
+      "R-CP-006",
+      "R-CP-011",
+      "R-FR-008",
+      "R-FR-009",
+      "R-FR-011",
+      "R-IC-001",
+      "R-IC-002",
+      "R-MR-002",
+      "R-QD-001",
+      "R-QD-003",
+      "R-QD-004",
+      "R-QN-002",
+      "R-QN-003",
+      "R-QN-005",
+      "R-QN-006",
+      "R-SA-001",
+      "R-SA-002",
+      "R-SA-003",
+      "R-SA-004",
+      "R-SA-005",
+      "R-SA-006",
+      "R-TP-002",
+      "R-TP-003",
+      "R-TP-005"
+    ],
+    "R1": [
+      "R-CP-001",
+      "R-CP-012",
+      "R-CP-020",
+      "R-FR-040",
+      "R-FR-050",
+      "R-FR-060",
+      "R-FR-061",
+      "R-FR-070",
+      "R-MR-020",
+      "R-MR-021",
+      "R-TP-022",
+      "R-VF-E001",
+      "R-VF-E002",
+      "R-VF-E003",
+      "R-VF-U001"
+    ],
+    "R10": [
+      "R-CP-003",
+      "R-CP-007",
+      "R-CP-008",
+      "R-CP-009",
+      "R-CP-010",
+      "R-CP-011",
+      "R-CP-012",
+      "R-CP-020",
+      "R-FR-007",
+      "R-FR-009",
+      "R-IC-001",
+      "R-MR-001",
+      "R-QD-001",
+      "R-QD-003",
+      "R-QD-004",
+      "R-SP-001",
+      "R-SP-003",
+      "R-SP-004",
+      "R-SP-005",
+      "R-SP-040",
+      "R-TP-140",
+      "R-VF-A001",
+      "R-VF-A002",
+      "R-VF-A003",
+      "R-VF-A004",
+      "R-VF-E001",
+      "R-VF-E002",
+      "R-VF-E003",
+      "R-VF-E004",
+      "R-VF-F001",
+      "R-VF-F002",
+      "R-VF-F003",
+      "R-VF-P002",
+      "R-VF-U001"
+    ],
+    "R2": [
+      "R-CP-001",
+      "R-VF-U001"
+    ],
+    "R3": [
+      "R-CP-001",
+      "R-CP-002",
+      "R-CP-005",
+      "R-CP-006",
+      "R-CP-007",
+      "R-CP-008",
+      "R-CP-009",
+      "R-CP-010",
+      "R-CP-020",
+      "R-TP-140",
+      "R-TP-141",
+      "R-VF-S001"
+    ],
+    "R4": [
+      "R-CP-006"
+    ],
+    "R5": [
+      "R-CP-002",
+      "R-CP-004",
+      "R-VF-T001"
+    ],
+    "S1": [
+      "R-FR-001",
+      "R-FR-005",
+      "R-FR-006",
+      "R-FR-021",
+      "R-FR-022",
+      "R-MR-020",
+      "R-SD-001",
+      "R-SP-005"
+    ],
+    "S2": [
+      "R-FR-003",
+      "R-SP-002"
+    ],
+    "S3": [
+      "R-FR-020",
+      "R-FR-021",
+      "R-FR-030",
+      "R-SD-001"
+    ],
+    "S4": [
+      "R-FR-004",
+      "R-FR-007",
+      "R-SP-003"
+    ],
+    "SV2-PROTOCOL": [
+      "R-VF-A003",
+      "R-VF-A004",
+      "R-VF-C001",
+      "R-VF-P003",
+      "R-VF-S001",
+      "R-VF-S002",
+      "R-VF-U002"
+    ],
+    "X1": [
+      "R-SA-020",
+      "R-SP-040"
+    ],
+    "X2": [
+      "R-FR-022",
+      "R-MR-021",
+      "R-TP-023"
+    ]
+  },
+  "claim_boundary": {
+    "prior_knowledge": "task taxonomies, graphical grammars, perceptual evidence, hard/soft constraints, partial-spec enumeration, and schema-linking concepts",
+    "skillvis_contribution": "versioned typed skills, explicit stage contracts, executable scoped rule translation, provenance, fail-closed validation, controlled back-routing, selective recovery, and failure-driven registry evolution",
+    "not_claimed": [
+      "a new universal chart-recommendation theory",
+      "invention of constraint-based visualization recommendation",
+      "replacement of all LLM reasoning",
+      "first-ever visualization skill system"
+    ]
+  }
+}

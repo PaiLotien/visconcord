@@ -1,0 +1,27 @@
+{
+  "assets": [
+    {
+      "path": "research/skillvis_v2/compassql_conformance_v1/evaluator_v1_1.py",
+      "sha256": "601b0287f05ba4d9b7c6d1b5c85b95dd1c544c730ca64dd0144e5bae2dbaa146",
+      "size_bytes": 8987
+    },
+    {
+      "path": "research/skillvis_v2/compassql_conformance_v1/finalize_v1_1.py",
+      "sha256": "0eb5ceb64b8f91378734aa666ed28285dcb25a4e11824779ac440b22f4d86be1",
+      "size_bytes": 4956
+    },
+    {
+      "path": "research/skillvis_v2/compassql_conformance_v1/freeze_amendment_v1_1.py",
+      "sha256": "f2735aa6f6f609049a308c8217186cb89f900b47091c93056886e52674fd3d43",
+      "size_bytes": 2210
+    }
+  ],
+  "base_protocol_lock_sha256": "d67ff916f21c77f1e22715c8af722d6c5b6623d8b393ea363ad3d6b3455e8805",
+  "change_scope": "One field-reference correction in duplicate-projection aggregation; metric definitions, tasks, system outputs, and thresholds unchanged.",
+  "schema_version": "skillvis-compassql-protocol-amendment-v1.1.0",
+  "status": "LOCKED_BEFORE_FIRST_SUCCESSFUL_EVALUATION",
+  "successful_prior_evaluation_exists": false,
+  "system_outputs_inspected_for_quality": false,
+  "system_outputs_modified": false,
+  "trigger": "All 90 subprocesses completed. Frozen evaluator v1 raised KeyError before writing any evaluation result because it read projection_signature from raw instead of evaluated candidates."
+}

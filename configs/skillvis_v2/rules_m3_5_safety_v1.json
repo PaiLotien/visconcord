@@ -1,0 +1,66 @@
+{
+  "schema_version": "skillvis-v2-safety-rule-registry-v1.0.0",
+  "status": "m3_5_safety_implemented",
+  "rules": [
+    {
+      "rule_id": "R-SA-001",
+      "module": "semantic_safety",
+      "source_ids": ["N7"],
+      "scope": "unresolved surface tokens after field and task profiling",
+      "rationale": "Harmless discourse, presentation, and grouping residue must not be promoted to material analytical ambiguity.",
+      "priority": 70,
+      "failure_condition": "A residue token changes a required field, task, operation, threshold, or relation.",
+      "conflict_policy": "Material impact takes precedence over lexical-residue classification.",
+      "trace_fields": ["unresolved_mentions", "lexical_residue", "evidence_spans", "resolution_strategy"],
+      "unit_tests": ["test_lexical_residue_is_non_material", "test_show_is_not_ambiguous"]
+    },
+    {
+      "rule_id": "R-SA-002",
+      "module": "semantic_safety",
+      "source_ids": ["N7", "D4", "D5"],
+      "scope": "material qualifiers, missing task roles, and surviving interpretation alternatives",
+      "rationale": "Planning safety depends on distinguishing missing obligations and real semantic alternatives from lexical noise.",
+      "priority": 71,
+      "failure_condition": "No evidence span or affected semantic object can be identified.",
+      "conflict_policy": "Missing required roles outrank material qualifiers; material qualifiers outrank multiple valid interpretations.",
+      "trace_fields": ["ambiguity_state", "affected_fields", "affected_tasks", "confidence", "resolution_strategy"],
+      "unit_tests": ["test_material_ambiguity_requires_clarification", "test_missing_role_is_typed", "test_multiple_valid_interpretations_are_preserved"]
+    },
+    {
+      "rule_id": "R-SA-003",
+      "module": "semantic_safety",
+      "source_ids": ["D4", "N7"],
+      "scope": "versioned capability vocabulary after analytical task profiling",
+      "rationale": "A valid field does not imply that the requested governing operation is supported.",
+      "priority": 72,
+      "failure_condition": "The governing operation is outside both the supported and unsupported versioned vocabularies.",
+      "conflict_policy": "Any explicit unsupported governing operation dominates supported structural fallback tasks.",
+      "trace_fields": ["supported_operations", "unsupported_operations", "risk_level", "evidence_spans"],
+      "unit_tests": ["test_forecast_is_unsupported", "test_causal_and_network_scope", "test_unsupported_join"]
+    },
+    {
+      "rule_id": "R-SA-004",
+      "module": "semantic_safety",
+      "source_ids": ["N7"],
+      "scope": "capability assessments containing one or more unsupported operations",
+      "rationale": "Unsupported requests must terminate before candidate planning instead of yielding a plausible but unsafe visualization task.",
+      "priority": 73,
+      "failure_condition": "Unsupported operation evidence is absent.",
+      "conflict_policy": "Force semantic-safety abstention and retain upstream task candidates only as diagnostic evidence.",
+      "trace_fields": ["abstention_required", "abstention_reason", "unsupported_scope", "safety_warnings"],
+      "unit_tests": ["test_unsupported_operation_forces_abstention", "test_no_fallback_to_line_chart"]
+    },
+    {
+      "rule_id": "R-SA-005",
+      "module": "semantic_safety",
+      "source_ids": ["D4", "N7"],
+      "scope": "queries with no detected unsupported governing operation",
+      "rationale": "Capability checking must preserve supported descriptive visualization tasks and avoid false abstention.",
+      "priority": 74,
+      "failure_condition": "An unsupported governing operation or an upstream failure is present.",
+      "conflict_policy": "Do not change upstream fields, tasks, or transforms; safety may only type ambiguity or abstain.",
+      "trace_fields": ["supported_operations", "risk_level", "pass_through", "provenance"],
+      "unit_tests": ["test_supported_comparison_passes", "test_supported_trend_passes"]
+    }
+  ]
+}

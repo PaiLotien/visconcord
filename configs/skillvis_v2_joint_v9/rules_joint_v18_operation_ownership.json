@@ -1,0 +1,18 @@
+{
+  "schema_version": "skillvis-v2-joint-v18-operation-ownership-registry-v1.0.0",
+  "status": "development_only_not_protocol_frozen",
+  "rules": [
+    {
+      "rule_id": "R-FR-090",
+      "module": "typed_operation_span_ownership",
+      "source_ids": ["NL4DV2020", "AMAR2005", "BREHMER_MUNZNER2013"],
+      "scope": "remove a required-field obligation when all of its query-grounded evidence is weak token overlap wholly covered by typed operation evidence spans and the candidate has no independent explicit or semantic grounding",
+      "rationale": "Words such as mean, average, sum, and count denote analytical operations and must not independently ground schema fields that merely contain those tokens.",
+      "priority": 79,
+      "failure_condition": "The aggregation word average adds capital_average when the query explicitly requests capital_total.",
+      "conflict_policy": "Exact full-field, alias, value, acronym, or semantic grounding always preserves the field; candidates and raw evidence remain available for audit.",
+      "trace_fields": ["field_name", "weak_spans", "operation_spans", "independent_grounding", "decision"],
+      "unit_tests": ["test_aggregate_token_does_not_ground_field", "test_exact_average_field_is_preserved", "test_operation_ownership_retains_audit_candidate"]
+    }
+  ]
+}

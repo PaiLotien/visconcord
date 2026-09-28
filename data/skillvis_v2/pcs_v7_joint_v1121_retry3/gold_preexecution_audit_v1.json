@@ -1,0 +1,11 @@
+{
+  "errors": [],
+  "gold_type": "source-schema-and-template-derived; not human expert gold",
+  "pass": true,
+  "post_result_gold_changes_forbidden": true,
+  "record_count": 50,
+  "schema_version": "skillvis-pcs-v7-gold-preexecution-audit-v1.0.0",
+  "status": "PASS",
+  "system_outputs_consulted": false,
+  "unresolved_count": 0
+}

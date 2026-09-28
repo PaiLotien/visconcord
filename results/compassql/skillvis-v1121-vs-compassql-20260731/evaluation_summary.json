@@ -1,0 +1,3132 @@
+{
+  "claim_boundary": "Reports structured partial-spec conformance, candidate behavior, and resources only. It does not measure visualization quality, chart accuracy, superiority, or non-inferiority.",
+  "evaluator_amendment": "v1.1 corrects only raw/evaluated candidate signature lookup",
+  "schema_version": "skillvis-compassql-conformance-evaluation-v1.1.0",
+  "status": "CONFORMANCE_ONLY_NO_QUALITY_GOLD",
+  "systems": {
+    "CompassQL": {
+      "candidate_count": {
+        "distribution": {
+          "0": 7,
+          "1": 7,
+          "3": 14,
+          "5": 7
+        },
+        "median": 3.0,
+        "total": 84
+      },
+      "candidate_level": {
+        "common_schema_valid_rate": 1.0,
+        "fixed_encoding_preservation_rate": 1.0,
+        "full_conformance_rate": 1.0,
+        "native_valid_rate": 1.0,
+        "required_transform_preservation_rate": 1.0,
+        "selected_field_preservation_rate": 1.0
+      },
+      "coverage": 1.0,
+      "projection": {
+        "duplicate_projection_count": 0,
+        "duplicate_projection_rate": 0.0,
+        "encoding_signature_diversity": 28,
+        "mark_diversity": 5,
+        "transform_signature_diversity": 1
+      },
+      "resource_measurement": {
+        "completion_tokens": 0,
+        "llm_calls": 0,
+        "median_cpu_time_ms": 9.634,
+        "median_peak_memory_mb": 77.375,
+        "median_runtime_ms": 9.676416,
+        "monetary_cost": 0,
+        "prompt_tokens": 0
+      },
+      "task_counts": {
+        "attempted": 35,
+        "completed": 35,
+        "failed": 0,
+        "failures": [],
+        "total": 35
+      },
+      "task_level_at_k": {
+        "any_common_schema_valid_at_k": 0.8,
+        "any_conforming_at_k": 0.8,
+        "any_fields_preserved_at_k": 0.8,
+        "any_fixed_encodings_preserved_at_k": 0.8,
+        "any_native_valid_at_k": 0.8,
+        "any_required_transforms_preserved_at_k": 0.8
+      }
+    },
+    "SkillVIS": {
+      "candidate_count": {
+        "distribution": {
+          "0": 7,
+          "1": 14,
+          "2": 9,
+          "3": 5
+        },
+        "median": 1.0,
+        "total": 47
+      },
+      "candidate_level": {
+        "common_schema_valid_rate": 1.0,
+        "fixed_encoding_preservation_rate": 1.0,
+        "full_conformance_rate": 1.0,
+        "native_valid_rate": 1.0,
+        "required_transform_preservation_rate": 1.0,
+        "selected_field_preservation_rate": 1.0
+      },
+      "coverage": 1.0,
+      "projection": {
+        "duplicate_projection_count": 0,
+        "duplicate_projection_rate": 0.0,
+        "encoding_signature_diversity": 33,
+        "mark_diversity": 3,
+        "transform_signature_diversity": 30
+      },
+      "resource_measurement": {
+        "completion_tokens": 0,
+        "llm_calls": 0,
+        "median_cpu_time_ms": 20.152,
+        "median_peak_memory_mb": 115.984375,
+        "median_runtime_ms": 23.240875,
+        "monetary_cost": 0,
+        "prompt_tokens": 0
+      },
+      "task_counts": {
+        "attempted": 35,
+        "completed": 35,
+        "failed": 0,
+        "failures": [],
+        "total": 35
+      },
+      "task_level_at_k": {
+        "any_common_schema_valid_at_k": 0.8,
+        "any_conforming_at_k": 0.8,
+        "any_fields_preserved_at_k": 0.8,
+        "any_fixed_encodings_preserved_at_k": 0.8,
+        "any_native_valid_at_k": 0.8,
+        "any_required_transforms_preserved_at_k": 0.8
+      }
+    }
+  },
+  "task_details": [
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "d59d20c2fcb4412ac75ef70da444b64ea10dac48989099b33c3b691a8379b221",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "0a8180e93893d2991de196e68d3cbf9c83a410e183e3f1ecd107c9af69ffbeea",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-001",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "342e22de8d6cfe657866af1b968f670b21dccd0d5ec65d24c6fc4a875313fa0c",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-002",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "89faf68a4c93877aa3929bea993d3d7d64ce3bfa34478c3e9874fa5d286ea1c7",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-003",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-004",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "28f8570f6a61a8987d90547e461ed166d12f900860a6959c550505e14547a971",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "83cf1f9d9e84579b32a5dc29563126021d38687381134215ed2943e467def272",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-005",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "7778854cbcbf4a27381ab53e156d27dedab6988a8a927d8610bead73ae2ab65e",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "73c444d0185c73e3137715e2e8c1028799bcf51784a73efa590b81ff5e7bd037",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-006",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "ac8dbe98b0116a2fa6452e2097bc1c219e48ce50efe392bace982ab50ea473cb",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-007",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "e20e56bf09313190f22fd6e1de124558d3f35758bdccc921a9613d2df85f9375",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-008",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-009",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "90a45b40ecaab685966fd7f9fc7f452915b0cb3887e6347fed2d152db800354a",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "c1a4bd526c3197f6cf451a5d7a66f64de0e20a4a0900e9320087e94203383b42",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-010",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "63114938bf34d821aa5e44223a9be451d272f8fb655dec56886a97cc601c74e1",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "92fd88e9e3933965435c049b7c6e9ff23213872216109d2fc2d44daec9fc7a4e",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-011",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "29f1afc92e72582e2dcc93eb2ca7a64f12753e1defd661f88fb44838c16c643c",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-012",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "f5e6a8fdf20c68c9c2bbdf3efbb70e51cc6dc9645d1c51712401f5ce4a8f9333",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-013",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-014",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "fbb27033758576172cb3624da376014c69b3843b094cdf46fd8888208d834c59",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "7ac3e610b1ef7fbf9828a2496c6596f47838d88beab6a84c610180f9598df1bf",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "3cc374808bef753a2c29f58f5ad55f94176d323e58391fa1bbc6b50f1f21147d",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-015",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "d5985d66ca03128dcc2535c24fddb07b856f549e08d37d88758d665ab899173d",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "bc695b14ac2d5e22ceb320b1c3edd49e28b69cb1b221ac5b4820c3366d307c77",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-016",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "8ff699f76ac760264a9d3f1bba6fbecded7bc8c66e57139bd77d507bcab1983c",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-017",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "951f1daf441695d32c6f508755cd0d52aa7eff03ace1a57e78af515478a011b1",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-018",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-019",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "834d32e11787254e5e549925a6b8ceda2a3f21c5fc78fd5fb6b2bd4c497fa6d2",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "db46f613795639efb4464cddad185303e6bc680a9b2e09e1f4dd3b443fe951bf",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "aa778d84cc31f9fae9c5d68ed29c099a48e667595ae701a4d86e33abfd915ae1",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "SkillVIS",
+      "task_id": "CQLC-020",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "f031e881c41c1bdfd65c0bea6ccc4806ce1768a6c69d3eb1803534df85072443",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "736fbeb49abb9c578fd1db64c851e47713edc0060f4a6a39267571d2fbc281d5",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-021",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "02c7eab2c65494ebe147aee480bd450103429e1d924b093df4f812a3776c5e20",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-022",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "e8d395fd03148f6404360daadcb1f91e270222f84994a326bab0186e0f8d03ba",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-023",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-024",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "f0f871c20373511033c7fcf7b0cd600389bb85b747377c65ee45dc5448115792",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "6826a1076ccaf4ac715e2a0f10e592fc3a1b8c5e6b949ad113f18b66e66bd9cf",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "fdcb693112572e3fd7985fd984fc84d6576b8659f6a29b174088c8d12b863dcc",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-025",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "2e859a289d594e0b17215b586a40974657a06af53e1a09fac148fc4c3997c33c",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "f7d50bb9cc7ac01cbaac90d877dbebe656282c209e129ad30d1fd77ac542cba8",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-026",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "585a0cd3425af48faf81971d1c962cef4a64533d97bdf9695a0f1061d03f4dc4",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-027",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "52a10614da039ef04ba404061d9d31e981b567115cdc8ae9db5c1bc9f33e7e03",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-028",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-029",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "3d5df41214fa19affbef69a5628689cb2784e0cbc9a9342012f9c7aef1f2b3d0",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "58167bcf8ecbc86c834fcc0f01fd41f3145261fc34378d30b42a48fb30de8b1e",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "651b3f429be077ec9e2cd36b240bbb50a94b33d514202b4e6dbf070eb1b55064",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-030",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "adce3cadf1be911f0fd4248f284372bd016ebc6a3a1422bebea514a2af242442",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "640502abea36f90078c91b1a89ec29ce756dc8cfc94ad6f56cf1e4b3af99092f",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-031",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "34fcf1fb08253865c705f15c90b65725f8085b8e315740b844c247b150af56c0",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-032",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "22eed5b4f2a9159332f5049558cdec65271a378ad48bb18d5b9505180b2959f0",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-033",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-034",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "c7b959cf70f49de6a5e9b7cc52beb2ecb007872776a9adf52bde158e7c957d78",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "8010668abc707d63b66455e57d46bea9450c23859fad8976f28280851a7383f0",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "e219233ea3c0ea8bf5ce7b64392c0497cc3ac74e08010401ff7c94b0a7b5070d",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "SkillVIS",
+      "task_id": "CQLC-035",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "9c4cfa28851cdf560a06c68a833c33269f49f476023c83af70619ab9718d8a42",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "f51aefaef2b816890c2869d5a35924539d0406c12408c1d2fa6d89b58af45970",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "3648482184f2387dd0853d27be477e8f67bdac64c131739fe787b013a95b188b",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-001",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "356de7b9a10380797fa87c18abc7e58ea91ea0ba8c3f9ae41c731074e95bc171",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "d83d4de32decc35d2ec1350174c8727abe18eac53a0be4b8ba3ee82a4f5f1e29",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "410804bf90699bbcb7fb9b135913f66bf45020a68f2278e4ad085085a8375c5c",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-002",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "9786f38ca45386b2ff6349355e7487493c316605a7c587f21dc00d8967dbc591",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-003",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "68e5817560b4fada222d06c4ec17284ba544106e6f0986ab644ebf8c0003b7da",
+          "rank": 1,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "70c2e1a2021c4a1135dbdb40865bdea8e034688a09b8cdeb383ae1ad5f6838c5",
+          "rank": 2,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "24534ce9ea4f651b39efbdc2fcfb0333a7de39a7263ea84ecb4be9819897de19",
+          "rank": 3,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "514c78daf86bb5174b57538ef96b9b95277dfc5aea1349fa5ea43135cf04113f",
+          "rank": 4,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "6ccc188f816caf9f70dbed922d0b80c491ad99dc53ae3ee3b57076b41d25c2c5",
+          "rank": 5,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-004",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-005",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "d8068aa205632a1aafcfb45ef2d4a7d607afb5014477f957cc063a2540141174",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "b55b1993b7b05c2a111d754397fa406633dc96802cb50d40a74053d242698fa1",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "a2c036f6e4bf8221e56f20606536aea5c92c074cdf584ca388f0cfa094b031c1",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-006",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "6d44d22ad53ba12231f48a5c9878c975f3dd00964b23a6f5b910a1b4300fdd5f",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "8796b4055fd66bc8b0e0e53267ed6fcd75884e0e8f94aa1db1c1f6ffe63859e6",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "41f95906b950b706248c994a3370cc98b8446cfca23a2ba715a1a956b5099791",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-007",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "0d86411ab88c91bdbcb1d4e75b1e8b83a4e047b798e9a083a4e3d90f80fb7386",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-008",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "a57bb36befda7ed628a2e462343cd6a53cab4c73ec9580927c8858dc6a11b797",
+          "rank": 1,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "30d0934ca839e9b5cf7a97b22e07c9fb744dffe4e3cc42b63e3efacc8ead7ab7",
+          "rank": 2,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "13cea2f54a7e80321801fffa0b3fc4dd460a1a2d54b5e8d14a970d65fc1ff4e2",
+          "rank": 3,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "7b62ad1e118f427aabcd5d1498661d3489fd6f5b80c4a39c6ee80f550cad398c",
+          "rank": 4,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "5b0f419296b2c2facf9cd0b981a21f0971eef2cb339a3f0715983e8eae25caa6",
+          "rank": 5,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-009",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-010",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "367779a4d0cfb4e8e1a2c12bb81235ee8dbcb8e3adbf89cc803ed778fbe97797",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "406491a1901b9fbd5f13ce28fee982785cc1cdfa7ef492ed0d35f95c501210f5",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "8f87dad87b95cfa3c7c286c7b8b15d356134a0df99eb38bd6dd3b1302d70720e",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-011",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "135a3ea525d08e3a43fe588a0281c02202eaa620fb3b512508a0dbac71eb9cd8",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "cb395f713d801ae42056cc398ebb4f5f68066ecaa8c461479154684b50533908",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "4966463c9e1ce88505839eb489b7fc0cdb36f2e5c3d271f721151c3f7e82841c",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-012",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "1d505615fcb8b078f7c0df0ec31e972af421fbd6c60731672fc654ef5155bb6a",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-013",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "7bef3b5205f7feb49e7c0e08e2e547b5d7799de13e369f4d06a32840af40e75a",
+          "rank": 1,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "9c9fdf8e77e02139677eb6364e1ba3c6214f7e364dffe3c1437cc80a42de7b6e",
+          "rank": 2,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "3273b4cfb597750be5aaf1ae5f54b7dde2cfd1076840bfa295562afd40a6fe33",
+          "rank": 3,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "da0d9cea197bc3263935fe48c08e557f0a83756281c1ed6c5e40b0ba76fcc849",
+          "rank": 4,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "a1661da7394a2b540c0ed613b9d0e8b45fb357ea8f5d9d732fbb063bbe28b3a0",
+          "rank": 5,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-014",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-015",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "01b28a42449ab21790e907e4da04b22818f32747419ef433f5258a794bf925da",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "ddaf21e6305afc985237d7a9c70d7072a028fa14b1662fe402d6314a8e48e39e",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "537b729782ebd123c3d62d7f809bf7f2cb090b0e8ac9ff6f1ebc6007986b26a3",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-016",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "8f4b6725fbec69fff39203295057771825ec097532711fe7828a2773d2392731",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "e26718e9e900086ac2f91f694c25f4051f3b8af5fbf9d1f718d373fb17c8e782",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "bd8133d80c9efb1c47ccea7f4876e9ab29eae64d80356ce125f856f9b491f76c",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-017",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "4e8c0959090a6086a0b826e4446f353815d333227907fa25d0ea702be9b40555",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-018",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "8c1679037650048128c389d6a176839538ecb82b5fcc981cb6d688da72ae0547",
+          "rank": 1,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "47d6ed64586d7b7b30015edcb1e6a470561003bbe9f48ff612ad072e6d9c87d0",
+          "rank": 2,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "2a70edd4b849e99bea07beccf4667385ed1848a014065e1ab4518ace8862e890",
+          "rank": 3,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "c9b93cbf0804d5d20a6b997ef0bdd850f893a4482dd8379e154cf28d778d710e",
+          "rank": 4,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "7cf8a16213ca17ed38f090225377b4ed4cc5d8dc4c67a6107a75f2c97f10e474",
+          "rank": 5,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-019",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "qualification",
+      "system": "CompassQL",
+      "task_id": "CQLC-020",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "f2619600b07e064a2a004790678a13031e110314f60a023b4921d4133057ebc3",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "c61bb48f10456d4662354c87355abdfaff79126b161f119bccc27bf8e3cf2b4a",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "306e87a0630e3b49940c0456bb600a4965951247eb20ddf810284795e5711bda",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-021",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "c24252b7f1d45be47d166d326df6232cdc1cc38731163ce3a915b54e4e26e11f",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "9ff6d474fef081f1ec1cabb1398c6740579ae4ba2fc4c8e67d1e09da07b6b8d4",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "ce7e4dbca0454ca1280b88eee5343394be9a1be5cc677f8c7e6e2eacfd7d2f29",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-022",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "26ea668fdcba95fe0d43708ddda1cd9843cd5d36115cfd274a08ff54e0c98fc1",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-023",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "0697b2858267b34acdf208cd3d47efc5837eb7c2c1284b5d6d92be4942136358",
+          "rank": 1,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "4493dced89918eb5378e46ab5130651b7e86aee06d602f02fe0f9de2edb95e26",
+          "rank": 2,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "00280375517d9c9a818ab5a496ac2a2c45316e63a1f808bcfd45c7c74b631ae3",
+          "rank": 3,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "a35b2ebceddf6ff67188b830e78786e72d0d9932303c4c84c758f4fa4eb41c85",
+          "rank": 4,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "3d3f038a97e5af300dbad2e8868797cdd5f114f6439cc3cae27b641da3dc0e29",
+          "rank": 5,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-024",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-025",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "fa17241aabc36c01fa5d967438a3d853ceddcce3a4974b01897979044571c1d5",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "7776dcdf98b992790d783fe7ee3b57095319128aec372a145a0b4ef9086ca8b3",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "cbb9dc932e2e086dd04ec464dcec87f2e97ef558477b04ef434ec20e36c6962d",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-026",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "f10823699e99d4e0241a92cf5b3cc0f23f1552176fca9c23fcf05205d0a85866",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "b9d17f11ec8d0072b630e6688ccc8fc6ba8c394dcfc243ca986f3723446da6af",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "fc7b067b4aeabaa98fa6e955e81697c4b3f5264fbb2c3d5eb6d7cfc2daa0555b",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-027",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "45917a4069a4e6e7083864a6ecf1b4f3607d126e58c151cf4472710795e0fd05",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-028",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "8ff88035d4fb0c852ef4269940ecfa9941dcde0d04226bde8cc18971e22c91d9",
+          "rank": 1,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "5357a58c50687fe33c42d276232904eeb04f165e89e967742343dd80b69ae463",
+          "rank": 2,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "bc63559735e570a030d358743106ffa89ab2c0f4a444d17a4565f1d3668b7313",
+          "rank": 3,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "0232e9926924450b0dce9553e84f316d9c9ce2826ba5df0cddc0a954f64379a9",
+          "rank": 4,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "02870eaa833f7051886c126656f9771ae01a550035595758f4a037c37c0d7fd4",
+          "rank": 5,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-029",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-030",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "comparison",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "0d73e347f8b6bc72fe827ef677520eafb5ddbdbef363688a4dd00d2c660eddc5",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "6775fc7d1d4fd92bd2e5e15bc664d74d56a6fb5c41a3d8889e35a6d6942d8fba",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "b4ec1aa86013aee6349524b07cdf2dc50254ca63b468226da22980bebad9931c",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-031",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "ranking",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "7f22be32317a79692a9482963ff47aed5f320fb0818359ece0f022866e18cda9",
+          "rank": 1,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "e9a15b40f6d8f4e776f06bb010ca2146d50aa5dae59779312e9f6af531c04fe0",
+          "rank": 2,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "7cb76f701a446dc824f5b298be2a2e1dd5456f75bcd2e21a75b7d5550f18e0e2",
+          "rank": 3,
+          "required_transform_flags": [
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-032",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "correlation",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "f00d9267d0fd8a7a0d2cc2c801ed5403db480e4ebf538100c45f049b061d65ba",
+          "rank": 1,
+          "required_transform_flags": [],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-033",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "distribution",
+      "any_common_schema_valid_at_k": true,
+      "any_conforming_at_k": true,
+      "any_fields_preserved_at_k": true,
+      "any_fixed_encodings_preserved_at_k": true,
+      "any_native_valid_at_k": true,
+      "any_required_transforms_preserved_at_k": true,
+      "candidate_count": 5,
+      "candidates": [
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "8063a743823a6e9216555b9ec885467f759a0b16b9a9f4612bbbe2e042815a6b",
+          "rank": 1,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "0f07c6834faafaf27f2a77c8fb833176ed6ea20d33010a2b5b950fa3405d808d",
+          "rank": 2,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "cc2afe4460a67ffe7174db3aa0214003ea681c8cb1f84f432827038598f23f0d",
+          "rank": 3,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "e201e415908daa9c916b8305ced6f0845a2276163f7d0cda906f3661275932e7",
+          "rank": 4,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        },
+        {
+          "common_schema_errors": [],
+          "common_schema_valid": true,
+          "conforming": true,
+          "fixed_encodings_preserved": true,
+          "native_valid": true,
+          "projection_signature": "175d9f5e433d9d53d1d75d39e78db946a1672ccc6bf96067ba9ffeef6a0c6e50",
+          "rank": 5,
+          "required_transform_flags": [
+            true,
+            true
+          ],
+          "required_transforms_preserved": true,
+          "selected_fields_preserved": true
+        }
+      ],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-034",
+      "top_k_cutoff": 5
+    },
+    {
+      "analytical_task": "composition",
+      "any_common_schema_valid_at_k": false,
+      "any_conforming_at_k": false,
+      "any_fields_preserved_at_k": false,
+      "any_fixed_encodings_preserved_at_k": false,
+      "any_native_valid_at_k": false,
+      "any_required_transforms_preserved_at_k": false,
+      "candidate_count": 0,
+      "candidates": [],
+      "duplicate_projection_count": 0,
+      "source_partition": "formal",
+      "system": "CompassQL",
+      "task_id": "CQLC-035",
+      "top_k_cutoff": 5
+    }
+  ],
+  "task_registry_sha256": "43950cbc34170a0c04b0db22c09cad947c6d363d538e3ef744864ffe6da2496a"
+}

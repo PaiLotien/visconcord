@@ -1,0 +1,510 @@
+{
+  "case_id": "M5P-066",
+  "context": {
+    "candidate_set_id": "candidate-set-M5P-066",
+    "candidate_set_signature": "78b7e58e57710f67081cc02c7993cd0fcc63351b1e5cdcb2fba789623ade1654",
+    "candidates": [
+      {
+        "aggregation": null,
+        "ambiguity_state": "NONE",
+        "applied_rule_ids": [
+          "R-M5P-CANDIDATE"
+        ],
+        "audit_only": false,
+        "candidate_id": "M5P-066-C1-35c238c1e4",
+        "chart_compatibility_assumptions": [
+          "context-aware validation uses frozen SchemaProfile"
+        ],
+        "chart_type": "scatter",
+        "deterministic_signature": "35c238c1e4e3b0ed1cbb72fbe2d6f3c28b3c2649971478bc36a7d71de0c778b0",
+        "encodings": [
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "x",
+            "field": "Permafrost Flux 1066",
+            "semantic_type": "quantitative",
+            "sort": null,
+            "time_unit": null
+          },
+          {
+            "aggregate": null,
+            "bin": false,
+            "channel": "y",
+            "field": "Permafrost Gradient 1066",
+            "semantic_type": "quantitative",
+            "sort": null,
+            "time_unit": null
+          }
+        ],
+        "evidence_spans": [
+          {
+            "end": 60,
+            "kind": "m5_pristine_authoring",
+            "normalized": "characterize permafrost flux 1066 spread for study unit 1066",
+            "rule_ids": [
+              "R-M5P-SEED"
+            ],
+            "start": 0,
+            "text": "Characterize Permafrost Flux 1066 spread for study unit 1066"
+          }
+        ],
+        "executable": true,
+        "field_role_alignment": {
+          "measure": [
+            "Permafrost Flux 1066"
+          ]
+        },
+        "fields": {
+          "color": [],
+          "dimension": [],
+          "facet": [],
+          "grouping": [],
+          "measure": [
+            "Permafrost Flux 1066"
+          ],
+          "size": [],
+          "temporal": []
+        },
+        "filters": [],
+        "grouping": [],
+        "limit": null,
+        "mark_type": "point",
+        "rank": 1,
+        "rationale": "Source-isolated M5 component blind candidate.",
+        "rejection_reasons": [],
+        "schema_version": "skillvis-v2-visualization-candidate-v1.0.0",
+        "score_components": {
+          "ambiguity_penalty": 0.0,
+          "chart_effectiveness_score": 0.85,
+          "complexity_penalty": 0.1,
+          "deterministic_tie_breaker": 0.5,
+          "field_role_fit_score": 0.9,
+          "missing_role_penalty": 0.0,
+          "provenance_strength_score": 1.0,
+          "rule_ids": {
+            "ambiguity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "chart_effectiveness_score": [
+              "R-M5P-SCORE"
+            ],
+            "complexity_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "deterministic_tie_breaker": [
+              "R-M5P-SCORE"
+            ],
+            "field_role_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "missing_role_penalty": [
+              "R-M5P-SCORE"
+            ],
+            "provenance_strength_score": [
+              "R-M5P-SCORE"
+            ],
+            "task_fit_score": [
+              "R-M5P-SCORE"
+            ],
+            "type_compatibility_score": [
+              "R-M5P-SCORE"
+            ],
+            "unsupported_feature_penalty": [
+              "R-M5P-SCORE"
+            ]
+          },
+          "task_fit_score": 0.9,
+          "type_compatibility_score": 0.9,
+          "unsupported_feature_penalty": 0.0
+        },
+        "sort": null,
+        "source_ids": [
+          "M5-PRISTINE-AUTHORING"
+        ],
+        "task_alignment": "distribution",
+        "total_score": 0.86,
+        "transforms": [],
+        "unsupported_features": [],
+        "warnings": []
+      }
+    ],
+    "capability": {
+      "abstention_required": false,
+      "explanation": "The declared analytical visualization task is supported.",
+      "provenance": [
+        "R-M5P-CAPABILITY"
+      ],
+      "risk_level": "low",
+      "supported_operations": [
+        "distribution"
+      ],
+      "unsupported_operations": []
+    },
+    "context_id": "context-M5P-066",
+    "intent": {
+      "abstention_reason": null,
+      "abstention_state": {
+        "abstained": false,
+        "reason": null,
+        "stage": null
+      },
+      "aggregation": null,
+      "ambiguity": [],
+      "ambiguity_state": {
+        "affected_fields": [],
+        "affected_tasks": [],
+        "confidence": 1.0,
+        "evidence_spans": [],
+        "explanation": "No material ambiguity.",
+        "resolution_strategy": "proceed",
+        "state": "NONE",
+        "triggering_rules": []
+      },
+      "capability_assessment": {
+        "abstention_required": false,
+        "explanation": "The declared analytical visualization task is supported.",
+        "provenance": [
+          "R-M5P-CAPABILITY"
+        ],
+        "risk_level": "low",
+        "supported_operations": [
+          "distribution"
+        ],
+        "unsupported_operations": []
+      },
+      "chart_mentions": [],
+      "config_version": "m5-blind-context-v1",
+      "dataset_id": "m5-blind-dataset-1066",
+      "deterministic_id": "m5-blind-intent-1066",
+      "dimensions": [],
+      "evidence_spans": [
+        {
+          "end": 60,
+          "kind": "m5_pristine_authoring",
+          "normalized": "characterize permafrost flux 1066 spread for study unit 1066",
+          "rule_ids": [
+            "R-M5P-SEED"
+          ],
+          "start": 0,
+          "text": "Characterize Permafrost Flux 1066 spread for study unit 1066"
+        }
+      ],
+      "field_candidates": [],
+      "filters": [],
+      "grouping_fields": [],
+      "limit": null,
+      "measures": [
+        {
+          "candidate_rank": 1,
+          "evidence": [
+            {
+              "evidence_type": "m5_pristine_context",
+              "query_span": {
+                "end": 60,
+                "kind": "m5_pristine_authoring",
+                "normalized": "characterize permafrost flux 1066 spread for study unit 1066",
+                "rule_ids": [
+                  "R-M5P-SEED"
+                ],
+                "start": 0,
+                "text": "Characterize Permafrost Flux 1066 spread for study unit 1066"
+              },
+              "rule_id": "R-M5P-SEED",
+              "source_ids": [
+                "M5-PRISTINE-AUTHORING"
+              ],
+              "value": "Permafrost Flux 1066"
+            }
+          ],
+          "field_name": "Permafrost Flux 1066",
+          "role": "measure",
+          "rule_ids": [
+            "R-M5P-INTENT"
+          ],
+          "score": 1.0
+        }
+      ],
+      "normalized_query": "characterize permafrost flux 1066 spread for study unit 1066",
+      "primary_task": "distribution",
+      "provenance": [
+        {
+          "conflict_policy": "Frozen annotation controls; no result feedback.",
+          "failure_condition": "Context fields or obligations are incomplete.",
+          "inputs": [
+            "schema_profile"
+          ],
+          "outputs": [
+            "intent_ir"
+          ],
+          "priority": 1,
+          "rationale": "Bind typed roles and obligations without query reparsing.",
+          "rule_id": "R-M5P-INTENT",
+          "scope": "frozen blind context",
+          "source_ids": [
+            "SV2-PROTOCOL"
+          ],
+          "stage": "intent_assembly",
+          "trace_fields": [
+            "fields",
+            "task",
+            "transforms"
+          ]
+        },
+        {
+          "conflict_policy": "Unsupported operation requires abstention.",
+          "failure_condition": "Capability and IntentIR disagree.",
+          "inputs": [
+            "intent_ir"
+          ],
+          "outputs": [
+            "capability_assessment"
+          ],
+          "priority": 2,
+          "rationale": "Bind supported or unsupported operations.",
+          "rule_id": "R-M5P-CAPABILITY",
+          "scope": "frozen blind capability context",
+          "source_ids": [
+            "SV2-PROTOCOL"
+          ],
+          "stage": "semantic_safety",
+          "trace_fields": [
+            "unsupported_operations",
+            "abstention_required"
+          ]
+        }
+      ],
+      "query": "Characterize Permafrost Flux 1066 spread for study unit 1066",
+      "registry_hash": "9bb8031a12d573377de0ca018bb3be590794606adacd559ec03a73de981d9509",
+      "safety_warnings": [],
+      "schema_version": "skillvis-v2-intent-ir-v0.2.0",
+      "sort": null,
+      "task_candidates": [
+        {
+          "evidence_spans": [
+            {
+              "end": 60,
+              "kind": "m5_pristine_authoring",
+              "normalized": "characterize permafrost flux 1066 spread for study unit 1066",
+              "rule_ids": [
+                "R-M5P-SEED"
+              ],
+              "start": 0,
+              "text": "Characterize Permafrost Flux 1066 spread for study unit 1066"
+            }
+          ],
+          "required_roles": [
+            "measure"
+          ],
+          "rule_ids": [
+            "R-M5P-TASK"
+          ],
+          "score": 1.0,
+          "score_components": {
+            "frozen_authoring": 1.0
+          },
+          "task": "distribution"
+        }
+      ],
+      "temporal_fields": [],
+      "unresolved_mentions": [],
+      "unsupported_scope": [],
+      "warnings": []
+    },
+    "schema": {
+      "applied_rule_ids": [
+        "R-M5P-SCHEMA"
+      ],
+      "data_access_policy": "frozen_schema_profile_only_no_raw_query_reparse",
+      "dataset_id": "m5-blind-dataset-1066",
+      "failure_state": null,
+      "fields": [
+        {
+          "aliases": [],
+          "cardinality": 12,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Permafrost Flux 1066",
+          "normalized_name": "permafrost flux 1066",
+          "null_rate": 0.0,
+          "numeric_summary": {
+            "count": 12,
+            "maximum": 12.0,
+            "mean": 6.0,
+            "median": 6.0,
+            "minimum": 1.0,
+            "standard_deviation": 1.0
+          },
+          "physical_type": "float64",
+          "role_candidates": [
+            "measure"
+          ],
+          "sample_values": [
+            1.0,
+            2.0
+          ],
+          "semantic_type": "quantitative",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 12,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Permafrost Gradient 1066",
+          "normalized_name": "permafrost gradient 1066",
+          "null_rate": 0.0,
+          "numeric_summary": {
+            "count": 12,
+            "maximum": 12.0,
+            "mean": 6.0,
+            "median": 6.0,
+            "minimum": 1.0,
+            "standard_deviation": 1.0
+          },
+          "physical_type": "float64",
+          "role_candidates": [
+            "measure"
+          ],
+          "sample_values": [
+            1.0,
+            2.0
+          ],
+          "semantic_type": "quantitative",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 12,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Permafrost Intensity 1066",
+          "normalized_name": "permafrost intensity 1066",
+          "null_rate": 0.0,
+          "numeric_summary": {
+            "count": 12,
+            "maximum": 12.0,
+            "mean": 6.0,
+            "median": 6.0,
+            "minimum": 1.0,
+            "standard_deviation": 1.0
+          },
+          "physical_type": "float64",
+          "role_candidates": [
+            "measure"
+          ],
+          "sample_values": [
+            1.0,
+            2.0
+          ],
+          "semantic_type": "quantitative",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 12,
+          "categorical_summary": {
+            "top_values": [],
+            "unique_count": 12
+          },
+          "confidence": 1.0,
+          "field_name": "Permafrost Zone 1066",
+          "normalized_name": "permafrost zone 1066",
+          "null_rate": 0.0,
+          "numeric_summary": null,
+          "physical_type": "string",
+          "role_candidates": [
+            "dimension",
+            "grouping"
+          ],
+          "sample_values": [
+            "Permafrost Zone 1066 A",
+            "Permafrost Zone 1066 B"
+          ],
+          "semantic_type": "categorical",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 12,
+          "categorical_summary": {
+            "top_values": [],
+            "unique_count": 12
+          },
+          "confidence": 1.0,
+          "field_name": "Permafrost Cohort 1066",
+          "normalized_name": "permafrost cohort 1066",
+          "null_rate": 0.0,
+          "numeric_summary": null,
+          "physical_type": "string",
+          "role_candidates": [
+            "dimension",
+            "grouping"
+          ],
+          "sample_values": [
+            "Permafrost Cohort 1066 A",
+            "Permafrost Cohort 1066 B"
+          ],
+          "semantic_type": "categorical",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": null,
+          "warnings": []
+        },
+        {
+          "aliases": [],
+          "cardinality": 12,
+          "categorical_summary": null,
+          "confidence": 1.0,
+          "field_name": "Permafrost Epoch 1066",
+          "normalized_name": "permafrost epoch 1066",
+          "null_rate": 0.0,
+          "numeric_summary": null,
+          "physical_type": "datetime64",
+          "role_candidates": [
+            "temporal",
+            "dimension"
+          ],
+          "sample_values": [
+            "2025-01-01",
+            "2025-02-01"
+          ],
+          "semantic_type": "temporal",
+          "source_rule_ids": [
+            "R-M5P-SCHEMA"
+          ],
+          "temporal_summary": {
+            "maximum": "2025-12-31",
+            "minimum": "2025-01-01",
+            "parse_ratio": 1.0,
+            "timezone_observed": false
+          },
+          "warnings": []
+        }
+      ],
+      "row_count": 12,
+      "schema_version": "skillvis-v2-schema-profile-v0.1.0",
+      "warnings": []
+    },
+    "schema_version": "skillvis-v2-m5-candidate-set-context-v1.0.0",
+    "source_id": "M5-PRISTINE-SYNTHETIC:masked-family"
+  },
+  "gold_included": false
+}

@@ -1,0 +1,1220 @@
+{
+  "partition": "qualification",
+  "record_count": 20,
+  "records": [
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "categorical",
+              "field": "glyph_class",
+              "time_unit": null
+            },
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "x_position",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "comparison"
+          ],
+          "interpretation_id": "PCS7-Q-001:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "x_position",
+            "glyph_class"
+          ],
+          "required_transforms": [
+            {
+              "field": "x_position",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "comparison",
+        "uci_id": 59
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:59",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-001"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "x_position",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "categorical",
+              "field": "glyph_class",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "ranking"
+          ],
+          "interpretation_id": "PCS7-Q-002:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "x_position",
+            "glyph_class"
+          ],
+          "required_transforms": [
+            {
+              "field": "x_position",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "ranking",
+        "uci_id": 59
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:59",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-002"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "scatter"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "x_position",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "y_position",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "correlation"
+          ],
+          "interpretation_id": "PCS7-Q-003:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "x_position",
+            "y_position"
+          ],
+          "required_transforms": []
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "correlation",
+        "uci_id": 59
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:59",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-003"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "histogram"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": true,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "x_position",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "distribution"
+          ],
+          "interpretation_id": "PCS7-Q-004:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "x_position"
+          ],
+          "required_transforms": [
+            {
+              "field": "x_position",
+              "operation": "bin"
+            },
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "distribution",
+        "uci_id": 59
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:59",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-004"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "pie"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "color",
+              "data_type": "categorical",
+              "field": "glyph_class",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "composition"
+          ],
+          "interpretation_id": "PCS7-Q-005:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "glyph_class"
+          ],
+          "required_transforms": [
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZP40",
+        "template_family": "composition",
+        "uci_id": 59
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:59",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-005"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "categorical",
+              "field": "localization_site",
+              "time_unit": null
+            },
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "protein_mcg_signal",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "comparison"
+          ],
+          "interpretation_id": "PCS7-Q-006:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "protein_mcg_signal",
+            "localization_site"
+          ],
+          "required_transforms": [
+            {
+              "field": "protein_mcg_signal",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "comparison",
+        "uci_id": 110
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:110",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-006"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "protein_mcg_signal",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "categorical",
+              "field": "localization_site",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "ranking"
+          ],
+          "interpretation_id": "PCS7-Q-007:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "protein_mcg_signal",
+            "localization_site"
+          ],
+          "required_transforms": [
+            {
+              "field": "protein_mcg_signal",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "ranking",
+        "uci_id": 110
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:110",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-007"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "scatter"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "protein_mcg_signal",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "protein_gvh_signal",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "correlation"
+          ],
+          "interpretation_id": "PCS7-Q-008:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "protein_mcg_signal",
+            "protein_gvh_signal"
+          ],
+          "required_transforms": []
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "correlation",
+        "uci_id": 110
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:110",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-008"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "histogram"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": true,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "protein_mcg_signal",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "distribution"
+          ],
+          "interpretation_id": "PCS7-Q-009:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "protein_mcg_signal"
+          ],
+          "required_transforms": [
+            {
+              "field": "protein_mcg_signal",
+              "operation": "bin"
+            },
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "distribution",
+        "uci_id": 110
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:110",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-009"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "pie"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "color",
+              "data_type": "categorical",
+              "field": "localization_site",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "composition"
+          ],
+          "interpretation_id": "PCS7-Q-010:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "localization_site"
+          ],
+          "required_transforms": [
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5KG68",
+        "template_family": "composition",
+        "uci_id": 110
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:110",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-010"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "categorical",
+              "field": "raisin_class",
+              "time_unit": null
+            },
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "area_value",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "comparison"
+          ],
+          "interpretation_id": "PCS7-Q-011:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "area_value",
+            "raisin_class"
+          ],
+          "required_transforms": [
+            {
+              "field": "area_value",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "comparison",
+        "uci_id": 850
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:850",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-011"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "area_value",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "categorical",
+              "field": "raisin_class",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "ranking"
+          ],
+          "interpretation_id": "PCS7-Q-012:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "area_value",
+            "raisin_class"
+          ],
+          "required_transforms": [
+            {
+              "field": "area_value",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "ranking",
+        "uci_id": 850
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:850",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-012"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "scatter"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "area_value",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "major_axis_length",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "correlation"
+          ],
+          "interpretation_id": "PCS7-Q-013:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "area_value",
+            "major_axis_length"
+          ],
+          "required_transforms": []
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "correlation",
+        "uci_id": 850
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:850",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-013"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "histogram"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": true,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "area_value",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "distribution"
+          ],
+          "interpretation_id": "PCS7-Q-014:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "area_value"
+          ],
+          "required_transforms": [
+            {
+              "field": "area_value",
+              "operation": "bin"
+            },
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "distribution",
+        "uci_id": 850
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:850",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-014"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "pie"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "color",
+              "data_type": "categorical",
+              "field": "raisin_class",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "composition"
+          ],
+          "interpretation_id": "PCS7-Q-015:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "raisin_class"
+          ],
+          "required_transforms": [
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5660T",
+        "template_family": "composition",
+        "uci_id": 850
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:850",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-015"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "categorical",
+              "field": "treatment_group",
+              "time_unit": null
+            },
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "bilirubin_level",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "comparison"
+          ],
+          "interpretation_id": "PCS7-Q-016:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "bilirubin_level",
+            "treatment_group"
+          ],
+          "required_transforms": [
+            {
+              "field": "bilirubin_level",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "comparison",
+        "uci_id": 878
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:878",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-016"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "bilirubin_level",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "categorical",
+              "field": "treatment_group",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "ranking"
+          ],
+          "interpretation_id": "PCS7-Q-017:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "bilirubin_level",
+            "treatment_group"
+          ],
+          "required_transforms": [
+            {
+              "field": "bilirubin_level",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "ranking",
+        "uci_id": 878
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:878",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-017"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "scatter"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "bilirubin_level",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "albumin_level",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "correlation"
+          ],
+          "interpretation_id": "PCS7-Q-018:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "bilirubin_level",
+            "albumin_level"
+          ],
+          "required_transforms": []
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "correlation",
+        "uci_id": 878
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:878",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-018"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "histogram"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": true,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "bilirubin_level",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "distribution"
+          ],
+          "interpretation_id": "PCS7-Q-019:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "bilirubin_level"
+          ],
+          "required_transforms": [
+            {
+              "field": "bilirubin_level",
+              "operation": "bin"
+            },
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "distribution",
+        "uci_id": 878
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:878",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-019"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "pie"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "color",
+              "data_type": "categorical",
+              "field": "treatment_group",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "composition"
+          ],
+          "interpretation_id": "PCS7-Q-020:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "treatment_group"
+          ],
+          "required_transforms": [
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5R02G",
+        "template_family": "composition",
+        "uci_id": 878
+      },
+      "partition": "qualification",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:878",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-Q-020"
+    }
+  ],
+  "schema_version": "skillvis-pcs-v7-gold-set-v1.0.0",
+  "status": "FROZEN_PREEXECUTION_GOLD_AUDITED"
+}

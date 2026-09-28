@@ -1,0 +1,11 @@
+{
+  "schema_version": "skillvis-v2-joint-semantic-config-v1.0.0",
+  "config_version": "skillvis-v2-joint-field-task-v1.0.0",
+  "base_config_path": "configs/skillvis_v2_obligation/candidate_planner_v4.json",
+  "joint_rule_registry_path": "configs/skillvis_v2_joint/rules_joint_semantic_v1.json",
+  "semantic_registry_path": "configs/skillvis_v2_joint/schema_semantic_registry_v1.json",
+  "field_top_k": 5,
+  "semantic_candidate_threshold": 0.5,
+  "hypothesis_ambiguity_margin": 0.06,
+  "status": "development_only_not_protocol_frozen"
+}

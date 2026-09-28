@@ -1,0 +1,30 @@
+{
+  "schema_version": "skillvis-v2-joint-semantic-repair-rule-registry-v1.0.0",
+  "status": "development_only_not_protocol_frozen",
+  "rules": [
+    {
+      "rule_id": "R-FR-030",
+      "module": "contextual_field_grounding",
+      "source_ids": ["NL4DV2020", "SCHEMALINKING2020"],
+      "scope": "suppress a generic value/values field obligation when the token is an adjacent nominal head of another explicitly grounded field",
+      "rationale": "An exact schema-name match is evidence, not proof of an independent field reference; local syntax must distinguish 'profit values' from 'profit and value'.",
+      "priority": 65,
+      "failure_condition": "A generic value field survives as an independent obligation despite an adjacent grounded measure with no coordination cue.",
+      "conflict_policy": "Preserve the generic field candidate for audit, remove only its required obligation; explicit standalone or coordinated mentions remain required.",
+      "trace_fields": ["generic_field", "generic_span", "head_field", "head_span", "intervening_text"],
+      "unit_tests": ["test_generic_value_head_is_suppressed", "test_explicit_value_field_is_preserved"]
+    },
+    {
+      "rule_id": "R-TP-030",
+      "module": "explicit_ranking_goal",
+      "source_ids": ["BREHMER_MUNZNER2013", "AMAR2005"],
+      "scope": "compile an explicit rank/ranking directive into a ranking analytical goal when dimension and measure roles are structurally complete",
+      "rationale": "Ranking is an analytical goal, whereas sorting is its execution operation; an explicit ranking directive must not fall back to generic comparison.",
+      "priority": 66,
+      "failure_condition": "An executable explicit ranking request is selected as comparison, or ranking is forced without both measure and dimension roles.",
+      "conflict_policy": "Explicit structurally complete ranking outranks comparison; incomplete ranking remains unresolved or is handled by existing safe ambiguity logic.",
+      "trace_fields": ["ranking_span", "measure_fields", "dimension_fields", "selected_hypothesis_id"],
+      "unit_tests": ["test_explicit_rank_compiles_to_ranking", "test_sort_only_does_not_force_ranking", "test_rank_without_roles_is_not_forced"]
+    }
+  ]
+}

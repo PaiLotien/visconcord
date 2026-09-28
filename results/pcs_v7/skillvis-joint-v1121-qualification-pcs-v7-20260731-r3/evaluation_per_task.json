@@ -1,0 +1,2278 @@
+[
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "glyph_class",
+              "matched": true
+            },
+            {
+              "channel_group": "position",
+              "field": "x_position",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-001:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "mean",
+                "x_position"
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "interpretation_id": "PCS7-Q-001:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 85.71100000000004,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 2,
+    "invalid": 0,
+    "invocation_wall_ms": 85.93537501292303,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.296875,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:59",
+    "subprocess_wall_ms": 437.51604098360986,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-001",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "x_position",
+              "matched": true
+            },
+            {
+              "channel_group": "position",
+              "field": "glyph_class",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-002:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "mean",
+                "x_position"
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "interpretation_id": "PCS7-Q-002:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 85.93299999999998,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 2,
+    "invalid": 0,
+    "invocation_wall_ms": 86.11495798686519,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.453125,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:59",
+    "subprocess_wall_ms": 402.4062920361757,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-002",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "x_position",
+              "matched": true
+            },
+            {
+              "channel_group": "position",
+              "field": "y_position",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-003:predeclared-common-scope",
+          "transform_details": [],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "interpretation_id": "PCS7-Q-003:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 84.62900000000006,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 2,
+    "invalid": 0,
+    "invocation_wall_ms": 84.81704100267962,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.203125,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:59",
+    "subprocess_wall_ms": 436.42329098656774,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-003",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "x_position",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-004:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "bin",
+                null,
+                "x_position"
+              ]
+            },
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "count",
+                null
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "interpretation_id": "PCS7-Q-004:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 88.05800000000002,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 1,
+    "invalid": 0,
+    "invocation_wall_ms": 88.2378329988569,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 116.921875,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:59",
+    "subprocess_wall_ms": 434.16195799363777,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-004",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "color",
+              "field": "glyph_class",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-005:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "count",
+                null
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "interpretation_id": "PCS7-Q-005:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 80.66000000000001,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 1,
+    "invalid": 0,
+    "invocation_wall_ms": 80.86204202845693,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.3125,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:59",
+    "subprocess_wall_ms": 469.8637920082547,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-005",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "localization_site",
+              "matched": true
+            },
+            {
+              "channel_group": "position",
+              "field": "protein_mcg_signal",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-006:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "mean",
+                "protein_mcg_signal"
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "interpretation_id": "PCS7-Q-006:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 89.976,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 2,
+    "invalid": 0,
+    "invocation_wall_ms": 90.1777499821037,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.0,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:110",
+    "subprocess_wall_ms": 449.2597920470871,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-006",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "protein_mcg_signal",
+              "matched": true
+            },
+            {
+              "channel_group": "position",
+              "field": "localization_site",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-007:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "mean",
+                "protein_mcg_signal"
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "interpretation_id": "PCS7-Q-007:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 84.16099999999999,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 2,
+    "invalid": 0,
+    "invocation_wall_ms": 84.36212496599182,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.515625,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:110",
+    "subprocess_wall_ms": 409.67858297517523,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-007",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "protein_mcg_signal",
+              "matched": true
+            },
+            {
+              "channel_group": "position",
+              "field": "protein_gvh_signal",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-008:predeclared-common-scope",
+          "transform_details": [],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "interpretation_id": "PCS7-Q-008:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 78.95599999999997,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 2,
+    "invalid": 0,
+    "invocation_wall_ms": 79.21966700814664,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 116.96875,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:110",
+    "subprocess_wall_ms": 402.75320899672806,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-008",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "protein_mcg_signal",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-009:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "bin",
+                null,
+                "protein_mcg_signal"
+              ]
+            },
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "count",
+                null
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "interpretation_id": "PCS7-Q-009:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 87.893,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 1,
+    "invalid": 0,
+    "invocation_wall_ms": 88.1363750086166,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.0625,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:110",
+    "subprocess_wall_ms": 438.3413749746978,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-009",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "color",
+              "field": "localization_site",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-010:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "count",
+                null
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "interpretation_id": "PCS7-Q-010:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 82.39699999999999,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 1,
+    "invalid": 0,
+    "invocation_wall_ms": 82.66199997160584,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.03125,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:110",
+    "subprocess_wall_ms": 403.14929198939353,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-010",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "raisin_class",
+              "matched": true
+            },
+            {
+              "channel_group": "position",
+              "field": "area_value",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-011:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "mean",
+                "area_value"
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "interpretation_id": "PCS7-Q-011:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 80.75499999999997,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 2,
+    "invalid": 0,
+    "invocation_wall_ms": 80.92341700103134,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.109375,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:850",
+    "subprocess_wall_ms": 404.7433329978958,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-011",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "area_value",
+              "matched": true
+            },
+            {
+              "channel_group": "position",
+              "field": "raisin_class",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-012:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "mean",
+                "area_value"
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "interpretation_id": "PCS7-Q-012:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 93.07100000000001,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 2,
+    "invalid": 0,
+    "invocation_wall_ms": 93.54191599413753,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.265625,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:850",
+    "subprocess_wall_ms": 428.03104198537767,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-012",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "area_value",
+              "matched": true
+            },
+            {
+              "channel_group": "position",
+              "field": "major_axis_length",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-013:predeclared-common-scope",
+          "transform_details": [],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "interpretation_id": "PCS7-Q-013:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 83.08200000000005,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 2,
+    "invalid": 0,
+    "invocation_wall_ms": 88.77270802622661,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 116.859375,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:850",
+    "subprocess_wall_ms": 403.7201249739155,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-013",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "area_value",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-014:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "bin",
+                null,
+                "area_value"
+              ]
+            },
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "count",
+                null
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "interpretation_id": "PCS7-Q-014:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 79.85700000000001,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 1,
+    "invalid": 0,
+    "invocation_wall_ms": 80.02904104068875,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 116.921875,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:850",
+    "subprocess_wall_ms": 399.8987909872085,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-014",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "color",
+              "field": "raisin_class",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-015:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "count",
+                null
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "interpretation_id": "PCS7-Q-015:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 80.731,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 1,
+    "invalid": 0,
+    "invocation_wall_ms": 81.03175001451746,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 116.890625,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:850",
+    "subprocess_wall_ms": 413.9950830140151,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-015",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "treatment_group",
+              "matched": true
+            },
+            {
+              "channel_group": "position",
+              "field": "bilirubin_level",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-016:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "mean",
+                "bilirubin_level"
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "interpretation_id": "PCS7-Q-016:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 85.61799999999997,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 2,
+    "invalid": 0,
+    "invocation_wall_ms": 85.80950001487508,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.484375,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:878",
+    "subprocess_wall_ms": 404.66449997620657,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-016",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "bilirubin_level",
+              "matched": true
+            },
+            {
+              "channel_group": "position",
+              "field": "treatment_group",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-017:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "mean",
+                "bilirubin_level"
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "interpretation_id": "PCS7-Q-017:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 91.25699999999998,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 2,
+    "invalid": 0,
+    "invocation_wall_ms": 97.65074995812029,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.734375,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:878",
+    "subprocess_wall_ms": 437.89933394873515,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-017",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "bilirubin_level",
+              "matched": true
+            },
+            {
+              "channel_group": "position",
+              "field": "albumin_level",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-018:predeclared-common-scope",
+          "transform_details": [],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "interpretation_id": "PCS7-Q-018:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 87.20100000000002,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 2,
+    "invalid": 0,
+    "invocation_wall_ms": 87.39908295683563,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.328125,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:878",
+    "subprocess_wall_ms": 430.275916995015,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-018",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "position",
+              "field": "bilirubin_level",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-019:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "bin",
+                null,
+                "bilirubin_level"
+              ]
+            },
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "count",
+                null
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "interpretation_id": "PCS7-Q-019:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 83.78300000000006,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 1,
+    "invalid": 0,
+    "invocation_wall_ms": 84.05141701223329,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.375,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:878",
+    "subprocess_wall_ms": 397.3775419872254,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-019",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  },
+  {
+    "acceptable_candidate_count_at_3": 1,
+    "acceptable_candidate_precision_at_3": 1.0,
+    "acceptable_candidate_recall_at_3": 1,
+    "adapter_warning_count": 0,
+    "best_interpretation": {
+      "candidate_matches": [
+        {
+          "chart_ok": true,
+          "complete": true,
+          "encoding_details": [
+            {
+              "channel_group": "color",
+              "field": "treatment_group",
+              "matched": true
+            }
+          ],
+          "encoding_role_satisfaction": 1.0,
+          "encodings_ok": true,
+          "fields_ok": true,
+          "independently_valid": true,
+          "interpretation_id": "PCS7-Q-020:predeclared-common-scope",
+          "transform_details": [
+            {
+              "matched": true,
+              "required": [
+                "aggregate",
+                "count",
+                null
+              ]
+            }
+          ],
+          "transform_recall": 1.0,
+          "transforms_ok": true
+        }
+      ],
+      "chart_hit_at_1": 1,
+      "chart_hit_at_3": 1,
+      "encoding_role_satisfaction_at_1": 1.0,
+      "encoding_role_satisfaction_at_3": 1.0,
+      "field": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "interpretation_id": "PCS7-Q-020:predeclared-common-scope",
+      "plan_success_at_1": 1,
+      "plan_success_at_3": 1,
+      "task": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "transform_recall_at_1": 1.0,
+      "transform_recall_at_3": 1.0
+    },
+    "candidate_count": 1,
+    "candidate_count_native": 1,
+    "chart_hit_at_1": 1,
+    "chart_hit_at_3": 1,
+    "completion_tokens": 0,
+    "correct_behavioral_abstention": 0,
+    "coverage": 1,
+    "cpu_time_ms": 84.11200000000002,
+    "duplicate_candidate_count": 0,
+    "encoding_role_satisfaction_at_1": 1.0,
+    "encoding_role_satisfaction_at_3": 1.0,
+    "explanation_accuracy": 0,
+    "failed": 0,
+    "false_abstention": 0,
+    "false_safe": 0,
+    "field_f1": 1.0,
+    "field_fn": 0,
+    "field_fp": 0,
+    "field_precision": 1.0,
+    "field_recall": 1.0,
+    "field_tp": 1,
+    "invalid": 0,
+    "invocation_wall_ms": 84.31599999312311,
+    "llm_calls": 0,
+    "monetary_cost": 0.0,
+    "partition": "qualification",
+    "peak_rss_mb": 117.328125,
+    "plan_success_at_1": 1,
+    "plan_success_at_3": 1,
+    "prompt_tokens": 0,
+    "provenance_complete": 1,
+    "source_arm": "uci_external_controlled_common_scope",
+    "source_cluster_id": "uci:878",
+    "subprocess_wall_ms": 399.7912500053644,
+    "system_name": "SkillVIS_V2_JOINT",
+    "task_f1": 1.0,
+    "task_fn": 0,
+    "task_fp": 0,
+    "task_id": "PCS7-Q-020",
+    "task_precision": 1.0,
+    "task_recall": 1.0,
+    "task_tp": 1,
+    "terminal_behavior": "candidate_emitted",
+    "trace_complete": 1,
+    "transform_recall_at_1": 1.0,
+    "transform_recall_at_3": 1.0,
+    "unsafe_recommendation": 0,
+    "worker_status": "success"
+  }
+]

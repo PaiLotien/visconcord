@@ -1,0 +1,514 @@
+{
+  "candidate_mutation_count": 0,
+  "candidate_results": [
+    {
+      "candidate_id": "M5P-096-C1-e15b029390",
+      "candidate_input_hash": "b5f213941a8bdfe8887e29b6ff9390e0096a773268bed4b890336d6a12f419a4",
+      "candidate_signature": "e15b0293906824bdba36ef38f409937e400d751afae655009eb703078dc5fdb2",
+      "confidence": [
+        1.0
+      ],
+      "decision": "REJECT",
+      "deterministic_signature": "cf4ba9640a33b1dd3649a29fd6c03880e347932423ee8e837c0bd217d44678f3",
+      "eligible": false,
+      "evidence": [
+        {
+          "capability_abstention": true,
+          "intent_abstention": {
+            "abstained": true,
+            "reason": "unsupported_scope:forecast",
+            "stage": "semantic_safety"
+          },
+          "risk_level": "critical",
+          "unsupported_operations": [
+            "forecast"
+          ],
+          "unsupported_scope": [
+            {
+              "evidence_spans": [
+                {
+                  "end": 78,
+                  "kind": "m5_pristine_authoring",
+                  "normalized": "forecast permafrost flux 1096 beyond permafrost epoch 1096 for study unit 1096",
+                  "rule_ids": [
+                    "R-M5P-SEED"
+                  ],
+                  "start": 0,
+                  "text": "Forecast Permafrost Flux 1096 beyond Permafrost Epoch 1096 for study unit 1096"
+                }
+              ],
+              "explanation": "forecast is excluded by the frozen capability registry.",
+              "operation": "forecast",
+              "triggering_rules": [
+                "R-M5P-CAPABILITY"
+              ]
+            }
+          ]
+        }
+      ],
+      "issue_type": [
+        "SAFETY_BYPASS"
+      ],
+      "issues": [
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "confidence": 1.0,
+          "decision": "REJECT",
+          "evidence": {
+            "capability_abstention": true,
+            "intent_abstention": {
+              "abstained": true,
+              "reason": "unsupported_scope:forecast",
+              "stage": "semantic_safety"
+            },
+            "risk_level": "critical",
+            "unsupported_operations": [
+              "forecast"
+            ],
+            "unsupported_scope": [
+              {
+                "evidence_spans": [
+                  {
+                    "end": 78,
+                    "kind": "m5_pristine_authoring",
+                    "normalized": "forecast permafrost flux 1096 beyond permafrost epoch 1096 for study unit 1096",
+                    "rule_ids": [
+                      "R-M5P-SEED"
+                    ],
+                    "start": 0,
+                    "text": "Forecast Permafrost Flux 1096 beyond Permafrost Epoch 1096 for study unit 1096"
+                  }
+                ],
+                "explanation": "forecast is excluded by the frozen capability registry.",
+                "operation": "forecast",
+                "triggering_rules": [
+                  "R-M5P-CAPABILITY"
+                ]
+              }
+            ]
+          },
+          "issue_id": "VFI-2669132f43ecf1d7c0",
+          "issue_type": "SAFETY_BYPASS",
+          "level": "V5",
+          "penalty": 1.0,
+          "repair_applied": false,
+          "repair_proposal": {
+            "applied": false,
+            "description": "Unapplied proposal for SAFETY_BYPASS; route to M3.5 under R-VF-U002.",
+            "proposal_type": "ROUTE_SEMANTIC_SAFETY",
+            "rule_id": "R-VF-U002",
+            "target_stage": "M3.5"
+          },
+          "scope": "candidate",
+          "severity": "CRITICAL",
+          "source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "violated_rule_ids": [
+            "R-VF-U002"
+          ]
+        }
+      ],
+      "original_rank": 1,
+      "original_score": 0.86,
+      "repair_applied": false,
+      "repair_proposal": [
+        {
+          "applied": false,
+          "description": "Unapplied proposal for SAFETY_BYPASS; route to M3.5 under R-VF-U002.",
+          "proposal_type": "ROUTE_SEMANTIC_SAFETY",
+          "rule_id": "R-VF-U002",
+          "target_stage": "M3.5"
+        }
+      ],
+      "schema_version": "skillvis-v2-m5-candidate-result-v1.0.0",
+      "severity": [
+        "CRITICAL"
+      ],
+      "source_ids": [
+        "D3",
+        "SV2-PROTOCOL"
+      ],
+      "trace": [
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-C001",
+          "scope": "candidate",
+          "source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "e682293080928339e33cdfc05705c644e03a85394edcf1ef39797de94f049afa",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-F001",
+          "scope": "candidate",
+          "source_ids": [
+            "D3",
+            "R10"
+          ],
+          "trace_signature": "09ab66cdb4746fdb35bda8f71e992e0840e9b513941a1fc7c2b9e9bbb9662fb5",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-F002",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "97f7bdb8c4a5294e2c802a93550a19582826da4828b84af014c16f869b96c6b3",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-F003",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "8b5fc95fad6cbea7b363c5de05d3a5124733d566416d5cb9211613006bf5882a",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E001",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R10"
+          ],
+          "trace_signature": "a2882206ee46bdd6071e416de1085774e2aa221c506e8a0ca134e109cbc6990f",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E002",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R10"
+          ],
+          "trace_signature": "b41f10f8e23269e22d978056563032acc65e77bb1c50e4f2b64fc76016c12e03",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E003",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R10"
+          ],
+          "trace_signature": "e12412fac4fa580a4b96e7380993e0aac78e832c9d8bce46aa5da5ddc2c1bce5",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E004",
+          "scope": "candidate",
+          "source_ids": [
+            "D1",
+            "R10"
+          ],
+          "trace_signature": "1c1a00e07f92dbecfc330cfdf7d8d6f2d2de848d0f2cde6c282729c3f653e4bc",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-T001",
+          "scope": "candidate",
+          "source_ids": [
+            "D1",
+            "R5"
+          ],
+          "trace_signature": "0a65f16a349c45af3d1aa62df4d24b91831a756af05da8924860cf49c0e2ae49",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A001",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "9247aef130e6400accc19ee2b02c147b6c3a670f5e73e3b5425d7a94eda89e2c",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A002",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "841435baf7f3377f75d6039ce6151cd5655db915b77b3d8efa5a6e96d1911ef9",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A003",
+          "scope": "candidate",
+          "source_ids": [
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "d53c39597a420af2b4d48e3da25c719dc624cd7e074460316a4ca6f6282407b4",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A004",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "c6094707e40d9b56acddf75d7996fe00a8fc34238816649a247077da4be83d4e",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-U001",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R2",
+            "R10"
+          ],
+          "trace_signature": "0d9e8e84e5c51928c76a399dcef961657a70a02f4044382c8252da60aa3b25d4",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "capability_abstention": true,
+            "intent_abstention": {
+              "abstained": true,
+              "reason": "unsupported_scope:forecast",
+              "stage": "semantic_safety"
+            },
+            "risk_level": "critical",
+            "unsupported_operations": [
+              "forecast"
+            ],
+            "unsupported_scope": [
+              {
+                "evidence_spans": [
+                  {
+                    "end": 78,
+                    "kind": "m5_pristine_authoring",
+                    "normalized": "forecast permafrost flux 1096 beyond permafrost epoch 1096 for study unit 1096",
+                    "rule_ids": [
+                      "R-M5P-SEED"
+                    ],
+                    "start": 0,
+                    "text": "Forecast Permafrost Flux 1096 beyond Permafrost Epoch 1096 for study unit 1096"
+                  }
+                ],
+                "explanation": "forecast is excluded by the frozen capability registry.",
+                "operation": "forecast",
+                "triggering_rules": [
+                  "R-M5P-CAPABILITY"
+                ]
+              }
+            ]
+          },
+          "rule_id": "R-VF-U002",
+          "scope": "candidate",
+          "source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "ba550b3fc9cabde5bd41a7256729a56a55b8e41c6cdd9d74773aa788c5f1e3e9",
+          "triggered": true
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-P001",
+          "scope": "candidate",
+          "source_ids": [
+            "D1",
+            "D6",
+            "D7"
+          ],
+          "trace_signature": "0c20b8ef741d7eb30c534befb4353e14e2d893b1c927695388fe8d9514fa95bb",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-P002",
+          "scope": "candidate",
+          "source_ids": [
+            "D7",
+            "R10"
+          ],
+          "trace_signature": "3eab154e8c28da12f10a85393dad82e2e7df9bbc47e52f6f1d3e2ee5b05b58a2",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-096-C1-e15b029390",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-P003",
+          "scope": "candidate",
+          "source_ids": [
+            "D7",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "58dde1b8354829d1d1341926c751cabf1374fc21c4e0e63fdd3ef971b3352998",
+          "triggered": false
+        }
+      ],
+      "validated_rank": 1,
+      "validated_score": 0.0,
+      "validation_penalty": 1.0,
+      "violated_rule_ids": [
+        "R-VF-U002"
+      ]
+    }
+  ],
+  "candidate_set_id": "candidate-set-M5P-096",
+  "candidate_set_input_sha256": "1f904444953873d39d1d7b29a434d8ee1cbee804c3a14116534067734ac7107e",
+  "capability_sha256": "28b7741244da8c659e6ff26b508c7b24391384e5d443bd88d96e6610d02fc236",
+  "config_sha256": "9bb8031a12d573377de0ca018bb3be590794606adacd559ec03a73de981d9509",
+  "config_version": "skillvis-v2-m5-validator-formal-v1.0.0",
+  "context_id": "context-M5P-096",
+  "deterministic_signature": "9a487654bfbd9100f9f4af4af105d3eaa28a02ea606eff6f2c0ee56d4dfe960e",
+  "intent_sha256": "edd579fa21e2daeffb42ab2c13d593b2bf7fd17b0b15455bb1693da03f645d2c",
+  "original_candidate_order": [
+    "M5P-096-C1-e15b029390"
+  ],
+  "overall_decision": "NO_VALID_CANDIDATE",
+  "rejected_candidate_ids": [
+    "M5P-096-C1-e15b029390"
+  ],
+  "repair_applied": false,
+  "schema_sha256": "e550ea32b3c68b8af56a19d01e2f07477c9804fc567d9e37c8de3e5ecd780f84",
+  "schema_version": "skillvis-v2-m5-validation-set-result-v1.0.0",
+  "set_issues": [
+    {
+      "candidate_id": null,
+      "confidence": 0.85,
+      "decision": "WARN",
+      "evidence": {
+        "candidate_decisions": {
+          "M5P-096-C1-e15b029390": "REJECT"
+        }
+      },
+      "issue_id": "VFI-95c0cae0162d3a05b2",
+      "issue_type": "CANDIDATE_SET_EXHAUSTED",
+      "level": "V6",
+      "penalty": 0.0,
+      "repair_applied": false,
+      "repair_proposal": {
+        "applied": false,
+        "description": "Unapplied proposal for CANDIDATE_SET_EXHAUSTED; route to FUTURE_ROUTER under R-VF-S002.",
+        "proposal_type": "ROUTE_NO_VALID_CANDIDATE",
+        "rule_id": "R-VF-S002",
+        "target_stage": "FUTURE_ROUTER"
+      },
+      "scope": "candidate_set",
+      "severity": "WARNING",
+      "source_ids": [
+        "D3",
+        "SV2-PROTOCOL"
+      ],
+      "violated_rule_ids": [
+        "R-VF-S002"
+      ]
+    }
+  ],
+  "set_trace": [
+    {
+      "candidate_id": null,
+      "evidence": {
+        "status": "not_triggered"
+      },
+      "rule_id": "R-VF-S001",
+      "scope": "candidate_set",
+      "source_ids": [
+        "R3",
+        "SV2-PROTOCOL"
+      ],
+      "trace_signature": "a5a63c960f2fd4c6e68380439498a881ad55894a12eb71d937b779ded1ce9a0a",
+      "triggered": false
+    },
+    {
+      "candidate_id": null,
+      "evidence": {
+        "candidate_decisions": {
+          "M5P-096-C1-e15b029390": "REJECT"
+        }
+      },
+      "rule_id": "R-VF-S002",
+      "scope": "candidate_set",
+      "source_ids": [
+        "D3",
+        "SV2-PROTOCOL"
+      ],
+      "trace_signature": "ca67382195e247dfe8a804a584a58243e8c7faf96f1735b62d0c777d63c2a45d",
+      "triggered": true
+    }
+  ],
+  "validated_candidate_order": [
+    "M5P-096-C1-e15b029390"
+  ]
+}

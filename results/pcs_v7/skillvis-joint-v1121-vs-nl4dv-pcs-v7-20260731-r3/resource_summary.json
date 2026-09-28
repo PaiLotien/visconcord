@@ -1,0 +1,76 @@
+{
+  "NL4DV": {
+    "invocation_count": 30,
+    "metrics": {
+      "completion_tokens_total": 0,
+      "cpu_time_ms": {
+        "max": 1564.1239999999998,
+        "mean": 1087.6605,
+        "median": 1032.6345,
+        "min": 959.6139999999997,
+        "n": 30
+      },
+      "invocation_wall_ms": {
+        "max": 1567.6976250251755,
+        "mean": 1091.5814624362004,
+        "median": 1035.253375011962,
+        "min": 962.0441669831052,
+        "n": 30
+      },
+      "llm_calls_total": 0,
+      "monetary_cost_total": 0,
+      "peak_rss_mb": {
+        "max": 460.65625,
+        "mean": 458.58177083333334,
+        "median": 458.6875,
+        "min": 453.71875,
+        "n": 30
+      },
+      "prompt_tokens_total": 0,
+      "subprocess_wall_ms": {
+        "max": 7619.816582999192,
+        "mean": 3870.3037528282343,
+        "median": 3564.21743799001,
+        "min": 3326.688874978572,
+        "n": 30
+      }
+    }
+  },
+  "SkillVIS_V2_JOINT": {
+    "invocation_count": 30,
+    "metrics": {
+      "completion_tokens_total": 0,
+      "cpu_time_ms": {
+        "max": 276.037,
+        "mean": 114.87483333333333,
+        "median": 91.526,
+        "min": 79.88800000000002,
+        "n": 30
+      },
+      "invocation_wall_ms": {
+        "max": 292.24229202372953,
+        "mean": 115.87141106332031,
+        "median": 91.71608349424787,
+        "min": 80.1083329715766,
+        "n": 30
+      },
+      "llm_calls_total": 0,
+      "monetary_cost_total": 0,
+      "peak_rss_mb": {
+        "max": 117.609375,
+        "mean": 117.09322916666666,
+        "median": 117.0859375,
+        "min": 116.734375,
+        "n": 30
+      },
+      "prompt_tokens_total": 0,
+      "subprocess_wall_ms": {
+        "max": 1451.9427089835517,
+        "mean": 581.8587486593364,
+        "median": 460.43399948393926,
+        "min": 398.0495000141673,
+        "n": 30
+      }
+    }
+  }
+}

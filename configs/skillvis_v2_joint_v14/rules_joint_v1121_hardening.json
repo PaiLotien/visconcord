@@ -1,0 +1,30 @@
+{
+  "schema_version": "skillvis-v2-joint-v1121-hardening-registry-v1.0.0",
+  "status": "development_only_not_protocol_frozen",
+  "rules": [
+    {
+      "rule_id": "R-SP-150",
+      "module": "grouped_extremum_numeric_role_guard",
+      "source_ids": ["MACKINLAY1986", "AMAR2005", "NL4DV2020"],
+      "scope": "restore a physically numeric field from a weak temporal-name role to quantitative when an explicit grouped min/max aggregation targets it, a distinct grouping dimension is grounded, and no temporal value summary or trend discourse exists",
+      "rationale": "Minimum and maximum can summarize numeric duration measures. A lexical time token is weaker than numeric value shape plus an explicit aggregate-target and grouping relation.",
+      "priority": 75,
+      "failure_condition": "Minimum wait_time by desk is encoded as a temporal axis and rejected despite numeric values and an explicit grouped aggregate.",
+      "conflict_policy": "Any parsed temporal value summary, datetime physical type, missing grouping dimension, absent explicit aggregate target, or trend discourse prevents restoration.",
+      "trace_fields": ["field_name", "numeric_summary", "temporal_summary", "aggregate_operation", "grouping_dimension", "trend_cue", "decision"],
+      "unit_tests": ["test_grouped_numeric_duration_min_is_measure", "test_grouped_numeric_duration_max_is_measure", "test_year_value_shape_remains_temporal"]
+    },
+    {
+      "rule_id": "R-TP-141",
+      "module": "typed_ranking_relation_preclosure",
+      "source_ids": ["AMAR2005", "BREHMER_MUNZNER2013", "COMPASSQL2016", "NL4DV2020"],
+      "scope": "close ranking from an explicit rank/order target-link-score relation, one explicit score aggregation, typed dimension and measure roles, and an unambiguous order-direction phrase before generic grouped-superlative interpretation can dominate",
+      "rationale": "A ranking request is a relation among entity target, aggregate score, and ordering direction; closing those roles jointly prevents direction words from being mistaken for a second aggregate and removes entailed comparison/extremum peer labels.",
+      "priority": 89,
+      "failure_condition": "Order vendors by median cost from smallest to largest remains comparison, or ranking is emitted together with extremum.",
+      "conflict_policy": "Requires distinct strongly grounded target and score fields, an explicit aggregation targeting the score, a recognized linkage phrase, and exactly one direction; missing roles or non-ranking superlatives remain unchanged.",
+      "trace_fields": ["directive_span", "target_dimension", "link_span", "score_measure", "explicit_aggregation", "direction_span", "suppressed_tasks", "decision"],
+      "unit_tests": ["test_preclosure_order_relation_becomes_ranking", "test_ranking_suppresses_peer_extremum", "test_missing_link_does_not_force_ranking", "test_non_ranking_superlative_is_preserved"]
+    }
+  ]
+}

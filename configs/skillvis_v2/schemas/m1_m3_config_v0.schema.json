@@ -1,0 +1,193 @@
+{
+  "$defs": {
+    "FeatureFlags": {
+      "additionalProperties": false,
+      "properties": {
+        "enable_candidate_planner": {
+          "title": "Enable Candidate Planner",
+          "type": "boolean"
+        },
+        "enable_llm": {
+          "title": "Enable Llm",
+          "type": "boolean"
+        },
+        "enable_m1_query_normalization": {
+          "title": "Enable M1 Query Normalization",
+          "type": "boolean"
+        },
+        "enable_m1_schema_profiling": {
+          "title": "Enable M1 Schema Profiling",
+          "type": "boolean"
+        },
+        "enable_m2_field_resolution": {
+          "title": "Enable M2 Field Resolution",
+          "type": "boolean"
+        },
+        "enable_m3_query_decomposition": {
+          "title": "Enable M3 Query Decomposition",
+          "type": "boolean"
+        },
+        "enable_m3_task_profiling": {
+          "title": "Enable M3 Task Profiling",
+          "type": "boolean"
+        },
+        "enable_selective_recovery": {
+          "title": "Enable Selective Recovery",
+          "type": "boolean"
+        },
+        "enable_semantic_validator": {
+          "title": "Enable Semantic Validator",
+          "type": "boolean"
+        },
+        "enable_value_matching": {
+          "title": "Enable Value Matching",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "enable_m1_query_normalization",
+        "enable_m1_schema_profiling",
+        "enable_m2_field_resolution",
+        "enable_m3_task_profiling",
+        "enable_m3_query_decomposition",
+        "enable_value_matching",
+        "enable_candidate_planner",
+        "enable_semantic_validator",
+        "enable_selective_recovery",
+        "enable_llm"
+      ],
+      "title": "FeatureFlags",
+      "type": "object"
+    },
+    "ResolverWeights": {
+      "additionalProperties": false,
+      "properties": {
+        "alias": {
+          "minimum": 0,
+          "title": "Alias",
+          "type": "number"
+        },
+        "conflict": {
+          "minimum": 0,
+          "title": "Conflict",
+          "type": "number"
+        },
+        "lexical": {
+          "minimum": 0,
+          "title": "Lexical",
+          "type": "number"
+        },
+        "structural_recovery": {
+          "minimum": 0,
+          "title": "Structural Recovery",
+          "type": "number"
+        },
+        "task_role": {
+          "minimum": 0,
+          "title": "Task Role",
+          "type": "number"
+        },
+        "type_compatible": {
+          "minimum": 0,
+          "title": "Type Compatible",
+          "type": "number"
+        },
+        "value": {
+          "minimum": 0,
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lexical",
+        "alias",
+        "value",
+        "type_compatible",
+        "task_role",
+        "structural_recovery",
+        "conflict"
+      ],
+      "title": "ResolverWeights",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "ambiguity_margin": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Ambiguity Margin",
+      "type": "number"
+    },
+    "config_version": {
+      "title": "Config Version",
+      "type": "string"
+    },
+    "deterministic_seed": {
+      "title": "Deterministic Seed",
+      "type": "integer"
+    },
+    "enabled": {
+      "title": "Enabled",
+      "type": "boolean"
+    },
+    "feature_flags": {
+      "$ref": "#/$defs/FeatureFlags"
+    },
+    "field_candidate_threshold": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Field Candidate Threshold",
+      "type": "number"
+    },
+    "max_profile_rows": {
+      "minimum": 1,
+      "title": "Max Profile Rows",
+      "type": "integer"
+    },
+    "max_sample_values": {
+      "minimum": 1,
+      "title": "Max Sample Values",
+      "type": "integer"
+    },
+    "max_value_cardinality": {
+      "minimum": 1,
+      "title": "Max Value Cardinality",
+      "type": "integer"
+    },
+    "resolver_weights": {
+      "$ref": "#/$defs/ResolverWeights"
+    },
+    "rule_registry_path": {
+      "title": "Rule Registry Path",
+      "type": "string"
+    },
+    "schema_version": {
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "task_candidate_threshold": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Task Candidate Threshold",
+      "type": "number"
+    }
+  },
+  "required": [
+    "schema_version",
+    "config_version",
+    "enabled",
+    "rule_registry_path",
+    "feature_flags",
+    "resolver_weights",
+    "field_candidate_threshold",
+    "ambiguity_margin",
+    "task_candidate_threshold",
+    "max_value_cardinality",
+    "max_sample_values",
+    "max_profile_rows",
+    "deterministic_seed"
+  ],
+  "title": "SkillVISV2Config",
+  "type": "object"
+}

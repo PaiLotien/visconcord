@@ -1,0 +1,18 @@
+{
+  "schema_version": "skillvis-v2-joint-v19-composite-span-registry-v1.0.0",
+  "status": "development_only_not_protocol_frozen",
+  "rules": [
+    {
+      "rule_id": "R-FR-100",
+      "module": "typed_composite_span_segmentation",
+      "source_ids": ["NL4DV2020", "BREHMER_MUNZNER2013", "AMAR2005"],
+      "scope": "suppress a required candidate when every grounded span is either weak evidence owned by a normalized operation span or a false exact mention that decomposes into an operation span followed by the prefix of another independently exact full-field span",
+      "rationale": "Longest lexical matching can create a false field such as mean_volume across the analytical operator mean and the real field volume_total; typed span ownership must precede field obligation emission.",
+      "priority": 81,
+      "failure_condition": "The phrase mean volume_total independently grounds both volume_total and schema field mean_volume.",
+      "conflict_policy": "Standalone exact/alias/value/semantic evidence remains protected; decomposition requires an explicit typed operation and a distinct exact owner field with adjacent spans.",
+      "trace_fields": ["candidate", "candidate_span", "operation_span", "owner_field", "owner_span", "segmentation", "decision"],
+      "unit_tests": ["test_composite_exact_span_is_segmented", "test_standalone_operation_named_field_is_preserved", "test_real_owner_field_is_preserved"]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "collision_records": [],
+  "current_query_count": 120,
+  "exact_query_collision_count": 0,
+  "schema_instance_policy": "case numbers 1001--1120 and new field names; template family reuse is separately disclosed",
+  "schema_version": "skillvis-v2-m5-pristine-overlap-audit-v1.0.0",
+  "status": "PRE_VALIDATOR_AUDIT"
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "skillvis-v2-joint-operator-role-rule-registry-v1.0.0",
+  "status": "development_only_not_protocol_frozen",
+  "rules": [
+    {
+      "rule_id": "R-FR-040",
+      "module": "operator_scoped_field_role_resolution",
+      "source_ids": ["NL4DV2020", "BREHMER_MUNZNER2013", "DRACO2019"],
+      "scope": "resolve a physically numeric low-cardinality field as a query-local measure when an explicit aggregate operation binds to that field and no local grouping cue binds to it",
+      "rationale": "Schema semantic type and query role are distinct. A global by/across cue must not convert an aggregate operand into a grouping dimension when the cue locally modifies another field.",
+      "priority": 67,
+      "failure_condition": "A numeric aggregate operand is treated as a dimension because an unrelated grouping cue exists elsewhere in the query.",
+      "conflict_policy": "Explicit operator-to-field binding outranks global grouping evidence; local grouping evidence on the same field blocks promotion; non-numeric fields are never promoted.",
+      "trace_fields": ["field_name", "physical_type", "aggregate_operation", "operator_span", "local_grouping_evidence", "previous_roles", "resolved_role"],
+      "unit_tests": ["test_operator_scoped_numeric_operands_become_measures", "test_numeric_grouping_fields_remain_dimensions", "test_non_numeric_aggregate_target_is_not_promoted"]
+    }
+  ]
+}

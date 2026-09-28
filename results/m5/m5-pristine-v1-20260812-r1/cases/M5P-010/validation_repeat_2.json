@@ -1,0 +1,335 @@
+{
+  "candidate_mutation_count": 0,
+  "candidate_results": [
+    {
+      "candidate_id": "M5P-010-C1-2d87863ee7",
+      "candidate_input_hash": "37d7b55027d1ef9b341b862c61e2311f92ea00fd3c9560f26ba04344d9572c72",
+      "candidate_signature": "2d87863ee7ee78eabe6136492f1ff504c2698e2c7b97da0401cb2e3bee640170",
+      "confidence": [],
+      "decision": "ACCEPT",
+      "deterministic_signature": "26b3d4ee28126ddca8f079b147453cacf93d9a46c499a73ce17ed39425440042",
+      "eligible": true,
+      "evidence": [],
+      "issue_type": [],
+      "issues": [],
+      "original_rank": 1,
+      "original_score": 0.86,
+      "repair_applied": false,
+      "repair_proposal": [],
+      "schema_version": "skillvis-v2-m5-candidate-result-v1.0.0",
+      "severity": [],
+      "source_ids": [],
+      "trace": [
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-C001",
+          "scope": "candidate",
+          "source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "8ee0b97a8579d6414c17c990d0e942fe4cc2880cd8cb0d0127a46e6559f62d03",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-F001",
+          "scope": "candidate",
+          "source_ids": [
+            "D3",
+            "R10"
+          ],
+          "trace_signature": "32ad52ecd4e150624b6f15c8fef26d4c00dffb3c3611fc2cea89eb92fbd187fd",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-F002",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "e826eaef5af912a0d22f267852bd026a1c47757ab620b583f1342f4e361ca475",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-F003",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "eab1ec85af26ac413d952bf56afae7890ec9cd59cb8a078042aea7ec8e610d0b",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E001",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R10"
+          ],
+          "trace_signature": "6fd50b3308c3e4e3160a11d2b479bdd83004f95abfa7c7428b4b6cc974558e93",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E002",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R10"
+          ],
+          "trace_signature": "6c6e7f6fbe8a688980c3241d91dbf1e9f9be064f429fec728adc8ac550cfd6d5",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E003",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R10"
+          ],
+          "trace_signature": "d66e39eb58a94ab6a721497925c59a75d76e1623c6750fe9caee9bbaebdcc538",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E004",
+          "scope": "candidate",
+          "source_ids": [
+            "D1",
+            "R10"
+          ],
+          "trace_signature": "24ae425fe543fa1574ab3c179e72f0c9695081df86292cbcc6a0a72c5e98a0f6",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-T001",
+          "scope": "candidate",
+          "source_ids": [
+            "D1",
+            "R5"
+          ],
+          "trace_signature": "066cbfe88dca80e19003c808933abc56eeb5f337935e9bc8f0cf24a62c8d645c",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A001",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "2b8b8f5cb73ae871aa1079c560fb727569969863ea90beadd03862def15ed294",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A002",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "6b9cfe76872e81843eb530114f74de383d6398826a4c53cf155a6ed0049176bf",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A003",
+          "scope": "candidate",
+          "source_ids": [
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "560b692cf497887b486df7539f93cb57852f49a40ae551d757a61c4587ce19e6",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A004",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "08eb4b352f4300804ae7b3ec28844c8bbf1bbc3c068d41bced74c8aeb8e7a6af",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-U001",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R2",
+            "R10"
+          ],
+          "trace_signature": "25f0d1613c10b2409aac379a5435479091c158d772f848365398353e49a86a22",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-U002",
+          "scope": "candidate",
+          "source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "8883022292b6a6c9605d2b7daf70cbfe02274da3134ae98c69297c424660bbb2",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-P001",
+          "scope": "candidate",
+          "source_ids": [
+            "D1",
+            "D6",
+            "D7"
+          ],
+          "trace_signature": "9bc1c817d7398e990aa191dc11a6669400e36fad10fd45fa0ba91055a4351e9b",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-P002",
+          "scope": "candidate",
+          "source_ids": [
+            "D7",
+            "R10"
+          ],
+          "trace_signature": "c323b1aaa87db5a0124c4d75a52730977e84b8013c5f12d654ef27dcee7b11bc",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-010-C1-2d87863ee7",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-P003",
+          "scope": "candidate",
+          "source_ids": [
+            "D7",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "e9701558b88087cd3e34539c695fbcbeba7d6ae12eae5f4431f3987fd40357d2",
+          "triggered": false
+        }
+      ],
+      "validated_rank": 1,
+      "validated_score": 0.86,
+      "validation_penalty": 0.0,
+      "violated_rule_ids": []
+    }
+  ],
+  "candidate_set_id": "candidate-set-M5P-010",
+  "candidate_set_input_sha256": "78c20ae72cef5eb3af2a164730af97e164e42e4084e6ffb3d21516c485b45de0",
+  "capability_sha256": "637ecbaecbe8d7414072cfcecd468039433b417bf8d0f7f9a7facdb31118bd4b",
+  "config_sha256": "9bb8031a12d573377de0ca018bb3be590794606adacd559ec03a73de981d9509",
+  "config_version": "skillvis-v2-m5-validator-formal-v1.0.0",
+  "context_id": "context-M5P-010",
+  "deterministic_signature": "60ca0151408f8d2ce338b06063abb86e95a047dd15fc65b0ad3d2a77498c0efa",
+  "intent_sha256": "03e607b039c81d168039ae289a66abb3a6506bfef32906a9023cadd983fa81c9",
+  "original_candidate_order": [
+    "M5P-010-C1-2d87863ee7"
+  ],
+  "overall_decision": "ANSWERABLE",
+  "rejected_candidate_ids": [],
+  "repair_applied": false,
+  "schema_sha256": "fceda8096122d570820c7e1c4cac26a970d50d4f404e49d40ebed756e68ef213",
+  "schema_version": "skillvis-v2-m5-validation-set-result-v1.0.0",
+  "set_issues": [],
+  "set_trace": [
+    {
+      "candidate_id": null,
+      "evidence": {
+        "status": "not_triggered"
+      },
+      "rule_id": "R-VF-S001",
+      "scope": "candidate_set",
+      "source_ids": [
+        "R3",
+        "SV2-PROTOCOL"
+      ],
+      "trace_signature": "7205f6939d160d22ec58a9a9a0e81cf5a348f1a3b3ff9020d3e3db87fcdcbc25",
+      "triggered": false
+    },
+    {
+      "candidate_id": null,
+      "evidence": {
+        "status": "not_triggered"
+      },
+      "rule_id": "R-VF-S002",
+      "scope": "candidate_set",
+      "source_ids": [
+        "D3",
+        "SV2-PROTOCOL"
+      ],
+      "trace_signature": "1bc0f90e1c513dccca49206ddbc3e200aab1419d815da29752b31cdc71aa7667",
+      "triggered": false
+    }
+  ],
+  "validated_candidate_order": [
+    "M5P-010-C1-2d87863ee7"
+  ]
+}

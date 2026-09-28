@@ -1,0 +1,2109 @@
+{
+  "partition": "formal_core",
+  "schema_version": "skillvis-pcs-v7-task-set-v1.0.0",
+  "seed": 202607319,
+  "status": "FROZEN_PREEXECUTION_RESULT_BLIND",
+  "task_count": 30,
+  "tasks": [
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "natural_language_query": "Create a bar chart comparing mean motor_updrs between sex_group groups.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "comparison",
+        "uci_id": 189
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:189",
+      "stratum": {
+        "analytical_task": "comparison",
+        "chart_family": "bar",
+        "paraphrase_index": 1,
+        "template_family": "comparison",
+        "uci_id": 189
+      },
+      "task_id": "PCS7-F-001"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "natural_language_query": "Summarize average motor_updrs per sex_group using vertical bars.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "comparison",
+        "uci_id": 189
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:189",
+      "stratum": {
+        "analytical_task": "comparison",
+        "chart_family": "bar",
+        "paraphrase_index": 2,
+        "template_family": "comparison",
+        "uci_id": 189
+      },
+      "task_id": "PCS7-F-002"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "natural_language_query": "Arrange sex_group from highest to lowest average motor_updrs in a horizontal bar chart.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "ranking",
+        "uci_id": 189
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:189",
+      "stratum": {
+        "analytical_task": "ranking",
+        "chart_family": "ranking_bar",
+        "paraphrase_index": 1,
+        "template_family": "ranking",
+        "uci_id": 189
+      },
+      "task_id": "PCS7-F-003"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "natural_language_query": "Order sex_group according to mean motor_updrs and draw ranked bars.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "ranking",
+        "uci_id": 189
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:189",
+      "stratum": {
+        "analytical_task": "ranking",
+        "chart_family": "ranking_bar",
+        "paraphrase_index": 2,
+        "template_family": "ranking",
+        "uci_id": 189
+      },
+      "task_id": "PCS7-F-004"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "natural_language_query": "Create a scatter plot relating motor_updrs to total_updrs.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "correlation",
+        "uci_id": 189
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:189",
+      "stratum": {
+        "analytical_task": "correlation",
+        "chart_family": "scatter",
+        "paraphrase_index": 1,
+        "template_family": "correlation",
+        "uci_id": 189
+      },
+      "task_id": "PCS7-F-005"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "natural_language_query": "Display total_updrs versus motor_updrs as points in a scatter chart.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "correlation",
+        "uci_id": 189
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:189",
+      "stratum": {
+        "analytical_task": "correlation",
+        "chart_family": "scatter",
+        "paraphrase_index": 2,
+        "template_family": "correlation",
+        "uci_id": 189
+      },
+      "task_id": "PCS7-F-006"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "natural_language_query": "Inspect the frequency distribution of motor_updrs in a histogram.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "distribution",
+        "uci_id": 189
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:189",
+      "stratum": {
+        "analytical_task": "distribution",
+        "chart_family": "histogram",
+        "paraphrase_index": 1,
+        "template_family": "distribution",
+        "uci_id": 189
+      },
+      "task_id": "PCS7-F-007"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "natural_language_query": "Bin motor_updrs values and render their counts as a histogram.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "distribution",
+        "uci_id": 189
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:189",
+      "stratum": {
+        "analytical_task": "distribution",
+        "chart_family": "histogram",
+        "paraphrase_index": 2,
+        "template_family": "distribution",
+        "uci_id": 189
+      },
+      "task_id": "PCS7-F-008"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "natural_language_query": "Represent record shares by sex_group with a pie chart.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "composition",
+        "uci_id": 189
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:189",
+      "stratum": {
+        "analytical_task": "composition",
+        "chart_family": "pie",
+        "paraphrase_index": 1,
+        "template_family": "composition",
+        "uci_id": 189
+      },
+      "task_id": "PCS7-F-009"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_parkinsons_189_pcs7f",
+        "fields": [
+          {
+            "name": "sex_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "motor_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "total_updrs",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "jitter_percent",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "shimmer_value",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_189_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_189_metadata.json",
+        "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "67cc9d95ff80f0f9bae0a830599c93b54144e1683195a04caafa3afc3353fc5f",
+        "source_doi": "10.24432/C5ZS3N",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_189_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+        "source_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+        "source_uci_id": 189
+      },
+      "natural_language_query": "Draw a pie chart of observation proportions for every sex_group group.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "composition",
+        "uci_id": 189
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:189",
+      "stratum": {
+        "analytical_task": "composition",
+        "chart_family": "pie",
+        "paraphrase_index": 2,
+        "template_family": "composition",
+        "uci_id": 189
+      },
+      "task_id": "PCS7-F-010"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "natural_language_query": "Create a bar chart comparing mean sensor_1_temperature between occupancy_class groups.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "comparison",
+        "uci_id": 864
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:864",
+      "stratum": {
+        "analytical_task": "comparison",
+        "chart_family": "bar",
+        "paraphrase_index": 1,
+        "template_family": "comparison",
+        "uci_id": 864
+      },
+      "task_id": "PCS7-F-011"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "natural_language_query": "Summarize average sensor_1_temperature per occupancy_class using vertical bars.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "comparison",
+        "uci_id": 864
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:864",
+      "stratum": {
+        "analytical_task": "comparison",
+        "chart_family": "bar",
+        "paraphrase_index": 2,
+        "template_family": "comparison",
+        "uci_id": 864
+      },
+      "task_id": "PCS7-F-012"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "natural_language_query": "Arrange occupancy_class from highest to lowest average sensor_1_temperature in a horizontal bar chart.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "ranking",
+        "uci_id": 864
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:864",
+      "stratum": {
+        "analytical_task": "ranking",
+        "chart_family": "ranking_bar",
+        "paraphrase_index": 1,
+        "template_family": "ranking",
+        "uci_id": 864
+      },
+      "task_id": "PCS7-F-013"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "natural_language_query": "Order occupancy_class according to mean sensor_1_temperature and draw ranked bars.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "ranking",
+        "uci_id": 864
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:864",
+      "stratum": {
+        "analytical_task": "ranking",
+        "chart_family": "ranking_bar",
+        "paraphrase_index": 2,
+        "template_family": "ranking",
+        "uci_id": 864
+      },
+      "task_id": "PCS7-F-014"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "natural_language_query": "Create a scatter plot relating sensor_1_temperature to sensor_1_light.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "correlation",
+        "uci_id": 864
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:864",
+      "stratum": {
+        "analytical_task": "correlation",
+        "chart_family": "scatter",
+        "paraphrase_index": 1,
+        "template_family": "correlation",
+        "uci_id": 864
+      },
+      "task_id": "PCS7-F-015"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "natural_language_query": "Display sensor_1_light versus sensor_1_temperature as points in a scatter chart.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "correlation",
+        "uci_id": 864
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:864",
+      "stratum": {
+        "analytical_task": "correlation",
+        "chart_family": "scatter",
+        "paraphrase_index": 2,
+        "template_family": "correlation",
+        "uci_id": 864
+      },
+      "task_id": "PCS7-F-016"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "natural_language_query": "Inspect the frequency distribution of sensor_1_temperature in a histogram.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "distribution",
+        "uci_id": 864
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:864",
+      "stratum": {
+        "analytical_task": "distribution",
+        "chart_family": "histogram",
+        "paraphrase_index": 1,
+        "template_family": "distribution",
+        "uci_id": 864
+      },
+      "task_id": "PCS7-F-017"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "natural_language_query": "Bin sensor_1_temperature values and render their counts as a histogram.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "distribution",
+        "uci_id": 864
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:864",
+      "stratum": {
+        "analytical_task": "distribution",
+        "chart_family": "histogram",
+        "paraphrase_index": 2,
+        "template_family": "distribution",
+        "uci_id": 864
+      },
+      "task_id": "PCS7-F-018"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "natural_language_query": "Represent record shares by occupancy_class with a pie chart.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "composition",
+        "uci_id": 864
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:864",
+      "stratum": {
+        "analytical_task": "composition",
+        "chart_family": "pie",
+        "paraphrase_index": 1,
+        "template_family": "composition",
+        "uci_id": 864
+      },
+      "task_id": "PCS7-F-019"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_room_occupancy_864_pcs7f",
+        "fields": [
+          {
+            "name": "occupancy_class",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "sensor_1_temperature",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_light",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_sound",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "sensor_1_co2",
+            "native_dtype": "int64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_864_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_864_metadata.json",
+        "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "ebf38a134e606735a088529093a0e168560b05a94285e95d393df551f8572893",
+        "source_doi": "10.24432/C5P605",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_864_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+        "source_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+        "source_uci_id": 864
+      },
+      "natural_language_query": "Draw a pie chart of observation proportions for every occupancy_class group.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "composition",
+        "uci_id": 864
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:864",
+      "stratum": {
+        "analytical_task": "composition",
+        "chart_family": "pie",
+        "paraphrase_index": 2,
+        "template_family": "composition",
+        "uci_id": 864
+      },
+      "task_id": "PCS7-F-020"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "natural_language_query": "Create a bar chart comparing mean body_mass_index between age_group groups.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "comparison",
+        "uci_id": 887
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:887",
+      "stratum": {
+        "analytical_task": "comparison",
+        "chart_family": "bar",
+        "paraphrase_index": 1,
+        "template_family": "comparison",
+        "uci_id": 887
+      },
+      "task_id": "PCS7-F-021"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "natural_language_query": "Summarize average body_mass_index per age_group using vertical bars.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "comparison",
+        "uci_id": 887
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:887",
+      "stratum": {
+        "analytical_task": "comparison",
+        "chart_family": "bar",
+        "paraphrase_index": 2,
+        "template_family": "comparison",
+        "uci_id": 887
+      },
+      "task_id": "PCS7-F-022"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "natural_language_query": "Arrange age_group from highest to lowest average body_mass_index in a horizontal bar chart.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "ranking",
+        "uci_id": 887
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:887",
+      "stratum": {
+        "analytical_task": "ranking",
+        "chart_family": "ranking_bar",
+        "paraphrase_index": 1,
+        "template_family": "ranking",
+        "uci_id": 887
+      },
+      "task_id": "PCS7-F-023"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "natural_language_query": "Order age_group according to mean body_mass_index and draw ranked bars.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "ranking",
+        "uci_id": 887
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:887",
+      "stratum": {
+        "analytical_task": "ranking",
+        "chart_family": "ranking_bar",
+        "paraphrase_index": 2,
+        "template_family": "ranking",
+        "uci_id": 887
+      },
+      "task_id": "PCS7-F-024"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "natural_language_query": "Create a scatter plot relating body_mass_index to blood_glucose.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "correlation",
+        "uci_id": 887
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:887",
+      "stratum": {
+        "analytical_task": "correlation",
+        "chart_family": "scatter",
+        "paraphrase_index": 1,
+        "template_family": "correlation",
+        "uci_id": 887
+      },
+      "task_id": "PCS7-F-025"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "natural_language_query": "Display blood_glucose versus body_mass_index as points in a scatter chart.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "correlation",
+        "uci_id": 887
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:887",
+      "stratum": {
+        "analytical_task": "correlation",
+        "chart_family": "scatter",
+        "paraphrase_index": 2,
+        "template_family": "correlation",
+        "uci_id": 887
+      },
+      "task_id": "PCS7-F-026"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "natural_language_query": "Inspect the frequency distribution of body_mass_index in a histogram.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "distribution",
+        "uci_id": 887
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:887",
+      "stratum": {
+        "analytical_task": "distribution",
+        "chart_family": "histogram",
+        "paraphrase_index": 1,
+        "template_family": "distribution",
+        "uci_id": 887
+      },
+      "task_id": "PCS7-F-027"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "natural_language_query": "Bin body_mass_index values and render their counts as a histogram.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "distribution",
+        "uci_id": 887
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:887",
+      "stratum": {
+        "analytical_task": "distribution",
+        "chart_family": "histogram",
+        "paraphrase_index": 2,
+        "template_family": "distribution",
+        "uci_id": 887
+      },
+      "task_id": "PCS7-F-028"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "natural_language_query": "Represent record shares by age_group with a pie chart.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "composition",
+        "uci_id": 887
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:887",
+      "stratum": {
+        "analytical_task": "composition",
+        "chart_family": "pie",
+        "paraphrase_index": 1,
+        "template_family": "composition",
+        "uci_id": 887
+      },
+      "task_id": "PCS7-F-029"
+    },
+    {
+      "dataset": {
+        "column_count": 5,
+        "dataset_id": "uci_nhanes_887_pcs7f",
+        "fields": [
+          {
+            "name": "age_group",
+            "native_dtype": "str",
+            "semantic_type": "categorical"
+          },
+          {
+            "name": "body_mass_index",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_glucose",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "oral_glucose_tolerance",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          },
+          {
+            "name": "blood_insulin",
+            "native_dtype": "float64",
+            "semantic_type": "quantitative"
+          }
+        ],
+        "filename": "uci_887_pcs7_formal.csv",
+        "local_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_pcs7_formal.csv",
+        "metadata_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/source_metadata/uci_887_metadata.json",
+        "metadata_sha256": "dfc240cc2b54bbf9521cda12d76cfe00bf269f212a2501c68d75fc9688538966",
+        "normalization": "content-addressed deterministic row sample plus predeclared semantic header projection",
+        "row_count": 800,
+        "selection_seed": 202607319,
+        "sha256": "df3d79dca6f8b2eac112d5839f1fbea737086d6270a9a9d95800156c59a46fdc",
+        "source_doi": "10.24432/C5BS66",
+        "source_path": "data/skillvis_v2/pcs_v7_joint_v1121_retry3/datasets/uci_887_raw.csv",
+        "source_repository": "https://archive.ics.uci.edu/dataset/887/national+health+and+nutrition+health+survey+2013-2014+(nhanes)+age+prediction+subset",
+        "source_sha256": "a5e588ef5d015349b2656b2905cd2ac9603381643e188a5587a58cf5f972354d",
+        "source_uci_id": 887
+      },
+      "natural_language_query": "Draw a pie chart of observation proportions for every age_group group.",
+      "partition": "formal_core",
+      "provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "composition",
+        "uci_id": 887
+      },
+      "schema_version": "skillvis-pcs-v7-task-v1.0.0",
+      "source_arm": "uci_external_controlled_common_scope",
+      "source_cluster_id": "uci:887",
+      "stratum": {
+        "analytical_task": "composition",
+        "chart_family": "pie",
+        "paraphrase_index": 2,
+        "template_family": "composition",
+        "uci_id": 887
+      },
+      "task_id": "PCS7-F-030"
+    }
+  ]
+}

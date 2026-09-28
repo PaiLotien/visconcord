@@ -1,0 +1,29 @@
+{
+  "claim_boundary": "Prospective UCI-source-derived controlled shared-capability comparison with preexecution template/schema gold; not an official benchmark, not human gold, and not unrestricted-language generalization. Two paraphrases within a dataset/task cell are clustered by source dataset.",
+  "completed_invocation_count": 80,
+  "input_parity_pass": true,
+  "llm_or_paid_api_used": false,
+  "memory_used": false,
+  "noninferiority_margin": null,
+  "planned_invocation_count": 80,
+  "protocol_lock_sha256": "3ce80662da2d89db640ed9a265aacc2b1acbec70744070881ae41e71f76cd79d",
+  "protocol_namespace": "PCS-v7-Joint-v1.12.1-vs-NL4DV",
+  "qualification_decision_sha256": "e81e99049844a74c4370f69a5c89d934628cc3f06ca070518992170e77385206",
+  "qualification_result_lock_sha256": "6353af1a3d30e9cc01ade796bb19591b2e12c85973c584510984b8efcd8a1fde",
+  "qualification_source": "outputs/skillvis_v2/pcs_v7_joint_v1121_retry3/skillvis-joint-v1121-qualification-pcs-v7-20260731-r3/qualification_result_lock_v1.json",
+  "qualification_status": "PASS",
+  "quality_invocation_count": 60,
+  "replay_pass": true,
+  "run_id": "skillvis-joint-v1121-vs-nl4dv-pcs-v7-20260731-r3",
+  "schema_version": "skillvis-pcs-v7-formal-run-manifest-v1.0.0",
+  "status": "COMPLETED",
+  "superiority_claim_rule": "paired cluster-bootstrap 95% CI must exclude zero; otherwise descriptive only",
+  "systems": [
+    "SkillVIS_V2_JOINT",
+    "NL4DV"
+  ],
+  "task_count": 30,
+  "worker_status_counts": {
+    "success": 80
+  }
+}

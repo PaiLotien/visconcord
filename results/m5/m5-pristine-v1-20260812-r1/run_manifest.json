@@ -1,0 +1,28 @@
+{
+  "authorization_sha256": "7c842ba511a64ac1d83c71012184b2c6dfa859ad5536849c566fb1b635579404",
+  "case_count": 120,
+  "environment": {
+    "implementation": "CPython",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "freeze_manifest_sha256": "55770b321e65d1bd4619b21ee6ad70949af0553dcf67f5a233a748bd80c39945",
+  "gold_sha256": "bd2d6dbc05e9c2067b9d0ff9d97a88c585e9861fcbcdd7841f9d23929002eb89",
+  "replays_per_case": 3,
+  "run_id": "m5-pristine-v1-20260812-r1",
+  "schema_version": "skillvis-v2-m5-pristine-run-v1.0.0",
+  "scope": {
+    "component_level_only": true,
+    "end_to_end_benchmark": false,
+    "independent_expert_gold": true,
+    "llm_invoked": false,
+    "paid_api_invoked": false,
+    "pristine_validator_execution": true,
+    "standalone_end_to_end_evidence": false,
+    "system_comparison": false,
+    "template_family_reused": true
+  },
+  "status": "COMPLETE_PRISTINE_M5_COMPONENT_VALIDATION",
+  "transition_decision": "PASS",
+  "validator_invocations": 360
+}

@@ -1,0 +1,9 @@
+{
+  "allowed_public_source_email_count": 2,
+  "issue_count": 0,
+  "issues": [],
+  "note": "Automated screening is necessary but not sufficient; the corresponding author must still inspect the final upload and choose a release license.",
+  "scanned_text_file_count": 975,
+  "schema_version": "skillvis-anonymization-scan-v1.0.0",
+  "status": "PASS"
+}

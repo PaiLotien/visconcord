@@ -1,0 +1,46 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2421767,
+      "path": "data/skillvis_v2/m5_pristine_blind_v1/candidate_set_v1.json",
+      "sha256": "279c913613af3bfc9c16b543bde9bf22c8b74770ec8a3abf99779e8319823b05"
+    },
+    {
+      "bytes": 2407255,
+      "path": "data/skillvis_v2/m5_pristine_blind_v1/annotator_a_packet_v1.json",
+      "sha256": "b3febe893049cbab39750392f0eda1795cd88c1213963e9f9dfdd000e540df6f"
+    },
+    {
+      "bytes": 2407255,
+      "path": "data/skillvis_v2/m5_pristine_blind_v1/annotator_b_packet_v1.json",
+      "sha256": "5e92ae092aa9abbe2588dc9c0c9cb2a647f2e5a3e0ecf1a28e43356f8ed37046"
+    },
+    {
+      "bytes": 41182,
+      "path": "data/skillvis_v2/m5_pristine_blind_v1/gold_template_v1.json",
+      "sha256": "59c825e4d3bf777c57592ea0d7c9780a41fabf4e16a083da0f49820f7751d2cf"
+    },
+    {
+      "bytes": 373,
+      "path": "data/skillvis_v2/m5_pristine_blind_v1/adjudication_template_v1.json",
+      "sha256": "db5f71c989e0018e479d6a8d0964a4fd83e86f63e9f63c0a5eaf2e6cf130bb5f"
+    },
+    {
+      "bytes": 321,
+      "path": "data/skillvis_v2/m5_pristine_blind_v1/overlap_audit_v1.json",
+      "sha256": "ae45d2598dfae2a1e1cdebefd23e4bb0079bead4a8d42ed4c06781e11b494355"
+    }
+  ],
+  "candidate_count": 140,
+  "case_count": 120,
+  "formal_execution_authorized": false,
+  "gold_frozen": false,
+  "next_gate": "two independent annotations, adjudication, gold hash freeze, and advisor authorization",
+  "randomization_seeds": {
+    "annotator_a": 202607301,
+    "annotator_b": 202607302
+  },
+  "schema_version": "skillvis-v2-m5-pristine-readiness-manifest-v1.0.0",
+  "status": "READY_FOR_INDEPENDENT_ANNOTATION_NOT_FROZEN",
+  "validator_invocations": 0
+}

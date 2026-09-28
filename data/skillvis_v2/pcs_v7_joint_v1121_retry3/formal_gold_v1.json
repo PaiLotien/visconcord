@@ -1,0 +1,1826 @@
+{
+  "partition": "formal_core",
+  "record_count": 30,
+  "records": [
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "categorical",
+              "field": "sex_group",
+              "time_unit": null
+            },
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "motor_updrs",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "comparison"
+          ],
+          "interpretation_id": "PCS7-F-001:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "motor_updrs",
+            "sex_group"
+          ],
+          "required_transforms": [
+            {
+              "field": "motor_updrs",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "comparison",
+        "uci_id": 189
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:189",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-001"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "categorical",
+              "field": "sex_group",
+              "time_unit": null
+            },
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "motor_updrs",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "comparison"
+          ],
+          "interpretation_id": "PCS7-F-002:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "motor_updrs",
+            "sex_group"
+          ],
+          "required_transforms": [
+            {
+              "field": "motor_updrs",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "comparison",
+        "uci_id": 189
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:189",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-002"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "motor_updrs",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "categorical",
+              "field": "sex_group",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "ranking"
+          ],
+          "interpretation_id": "PCS7-F-003:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "motor_updrs",
+            "sex_group"
+          ],
+          "required_transforms": [
+            {
+              "field": "motor_updrs",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "ranking",
+        "uci_id": 189
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:189",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-003"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "motor_updrs",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "categorical",
+              "field": "sex_group",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "ranking"
+          ],
+          "interpretation_id": "PCS7-F-004:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "motor_updrs",
+            "sex_group"
+          ],
+          "required_transforms": [
+            {
+              "field": "motor_updrs",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "ranking",
+        "uci_id": 189
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:189",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-004"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "scatter"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "motor_updrs",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "total_updrs",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "correlation"
+          ],
+          "interpretation_id": "PCS7-F-005:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "motor_updrs",
+            "total_updrs"
+          ],
+          "required_transforms": []
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "correlation",
+        "uci_id": 189
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:189",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-005"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "scatter"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "motor_updrs",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "total_updrs",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "correlation"
+          ],
+          "interpretation_id": "PCS7-F-006:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "motor_updrs",
+            "total_updrs"
+          ],
+          "required_transforms": []
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "correlation",
+        "uci_id": 189
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:189",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-006"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "histogram"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": true,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "motor_updrs",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "distribution"
+          ],
+          "interpretation_id": "PCS7-F-007:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "motor_updrs"
+          ],
+          "required_transforms": [
+            {
+              "field": "motor_updrs",
+              "operation": "bin"
+            },
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "distribution",
+        "uci_id": 189
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:189",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-007"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "histogram"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": true,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "motor_updrs",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "distribution"
+          ],
+          "interpretation_id": "PCS7-F-008:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "motor_updrs"
+          ],
+          "required_transforms": [
+            {
+              "field": "motor_updrs",
+              "operation": "bin"
+            },
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "distribution",
+        "uci_id": 189
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:189",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-008"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "pie"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "color",
+              "data_type": "categorical",
+              "field": "sex_group",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "composition"
+          ],
+          "interpretation_id": "PCS7-F-009:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "sex_group"
+          ],
+          "required_transforms": [
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "composition",
+        "uci_id": 189
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:189",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-009"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "pie"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "color",
+              "data_type": "categorical",
+              "field": "sex_group",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "composition"
+          ],
+          "interpretation_id": "PCS7-F-010:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "sex_group"
+          ],
+          "required_transforms": [
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5ZS3N",
+        "template_family": "composition",
+        "uci_id": 189
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:189",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-010"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "categorical",
+              "field": "occupancy_class",
+              "time_unit": null
+            },
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "sensor_1_temperature",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "comparison"
+          ],
+          "interpretation_id": "PCS7-F-011:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "sensor_1_temperature",
+            "occupancy_class"
+          ],
+          "required_transforms": [
+            {
+              "field": "sensor_1_temperature",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "comparison",
+        "uci_id": 864
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:864",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-011"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "categorical",
+              "field": "occupancy_class",
+              "time_unit": null
+            },
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "sensor_1_temperature",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "comparison"
+          ],
+          "interpretation_id": "PCS7-F-012:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "sensor_1_temperature",
+            "occupancy_class"
+          ],
+          "required_transforms": [
+            {
+              "field": "sensor_1_temperature",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "comparison",
+        "uci_id": 864
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:864",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-012"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "sensor_1_temperature",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "categorical",
+              "field": "occupancy_class",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "ranking"
+          ],
+          "interpretation_id": "PCS7-F-013:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "sensor_1_temperature",
+            "occupancy_class"
+          ],
+          "required_transforms": [
+            {
+              "field": "sensor_1_temperature",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "ranking",
+        "uci_id": 864
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:864",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-013"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "sensor_1_temperature",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "categorical",
+              "field": "occupancy_class",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "ranking"
+          ],
+          "interpretation_id": "PCS7-F-014:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "sensor_1_temperature",
+            "occupancy_class"
+          ],
+          "required_transforms": [
+            {
+              "field": "sensor_1_temperature",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "ranking",
+        "uci_id": 864
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:864",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-014"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "scatter"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "sensor_1_temperature",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "sensor_1_light",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "correlation"
+          ],
+          "interpretation_id": "PCS7-F-015:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "sensor_1_temperature",
+            "sensor_1_light"
+          ],
+          "required_transforms": []
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "correlation",
+        "uci_id": 864
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:864",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-015"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "scatter"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "sensor_1_temperature",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "sensor_1_light",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "correlation"
+          ],
+          "interpretation_id": "PCS7-F-016:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "sensor_1_temperature",
+            "sensor_1_light"
+          ],
+          "required_transforms": []
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "correlation",
+        "uci_id": 864
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:864",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-016"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "histogram"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": true,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "sensor_1_temperature",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "distribution"
+          ],
+          "interpretation_id": "PCS7-F-017:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "sensor_1_temperature"
+          ],
+          "required_transforms": [
+            {
+              "field": "sensor_1_temperature",
+              "operation": "bin"
+            },
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "distribution",
+        "uci_id": 864
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:864",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-017"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "histogram"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": true,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "sensor_1_temperature",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "distribution"
+          ],
+          "interpretation_id": "PCS7-F-018:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "sensor_1_temperature"
+          ],
+          "required_transforms": [
+            {
+              "field": "sensor_1_temperature",
+              "operation": "bin"
+            },
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "distribution",
+        "uci_id": 864
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:864",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-018"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "pie"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "color",
+              "data_type": "categorical",
+              "field": "occupancy_class",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "composition"
+          ],
+          "interpretation_id": "PCS7-F-019:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "occupancy_class"
+          ],
+          "required_transforms": [
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "composition",
+        "uci_id": 864
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:864",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-019"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "pie"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "color",
+              "data_type": "categorical",
+              "field": "occupancy_class",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "composition"
+          ],
+          "interpretation_id": "PCS7-F-020:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "occupancy_class"
+          ],
+          "required_transforms": [
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5P605",
+        "template_family": "composition",
+        "uci_id": 864
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:864",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-020"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "categorical",
+              "field": "age_group",
+              "time_unit": null
+            },
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "body_mass_index",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "comparison"
+          ],
+          "interpretation_id": "PCS7-F-021:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "body_mass_index",
+            "age_group"
+          ],
+          "required_transforms": [
+            {
+              "field": "body_mass_index",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "comparison",
+        "uci_id": 887
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:887",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-021"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "categorical",
+              "field": "age_group",
+              "time_unit": null
+            },
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "body_mass_index",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "comparison"
+          ],
+          "interpretation_id": "PCS7-F-022:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "body_mass_index",
+            "age_group"
+          ],
+          "required_transforms": [
+            {
+              "field": "body_mass_index",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "comparison",
+        "uci_id": 887
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:887",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-022"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "body_mass_index",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "categorical",
+              "field": "age_group",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "ranking"
+          ],
+          "interpretation_id": "PCS7-F-023:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "body_mass_index",
+            "age_group"
+          ],
+          "required_transforms": [
+            {
+              "field": "body_mass_index",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "ranking",
+        "uci_id": 887
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:887",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-023"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "bar"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": "mean",
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "body_mass_index",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "categorical",
+              "field": "age_group",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "ranking"
+          ],
+          "interpretation_id": "PCS7-F-024:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "body_mass_index",
+            "age_group"
+          ],
+          "required_transforms": [
+            {
+              "field": "body_mass_index",
+              "operation": "aggregate",
+              "operator": "mean"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "ranking",
+        "uci_id": 887
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:887",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-024"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "scatter"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "body_mass_index",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "blood_glucose",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "correlation"
+          ],
+          "interpretation_id": "PCS7-F-025:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "body_mass_index",
+            "blood_glucose"
+          ],
+          "required_transforms": []
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "correlation",
+        "uci_id": 887
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:887",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-025"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "scatter"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "body_mass_index",
+              "time_unit": null
+            },
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "y",
+              "data_type": "quantitative",
+              "field": "blood_glucose",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "correlation"
+          ],
+          "interpretation_id": "PCS7-F-026:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "body_mass_index",
+            "blood_glucose"
+          ],
+          "required_transforms": []
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "correlation",
+        "uci_id": 887
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:887",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-026"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "histogram"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": true,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "body_mass_index",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "distribution"
+          ],
+          "interpretation_id": "PCS7-F-027:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "body_mass_index"
+          ],
+          "required_transforms": [
+            {
+              "field": "body_mass_index",
+              "operation": "bin"
+            },
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "distribution",
+        "uci_id": 887
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:887",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-027"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "histogram"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": true,
+              "channel": "x",
+              "data_type": "quantitative",
+              "field": "body_mass_index",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "distribution"
+          ],
+          "interpretation_id": "PCS7-F-028:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "body_mass_index"
+          ],
+          "required_transforms": [
+            {
+              "field": "body_mass_index",
+              "operation": "bin"
+            },
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "distribution",
+        "uci_id": 887
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:887",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-028"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "pie"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "color",
+              "data_type": "categorical",
+              "field": "age_group",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "composition"
+          ],
+          "interpretation_id": "PCS7-F-029:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "age_group"
+          ],
+          "required_transforms": [
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 1,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "composition",
+        "uci_id": 887
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:887",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-029"
+    },
+    {
+      "abstention_acceptability": "not_acceptable",
+      "acceptable_candidate_set": [
+        {
+          "acceptable_chart_types": [
+            "pie"
+          ],
+          "acceptable_encodings": [
+            {
+              "aggregate": null,
+              "bin": null,
+              "channel": "color",
+              "data_type": "categorical",
+              "field": "age_group",
+              "time_unit": null
+            }
+          ],
+          "analytical_tasks": [
+            "composition"
+          ],
+          "interpretation_id": "PCS7-F-030:predeclared-common-scope",
+          "notes": "Frozen from an explicit chart request and predeclared schema roles before either system ran.",
+          "optional_relevant_fields": [],
+          "required_fields": [
+            "age_group"
+          ],
+          "required_transforms": [
+            {
+              "operation": "aggregate",
+              "operator": "count"
+            }
+          ]
+        }
+      ],
+      "ambiguity_labels": [],
+      "annotation_status": "source_derived_preexecution_audited",
+      "answerability": "answerable",
+      "gold_provenance": {
+        "compared_system_output_consulted": false,
+        "creation_method": "predeclared_template_applied_to_frozen_semantic_schema",
+        "paraphrase_index": 2,
+        "selection_blind_to_system_outputs": true,
+        "selection_seed": 202607319,
+        "source": "UCI dataset plus controlled common-scope template",
+        "source_doi": "10.24432/C5BS66",
+        "template_family": "composition",
+        "uci_id": 887
+      },
+      "partition": "formal_core",
+      "schema_version": "skillvis-pcs-v3-gold-v1.0.0",
+      "source_cluster_id": "uci:887",
+      "source_gold_type": "predeclared_controlled_template_and_schema_roles",
+      "supported_scope": true,
+      "task_id": "PCS7-F-030"
+    }
+  ],
+  "schema_version": "skillvis-pcs-v7-gold-set-v1.0.0",
+  "status": "FROZEN_PREEXECUTION_GOLD_AUDITED"
+}

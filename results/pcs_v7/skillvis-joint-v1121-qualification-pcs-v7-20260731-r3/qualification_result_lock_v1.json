@@ -1,0 +1,26 @@
+{
+  "artifact_manifest_sha256": "43a482b4727bbd8784ef7ab856a6bd610a61918f139c70d9bfdadaeb28e16255",
+  "checks": {
+    "artifact_hashes": true,
+    "deterministic_replay": true,
+    "formal_authorized": true,
+    "input_parity": true,
+    "invocations_complete": true,
+    "memory_off": true,
+    "no_llm_or_paid_api": true,
+    "protocol_lock": true,
+    "qualification_pass": true
+  },
+  "claim_boundary": "Qualification gate only; not a paper comparison result.",
+  "decision_sha256": "e81e99049844a74c4370f69a5c89d934628cc3f06ca070518992170e77385206",
+  "evaluation_sha256": "cc14dad2a465756a0d0b19a18b45028f31b880ba8b7635ed9f2839a814ed5b1a",
+  "formal_run_authorized": true,
+  "hash_validation_sha256": "cd4e9ae9e35d44ff64b1d9910a6283eee3e40a9bc9c180354facfa232f8bac2a",
+  "input_parity_sha256": "f269d6e7b3528758e70ed0c0b2c46acc3e9f456281404da2e9fd553723ed1030",
+  "manifest_sha256": "ef76a8aae1a63fe4937d837c0643e88d822c7c2db80d225a7511762d59983f0f",
+  "post_lock_mutation_forbidden": true,
+  "protocol_lock_sha256": "3ce80662da2d89db640ed9a265aacc2b1acbec70744070881ae41e71f76cd79d",
+  "replay_sha256": "aa8f69dec6f00ef4c817eedb34671b9219cbee8f77a848a40c94fcec8e56b6fe",
+  "schema_version": "skillvis-pcs-v7-qualification-result-lock-v1.0.0",
+  "status": "LOCKED_PASS"
+}

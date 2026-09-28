@@ -1,0 +1,114 @@
+{
+  "schema_version": "skillvis-v2-candidate-rule-registry-v2.0.0",
+  "status": "derived_measure_planner_v2_implemented",
+  "rules": [
+    {
+      "rule_id": "R-CP-001",
+      "module": "candidate_planning",
+      "source_ids": ["R1", "R2", "R3"],
+      "scope": "declared M4 chart grammar and typed IR roles",
+      "rationale": "Hard data, role, safety, and grammar constraints determine whether a partial design can be completed.",
+      "priority": 80,
+      "failure_condition": "A required role is absent, safety requires abstention, or a chart is outside the versioned vocabulary.",
+      "conflict_policy": "Hard failure cannot be offset by a soft preference score.",
+      "trace_fields": ["task", "required_roles", "field_roles", "chart_vocabulary", "rejection_reasons"],
+      "unit_tests": ["test_missing_role_returns_zero", "test_unsupported_scope_returns_zero", "test_chart_vocabulary_is_bounded"]
+    },
+    {
+      "rule_id": "R-CP-002",
+      "module": "candidate_planning",
+      "source_ids": ["D1", "R3", "R5"],
+      "scope": "supported core analytical tasks with complete typed field roles",
+      "rationale": "Task-specific chart families enumerate genuine alternative completions rather than one forced chart.",
+      "priority": 81,
+      "failure_condition": "Task is auxiliary, unresolved, or outside the supported core task set.",
+      "conflict_policy": "Enumerate only templates whose required roles are satisfied.",
+      "trace_fields": ["task", "chart_type", "mark_type", "template", "task_alignment"],
+      "unit_tests": ["test_chart_family_branches", "test_true_variable_length_candidates"]
+    },
+    {
+      "rule_id": "R-CP-003",
+      "module": "candidate_planning",
+      "source_ids": ["D2", "R10", "N7"],
+      "scope": "field and encoding assignment from raw, aggregate-derived, and row-count VisualizationIntentIR roles",
+      "rationale": "Candidate encodings preserve raw and derived semantic roles, including fieldless row count, without inventing schema fields.",
+      "priority": 82,
+      "failure_condition": "The requested encoding requires a field role absent from the IR.",
+      "conflict_policy": "Retain distinct color/facet branches only when both are role-compatible.",
+      "trace_fields": ["fields", "encodings", "grouping", "field_role_alignment", "evidence_spans"],
+      "unit_tests": ["test_grouped_comparison", "test_temporal_trend", "test_correlation_encoding", "test_encoding_diversity"]
+    },
+    {
+      "rule_id": "R-CP-004",
+      "module": "candidate_planning",
+      "source_ids": ["D1", "D7", "R5"],
+      "scope": "surviving hard-valid candidate completions",
+      "rationale": "Soft effectiveness preferences must remain componentized, source-scoped, and auditable.",
+      "priority": 83,
+      "failure_condition": "A score component or configured weight is missing.",
+      "conflict_policy": "The fixed formula combines components; scores never override hard rejection.",
+      "trace_fields": ["score_components", "score_weights", "total_score", "ranking_key"],
+      "unit_tests": ["test_score_component_completeness", "test_fixed_score_formula", "test_deterministic_tie"]
+    },
+    {
+      "rule_id": "R-CP-005",
+      "module": "candidate_planning",
+      "source_ids": ["N7", "R3"],
+      "scope": "all enumerated M4 candidate specifications",
+      "rationale": "Semantic-equivalent candidates must be deduplicated before ranking, and top-k must never be padded.",
+      "priority": 84,
+      "failure_condition": "Canonical signature inputs are incomplete or nondeterministic.",
+      "conflict_policy": "Keep one canonical representative per signature; never clone a survivor.",
+      "trace_fields": ["deterministic_signature", "raw_count", "post_dedup_count", "duplicate_count"],
+      "unit_tests": ["test_candidate_dedup", "test_no_top_k_padding", "test_signature_stability"]
+    },
+    {
+      "rule_id": "R-CP-006",
+      "module": "candidate_planning",
+      "source_ids": ["R3", "R4", "N7"],
+      "scope": "distinct hard-valid candidate set after deduplication",
+      "rationale": "Variable-length output should preserve genuine chart-family, encoding, transform, and task diversity within a fixed budget.",
+      "priority": 85,
+      "failure_condition": "A diversity branch violates a hard constraint or only renames an identical encoding.",
+      "conflict_policy": "Quality constraints dominate diversity; fewer candidates are valid.",
+      "trace_fields": ["candidate_count", "chart_family_diversity", "encoding_diversity", "transform_diversity", "task_diversity"],
+      "unit_tests": ["test_multiple_valid_candidates", "test_diversity_does_not_create_invalid_candidate"]
+    },
+    {
+      "rule_id": "R-CP-007",
+      "module": "candidate_planning",
+      "source_ids": ["N1", "R3", "R10"],
+      "scope": "explicit chart mentions that are compatible with the typed task and field roles",
+      "rationale": "A compatible explicit chart request constrains enumeration; an incompatible hint must remain visible instead of being silently replaced.",
+      "priority": 86,
+      "failure_condition": "The explicit chart family is unsupported or role-incompatible.",
+      "conflict_policy": "Compatible hint is a hard filter; incompatible hint yields zero executable candidates and a recorded reason.",
+      "trace_fields": ["chart_mentions", "compatible_templates", "rejection_reasons"],
+      "unit_tests": ["test_explicit_chart_hint_unique_candidate", "test_incompatible_chart_hint_is_not_repaired"]
+    },
+    {
+      "rule_id": "R-CP-008",
+      "module": "candidate_planning",
+      "source_ids": ["D2", "R3", "R10"],
+      "scope": "group-representing charts with mathematically certain duplicate group keys and no explicit aggregation",
+      "rationale": "A candidate must declare its data-grain operation; the planner uses a versioned unit-aware mean/sum policy instead of leaving M5 to reject an incomplete design.",
+      "priority": 87,
+      "failure_condition": "Measure units disagree or no grounded measure field is available.",
+      "conflict_policy": "Explicit aggregation always wins; unknown or mixed units use the conservative mean policy and retain an audit assumption.",
+      "trace_fields": ["row_count", "group_cardinality_bound", "measure_fields", "unit_tokens", "aggregation_operation"],
+      "unit_tests": ["test_implicit_group_aggregation_is_declared", "test_explicit_aggregation_is_not_overridden"]
+    },
+    {
+      "rule_id": "R-CP-009",
+      "module": "candidate_planning",
+      "source_ids": ["D2", "R3", "R10"],
+      "scope": "multi-measure comparison over one grounded dimension",
+      "rationale": "A typed fold prevents the planner from silently dropping all but the first requested measure in grouped comparison designs.",
+      "priority": 88,
+      "failure_condition": "Fewer than two grounded quantitative fields or no comparison dimension is available.",
+      "conflict_policy": "All folded source measures remain explicit; derived key/value fields are declared by the transform and checked by M5.",
+      "trace_fields": ["source_measure_fields", "derived_key_field", "derived_value_field", "encodings"],
+      "unit_tests": ["test_multi_measure_fold_preserves_all_measures", "test_validator_accepts_declared_fold_fields"]
+    }
+  ]
+}

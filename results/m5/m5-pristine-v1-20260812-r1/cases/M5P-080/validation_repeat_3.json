@@ -1,0 +1,496 @@
+{
+  "candidate_mutation_count": 0,
+  "candidate_results": [
+    {
+      "candidate_id": "M5P-080-C1-8d965366c2",
+      "candidate_input_hash": "3f030400eb93eab03e01ef40bc3361cfa3df920affc7ed0ad4d1951dd60f137a",
+      "candidate_signature": "8d965366c207ec45b81ad3aa4dc8bb55646d1e352c9dd0c5b7aa3ec4e305df88",
+      "confidence": [
+        1.0
+      ],
+      "decision": "REJECT",
+      "deterministic_signature": "7e71ea3c7bf20cc70d7756b64f32e87abbb62b3b51f324609eb0e3497bd88574",
+      "eligible": false,
+      "evidence": [
+        {
+          "expected": {
+            "evidence_spans": [
+              {
+                "end": 71,
+                "kind": "m5_pristine_authoring",
+                "normalized": "contrast isotope flux 1080 across isotope zone 1080 for study unit 1080",
+                "rule_ids": [
+                  "R-M5P-SEED"
+                ],
+                "start": 0,
+                "text": "Contrast Isotope Flux 1080 across Isotope Zone 1080 for study unit 1080"
+              }
+            ],
+            "field_candidates": [
+              "Isotope Flux 1080"
+            ],
+            "negated": false,
+            "operation": "mean",
+            "rule_ids": [
+              "R-M5P-TRANSFORM"
+            ],
+            "transform_type": "aggregate",
+            "value": null
+          },
+          "observed": null
+        }
+      ],
+      "issue_type": [
+        "AGGREGATION_OBLIGATION_MISMATCH"
+      ],
+      "issues": [
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "confidence": 1.0,
+          "decision": "REJECT",
+          "evidence": {
+            "expected": {
+              "evidence_spans": [
+                {
+                  "end": 71,
+                  "kind": "m5_pristine_authoring",
+                  "normalized": "contrast isotope flux 1080 across isotope zone 1080 for study unit 1080",
+                  "rule_ids": [
+                    "R-M5P-SEED"
+                  ],
+                  "start": 0,
+                  "text": "Contrast Isotope Flux 1080 across Isotope Zone 1080 for study unit 1080"
+                }
+              ],
+              "field_candidates": [
+                "Isotope Flux 1080"
+              ],
+              "negated": false,
+              "operation": "mean",
+              "rule_ids": [
+                "R-M5P-TRANSFORM"
+              ],
+              "transform_type": "aggregate",
+              "value": null
+            },
+            "observed": null
+          },
+          "issue_id": "VFI-76d030c0fdb74ef06c",
+          "issue_type": "AGGREGATION_OBLIGATION_MISMATCH",
+          "level": "V4",
+          "penalty": 1.0,
+          "repair_applied": false,
+          "repair_proposal": {
+            "applied": false,
+            "description": "Unapplied proposal for AGGREGATION_OBLIGATION_MISMATCH; route to M4 under R-VF-A001.",
+            "proposal_type": "ALIGN_WITH_INTENT_AGGREGATION",
+            "rule_id": "R-VF-A001",
+            "target_stage": "M4"
+          },
+          "scope": "candidate",
+          "severity": "ERROR",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "violated_rule_ids": [
+            "R-VF-A001"
+          ]
+        }
+      ],
+      "original_rank": 1,
+      "original_score": 0.86,
+      "repair_applied": false,
+      "repair_proposal": [
+        {
+          "applied": false,
+          "description": "Unapplied proposal for AGGREGATION_OBLIGATION_MISMATCH; route to M4 under R-VF-A001.",
+          "proposal_type": "ALIGN_WITH_INTENT_AGGREGATION",
+          "rule_id": "R-VF-A001",
+          "target_stage": "M4"
+        }
+      ],
+      "schema_version": "skillvis-v2-m5-candidate-result-v1.0.0",
+      "severity": [
+        "ERROR"
+      ],
+      "source_ids": [
+        "D2",
+        "R10"
+      ],
+      "trace": [
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-C001",
+          "scope": "candidate",
+          "source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "3619e0a112a0cddad498ea60e11489aca3f54a2ddbce01264ed853988f27f3b4",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-F001",
+          "scope": "candidate",
+          "source_ids": [
+            "D3",
+            "R10"
+          ],
+          "trace_signature": "7bb6ece27b9f27b31218695e589ab384ba1385c601a06c8cf5ef7daa68fb02e6",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-F002",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "127d8766068e9f18cf729f76b3e4d249a6b66f2b8cba573b7b3820c874cec4b6",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-F003",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "47c0ee37f346cbb039600eb3d45beee6c1ed217148cb04bb6e65b0a30ca2ed63",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E001",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R10"
+          ],
+          "trace_signature": "d8ffdc8ff67fce25ba59e66092df2c49e6d9ca9d6255d05a3acadb16e747dadc",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E002",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R10"
+          ],
+          "trace_signature": "6f135f4d60dbcbf5f550816ff89c6c0cdd2e21485ee56c91a31457fef4de66d6",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E003",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R10"
+          ],
+          "trace_signature": "96b2065a92a70e5ba0ab9e406f7f020a4d5cc58988694f9d639a5bc18d1c8b2d",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-E004",
+          "scope": "candidate",
+          "source_ids": [
+            "D1",
+            "R10"
+          ],
+          "trace_signature": "988ee830d7217b98daca24108e7de6c96465629864f1b5ee7599152f4dcf78a8",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-T001",
+          "scope": "candidate",
+          "source_ids": [
+            "D1",
+            "R5"
+          ],
+          "trace_signature": "e82c860c12a94bb413f2bd1803b28d192a7cd5f942ed0f7f750fb3bd4fced433",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "expected": {
+              "evidence_spans": [
+                {
+                  "end": 71,
+                  "kind": "m5_pristine_authoring",
+                  "normalized": "contrast isotope flux 1080 across isotope zone 1080 for study unit 1080",
+                  "rule_ids": [
+                    "R-M5P-SEED"
+                  ],
+                  "start": 0,
+                  "text": "Contrast Isotope Flux 1080 across Isotope Zone 1080 for study unit 1080"
+                }
+              ],
+              "field_candidates": [
+                "Isotope Flux 1080"
+              ],
+              "negated": false,
+              "operation": "mean",
+              "rule_ids": [
+                "R-M5P-TRANSFORM"
+              ],
+              "transform_type": "aggregate",
+              "value": null
+            },
+            "observed": null
+          },
+          "rule_id": "R-VF-A001",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "27d5e6704ff211e8e19fa17127d176c7da368da0c13523c877e069a31748e148",
+          "triggered": true
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A002",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10"
+          ],
+          "trace_signature": "756b09639e1ef2ca589f2090a497b6dc215b03dc75ed6a5c180909486a209831",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A003",
+          "scope": "candidate",
+          "source_ids": [
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "47b2acb5e6f281f23f687f8540dd7eb43ba1c67355b43ecafb75c627212b7f9f",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-A004",
+          "scope": "candidate",
+          "source_ids": [
+            "D2",
+            "R10",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "a5add175153ea8db0c1af6aba0aeaa67c2ab2016e0c35d2ddde59ae9e8664835",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-U001",
+          "scope": "candidate",
+          "source_ids": [
+            "R1",
+            "R2",
+            "R10"
+          ],
+          "trace_signature": "4559b82300dfb1c46c87020700d42d1cf3b77270f0acedc5a74d9ecfa2d8bcbc",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-U002",
+          "scope": "candidate",
+          "source_ids": [
+            "D3",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "6041a1bb17a988fa7ab4ea3bd480b22db60c4072a71d8a7dff8f8218a27942d2",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-P001",
+          "scope": "candidate",
+          "source_ids": [
+            "D1",
+            "D6",
+            "D7"
+          ],
+          "trace_signature": "b6a571852efcb4608919745d88d82dd51dcbaa5246e8cafaff05767e094ea0df",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-P002",
+          "scope": "candidate",
+          "source_ids": [
+            "D7",
+            "R10"
+          ],
+          "trace_signature": "003155367883938214304724a74daa8b6f1af01e297889d2c3dab75e70ae1254",
+          "triggered": false
+        },
+        {
+          "candidate_id": "M5P-080-C1-8d965366c2",
+          "evidence": {
+            "status": "not_triggered"
+          },
+          "rule_id": "R-VF-P003",
+          "scope": "candidate",
+          "source_ids": [
+            "D7",
+            "SV2-PROTOCOL"
+          ],
+          "trace_signature": "8f9db21bb282201559465128c109b094780b395726e8cb7d5fe6151da364d1d7",
+          "triggered": false
+        }
+      ],
+      "validated_rank": 1,
+      "validated_score": 0.0,
+      "validation_penalty": 1.0,
+      "violated_rule_ids": [
+        "R-VF-A001"
+      ]
+    }
+  ],
+  "candidate_set_id": "candidate-set-M5P-080",
+  "candidate_set_input_sha256": "16ff3bf1b6eb631166e5898e130592cd1758d82bc76172e71bd24183bfdea621",
+  "capability_sha256": "630a94d575881f0c85804763419e82f488669a8e414b716230ba4a2ca89d0630",
+  "config_sha256": "9bb8031a12d573377de0ca018bb3be590794606adacd559ec03a73de981d9509",
+  "config_version": "skillvis-v2-m5-validator-formal-v1.0.0",
+  "context_id": "context-M5P-080",
+  "deterministic_signature": "8e997f295875ffd41efe16ff24310918028947f52c7e0730b85b4ca2236b7905",
+  "intent_sha256": "dae95cbb208ddc4e2a16c8a0a9ec6bdb7ee31907cc36e363ff5cec276de780fb",
+  "original_candidate_order": [
+    "M5P-080-C1-8d965366c2"
+  ],
+  "overall_decision": "NO_VALID_CANDIDATE",
+  "rejected_candidate_ids": [
+    "M5P-080-C1-8d965366c2"
+  ],
+  "repair_applied": false,
+  "schema_sha256": "d6579adbb2df20d57fed762d895d4d97a62f11d1a427f759e52cfcf48dbe8d61",
+  "schema_version": "skillvis-v2-m5-validation-set-result-v1.0.0",
+  "set_issues": [
+    {
+      "candidate_id": null,
+      "confidence": 0.85,
+      "decision": "WARN",
+      "evidence": {
+        "candidate_decisions": {
+          "M5P-080-C1-8d965366c2": "REJECT"
+        }
+      },
+      "issue_id": "VFI-b459d7177369c7dde3",
+      "issue_type": "CANDIDATE_SET_EXHAUSTED",
+      "level": "V6",
+      "penalty": 0.0,
+      "repair_applied": false,
+      "repair_proposal": {
+        "applied": false,
+        "description": "Unapplied proposal for CANDIDATE_SET_EXHAUSTED; route to FUTURE_ROUTER under R-VF-S002.",
+        "proposal_type": "ROUTE_NO_VALID_CANDIDATE",
+        "rule_id": "R-VF-S002",
+        "target_stage": "FUTURE_ROUTER"
+      },
+      "scope": "candidate_set",
+      "severity": "WARNING",
+      "source_ids": [
+        "D3",
+        "SV2-PROTOCOL"
+      ],
+      "violated_rule_ids": [
+        "R-VF-S002"
+      ]
+    }
+  ],
+  "set_trace": [
+    {
+      "candidate_id": null,
+      "evidence": {
+        "status": "not_triggered"
+      },
+      "rule_id": "R-VF-S001",
+      "scope": "candidate_set",
+      "source_ids": [
+        "R3",
+        "SV2-PROTOCOL"
+      ],
+      "trace_signature": "53fa21a771d21cb554f725c5e67e5f8fb9d2747ec2b2a2fafa0a73416a8dbfec",
+      "triggered": false
+    },
+    {
+      "candidate_id": null,
+      "evidence": {
+        "candidate_decisions": {
+          "M5P-080-C1-8d965366c2": "REJECT"
+        }
+      },
+      "rule_id": "R-VF-S002",
+      "scope": "candidate_set",
+      "source_ids": [
+        "D3",
+        "SV2-PROTOCOL"
+      ],
+      "trace_signature": "aea4a3365bab5beeccdd02f5cd102dc8e8dd8058b022cb52a4da681ae884e6fd",
+      "triggered": true
+    }
+  ],
+  "validated_candidate_order": [
+    "M5P-080-C1-8d965366c2"
+  ]
+}

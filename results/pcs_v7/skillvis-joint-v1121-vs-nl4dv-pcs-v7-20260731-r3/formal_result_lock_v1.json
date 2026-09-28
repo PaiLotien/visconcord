@@ -1,0 +1,26 @@
+{
+  "artifact_manifest_sha256": "1f1fe0a1125405db796da48d0faed0f2e593d56a07053e5da1698fefceb7c972",
+  "checks": {
+    "artifact_hashes": true,
+    "deterministic_replay": true,
+    "input_parity": true,
+    "invocations_complete": true,
+    "memory_off": true,
+    "no_llm_or_paid_api": true,
+    "protocol_lock": true,
+    "qualification": true,
+    "run_completed": true
+  },
+  "claim_boundary": "Prospective UCI-source-derived controlled shared-capability comparison with preexecution template/schema gold; not an official benchmark, not human gold, and not unrestricted-language generalization. Two paraphrases within a dataset/task cell are clustered by source dataset.",
+  "evaluation_summary_sha256": "26b5144cff625421f4c6ea68eae3b38954cc15e7d2d1510208198816167e8116",
+  "hash_validation_sha256": "9c7693616fda09ebcaa20500e4081946532d1309ad99136e333778ba27e800a5",
+  "input_parity_sha256": "5a64d747da3ac21e11cc4aa02aab3a2616dd6bd2323b9e88830d6d796e15908e",
+  "paired_comparisons_sha256": "570749f3a24d8266da9572bd0fcad1c53508707d6cc3ac77ea8c6426757d562e",
+  "post_lock_result_mutation_forbidden": true,
+  "protocol_lock_sha256": "3ce80662da2d89db640ed9a265aacc2b1acbec70744070881ae41e71f76cd79d",
+  "replay_summary_sha256": "14e3714c30a14913ceff6c0123469a4471863005f3dff77dd9251212312ecbbf",
+  "resource_summary_sha256": "6c45f81a13eaf2db2ef4d9b7c56f3cc79f6d8cf3b8f35facd4dc0550f6e4b818",
+  "run_manifest_sha256": "b708895316c7533d8f48d39e465576fd99cc0b0970618445ffc6452e093a9773",
+  "schema_version": "skillvis-pcs-v7-formal-result-lock-v1.0.0",
+  "status": "LOCKED_COMPLETED"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "skillvis-v2-joint-mention-ownership-rule-registry-v1.0.0",
+  "status": "development_only_not_protocol_frozen",
+  "rules": [
+    {
+      "rule_id": "R-FR-050",
+      "module": "field_mention_ownership",
+      "source_ids": ["NL4DV2020", "BREHMER_MUNZNER2013", "DRACO2019"],
+      "scope": "remove a required-field obligation when its only lexical support is a schema-shared token already owned by a stronger complete field mention",
+      "rationale": "Token overlap is useful for recall but a shared schema token such as area must not create independent field obligations when it occurs only inside an explicitly grounded longer field phrase.",
+      "priority": 69,
+      "failure_condition": "One complete field mention expands into several unrelated required fields through a shared schema token.",
+      "conflict_policy": "Independent exact, normalized, alias, acronym, semantic-concept, or value evidence preserves the field; only weak overlap evidence may be suppressed.",
+      "trace_fields": ["field_name", "weak_span", "matched_tokens", "shared_tokens", "owner_field", "owner_span"],
+      "unit_tests": ["test_shared_token_obligations_are_suppressed", "test_independent_complete_mentions_are_preserved", "test_value_and_alias_evidence_are_preserved"]
+    },
+    {
+      "rule_id": "R-FR-051",
+      "module": "field_mention_ownership",
+      "source_ids": ["NL4DV2020", "BREHMER_MUNZNER2013"],
+      "scope": "separate an analytical-operation cue from a similarly named field when the remaining phrase is fully grounded by another explicit field",
+      "rationale": "In phrases such as distribution of demand, distribution denotes an analytical task unless the similarly named schema field has independent strong evidence.",
+      "priority": 68,
+      "failure_condition": "An analytical operation token is counted both as task evidence and as an independent required field.",
+      "conflict_policy": "A complete exact or alias mention of the operation-named field wins; otherwise operation ownership plus an explicit base field suppresses only the weak obligation.",
+      "trace_fields": ["field_name", "operation_tokens", "base_tokens", "owner_field", "weak_span"],
+      "unit_tests": ["test_operation_owned_field_overlap_is_suppressed", "test_exact_operation_named_field_is_preserved"]
+    },
+    {
+      "rule_id": "R-CP-012",
+      "module": "candidate_construction_isolation",
+      "source_ids": ["DRACO2019", "VEGALITE2017"],
+      "scope": "validate channel uniqueness per enumerated row and isolate a malformed candidate without aborting valid sibling candidates",
+      "rationale": "A typed candidate contract is a safety boundary. Construction failures must be auditable row-level rejections rather than process-wide exceptions.",
+      "priority": 88,
+      "failure_condition": "One invalid candidate row aborts the full planning request or duplicate channels are silently repaired.",
+      "conflict_policy": "Identical duplicate encodings are deduplicated; conflicting duplicate channels are rejected without guessing or channel reassignment; valid sibling rows continue.",
+      "trace_fields": ["chart_type", "channel", "fields", "rejection_reason", "surviving_candidate_count"],
+      "unit_tests": ["test_conflicting_duplicate_channel_is_rejected_per_row", "test_identical_duplicate_encoding_is_deduplicated", "test_valid_sibling_survives_invalid_row"]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "skillvis-v2-accuracy-memory-revision-manifest-v1.0.0",
+  "revision_id": "skillvis-v2-accuracy-repair-memory-v2-20260727",
+  "status": "IMPLEMENTED_INTERNAL_VALIDATION_NOT_FROZEN_FOR_PUBLICATION",
+  "created_date": "2026-07-27",
+  "runtime_stage_labels": [
+    "S1_query_and_schema",
+    "S2_field_grounding",
+    "S3_intent_construction",
+    "S4_semantic_safety",
+    "S5_candidate_resolution",
+    "S6_validator",
+    "S7_memory_overlay_and_feedback"
+  ],
+  "development_milestones": [
+    "M1_query_normalization_and_schema_profiling",
+    "M2_semantic_field_resolution",
+    "M3_task_profiling_and_intent_ir",
+    "M3.5_semantic_safety",
+    "M4_candidate_planner",
+    "M5_validator",
+    "M6_task_conditioned_memory"
+  ],
+  "identity": {
+    "source_file_count": 17,
+    "source_sha256": "d1d749947e3b5e67d076f7d8e2b690e3524034aab90a8888089d171b96054be5",
+    "config_file_count_excluding_this_manifest": 4,
+    "config_sha256_excluding_this_manifest": "e3353abbcf951549274b5114a72dc2d166242feeecaab59fdee5aecd2b6960ff",
+    "test_file_count": 2,
+    "test_sha256": "bb13db972711f9d886b9ec0ca713856f2455b09844ff69c3f404fcccd8f130c7",
+    "combined_sha256_excluding_this_manifest": "0e7321395cdd88171763218093cdb9702448da04e50343db641b11cd06fe0c12"
+  },
+  "governance": {
+    "legacy_skillvis_v2_modified": false,
+    "legacy_freeze_manifests_modified": false,
+    "llm_calls": 0,
+    "paid_api_calls": 0,
+    "formal_benchmark_run": false,
+    "memory_can_override_safety": false,
+    "memory_can_override_validator_reject": false,
+    "memory_can_mutate_candidates": false,
+    "memory_write_requires_explicit_feedback": true
+  },
+  "key_assets": {
+    "memory": {
+      "path": "src/skillvis_v2_accuracy/memory.py",
+      "sha256": "7565751dd2af36cc78b3c1456fb186a358ed6c9c0d123f8e9f22bf3063ea348e"
+    },
+    "memory_pipeline": {
+      "path": "src/skillvis_v2_accuracy/memory_pipeline.py",
+      "sha256": "b38e02d93a65d7dd722c2f6d36495d4bd720306f0c125da41e845298eb472e0f"
+    },
+    "accuracy_regression_tests": {
+      "path": "tests/skillvis_v2/test_accuracy_repair_v2.py",
+      "sha256": "f5ce740f6e23968dca8907f52159cf2a716b267991ed986d3c87adfa6ad0f3f5"
+    },
+    "memory_tests": {
+      "path": "tests/skillvis_v2/test_task_conditioned_memory.py",
+      "sha256": "8ec77a988dab77a5536348c9060dd893d14ec5b7364896fcf485a6f8036e9f41"
+    }
+  }
+}

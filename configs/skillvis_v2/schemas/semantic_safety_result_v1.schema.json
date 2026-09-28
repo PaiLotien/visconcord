@@ -1,0 +1,371 @@
+{
+  "$defs": {
+    "AbstentionState": {
+      "additionalProperties": false,
+      "properties": {
+        "abstained": {
+          "title": "Abstained",
+          "type": "boolean"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reason"
+        },
+        "stage": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stage"
+        }
+      },
+      "required": [
+        "abstained"
+      ],
+      "title": "AbstentionState",
+      "type": "object"
+    },
+    "AmbiguityStateType": {
+      "enum": [
+        "NONE",
+        "LEXICAL_RESIDUE",
+        "MATERIAL_AMBIGUITY",
+        "MISSING_REQUIRED_ROLE",
+        "MULTIPLE_VALID_INTERPRETATIONS",
+        "UNSUPPORTED_SCOPE"
+      ],
+      "title": "AmbiguityStateType",
+      "type": "string"
+    },
+    "CapabilityAssessment": {
+      "additionalProperties": false,
+      "properties": {
+        "abstention_required": {
+          "title": "Abstention Required",
+          "type": "boolean"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        },
+        "provenance": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Provenance",
+          "type": "array"
+        },
+        "risk_level": {
+          "enum": [
+            "unknown",
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ],
+          "title": "Risk Level",
+          "type": "string"
+        },
+        "supported_operations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supported Operations",
+          "type": "array"
+        },
+        "unsupported_operations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unsupported Operations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "supported_operations",
+        "unsupported_operations",
+        "risk_level",
+        "abstention_required",
+        "explanation",
+        "provenance"
+      ],
+      "title": "CapabilityAssessment",
+      "type": "object"
+    },
+    "EvidenceSpan": {
+      "additionalProperties": false,
+      "properties": {
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "normalized": {
+          "title": "Normalized",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "text",
+        "normalized",
+        "kind",
+        "rule_ids"
+      ],
+      "title": "EvidenceSpan",
+      "type": "object"
+    },
+    "SafetyWarning": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_spans": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence Spans",
+          "type": "array"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "severity": {
+          "enum": [
+            "info",
+            "warning",
+            "error",
+            "critical"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "warning_type": {
+          "enum": [
+            "lexical_residue",
+            "material_ambiguity",
+            "missing_required_role",
+            "multiple_valid_interpretations",
+            "unsupported_scope"
+          ],
+          "title": "Warning Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "warning_type",
+        "severity",
+        "message",
+        "evidence_spans",
+        "rule_ids"
+      ],
+      "title": "SafetyWarning",
+      "type": "object"
+    },
+    "TypedAmbiguityState": {
+      "additionalProperties": false,
+      "properties": {
+        "affected_fields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Affected Fields",
+          "type": "array"
+        },
+        "affected_tasks": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Affected Tasks",
+          "type": "array"
+        },
+        "confidence": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "evidence_spans": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence Spans",
+          "type": "array"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        },
+        "resolution_strategy": {
+          "enum": [
+            "proceed",
+            "ignore_lexical_residue",
+            "request_clarification",
+            "preserve_alternatives",
+            "abstain_unsupported"
+          ],
+          "title": "Resolution Strategy",
+          "type": "string"
+        },
+        "state": {
+          "$ref": "#/$defs/AmbiguityStateType"
+        },
+        "triggering_rules": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Triggering Rules",
+          "type": "array"
+        }
+      },
+      "required": [
+        "state",
+        "evidence_spans",
+        "triggering_rules",
+        "confidence",
+        "affected_fields",
+        "affected_tasks",
+        "resolution_strategy",
+        "explanation"
+      ],
+      "title": "TypedAmbiguityState",
+      "type": "object"
+    },
+    "UnsupportedScopeRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_spans": {
+          "items": {
+            "$ref": "#/$defs/EvidenceSpan"
+          },
+          "title": "Evidence Spans",
+          "type": "array"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        },
+        "operation": {
+          "title": "Operation",
+          "type": "string"
+        },
+        "triggering_rules": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Triggering Rules",
+          "type": "array"
+        }
+      },
+      "required": [
+        "operation",
+        "evidence_spans",
+        "triggering_rules",
+        "explanation"
+      ],
+      "title": "UnsupportedScopeRecord",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "abstention_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Abstention Reason"
+    },
+    "abstention_state": {
+      "$ref": "#/$defs/AbstentionState"
+    },
+    "ambiguity_state": {
+      "$ref": "#/$defs/TypedAmbiguityState"
+    },
+    "applied_rule_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Applied Rule Ids",
+      "type": "array"
+    },
+    "capability_assessment": {
+      "$ref": "#/$defs/CapabilityAssessment"
+    },
+    "safety_warnings": {
+      "items": {
+        "$ref": "#/$defs/SafetyWarning"
+      },
+      "title": "Safety Warnings",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "skillvis-v2-semantic-safety-v1.0.0",
+      "default": "skillvis-v2-semantic-safety-v1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "unsupported_scope": {
+      "items": {
+        "$ref": "#/$defs/UnsupportedScopeRecord"
+      },
+      "title": "Unsupported Scope",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ambiguity_state",
+    "unsupported_scope",
+    "capability_assessment",
+    "safety_warnings",
+    "abstention_state",
+    "abstention_reason",
+    "applied_rule_ids"
+  ],
+  "title": "SemanticSafetyResult",
+  "type": "object"
+}

@@ -1,0 +1,226 @@
+{
+  "$defs": {
+    "DetectedTerm": {
+      "additionalProperties": false,
+      "properties": {
+        "canonical": {
+          "title": "Canonical",
+          "type": "string"
+        },
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "canonical",
+        "text",
+        "start",
+        "end",
+        "rule_ids"
+      ],
+      "title": "DetectedTerm",
+      "type": "object"
+    },
+    "EvidenceSpan": {
+      "additionalProperties": false,
+      "properties": {
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "normalized": {
+          "title": "Normalized",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "text",
+        "normalized",
+        "kind",
+        "rule_ids"
+      ],
+      "title": "EvidenceSpan",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "aggregation_terms": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/DetectedTerm"
+      },
+      "title": "Aggregation Terms",
+      "type": "array"
+    },
+    "applied_rule_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Applied Rule Ids",
+      "type": "array"
+    },
+    "chart_mentions": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/DetectedTerm"
+      },
+      "title": "Chart Mentions",
+      "type": "array"
+    },
+    "detected_comparatives": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/DetectedTerm"
+      },
+      "title": "Detected Comparatives",
+      "type": "array"
+    },
+    "detected_superlatives": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/DetectedTerm"
+      },
+      "title": "Detected Superlatives",
+      "type": "array"
+    },
+    "failure_state": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Failure State"
+    },
+    "lemmas_or_normalized_terms": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Lemmas Or Normalized Terms",
+      "type": "array"
+    },
+    "limitation_terms": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/DetectedTerm"
+      },
+      "title": "Limitation Terms",
+      "type": "array"
+    },
+    "normalized_query": {
+      "title": "Normalized Query",
+      "type": "string"
+    },
+    "original_query": {
+      "title": "Original Query",
+      "type": "string"
+    },
+    "query_spans": {
+      "items": {
+        "$ref": "#/$defs/EvidenceSpan"
+      },
+      "title": "Query Spans",
+      "type": "array"
+    },
+    "ranking_terms": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/DetectedTerm"
+      },
+      "title": "Ranking Terms",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "skillvis-v2-query-normalization-v0.1.0",
+      "default": "skillvis-v2-query-normalization-v0.1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "task_terms": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/DetectedTerm"
+      },
+      "title": "Task Terms",
+      "type": "array"
+    },
+    "temporal_expressions": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/DetectedTerm"
+      },
+      "title": "Temporal Expressions",
+      "type": "array"
+    },
+    "tokens": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Tokens",
+      "type": "array"
+    },
+    "warnings": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "original_query",
+    "normalized_query",
+    "tokens",
+    "lemmas_or_normalized_terms",
+    "query_spans",
+    "applied_rule_ids"
+  ],
+  "title": "QueryNormalizationResult",
+  "type": "object"
+}

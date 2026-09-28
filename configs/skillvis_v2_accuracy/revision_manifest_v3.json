@@ -1,0 +1,52 @@
+{
+  "schema_version": "skillvis-v2-contract-closure-revision-manifest-v1.0.0",
+  "revision_id": "skillvis-v2-contract-closure-v3-20260727",
+  "status": "FROZEN_BEFORE_FIRST_HOLDOUT_EXECUTION",
+  "created_date": "2026-07-27",
+  "identity": {
+    "source_file_count": 19,
+    "source_sha256": "318193c9490172647f505d65de1bda03e58b62e2873430bf3ebc9f51c474b934",
+    "config_file_count_excluding_manifests": 5,
+    "config_sha256_excluding_manifests": "7a9877c56660948d13316ced7becf364fee77a1582a652f009794904549232ee",
+    "test_file_count": 3,
+    "test_sha256": "81d28441b6f3b17d130effba125f70d8f79305aaf810a2b65644fd93a297a178",
+    "combined_sha256_excluding_manifests": "c8910ca3a360853eebc137b55109b7af0d80e5eb7ed6a7053b82d30dcbfd021b"
+  },
+  "optimization_set_identity": {
+    "development_path": "data/skillvis_v2_accuracy/optimization/v2_optimization_development_v1.json",
+    "development_sha256": "385374e03018ec3e0d3a23249fcd17ef52c20d9840a1c5c637af5687e70e3e97",
+    "holdout_path": "data/skillvis_v2_accuracy/optimization/v2_optimization_holdout_v1.json",
+    "holdout_sha256": "ee9bfa77c3938b99281ad0d1cebfe2bceaab7cacbf866d54ec43f5c50e67d3d3",
+    "freeze_manifest_path": "data/skillvis_v2_accuracy/optimization/v2_optimization_freeze_v1.json",
+    "freeze_manifest_sha256": "0be9e04fa6b36b98efe842ef064258e1ea991c62cf606fd440df37f757367d1b"
+  },
+  "implemented_contract_closure": [
+    "typed_schema_local_semantic_concept_bridge",
+    "contextual_inclusive_threshold_compilation",
+    "expanded_temporal_and_task_phrase_evidence",
+    "value_only_filter_role_separation",
+    "count_entity_identifier_suppression",
+    "material_ambiguity_precedence",
+    "candidate_level_data_grain_aggregation_policy",
+    "typed_multi_measure_fold",
+    "validator_awareness_of_declared_derived_fields"
+  ],
+  "governance": {
+    "legacy_skillvis_v2_modified": false,
+    "legacy_freeze_manifests_modified": false,
+    "holdout_used_for_tuning": false,
+    "holdout_execution_count_before_this_freeze": 0,
+    "formal_benchmark_run": false,
+    "nl4dv_comparison_run": false,
+    "llm_calls": 0,
+    "paid_api_calls": 0,
+    "memory_expansion_in_scope": false,
+    "memory_source_unchanged": true,
+    "memory_can_override_safety": false,
+    "memory_can_override_validator_reject": false
+  },
+  "unchanged_memory_assets": {
+    "memory_sha256": "7565751dd2af36cc78b3c1456fb186a358ed6c9c0d123f8e9f22bf3063ea348e",
+    "memory_pipeline_sha256": "b38e02d93a65d7dd722c2f6d36495d4bd720306f0c125da41e845298eb472e0f"
+  }
+}
